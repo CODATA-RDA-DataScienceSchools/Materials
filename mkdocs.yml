@@ -1,0 +1,14 @@
+site_name: CODATA RDA Summer Schools Repo
+site_url: https://CODATA-RDA-DataScienceSchools.github.io/Materials
+repo_url: https://github.com/CODATA-RDA-DataScienceSchools/Materials
+theme: readthedocs
+
+extra_css:
+  - css/extra.css
+
+pages:
+- Home: 'index.md'
+
+markdown_extensions:
+  - admonition
+  - osg_markdown.colors
