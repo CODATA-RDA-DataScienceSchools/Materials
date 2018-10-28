@@ -1,4 +1,4 @@
-# Kigali School for Research Data Science 
+# Kigali Foundational School in Research Data Science 
 22 October – 2 November, 2018
 University of Rwanda, Kigali, Rwanda
 
