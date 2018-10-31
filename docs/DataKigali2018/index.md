@@ -15,8 +15,8 @@ A 10-day workshop, organized by CODATA, ICTP and EAIFR, will be conducted at the
    * Day 4 - ![Research Data Management](slides/Intro-DMPs.pdf)
    * Day 5 - ![Research Data Management](slides/Intro-RDM-open-research.pdf), ![Open Science](slides/OpenScienceFriday.pdf)
    * Weekend
-   * Day 6 - Data Visualization
+   * Day 6 - ![Data Visualization](slides/DataVizMaterials)
    * Day 7 - Overview of Machine Learning
-   * Day 8 - Artificial Neural Networks
+   * Day 8 - ![Artificial Neural Networks](slides/Artificial_Nueral_Networks.pdf)
    * Day 9 - Computation Infrastructures
    * Day 10 - Computational Infrastrcutures, Close Out
