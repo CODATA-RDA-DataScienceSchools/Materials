@@ -18,5 +18,5 @@ A 10-day workshop, organized by CODATA, ICTP and EAIFR, will be conducted at the
    * Day 6 - [Data Visualization](slides/DataVizMaterials)
    * Day 7 - Overview of Machine Learning
    * Day 8 - [Artificial Neural Networks](slides/Artificial_Nueral_Networks.pdf)
-   * Day 9 - Computation Infrastructures - [Lecture 1](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/RDA-Lecture1-Kigali-2018.pdf), [Lecture 2](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/RDA-Lecture2-Kigali-2018.pdf), [Lecture 3](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/RDA-Lecture3-Kigali-2018.pdf), [Lecture 4](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/RDA-Lecture4-Kigali-2018.pdf))
-   * Day 10 - Computational Infrastrcutures Wrap-Up, School Close Out
+   * Day 9 - Computation Infrastructures - [Lecture 1](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/RDA-Lecture1-Kigali-2018.pdf), [Lecture 2](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/RDA-Lecture2-Kigali-2018.pdf), [Lecture 3](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/RDA-Lecture3-Kigali-2018.pdf), 
+   * Day 10 - Computational Infrastrcutures Wrap-Up - [Lecture 4](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/RDA-Lecture4-Kigali-2018.pdf), School Close Out
