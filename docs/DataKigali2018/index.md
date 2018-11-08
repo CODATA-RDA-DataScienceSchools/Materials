@@ -14,7 +14,6 @@ A 10-day workshop, organized by CODATA, ICTP and EAIFR, will be conducted at the
    * Day 3 - [Introduction to R](https://swcarpentry.github.io/r-novice-gapminder/)
    * Day 4 - [Research Data Management](slides/Intro-DMPs.pdf)
    * Day 5 - [Research Data Management](slides/Intro-RDM-open-research.pdf), [Open Science](slides/OpenScienceFriday.pdf)
-   * Weekend
    * Day 6 - [Data Visualization](slides/DataVizMaterials)
    * Day 7 - Overview of Machine Learning - [Fundementals](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataKigali2018/slides/Fundamentals%20of%20Machine%20Learning%202018.pdf), [Recommender Systesm](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataKigali2018/slides/Recommender%20Systems%202018.pdf)
    * Day 8 - [Artificial Neural Networks](slides/Artificial_Nueral_Networks.pdf)
