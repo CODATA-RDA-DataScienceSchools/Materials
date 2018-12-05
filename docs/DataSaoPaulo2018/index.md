@@ -11,7 +11,7 @@ A 10-day workshop, organized by CODATA, RDA, ICTP and SAIFR, was conducted at th
 
    * Day 1 - Introduction, [Open Science](slides/OpenScience_Monday.pdf), [UNIX Shell](http://swcarpentry.github.io/shell-novice/)
    * Day 2 - [Version Control with Git](https://swcarpentry.github.io/git-novice/reference), [Introduction to R](https://swcarpentry.github.io/r-novice-gapminder/) 
-   * Day 3 - [Introduction to R](https://swcarpentry.github.io/r-novice-gapminder/)
+   * Day 3 - [Introduction to R](https://swcarpentry.github.io/r-novice-gapminder/), [Reports Knitr](https://beatrizmilz.github.io/CODATASP18_knitr/#1)
    * Day 4 - [Research Data Management]()
    * Day 5 - [Research Data Management](), [Open Science]()
    * Day 6 - [Data Visualization]()
