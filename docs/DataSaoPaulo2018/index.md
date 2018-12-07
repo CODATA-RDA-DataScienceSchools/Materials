@@ -14,7 +14,7 @@ A 10-day workshop, organized by CODATA, RDA, ICTP and SAIFR, was conducted at th
    * Day 3 - [Introduction to R](https://swcarpentry.github.io/r-novice-gapminder/), [Reports Knitr](https://beatrizmilz.github.io/CODATASP18_knitr/#1)
    * Day 4 - [Data Visualization](https://natydasilva.github.io/CODATA/#1)
    * Day 5 - [Research Data Management](https://github.com/malfaro2/Materials/blob/master/docs/DataSaoPaulo2018/slides/Intro-RDM.pdf), [Data Management Plans](https://github.com/malfaro2/Materials/blob/master/docs/DataSaoPaulo2018/slides/Intro-DMPs.pdf)
-   * Day 6 - [Open Science](), [Information Security]()
+   * Day 6 - [Open Science](https://github.com/malfaro2/Materials/blob/master/docs/DataSaoPaulo2018/slides/Monday_Sao%20Paulo2018.pdf), [Information Security]()
    * Day 7 - [Overview of Machine Learning]()
    * Day 8 - [Artificial Neural Networks]()
    * Day 9 - Computational Infrastructures - [Lecture 1](), [Lecture 2](), [Lecture 3](), 
