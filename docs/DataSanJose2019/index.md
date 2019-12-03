@@ -11,7 +11,7 @@ A 10-day workshop, organized by CODATA, RDA, CONARE and CeNAT, was conducted at 
 
    * Day 1 - Introduction, [Open Science](), [UNIX Shell](http://swcarpentry.github.io/shell-novice/)
    * Day 2 - [Version Control with Git](https://swcarpentry.github.io/git-novice/reference), [Introduction to Python]() 
-   * Day 3 - [Introduction to R]()
+   * Day 3 - [Introduction to Python]()
    * Day 4 - [Data Visualization]()
    * Day 5 - [Research Data Management](), [Data Management Plans]()
    * Day 6 - [Open Science](), [Information Security]()
