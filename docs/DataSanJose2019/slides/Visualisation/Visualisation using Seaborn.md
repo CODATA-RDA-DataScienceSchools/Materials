@@ -319,7 +319,7 @@ sns.catplot(y="lifeExp", data=gapminder,jitter=False)
 
 
 
-![png](Figures/output_11_1.png)
+![png](Figures/output_15_1.png)
 
 This scatterplot is not very informative! We can create a box plot of the data
 
@@ -340,7 +340,7 @@ One can use another type of plot called a *violin* plot which tries to summarise
 
 ## Diving deeper into the data
 
-Just looking at the life expectancy for all of the countries isn't very informative. The first thing w can do is ask how does this vary across continents. Seaborn does this easily by introducing an x-axis which is the continent. Again, let's try with just the points.   
+Just looking at the life expectancy for all of the countries isn't very informative. The first thing we can do is ask how does this vary across continents. Seaborn does this easily by introducing an x-axis which is the continent. Again, let's try with just the points.   
 
 ```python
 sns.catplot(x="continent", y="lifeExp", data=gapminder)
@@ -349,7 +349,7 @@ sns.catplot(x="continent", y="lifeExp", data=gapminder)
 
 
 
-![png](Figures/output_14_1.png)
+![png](Figures/output_18_1.png)
 
 ### Exercise
 
@@ -424,7 +424,7 @@ Do the same plot for GDP per capita.
 
 ## Line and scatter plots
 
-instead of having a categorical variable on the horizontal access we now do scatter and line plots. Let's start with the whole data set.
+Instead of having a categorical variable on the horizontal access we now do scatter and line plots. Let's start with the whole data set.
 
 ```python
 sns.scatterplot(x="gdpPercap",y="lifeExp",data=gapminder)
@@ -593,7 +593,13 @@ sns.lineplot(x="year",y="lifeExp",hue="continent",data= medianGapminder.reset_in
 
 ![png](Figures/output_36_1.png)
 
+### Exercise
 
+1. Repeat this using the GDP per capita.
+
+2. Use a different statistical summary apart from the median. 
+
+   
 
 ## Regression
 
@@ -618,6 +624,12 @@ sns.lmplot(x="year",y="lifeExp",hue="continent", lowess=True, data= medianGapmin
 
 
 ![png](Figures/output_38_1.png)
+
+### Exercise
+
+Repeat the above using the GDP per capita.
+
+
 
 ## More regression
 
