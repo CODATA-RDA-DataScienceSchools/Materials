@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../../img/favicon.ico">
+  <title>Visualisation using Seaborn - CODATA RDA Summer Schools Repo</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../../../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Visualisation using Seaborn";
+    var mkdocs_page_input_path = "DataSanJose2019/slides/Visualisation/Visualisation using Seaborn.md";
+    var mkdocs_page_url = "/Materials/DataSanJose2019/slides/Visualisation/Visualisation using Seaborn/";
+  </script>
+  
+  <script src="../../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../../.." class="icon icon-home"> CODATA RDA Summer Schools Repo</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../..">Home</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../..">CODATA RDA Summer Schools Repo</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Visualisation using Seaborn</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/CODATA-RDA-DataScienceSchools/Materials/edit/master/docs/DataSanJose2019/slides/Visualisation/Visualisation using Seaborn.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="visualisation-using-seaborn">Visualisation using Seaborn</h1>
+<p>The notes listed here are based on this <a href="https://www.datacamp.com/community/tutorials/seaborn-python-tutorial#log">DataCamp tutorial</a> on Seaborn by <a href="https://www.datacamp.com/profile/karlijn">Karlijn Willems</a> and this <a href="https://drive.google.com/drive/folders/1Lsi9DK4uEB0QaP2GOtJ4GlEPwgL2ssR3?usp=sharing">CODATA-RDA module on visualisation</a> by <a href="eljadidsara@gmail.com">Sara El Jadid</a>.</p>
+<p>During this module we'll be making use of  <a href="http://seaborn.pydata.org/">Seaborn</a>, which provides a high-level interface to draw statistical graphics. </p>
+<h2 id="seaborn-vs-matplotlib">Seaborn vs Matplotlib</h2>
+<p>Seaborn is complimentary to <a href="https://matplotlib.org/">Matplotlib</a> and it  specifically targets statistical data visualization. But it goes even  further than that: Seaborn extends Matplotlib and that’s why it can  address the two biggest frustrations of working with Matplotlib. Or, as  Michael Waskom says in the “<a href="http://seaborn.pydata.org/introduction.html">introduction to Seaborn</a>”: “If matplotlib “tries to make easy things easy and hard things  possible”, seaborn tries to make a well-defined set of hard things easy  too.”</p>
+<p>One of these hard things or frustrations had to do with the default  Matplotlib parameters. Seaborn works with different parameters, which  undoubtedly speaks to those users that don’t use the default looks of  the Matplotlib plots.</p>
+<p>During this module we'll also be making some use of <a href="http://pandas.pydata.org/">Pandas</a> to extract features of the data that we need.</p>
+<h2 id="getting-started">Getting started</h2>
+<p>We'll start with importing a set of libraries that will be useful for us and the gapminder data set.</p>
+<pre><code class="python">import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+sns.set(style=&quot;darkgrid&quot;)
+</code></pre>
+
+<p>The last line is a choice about how things look - you may want to leave that out.</p>
+<p>Now we'll read in the data.</p>
+<pre><code class="python">gapminder = pd.read_csv(&quot;gapminder.csv&quot;)
+</code></pre>
+
+<p>So we are using pandas to read in the data set. The gapminder data set is a <em>Data Frame</em>.</p>
+<h2 id="exploring-the-gapminder-data-set">Exploring the gapminder data set</h2>
+<p>The gapminder data set is a set of socioeconomic data about populations, GDP per capita and expected life span for a large number of countries over a number of years. </p>
+<p>We can have a look at it using the head command. </p>
+<pre><code>gapminder.head()
+</code></pre>
+
+<p>You should get something like this. </p>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>country</th>
+      <th>continent</th>
+      <th>year</th>
+      <th>lifeExp</th>
+      <th>pop</th>
+      <th>gdpPercap</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>Afghanistan</td>
+      <td>Asia</td>
+      <td>1952</td>
+      <td>28.801</td>
+      <td>8425333</td>
+      <td>779.445314</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>Afghanistan</td>
+      <td>Asia</td>
+      <td>1957</td>
+      <td>30.332</td>
+      <td>9240934</td>
+      <td>820.853030</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>Afghanistan</td>
+      <td>Asia</td>
+      <td>1962</td>
+      <td>31.997</td>
+      <td>10267083</td>
+      <td>853.100710</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>Afghanistan</td>
+      <td>Asia</td>
+      <td>1967</td>
+      <td>34.020</td>
+      <td>11537966</td>
+      <td>836.197138</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>Afghanistan</td>
+      <td>Asia</td>
+      <td>1972</td>
+      <td>36.088</td>
+      <td>13079460</td>
+      <td>739.981106</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>So it is a combination of <em>categorical</em> data (countries and continents) and <em>quantitative</em> data (year, lifeExp etc.). It's also nice (though unrealistic) that it doesn't have missing values or malformed data e.g. Ireland is written sometimes as "Ireland" and sometimes "ireland" and sometimes "Republic of Ireland" or even "Eire"!! Dealing with those kinds of issues is not what we're going to focus on here.</p>
+<p>We can do a statistical summary of the numerical data using the <strong>describe</strong> function</p>
+<pre><code class="python">gapminder.describe()
+</code></pre>
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>year</th>
+      <th>lifeExp</th>
+      <th>pop</th>
+      <th>gdpPercap</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>1704.000000</td>
+      <td>1704.00000</td>
+      <td>1704.000000</td>
+      <td>1.704000e+03</td>
+      <td>1704.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>852.500000</td>
+      <td>1979.50000</td>
+      <td>59.474439</td>
+      <td>2.960121e+07</td>
+      <td>7215.327081</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>492.046746</td>
+      <td>17.26533</td>
+      <td>12.917107</td>
+      <td>1.061579e+08</td>
+      <td>9857.454543</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>1.000000</td>
+      <td>1952.00000</td>
+      <td>23.599000</td>
+      <td>6.001100e+04</td>
+      <td>241.165877</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>426.750000</td>
+      <td>1965.75000</td>
+      <td>48.198000</td>
+      <td>2.793664e+06</td>
+      <td>1202.060309</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>852.500000</td>
+      <td>1979.50000</td>
+      <td>60.712500</td>
+      <td>7.023596e+06</td>
+      <td>3531.846989</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>1278.250000</td>
+      <td>1993.25000</td>
+      <td>70.845500</td>
+      <td>1.958522e+07</td>
+      <td>9325.462346</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>1704.000000</td>
+      <td>2007.00000</td>
+      <td>82.603000</td>
+      <td>1.318683e+09</td>
+      <td>113523.132900</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>One can find the names of the continents by executing the following.</p>
+<pre><code>list(set(gapminder.continent))
+</code></pre>
+
+<p>We note that <strong>gapminder.continent</strong> gives us the list with the column corresponding to the continent entry. The <strong>set</strong> command converts the list into a set (which only has unique entries) and then <strong>list</strong> turns that back into a list again.</p>
+<p>We can list these entries alphabetically from the command</p>
+<pre><code>sorted(list(set(gapminder.continent)))
+</code></pre>
+
+<h3 id="exercise">Exercise</h3>
+<ol>
+<li>
+<p>What does the function <strong>sorted</strong> do?</p>
+</li>
+<li>
+<p>Do the same for the countries.</p>
+</li>
+</ol>
+<p>The gsapminder data set also presents lots of questions such as </p>
+<ul>
+<li>Is there a relationship between gdpPercap (roughly a measure of the average wealth of each person in a country) and their average life span?</li>
+<li>Is the average life span changing over time? </li>
+<li>How does picture change over different countries or comntinents?</li>
+</ul>
+<p>Visualisation allows us to explore all of this!</p>
+<h2 id="getting-started-with-seaborn">Getting started with seaborn</h2>
+<p>Let us start with doing box plots which count the number of entries that we have for each continent.</p>
+<pre><code>sns.countplot(x=&quot;continent&quot;, data=gapminder)
+</code></pre>
+
+<p>You should get the folllowing.</p>
+<p><img alt="png" src="../Figures/output_3_1.png" /></p>
+<p>Note that generically seaborn generally looks like this.</p>
+<p>sns.<command>(x=<column name>, y=<another column name>, ... , data =&lt; a data frame&gt;)</p>
+<p>We use countplot here to just count entries and plot them as a box plot. </p>
+<h3 id="exercise_1">Exercise</h3>
+<p>What happens if we do the following? </p>
+<pre><code class="python">sns.countplot(x=&quot;Continent&quot;, data=gapminder)
+</code></pre>
+
+<p>What does that tell us?</p>
+<h2 id="printing-out">Printing out</h2>
+<p>You can save a figure as a PNG or as a PDF then in the same cell as the command you run to plot use the <strong>savefig</strong> command.</p>
+<pre><code class="python">sns.countplot(x=&quot;continent&quot;, data=gapminder)
+plt.savefig(&quot;Histogram.png&quot;)
+plt.savefig(&quot;Histogram.pdf&quot;)
+</code></pre>
+
+<h2 id="looking-at-1-d-distributions">Looking at 1-d distributions</h2>
+<p>We can use the command <strong>catplot</strong> to just look at the distribution of life expenctancies.</p>
+<pre><code class="python">sns.catplot(y=&quot;lifeExp&quot;, data=gapminder)
+</code></pre>
+
+<p>You should get something like this.</p>
+<p><img alt="png" src="../Figures/output_10_1.png" /></p>
+<p>The points are <em>jittered</em> i.e. randomly moved in the horizontal axis to make things clearer. We can switch that off if we wish. </p>
+<pre><code class="python">sns.catplot(y=&quot;lifeExp&quot;, data=gapminder,jitter=False)
+</code></pre>
+
+<p><img alt="png" src="../Figures/output_11_1.png" /></p>
+<p>This scatterplot is not very informative! We can create a box plot of the data</p>
+<pre><code class="python">sns.boxplot(y=&quot;lifeExp&quot;, data=gapminder)
+</code></pre>
+
+<p>This should give the following. </p>
+<p><img alt="png" src="../Figures/output_12_1.png" /></p>
+<h3 id="exercise_2">Exercise</h3>
+<p>One can use another type of plot called a <em>violin</em> plot which tries to summarise the distribution better than a boxplot. The width of the violin plot represents how big the distribution is at that value. It is quite useful for picking out multi-modal (one with a distribution that has more than one peak). The command in seaborn is violinplot. Try and implement this for this data. </p>
+<h2 id="diving-deeper-into-the-data">Diving deeper into the data</h2>
+<p>Just looking at the life expectancy for all of the countries isn't very informative. The first thing w can do is ask how does this vary across continents. Seaborn does this easily by introducing an x-axis which is the continent. Again, let's try with just the points.   </p>
+<pre><code class="python">sns.catplot(x=&quot;continent&quot;, y=&quot;lifeExp&quot;, data=gapminder)
+</code></pre>
+
+<p><img alt="png" src="../Figures/output_14_1.png" /></p>
+<h3 id="exercise_3">Exercise</h3>
+<ol>
+<li>Repeat this using box plots (and violin plots if you wish).</li>
+<li>Repeat the above steps using GDP per capita (gdpPercap) instead of life expectancy.</li>
+<li>You can also try the <strong>swarmplot</strong> function as another way to represent this data.</li>
+</ol>
+<p>Can we just draw a distribution or a histogram? What about dividing it as continents? Yes! But we'll get to that in a bit.</p>
+<h2 id="ordering">Ordering</h2>
+<p>Plotting the box plots with the continents in alphabetical order is quite easy. </p>
+<pre><code class="python">orderedContinents = sorted(list(set(gapminder.continent)))
+orderedContinents
+</code></pre>
+
+<p>orderedContinents is a list with the continents ordered.</p>
+<pre><code class="python">sns.boxplot(x=&quot;continent&quot;, y=&quot;lifeExp&quot;, order=orderedContinents, data=gapminder)
+</code></pre>
+
+<p><img alt="png" src="../Figures/output_22_1.png" /></p>
+<p>On the other hand we may want to order the box plots in ascending order of the medians of the life expectancy. This is more involved but is a good exercise in manipulating the data.</p>
+<pre><code class="python">#Create an empty dictionary
+medianLifeExps = {}
+# Loop through all the continents
+for val in gapminder.continent:
+  # Create a new key which is the median life expectancy of that continent
+  # gapminder[gapminder.continent == val] pulls out the continent in that loop
+  # the .lifeExp.median() part then computes the median 
+  # of the remaining life expectancy data
+    key = gapminder[gapminder.continent==val].lifeExp.median()
+  # create a new entry in the dictionary with the continent as the value and the key 
+  # as the median.
+    medianLifeExps[key] = val   
+# Create a sorted list of the medians (in ascending order)    
+sortedKeys = sorted(medianLifeExps)
+# Finally return the list of continents in that order
+sortedMedContinents = [medianLifeExps[x] for x in sortedKeys]
+</code></pre>
+
+<pre><code class="python">sns.boxplot(x=&quot;continent&quot;, y=&quot;lifeExp&quot;, order=orderedMedianContinents, data=gapminder)
+</code></pre>
+
+<h3 id="exercise_4">Exercise</h3>
+<p>Do the same plot for GDP per capita.</p>
+<h2 id="line-and-scatter-plots">Line and scatter plots</h2>
+<p>instead of having a categorical variable on the horizontal access we now do scatter and line plots. Let's start with the whole data set.</p>
+<pre><code class="python">sns.scatterplot(x=&quot;gdpPercap&quot;,y=&quot;lifeExp&quot;,data=gapminder)
+</code></pre>
+
+<p><img alt="png" src="../Figures/output_25_1.png" /></p>
+<p>This is hard to grasp as a whole, so we'll just consider one country - China. </p>
+<p>We can select data corresponding to China by the following.</p>
+<p>gapminder[gapminder.country=="China"]</p>
+<pre><code class="python">sns.scatterplot(x=&quot;gdpPercap&quot;,y=&quot;lifeExp&quot;,data= gapminder[gapminder.country==&quot;China&quot;])
+</code></pre>
+
+<p><img alt="png" src="../Figures/output_26_1.png" /></p>
+<h3 id="exercise_5">Exercise</h3>
+<p>Do the same for your country - if it isn't listed in gapminder then pick another.</p>
+<p>A line plot works in the same way. It's possible to overlay these in the same cell. </p>
+<pre><code class="python">sns.lineplot(x=&quot;gdpPercap&quot;,y=&quot;lifeExp&quot;,data= gapminder[gapminder.country==&quot;China&quot;])
+sns.scatterplot(x=&quot;gdpPercap&quot;,y=&quot;lifeExp&quot;,data= gapminder[gapminder.country==&quot;China&quot;])
+</code></pre>
+
+<p><img alt="png" src="../Figures/output_27_1.png" /></p>
+<h2 id="expressing-more-variables-with-different-attributes">Expressing more variables with different attributes</h2>
+<p>It is hard to make out the points from the lines. We can change the colour (color) of the points accordingly.</p>
+<pre><code class="python">sns.lineplot(x=&quot;gdpPercap&quot;,y=&quot;lifeExp&quot;,data= gapminder[gapminder.country==&quot;China&quot;])
+sns.scatterplot(x=&quot;gdpPercap&quot;,y=&quot;lifeExp&quot;,color=&quot;red&quot;,data= gapminder[gapminder.country==&quot;China&quot;])
+</code></pre>
+
+<p><img alt="png" src="../Figures/output_28_1.png" /></p>
+<p>We can use the colour of the points to represent a different column - e.g. the year. </p>
+<pre><code class="python">sns.lineplot(x=&quot;gdpPercap&quot;,y=&quot;lifeExp&quot;,data= gapminder[gapminder.country==&quot;China&quot;])
+sns.scatterplot(x=&quot;gdpPercap&quot;,y=&quot;lifeExp&quot;,hue=&quot;year&quot;,
+                data= gapminder[gapminder.country==&quot;China&quot;])
+</code></pre>
+
+<p><img alt="png" src="../Figures/output_29_1.png" /></p>
+<p>The problem here is that only a certain number of years have been picked out. We need to tell seaborn how  many years there are and how to set a palette of colours for this (the default palette has six colours).</p>
+<pre><code class="python"># Find the number of years (why only set?)
+n = len(set(gapminder.year))
+sns.lineplot(x=&quot;gdpPercap&quot;,y=&quot;lifeExp&quot;,data= gapminder[gapminder.country==&quot;China&quot;])
+# We use a rainbow-like palette but there are others.
+sns.scatterplot(x=&quot;gdpPercap&quot;,y=&quot;lifeExp&quot;,hue=&quot;year&quot;,palette=sns.color_palette(&quot;rainbow_r&quot;,n), data= gapminder[gapminder.country==&quot;China&quot;])
+
+</code></pre>
+
+<p><img alt="png" src="../Figures/output_30_1.png" /></p>
+<p>We can use the size of the point to represent an additional column - the population.</p>
+<pre><code class="python">n = len(set(gapminder.year))
+sns.lineplot(x=&quot;gdpPercap&quot;,y=&quot;lifeExp&quot;,data= gapminder[gapminder.country==&quot;China&quot;])
+sns.scatterplot(x=&quot;gdpPercap&quot;,y=&quot;lifeExp&quot;,hue=&quot;year&quot;,size=&quot;pop&quot;, 
+                palette=sns.color_palette(&quot;rainbow_r&quot;,n),
+                data= gapminder[gapminder.country==&quot;China&quot;])
+</code></pre>
+
+<p><img alt="png" src="../Figures/output_32_1.png" /></p>
+<p>The problem now is that there is too much detail in the legend - so we'll switch that off. </p>
+<pre><code class="python">n = len(set(gapminder.year))
+sns.lineplot(x=&quot;gdpPercap&quot;,y=&quot;lifeExp&quot;,data= gapminder[gapminder.country==&quot;China&quot;])
+sns.scatterplot(x=&quot;gdpPercap&quot;,y=&quot;lifeExp&quot;,hue=&quot;year&quot;,size=&quot;pop&quot;, 
+                palette=sns.color_palette(&quot;rainbow_r&quot;,n),
+                data= gapminder[gapminder.country==&quot;China&quot;],
+               legend=False)
+</code></pre>
+
+<p><img alt="png" src="../Figures/output_33_1.png" /></p>
+<p>How useful is adding these attributes?</p>
+<h3 id="exercise_6">Exercise</h3>
+<p>Pick another country and try this out. Costa Rica is interesting. Does anybody have an explanation? </p>
+<h2 id="summarising">Summarising</h2>
+<p>We will now examine how life expenctancy has varied over time. </p>
+<pre><code class="python">sns.lineplot(x=&quot;year&quot;,y=&quot;lifeExp&quot;,hue=&quot;country&quot;,data= gapminder,legend=False)
+</code></pre>
+
+<p><img alt="png" src="../Figures/output_34_1.png" /></p>
+<p>There are so many countries here I haven't even tried to construct a palette! Looking at this many countries are generally increasing but some are not following that trend. We could explore those outliers but here we will focus on trying to summarise what is going on (is a particular continent not going with the trend of increasing life span over time?)</p>
+<p>To do this we need to use another pandas command <strong>groupby</strong> which creates a new data frame for particular variables. Once we have created that new data frame we can then plot the data. </p>
+<pre><code class="python"># First create a new data frame which has the medians, by year and continent, of the life expectancy 
+medianGapminder = gapminder.groupby(['continent','year']).lifeExp.median()
+# Now plot it
+sns.lineplot(x=&quot;year&quot;,y=&quot;lifeExp&quot;,hue=&quot;continent&quot;,data= medianGapminder)
+</code></pre>
+
+<p>What happened? The groupby command makes continent and year <em>indices</em> of the data (you can see this if you print out the data frame). Having created the data frame we need to reset the indices. </p>
+<pre><code class="python"># First create a new data frame which has the medians, by year and continent, of the life expectancy 
+medianGapminder = gapminder.groupby(['continent','year']).lifeExp.median()
+# Now plot it
+sns.lineplot(x=&quot;year&quot;,y=&quot;lifeExp&quot;,hue=&quot;continent&quot;,data= medianGapminder.reset_index())
+</code></pre>
+
+<p><img alt="png" src="../Figures/output_36_1.png" /></p>
+<h2 id="regression">Regression</h2>
+<p>The line plots just "join the dots". It is more intesting to try and fit the data to a curve. We also want to do the fit and distinguish between the different continents. We can do this using the <strong>lmplot</strong> command.</p>
+<pre><code class="python">sns.lmplot(x=&quot;year&quot;,y=&quot;lifeExp&quot;,hue=&quot;continent&quot;, data= medianGapminder.reset_index())
+</code></pre>
+
+<p><img alt="png" src="../Figures/output_37_1.png" /></p>
+<p>This does a simple linear regression. We can do more sophisticated types of fit, for example Loess (or Lowess).</p>
+<pre><code class="python">sns.lmplot(x=&quot;year&quot;,y=&quot;lifeExp&quot;,hue=&quot;continent&quot;, lowess=True, data= medianGapminder.reset_index())
+</code></pre>
+
+<p><img alt="png" src="../Figures/output_38_1.png" /></p>
+<h2 id="more-regression">More regression</h2>
+<p>Now that we know how to fit curves through data with a number of different variables we can go back to the case of where we plotted the life expectancy against the GDP per capita. Instead of just doing a scatter plot we can now do regression (curve fitting) as function of the continent as well so we can see how the life expectancy varies between GDP per capita and the continent.</p>
+<pre><code class="python">sns.lmplot(x=&quot;gdpPercap&quot;,y=&quot;lifeExp&quot;,hue=&quot;continent&quot;, lowess=True,data=gapminder)
+</code></pre>
+
+<p><img alt="" src="../Figures/output_39_1.png" /></p>
+<p>The problem here is that points are too large - we cannot see the trend. When you have many points make the point size smaller, indeed way smaller (someone described it as 'dust size') to see the trend better. Since Seaborn is based on Matplotlib we need to use a slightly different notation in the arguments to what was used previously.</p>
+<pre><code class="python"># scatter_kws is passed onto the underlying matplotlib plotting routine.
+sns.lmplot(x=&quot;gdpPercap&quot;,y=&quot;lifeExp&quot;,hue=&quot;continent&quot;, lowess=True,data=gapminder,scatter_kws={&quot;s&quot;:5})
+</code></pre>
+
+<p><img alt="png" src="../Figures/output_40_1.png" /></p>
+<p>The GDP per capita varies over a wide range and it would be good in the first instance to plot the x-axis on a logarithmic scale. Again since Seaborn is based on Matplotlib we need to use a slightly different notation to what was used previously.</p>
+<pre><code class="python">ax = sns.lmplot(x=&quot;gdpPercap&quot;,y=&quot;lifeExp&quot;,hue=&quot;continent&quot;, lowess=True, data=gapminder,scatter_kws={&quot;s&quot;:5})
+ax.set(xscale=&quot;log&quot;)
+</code></pre>
+
+<p><img alt="png" src="../Figures/output_42_1.png" /></p>
+<p>We now get a much better spread of the data but it's still hard to see how the different continents are behaving. To do that we make use of <strong>facet plots</strong>. These are simply plots of different but related variables that are organised on the same screen for easy comparison.</p>
+<pre><code class="python">ax = sns.lmplot(x=&quot;gdpPercap&quot;,y=&quot;lifeExp&quot;,col=&quot;continent&quot;, lowess=True, data=gapminder,scatter_kws={&quot;s&quot;:5})
+ax.set(xlim=(100,200000),xscale=&quot;log&quot;)
+</code></pre>
+
+<p><img alt="png" src="../Figures/output_43_1.png" /></p>
+<p>We note that the axes of all of these plots are the same so we can do a valid comparison. Still these plots are quite squashed as thy try and fit to the width of the page. Instead we can wrap them around. </p>
+<pre><code class="python">ax = sns.lmplot(x=&quot;gdpPercap&quot;,y=&quot;lifeExp&quot;,col=&quot;continent&quot;, 
+                col_wrap=2,
+                lowess=True, data=gapminder,scatter_kws={&quot;s&quot;:5})
+ax.set(xlim=(100,200000),xscale=&quot;log&quot;)
+</code></pre>
+
+<p><img alt="png" src="../Figures/output_44_1.png" /></p>
+<p>Finally, we can adjust the colour of the individual plots.</p>
+<pre><code class="python">ax = sns.lmplot(x=&quot;gdpPercap&quot;,y=&quot;lifeExp&quot;,col=&quot;continent&quot;, hue=&quot;continent&quot;,
+                col_wrap=2,
+                lowess=True, data=gapminder,scatter_kws={&quot;s&quot;:5})
+ax.set(xlim=(100,200000),xscale=&quot;log&quot;)
+</code></pre>
+
+<p><img alt="png" src="../Figures/output_45_1.png" /></p>
+<h3 id="exercise_7">Exercise</h3>
+<p>Do the same type of plots for life expectancy against year.</p>
+<h2 id="distributions">Distributions</h2>
+<p>We can plot the distribution of a list of data (one column from a data frame) using a kernal density approach and/or a histogram.</p>
+<pre><code class="python">sns.distplot(gapminder.lifeExp)
+</code></pre>
+
+<p><strong>distplot</strong> only allows a single column from a data frame!</p>
+<p><img alt="png" src="../Figures/output_46_1.png" /></p>
+<p>You can also add the raw data into this plot as well (although this isn't very useful in this case as there's so much data).</p>
+<pre><code class="python">sns.distplot(gapminder.lifeExp,rug=True)
+</code></pre>
+
+<p><img alt="png" src="../Figures/output_47_1.png" /></p>
+<h3 id="exercise_8">Exercise</h3>
+<p>Do the same type of plot with the GDP per capita data.</p>
+<p>Again we would like to break this down in separate continents. Again we will make use of facet plots. <strong>lmplot</strong> is designed to create facet plots but <strong>distplot</strong> isn't so we need to use a specific function called <strong>FacetGrid</strong> to do this. In the call below we also adjust the height and aspect (the height/width ratio) of the figures. </p>
+<pre><code class="python"># Create a facet of the gapminder data based on the continents ordered alphabetically (orderedContinents)
+g = sns.FacetGrid(gapminder, row=&quot;continent&quot;, row_order=orderedContinents,
+                  height=2, aspect=4)
+# Plot on the facets the distribution of the life expctancy data, but don't plot the histogram.
+g.map(sns.distplot, &quot;lifeExp&quot;, hist=False)
+</code></pre>
+
+<p><img alt="png" src="../Figures/output_48_1.png" /></p>
+<p>Finally the facet plot can also be used with just one facet!</p>
+<pre><code class="python"># Create a facet plot with one facet but colour on continent.
+g = sns.FacetGrid(gapminder, hue=&quot;continent&quot;,height=2, aspect=4)
+# Plot the distributions with no histogram
+g.map(sns.distplot, &quot;lifeExp&quot;, hist=False)
+# Give the colour scheme in a legend
+g.add_legend()
+</code></pre>
+
+<p><img alt="png" src="../Figures/output_49_1.png" /></p>
+<h3 id="exercise_9">Exercise</h3>
+<ul>
+<li>Do the same type of plot with the GDP per capita data</li>
+<li>(Longer) Select the data from the gapminder data set for a particular continent and now create facet plots for those countries.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/CODATA-RDA-DataScienceSchools/Materials/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../../..';</script>
+    <script src="../../../../js/theme.js" defer></script>
+      <script src="../../../../search/main.js" defer></script>
+
+</body>
+</html>
