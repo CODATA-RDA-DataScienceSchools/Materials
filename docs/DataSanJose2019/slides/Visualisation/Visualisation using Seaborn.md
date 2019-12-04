@@ -16,6 +16,16 @@ During this module we'll also be making some use of [Pandas](http://pandas.pydat
 
 ## Getting started
 
+In the first instance please get yourself set up with a notebook on the Google colab site. Please go to 
+
+https://colab.research.google.com/notebooks/welcome.ipynb
+
+and then click on File and New Python 3 notebook.
+
+#### OR
+
+log into the Kabre jupyter server and then click on New  and then New Python 3. 
+
 We'll start with importing a set of libraries that will be useful for us and the gapminder data set.
 
 ```python
@@ -28,10 +38,12 @@ sns.set(style="darkgrid")
 
 The last line is a choice about how things look - you may want to leave that out.
 
-Now we'll read in the data.
+Now we'll read in the data. We will again use the gapminder data set but with the columns labelled differently. Please do not use the version you have used previously. The version is stored on a github repository which has been shortened using bit.ly.
 
 ```python
-gapminder = pd.read_csv("gapminder.csv")
+url="http://bit.ly/2PbVBcR"
+#url="https://raw.githubusercontent.com/CODATA-RDA-DataScienceSchools/Materials/master/docs/DataSanJose2019/slides/Visualisation/gapminder.csv"
+gapminder=pd.read_csv(url)
 ```
 
 
@@ -50,21 +62,6 @@ gapminder.head()
 
 You should get something like this. 
 
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-    
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -131,7 +128,7 @@ You should get something like this.
     </tr>
   </tbody>
 </table>
-</div>
+
 
 So it is a combination of *categorical* data (countries and continents) and *quantitative* data (year, lifeExp etc.). It's also nice (though unrealistic) that it doesn't have missing values or malformed data e.g. Ireland is written sometimes as "Ireland" and sometimes "ireland" and sometimes "Republic of Ireland" or even "Eire"!! Dealing with those kinds of issues is not what we're going to focus on here.
 
@@ -143,20 +140,7 @@ gapminder.describe()
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-    
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -235,7 +219,7 @@ gapminder.describe()
     </tr>
   </tbody>
 </table>
-</div>
+
 
 One can find the names of the continents by executing the following.
 
@@ -419,7 +403,9 @@ for val in gapminder.continent:
 # Create a sorted list of the medians (in ascending order)    
 sortedKeys = sorted(medianLifeExps)
 # Finally return the list of continents in that order
-sortedMedContinents = [medianLifeExps[x] for x in sortedKeys]
+orderedMedianContinents = []
+for m in orderedMedians:
+    orderedMedianContinents.append(medianLifeExps[m])
 ```
 
 
