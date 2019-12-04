@@ -335,7 +335,7 @@ plt.savefig(&quot;Histogram.pdf&quot;)
 <pre><code class="python">sns.catplot(y=&quot;lifeExp&quot;, data=gapminder,jitter=False)
 </code></pre>
 
-<p><img alt="png" src="../Figures/output_11_1.png" /></p>
+<p><img alt="png" src="../Figures/output_15_1.png" /></p>
 <p>This scatterplot is not very informative! We can create a box plot of the data</p>
 <pre><code class="python">sns.boxplot(y=&quot;lifeExp&quot;, data=gapminder)
 </code></pre>
@@ -345,11 +345,11 @@ plt.savefig(&quot;Histogram.pdf&quot;)
 <h3 id="exercise_2">Exercise</h3>
 <p>One can use another type of plot called a <em>violin</em> plot which tries to summarise the distribution better than a boxplot. The width of the violin plot represents how big the distribution is at that value. It is quite useful for picking out multi-modal (one with a distribution that has more than one peak). The command in seaborn is violinplot. Try and implement this for this data. </p>
 <h2 id="diving-deeper-into-the-data">Diving deeper into the data</h2>
-<p>Just looking at the life expectancy for all of the countries isn't very informative. The first thing w can do is ask how does this vary across continents. Seaborn does this easily by introducing an x-axis which is the continent. Again, let's try with just the points.   </p>
+<p>Just looking at the life expectancy for all of the countries isn't very informative. The first thing we can do is ask how does this vary across continents. Seaborn does this easily by introducing an x-axis which is the continent. Again, let's try with just the points.   </p>
 <pre><code class="python">sns.catplot(x=&quot;continent&quot;, y=&quot;lifeExp&quot;, data=gapminder)
 </code></pre>
 
-<p><img alt="png" src="../Figures/output_14_1.png" /></p>
+<p><img alt="png" src="../Figures/output_18_1.png" /></p>
 <h3 id="exercise_3">Exercise</h3>
 <ol>
 <li>Repeat this using box plots (and violin plots if you wish).</li>
@@ -395,7 +395,7 @@ for m in orderedMedians:
 <h3 id="exercise_4">Exercise</h3>
 <p>Do the same plot for GDP per capita.</p>
 <h2 id="line-and-scatter-plots">Line and scatter plots</h2>
-<p>instead of having a categorical variable on the horizontal access we now do scatter and line plots. Let's start with the whole data set.</p>
+<p>Instead of having a categorical variable on the horizontal access we now do scatter and line plots. Let's start with the whole data set.</p>
 <pre><code class="python">sns.scatterplot(x=&quot;gdpPercap&quot;,y=&quot;lifeExp&quot;,data=gapminder)
 </code></pre>
 
@@ -483,6 +483,15 @@ sns.lineplot(x=&quot;year&quot;,y=&quot;lifeExp&quot;,hue=&quot;continent&quot;,
 </code></pre>
 
 <p><img alt="png" src="../Figures/output_36_1.png" /></p>
+<h3 id="exercise_7">Exercise</h3>
+<ol>
+<li>
+<p>Repeat this using the GDP per capita.</p>
+</li>
+<li>
+<p>Use a different statistical summary apart from the median. </p>
+</li>
+</ol>
 <h2 id="regression">Regression</h2>
 <p>The line plots just "join the dots". It is more intesting to try and fit the data to a curve. We also want to do the fit and distinguish between the different continents. We can do this using the <strong>lmplot</strong> command.</p>
 <pre><code class="python">sns.lmplot(x=&quot;year&quot;,y=&quot;lifeExp&quot;,hue=&quot;continent&quot;, data= medianGapminder.reset_index())
@@ -494,6 +503,8 @@ sns.lineplot(x=&quot;year&quot;,y=&quot;lifeExp&quot;,hue=&quot;continent&quot;,
 </code></pre>
 
 <p><img alt="png" src="../Figures/output_38_1.png" /></p>
+<h3 id="exercise_8">Exercise</h3>
+<p>Repeat the above using the GDP per capita.</p>
 <h2 id="more-regression">More regression</h2>
 <p>Now that we know how to fit curves through data with a number of different variables we can go back to the case of where we plotted the life expectancy against the GDP per capita. Instead of just doing a scatter plot we can now do regression (curve fitting) as function of the continent as well so we can see how the life expectancy varies between GDP per capita and the continent.</p>
 <pre><code class="python">sns.lmplot(x=&quot;gdpPercap&quot;,y=&quot;lifeExp&quot;,hue=&quot;continent&quot;, lowess=True,data=gapminder)
@@ -534,7 +545,7 @@ ax.set(xlim=(100,200000),xscale=&quot;log&quot;)
 </code></pre>
 
 <p><img alt="png" src="../Figures/output_45_1.png" /></p>
-<h3 id="exercise_7">Exercise</h3>
+<h3 id="exercise_9">Exercise</h3>
 <p>Do the same type of plots for life expectancy against year.</p>
 <h2 id="distributions">Distributions</h2>
 <p>We can plot the distribution of a list of data (one column from a data frame) using a kernal density approach and/or a histogram.</p>
@@ -548,7 +559,7 @@ ax.set(xlim=(100,200000),xscale=&quot;log&quot;)
 </code></pre>
 
 <p><img alt="png" src="../Figures/output_47_1.png" /></p>
-<h3 id="exercise_8">Exercise</h3>
+<h3 id="exercise_10">Exercise</h3>
 <p>Do the same type of plot with the GDP per capita data.</p>
 <p>Again we would like to break this down in separate continents. Again we will make use of facet plots. <strong>lmplot</strong> is designed to create facet plots but <strong>distplot</strong> isn't so we need to use a specific function called <strong>FacetGrid</strong> to do this. In the call below we also adjust the height and aspect (the height/width ratio) of the figures. </p>
 <pre><code class="python"># Create a facet of the gapminder data based on the continents ordered alphabetically (orderedContinents)
@@ -569,7 +580,7 @@ g.add_legend()
 </code></pre>
 
 <p><img alt="png" src="../Figures/output_49_1.png" /></p>
-<h3 id="exercise_9">Exercise</h3>
+<h3 id="exercise_11">Exercise</h3>
 <ul>
 <li>Do the same type of plot with the GDP per capita data</li>
 <li>(Longer) Select the data from the gapminder data set for a particular continent and now create facet plots for those countries.</li>
