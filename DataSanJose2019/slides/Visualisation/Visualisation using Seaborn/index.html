@@ -97,6 +97,11 @@
 <p>One of these hard things or frustrations had to do with the default  Matplotlib parameters. Seaborn works with different parameters, which  undoubtedly speaks to those users that don’t use the default looks of  the Matplotlib plots.</p>
 <p>During this module we'll also be making some use of <a href="http://pandas.pydata.org/">Pandas</a> to extract features of the data that we need.</p>
 <h2 id="getting-started">Getting started</h2>
+<p>In the first instance please get yourself set up with a notebook on the Google colab site. Please go to </p>
+<p>https://colab.research.google.com/notebooks/welcome.ipynb</p>
+<p>and then click on File and New Python 3 notebook.</p>
+<h4 id="or">OR</h4>
+<p>log into the Kabre jupyter server and then click on New  and then New Python 3. </p>
 <p>We'll start with importing a set of libraries that will be useful for us and the gapminder data set.</p>
 <pre><code class="python">import numpy as np
 import pandas as pd
@@ -106,8 +111,10 @@ sns.set(style=&quot;darkgrid&quot;)
 </code></pre>
 
 <p>The last line is a choice about how things look - you may want to leave that out.</p>
-<p>Now we'll read in the data.</p>
-<pre><code class="python">gapminder = pd.read_csv(&quot;gapminder.csv&quot;)
+<p>Now we'll read in the data. We will again use the gapminder data set but with the columns labelled differently. Please do not use the version you have used previously. The version is stored on a github repository which has been shortened using bit.ly.</p>
+<pre><code class="python">url=&quot;http://bit.ly/2PbVBcR&quot;
+#url=&quot;https://raw.githubusercontent.com/CODATA-RDA-DataScienceSchools/Materials/master/docs/DataSanJose2019/slides/Visualisation/gapminder.csv&quot;
+gapminder=pd.read_csv(url)
 </code></pre>
 
 <p>So we are using pandas to read in the data set. The gapminder data set is a <em>Data Frame</em>.</p>
@@ -118,20 +125,6 @@ sns.set(style=&quot;darkgrid&quot;)
 </code></pre>
 
 <p>You should get something like this. </p>
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -198,27 +191,12 @@ sns.set(style=&quot;darkgrid&quot;)
     </tr>
   </tbody>
 </table>
-</div>
 
 <p>So it is a combination of <em>categorical</em> data (countries and continents) and <em>quantitative</em> data (year, lifeExp etc.). It's also nice (though unrealistic) that it doesn't have missing values or malformed data e.g. Ireland is written sometimes as "Ireland" and sometimes "ireland" and sometimes "Republic of Ireland" or even "Eire"!! Dealing with those kinds of issues is not what we're going to focus on here.</p>
 <p>We can do a statistical summary of the numerical data using the <strong>describe</strong> function</p>
 <pre><code class="python">gapminder.describe()
 </code></pre>
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -297,7 +275,6 @@ sns.set(style=&quot;darkgrid&quot;)
     </tr>
   </tbody>
 </table>
-</div>
 
 <p>One can find the names of the continents by executing the following.</p>
 <pre><code>list(set(gapminder.continent))
@@ -407,7 +384,9 @@ for val in gapminder.continent:
 # Create a sorted list of the medians (in ascending order)    
 sortedKeys = sorted(medianLifeExps)
 # Finally return the list of continents in that order
-sortedMedContinents = [medianLifeExps[x] for x in sortedKeys]
+orderedMedianContinents = []
+for m in orderedMedians:
+    orderedMedianContinents.append(medianLifeExps[m])
 </code></pre>
 
 <pre><code class="python">sns.boxplot(x=&quot;continent&quot;, y=&quot;lifeExp&quot;, order=orderedMedianContinents, data=gapminder)
