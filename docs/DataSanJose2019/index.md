@@ -13,7 +13,7 @@ A 10-day workshop, organized by CODATA, RDA, CONARE and CeNAT, was conducted at 
    * Day 2 - [Version Control with Git](https://swcarpentry.github.io/git-novice/reference), [Introduction to Python]() 
    * Day 3 - [Introduction to Python]()
    * Day 4 - [Data Visualization](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/slides/Visualisation/Visualisation%20using%20Seaborn.md)
-   * Day 5 - [Research Data Management](), [Data Management Plans]()
+   * Day 5 - [Research Data Management](https://github.com/malfaro2/Materials/blob/master/docs/DataSanJose2019/slides/Unit%206_Intro_to_RDM_open_fair_dmp_part1.pdf), [Data Management Plans]()
    * Day 6 - [Open Science](), [Information Security]()
    * Day 7 - [Overview of Machine Learning]()
    * Day 8 - [Artificial Neural Networks]()
