@@ -9,10 +9,10 @@ A 10-day workshop, organized by CODATA, RDA, CONARE and CeNAT, was conducted at 
 
 ## Materials for the 2019 School of Research Data Science in San José
 
-   * Day 1 -[Introduction](https://github.com/malfaro2/Materials/blob/master/docs/DataSanJose2019/slides/Intro_dataSanJosé19Monday.pdf), [Open Science](https://github.com/malfaro2/Materials/blob/master/docs/DataSanJose2019/slides/Unit%201_CR_Ethics_Mon_presentation_extended.pdf), [UNIX Shell](http://swcarpentry.github.io/shell-novice/)
+   * Day 1 -[Introduction](/slides/Intro_dataSanJosé19Monday.pdf), [Open Science](/slides/Unit%201_CR_Ethics_Mon_presentation_extended.pdf), [UNIX Shell](http://swcarpentry.github.io/shell-novice/)
    * Day 2 - [Version Control with Git](https://swcarpentry.github.io/git-novice/reference), [Introduction to Python]() 
    * Day 3 - [Introduction to Python]()
-   * Day 4 - [Data Visualization](CODATA-RDA-DataScienceSchools.github.io/Materials/docs/DataSanJose2019/slides/Visualisation/Visualisation%20using%20Seaborn.md)
+   * Day 4 - [Data Visualization](/slides/Visualisation/Visualisation%20using%20Seaborn.md)
    * Day 5 - [Research Data Management](), [Data Management Plans]()
    * Day 6 - [Open Science](), [Information Security]()
    * Day 7 - [Overview of Machine Learning]()
