@@ -12,7 +12,7 @@ A 10-day workshop, organized by CODATA, RDA, CONARE and CeNAT, was conducted at 
    * Day 1 -[Introduction](https://github.com/malfaro2/Materials/blob/master/docs/DataSanJose2019/slides/Intro_dataSanJosé19Monday.pdf), [Open Science](https://github.com/malfaro2/Materials/blob/master/docs/DataSanJose2019/slides/Unit%201_CR_Ethics_Mon_presentation_extended.pdf), [UNIX Shell](http://swcarpentry.github.io/shell-novice/)
    * Day 2 - [Version Control with Git](https://swcarpentry.github.io/git-novice/reference), [Introduction to Python]() 
    * Day 3 - [Introduction to Python]()
-   * Day 4 - [Author Carpentry](), [Intro to Research Data Management](https://github.com/malfaro2/Materials/blob/master/docs/DataSanJose2019/slides/Unit%206_Intro_to_RDM_open_fair_dmp_part1.pdf)
+   * Day 4 - [Author Carpentry](https://github.com/malfaro2/Materials/blob/master/docs/DataSanJose2019/slides/Unit%205_AuthorCarpentry.pdf), [Intro to Research Data Management](https://github.com/malfaro2/Materials/blob/master/docs/DataSanJose2019/slides/Unit%206_Intro_to_RDM_open_fair_dmp_part1.pdf)
    * Day 5 - [Research Data Management](https://github.com/malfaro2/Materials/blob/master/docs/DataSanJose2019/slides/Unit%206_Intro_to_RDM_open_fair_dmp_part1.pdf), [Data Management Plans]()
    * Day 6 - [Data Visualization](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/slides/Visualisation/Visualisation%20using%20Seaborn.md)
    * Day 6 - [Open Science](), [Information Security]()
