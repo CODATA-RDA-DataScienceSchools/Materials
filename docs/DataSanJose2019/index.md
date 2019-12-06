@@ -15,7 +15,6 @@ A 10-day workshop, organized by CODATA, RDA, CONARE and CeNAT, was conducted at 
    * Day 4 - [Author Carpentry](https://github.com/malfaro2/Materials/blob/master/docs/DataSanJose2019/slides/Unit%205_AuthorCarpentry.pdf), [Intro to Research Data Management](https://github.com/malfaro2/Materials/blob/master/docs/DataSanJose2019/slides/Unit%206_Intro_to_RDM_open_fair_dmp_part1.pdf)
    * Day 5 - [Open Science](), [Research Data Management](https://github.com/malfaro2/Materials/blob/master/docs/DataSanJose2019/slides/Unit%206_Intro_to_RDM_open_fair_dmp_part1.pdf), [Data Management Plans]()
    * Day 6 - [Data Visualization](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/slides/Visualisation/Visualisation%20using%20Seaborn.md)
-   * Day 6 - [Information Security]()
    * Day 7 - [Overview of Machine Learning]()
    * Day 8 - [Artificial Neural Networks]()
    * Day 9 - Computational Infrastructures - [Lecture 1](https://opensciencegrid.org/dosar/DataSaoPaulo2018/Materials/#thursday-morning-computational-infrastructures-session-1), [Lecture 2](https://opensciencegrid.org/dosar/DataSaoPaulo2018/Materials/#thursday-morning-computational-infrastructures-session-2), [Lecture 3](https://opensciencegrid.org/dosar/DataSaoPaulo2018/Materials/#thursday-afternoon-computational-infrastructures-session-3), [Lecture 4](https://opensciencegrid.org/dosar/DataSaoPaulo2018/Materials/#thursday-aftenoon-computational-infrastructures-session-4)
