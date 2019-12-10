@@ -7,13 +7,21 @@ You will receive login credentials at the beginning of this session. To authenti
 From Monty Python and the Holy Grail: 
 
 BRIDGEKEEPER: Hee hee heh. Stop! What... is your name?
+
 ARTHUR: It is 'Arthur', King of the Britons.
-BRIDGEKEEPER: What... is your quest
+
+BRIDGEKEEPER: What... is your quest?
+
 ARTHUR: To seek the Holy Grail.
+\
 BRIDGEKEEPER: What... is the air-speed velocity of an unladen swallow?
+
 ARTHUR: What do you mean? An African or European swallow?
+
 BRIDGEKEEPER: Huh? I-- I don't know that. Auuuuuuuugh!
+
 BEDEVERE: How do know so much about swallows?
+
 ARTHUR: Well, you have to know these things when you're a king, you know. 
 
 or... 
