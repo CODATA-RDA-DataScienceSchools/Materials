@@ -2,6 +2,10 @@
 
 We will be using OSG Connect for this set of sessions. Please visit [http://www.osgconnect.net](http://www.osgconnect.net) for more information.
 
+## Wednesday Afternoon - Security and Setup - Session 0
+   * Security Lecture - Link to slides.
+   * Authentication with Keys - Add link.
+
 ## Thursday Morning - Computational Infrastructures - Session 1
 
    * Welcome and Introduction - The Landscape of Academic Research Computing
