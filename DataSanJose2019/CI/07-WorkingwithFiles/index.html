@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Working with data in files - CODATA RDA Summer Schools Repo</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Working with data in files";
+    var mkdocs_page_input_path = "DataSanJose2019/CI/07-WorkingwithFiles.md";
+    var mkdocs_page_url = "/Materials/DataSanJose2019/CI/07-WorkingwithFiles/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> CODATA RDA Summer Schools Repo</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">Home</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">CODATA RDA Summer Schools Repo</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Working with data in files</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/CODATA-RDA-DataScienceSchools/Materials/edit/master/docs/DataSanJose2019/CI/07-WorkingwithFiles.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="working-with-data-in-files">Working with data in files</h1>
+<h3 id="objective">Objective</h3>
+<p>The objective of this exercise is to teach you how to provide files as input to your job, and get output as files back from your job.</p>
+<h2 id="data-movement">Data Movement</h2>
+<p>So far, we've done really simple examples where the entire input to the program is just on the command-line. What do you do if you have data files to deal with? Let's walk through a short example.</p>
+<p>First, let's make a program, call it <code>analyze.sh</code> that analyzes a text file that it is provided on the command-line.</p>
+<pre><code>#!/bin/sh
+
+if [ $# -ne 1 ]; then
+    echo &quot;Usage: analyze.sh &lt;filename&gt;&quot;
+    exit 1
+fi
+
+echo &quot;About to do a deep analysis of $1...&quot;
+echo &quot;First, we convert it to all upper case (see $1.upper)&quot;
+tr &quot;[:lower:]&quot; &quot;[:upper:]&quot; &lt; $1 &gt; $1.upper
+
+echo &quot;Next, we find the 10 most common words (see $1.10)&quot;
+cat $1 | tr &quot;[:upper:]&quot; &quot;[:lower:]&quot; | tr -cs &quot;[:alpha:]&quot; &quot;\n&quot; | sort | uniq -c | sort --key=1,7 -n -r  | head -10 &gt; $1.10
+
+sleep 5
+</code></pre>
+
+<p>You also need a file to analyze. Put the following text into a file called <code>gettysburg</code>.</p>
+<pre><code>Four score and seven years ago our fathers brought forth on this
+continent, a new nation, conceived in Liberty, and dedicated to the
+proposition that all men are created equal.
+
+Now we are engaged in a great civil war, testing whether that nation,
+or any nation so conceived and so dedicated, can long endure. We are
+met on a great battle-field of that war. We have come to dedicate a
+portion of that field, as a final resting place for those who here
+gave their lives that that nation might live. It is altogether fitting
+and proper that we should do this.
+
+But, in a larger sense, we can not dedicate -- we can not consecrate
+-- we can not hallow -- this ground. The brave men, living and dead,
+who struggled here, have consecrated it, far above our poor power to
+add or detract. The world will little note, nor long remember what we
+say here, but it can never forget what they did here. It is for us the
+living, rather, to be dedicated here to the unfinished work which they
+who fought here have thus far so nobly advanced. It is rather for us
+to be here dedicated to the great task remaining before us -- that
+from these honored dead we take increased devotion to that cause for
+which they gave the last full measure of devotion -- that we here
+highly resolve that these dead shall not have died in vain -- that
+this nation, under God, shall have a new birth of freedom -- and that
+government of the people, by the people, for the people, shall not
+perish from the earth.
+</code></pre>
+
+<p>Our submit file looks nearly identical to what we had before, except for the one bolded line that specifies the data file to transfer.  Put the following text into a file called <code>submit.speech</code>.</p>
+<pre><code>Universe        = vanilla
+Executable      = analyze.sh
+Output          = analyze.out
+Error           = analyze.error
+Log             = analyze.log
+Arguments       = gettysburg
++ProjectName = &quot;ConnectTrain&quot;
+requirements = (HAS_MODULES =?= true) &amp;&amp; (OSGVO_OS_STRING == &quot;RHEL 6&quot;) &amp;&amp; (OpSys == &quot;LINUX&quot;)
+ShouldTransferFiles = Yes
+WhenToTransferOutput = ON_EXIT
+transfer_input_files = gettysburg
+queue 
+</code></pre>
+
+<p>Notice that you just had to specify the input files and not the output files. Condor will automatically transfer back any new files, so you don't have to worry about it. Nifty, huh?</p>
+<p>Now run the job.</p>
+<pre><code>$ condor_submit submit.speech
+Submitting job(s).
+1 job(s) submitted to cluster 37.
+
+$ ls -lh gettys*
+-rw-rw-r--. 1 kagross kagross 1.5K Aug 18 15:41 gettysburg
+-rw-r--r--. 1 kagross kagross  120 Aug 18 15:42 gettysburg.10
+-rw-r--r--. 1 kagross kagross 1.5K Aug 18 15:42 gettysburg.upper
+</code></pre>
+
+<p>You got your files! Check them out--do they look okay?</p>
+<h2 id="on-your-own">On your own</h2>
+<p>Create several text files, then submit jobs (preferably from a single submit file) to analyze each of them. If you're at a loss to create some text files, here are a few for you.</p>
+<ul>
+<li><a href="http://textfiles.com/100/adventur.txt">Walkthrough of the Original Text Game "Adventure"</a></li>
+<li><a href="http://textfiles.com/100/captmidn.txt">The Story of Captain Midnight</a></li>
+<li><a href="http://textfiles.com/100/codegeek.txt">The Universal Geek Code</a></li>
+<li><a href="http://textfiles.com/100/taoprogram.pro">Tao of Programming</a></li>
+</ul>
+<p>Instead of downloading these files and transferring them directly, can you change your <code>transfer-input-files</code> to use a URL and have Condor download them for you? Give this a try.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/CODATA-RDA-DataScienceSchools/Materials/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>
