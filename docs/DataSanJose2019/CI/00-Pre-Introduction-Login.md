@@ -2,7 +2,7 @@
 
 ## Authentication for CI Exercises
 
-You will receive login credentials at the beginning of this session. To authenticate (prove you who you say you are and establish what you are authorized to do) the bridgekeeper (login node) requires three bits of information: 
+You will receive login credentials at the beginning of this session. To authenticate (prove you who you say you are and establish what you are authorized to do) the bridgekeeper (login nodes) requires three bits of information: 
 
 From Monty Python and the Holy Grail: 
 
