@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Submitting your first Condor job - CODATA RDA Summer Schools Repo</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Submitting your first Condor job";
+    var mkdocs_page_input_path = "DataSanJose2019/CI/03-FirstManagedJob.md";
+    var mkdocs_page_url = "/Materials/DataSanJose2019/CI/03-FirstManagedJob/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> CODATA RDA Summer Schools Repo</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">Home</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">CODATA RDA Summer Schools Repo</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Submitting your first Condor job</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/CODATA-RDA-DataScienceSchools/Materials/edit/master/docs/DataSanJose2019/CI/03-FirstManagedJob.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="submitting-your-first-condor-job">Submitting your first Condor job</h1>
+<h3 id="objective">Objective</h3>
+<p>The objective of this exercise to have you run and understand your first Condor job, as well as run small sets of jobs in a parameter sweep. This is an important exercise because it is the basis for everything that follows. If there is <em>anything</em> you don't understand in this exercise, <em>please ask</em> before you continue on.</p>
+<p>Because this is an important foundation, please seriously consider doing the &ldquo;On Your Own&rdquo; section.</p>
+<h2 id="first-you-need-a-job">First you need a job</h2>
+<p>Before you can submit a job to Condor, you need a job. We will quickly write a small program in C. If you aren't an expert C programmer, fear not. We will hold your hand throughout this process.</p>
+<p>Create a file called simple.c using your favorite editor. Put it anywhere you like in your home directory. In that file, put the following text. Copy and paste is a good choice: </p>
+<pre><code>$ mkdir -p ~/condor-test
+$ cd ~/condor-test
+</code></pre>
+
+<p>Use your preferred text editor to create this C program. (Shown below with nano.)</p>
+<pre><code>$ nano simple.c
+</code></pre>
+
+<p>Paste in the following C code. </p>
+<pre><code>#include &lt;stdio.h&gt;
+
+int main(int argc, char **argv)
+{
+    int sleep_time;
+    int input;
+    int failure;
+
+    if (argc != 3) {
+        printf(&quot;Usage: simple &amp;lt;sleep-time&amp;gt; &amp;lt;integer&amp;gt;\n&quot;);
+        failure = 1;
+    } else {
+        sleep_time = atoi(argv[1]);
+        input      = atoi(argv[2]);
+
+        printf(&quot;Thinking really hard for %d seconds...\n&quot;, sleep_time);
+        sleep(sleep_time);
+        printf(&quot;We calculated: %d\n&quot;, input * 2);
+        failure = 0;
+    }
+    return failure;
+}
+</code></pre>
+
+<p>Now compile that program:</p>
+<pre><code>$ gcc -o simple simple.c
+$ ls -lh simple
+-rwxrwxr-x 1 roy roy 595K Jun 20 11:12 simple
+</code></pre>
+
+<p>Finally, run the program and tell it to sleep for four seconds and calculate 10 * 2: </p>
+<pre><code>$ ./simple 4 10
+Thinking really hard for 4 seconds...
+We calculated: 20
+</code></pre>
+
+<p>Great! You just had a job run locally on the machine you are logged into (user-training.osgconnect.net). The next step is to run this job on a remote computer - and this is a job you can tell Condor to run! Although it clearly isn't an interesting job, it models some of the aspects of a real scientific program: it takes a while to run and it does a calculation. </p>
+<p>Think back to the lecture. I said that our first step was to have a job to run. Now we'll work on running it in Condor, and eventually running lots of copies of it.</p>
+<h2 id="submitting-your-job">Submitting your job</h2>
+<p>Now that you have a job, you just have to tell Condor to run it. Put the following text into a file called <code>submit</code>:</p>
+<pre><code>Universe   = vanilla
+Executable = simple
+Arguments  = 4 10
++ProjectName = &quot;ConnectTrain&quot;
+Log        = simple.log
+Output     = simple.out
+Error      = simple.error
+requirements = (HAS_MODULES =?= true) &amp;&amp; (OSGVO_OS_STRING == &quot;RHEL 6&quot;) &amp;&amp; (OpSys == &quot;LINUX&quot;)
+should_transfer_files   = YES
+when_to_transfer_output = ON_EXIT
+Queue
+</code></pre>
+
+<p>Let's examine each of these lines:</p>
+<ul>
+<li><em>Universe:</em> The vanilla universe means a plain old job. Later on, we'll encounter some special universes.</li>
+<li><em>Executable:</em> The name of your program</li>
+<li><em>Arguments:</em> These are the arguments you want. They will be the same arguments we typed above.</li>
+<li><em>Log:</em> This is the name of a file where Condor will record information about your job's execution. While it's not required, it is a really good idea to have a log. If something goes wrong you can refer to this log to help figure out the problem.</li>
+<li><em>Output:</em> Where Condor should put the standard output from your job.</li>
+<li><em>Error:</em> Where Condor should put the standard error from your job. Our job isn't likely to have any, but we'll put it there to be safe.</li>
+<li><em>should_transfer_files:</em> Tell Condor that it should transfer files, instead of relying on a shared filesystem. While your home directories (on the glite-tutor computers) are mounted on NFS, you do not have user accounts on the worker nodes, so your jobs cannot access files on NFS. In addition, NFS isn't available between the local UI computers and the remote worker nodes. Therefore we will have Condor transfer files to the remote computer.</li>
+<li><em>when_to_transfer_output:</em> A technical detail about when files should be transported back to the computer from which you submitted your job. Don't worry about the details for now. If you're really curious, you can read <a href="http://www.cs.wisc.edu/condor/manual/v7.6/2_5Submitting_Job.html#sec:file-transfer">all the details in the Condor manual</a>.</li>
+</ul>
+<p>Next, tell Condor to run your job: </p>
+<pre><code>$ condor_submit submit
+Submitting job(s).
+1 job(s) submitted to cluster 16.
+</code></pre>
+
+<p>Now, watch your job run (insert your username in the command below instead of <code>USER</code>.  If you forgot your username use the <code>whoami</code> command.  Note that most of your output will be different than the example, the important column to watch is the <code>ST</code> column - the job state):</p>
+<pre><code># Note the job state of 'I' means the job is idle - not yet running
+$ condor_q YOUR_USER_ID -nobatch
+
+-- Schedd: user-training.osgconnect.net : &lt;192.170.227.119:9618?... @ 07/19/17 03:41:08
+ ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
+2056.0   osguser99       7/19 03:40   0+00:00:00 I  0    0.0 simple 4 10
+
+Total for query: 1 jobs; 0 completed, 0 removed, 1 idle, 0 running, 0 held, 0 suspended 
+Total for all users: 1 jobs; 0 completed, 0 removed, 1 idle, 0 running, 0 held, 0 suspended
+
+1 jobs; 0 completed, 0 removed, 1 idle, 0 running, 0 held, 0 suspended
+
+# After some time your job will enter the 'R' state which means it is currently running
+$ condor_q YOUR_USER_ID -nobatch
+
+-- Schedd: user-training.osgconnect.net : &lt;192.170.227.119:9618?... @ 07/19/17 03:41:14
+ ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
+2056.0   osguser99       7/19 03:40   0+00:00:02 R  0    0.0 simple 4 10
+
+Total for query: 1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended 
+Total for all users: 1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended
+
+1 jobs; 0 completed, 0 removed, 1 idle, 0 running, 0 held, 0 suspended
+
+# When your job disappears from the queue that means it completed.
+$ condor_q YOUR_USER_ID -nobatch
+
+-- Schedd: user-training.osgconnect.net : &lt;192.170.227.119:9618?... @ 07/19/17 03:41:21
+ ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
+
+Total for query: 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended 
+Total for all users: 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended
+</code></pre>
+
+<p><em>Tip</em>: While you are waiting for your job to run and complete you can check out <a href="https://twiki.grid.iu.edu/bin/view/Operations/HTCReviewCondorTips">"A few tips and tricks"</a> to learn how to user <code>condor_q</code> more effectively.</p>
+<p>When my job was done, it was no longer listed. Because I told Condor to log information about my job, I can see what happened: </p>
+<pre><code>$ cat simple.log
+000 (032.000.000) 08/18 15:18:13 Job submitted from host: &lt;10.0.0.252:9645&gt;
+...
+001 (032.000.000) 08/18 15:18:32 Job executing on host: &lt;172.16.200.1:9250&gt;
+...
+006 (032.000.000) 08/18 15:18:32 Image size of job updated: 7
+    0  -  MemoryUsage of job (MB)
+    0  -  ResidentSetSize of job (KB)
+...
+005 (032.000.000) 08/18 15:18:33 Job terminated.
+    (1) Normal termination (return value 0)
+        Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+        Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+        Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+        Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+    56  -  Run Bytes Sent By Job
+    7059  -  Run Bytes Received By Job
+    56  -  Total Bytes Sent By Job
+    7059  -  Total Bytes Received By Job
+    Partitionable Resources :    Usage  Request Allocated
+       Cpus                 :                 1         1
+       Disk (KB)            :       15        7  17605109
+       Memory (MB)          :        0        1      1900
+</code></pre>
+
+<p>That looks good: the job started up quickly, though you will often see slightly slower startups. Condor doesn't optimize for fast job startup, but for high throughput, The job ran for four seconds.</p>
+<p>Now take a look at the job's output:</p>
+<pre><code>$ cat simple.out
+Thinking really hard for 4 seconds...
+We calculated: 20
+</code></pre>
+
+<p>Excellent! We ran our sophisticated scientific job on a Condor pool! We've only run one job though. Can we run more?</p>
+<h2 id="doing-a-parameter-sweep">Doing a parameter sweep</h2>
+<p>If you only ever had to run a single job, you probably wouldn't need Condor. But we would like to have our program calculate a whole set of values for different inputs. How can we do that? Let's change our <code>submit</code> file to look like this: </p>
+<pre><code>Universe   = vanilla
+Executable = simple
++ProjectName = &quot;ConnectTrain&quot;
+Arguments  = 4 10
+Log        = simple.$(Process).log
+Output     = simple.$(Process).out
+Error      = simple.$(Process).error
+requirements = (HAS_MODULES =?= true) &amp;&amp; (OSGVO_OS_STRING == &quot;RHEL 6&quot;) &amp;&amp; (OpSys == &quot;LINUX&quot;)
+should_transfer_files   = YES
+when_to_transfer_output = ON_EXIT
+Queue
+
+Arguments = 4 11
+Queue
+
+Arguments = 4 12
+Queue
+</code></pre>
+
+<p>There are two important differences to notice here. First, the Log, Output and Error lines have the <code>$(Process)</code> macro in them. This means that the output and error files will be named according to the process number of the job. You'll see what this looks like in a moment. Second, we told Condor to run the same job an extra two times by adding extra <code>Arguments</code> and <code>Queue</code> statements. We are doing a parameter sweep on the values 10, 11, and 12. Let's see what happens: </p>
+<pre><code>$ condor_submit submit
+Submitting job(s)...
+3 job(s) submitted to cluster 18.
+
+$ condor_q USER -nobatch
+-- Submitter: frontal.cci.ucad.sn : &lt;10.0.0.252:9645&gt; : frontal.cci.ucad.sn
+ ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
+
+  34.0   kagross         8/18 15:28   0+00:00:00 I  0   0.0  simple 0 34       
+  34.1   kagross         8/18 15:28   0+00:00:00 I  0   0.0  simple 1 34       
+  34.2   kagross         8/18 15:28   0+00:00:00 I  0   0.0  simple 2 34        
+
+3 jobs; 0 completed, 0 removed, 4 idle, 0 running, 0 held, 0 suspended
+
+$ condor_q USER -nobatch
+-- Submitter: frontal.cci.ucad.sn : &lt;10.0.0.252:9645&gt; : frontal.cci.ucad.sn
+ ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
+
+  34.0   kagross         8/18 15:28   0+00:00:00 R  0   0.0  simple 0 34       
+  34.1   kagross         8/18 15:28   0+00:00:00 R  0   0.0  simple 1 34       
+  34.2   kagross         8/18 15:28   0+00:00:00 R  0   0.0  simple 2 34     
+
+3 jobs; 0 completed, 0 removed, 0 idle, 4 running, 0 held, 0 suspended
+
+$ condor_q USER -nobatch
+-- Submitter: frontal.cci.ucad.sn : &lt;10.0.0.252:9645&gt; : frontal.cci.ucad.sn
+ ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
+
+0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended
+
+$ ls simple*out
+simple.0.out  simple.1.out  simple.2.out  simple.out
+
+$ cat simple.0.out
+Thinking really hard for 4 seconds...
+We calculated: 20
+
+$ cat simple.1.out
+Thinking really hard for 4 seconds...
+We calculated: 22
+
+$ cat simple.2.out
+Thinking really hard for 4 seconds...
+We calculated: 24
+</code></pre>
+
+<p>Notice that we had three jobs with the same cluster number, but different process numbers. They have the same cluster number because they were all submitted from the same submit file. When the jobs ran, they created three different output files, each with the desired output.</p>
+<p>You are now ready to submit lots of jobs! Although this example was simple, Condor has many, many options so you can get a wide variety of behaviors. You can find many of these if you look at <a href="http://www.cs.wisc.edu/condor/manual/v8.6/condor_submit.html">the documentation for condor_submit</a>.</p>
+<h2 id="on-your-own">On your own</h2>
+<p>Now that you've gotten your feet wet, try a few things on your own.</p>
+<h3 id="just-one-log-file">Just one log file</h3>
+<p>There's no reason to have a separate log file for each job. Change your submit file so that it uses a single log file. Does it all still work?</p>
+<h3 id="new-outputs-for-each-run">New outputs for each run</h3>
+<p>You might have noticed that the output files were over-written when you re-ran the jobs. (That is, <code>simple.1.out</code> was just re-written.) That was okay for a simple exercise, but it might be very bad if you had wanted to keep around the results. Maybe you changed a parameter or rebuilt your program, and you want to compare the outputs.</p>
+<p>Just like you used <code>$(Process)</code>, you can also use <code>$(Cluster)</code>. This will be a number from your job ID. For example, it would be 34 from the above example. Change your submit file to use <code>$(Cluster)</code> and <code>$(Process)</code>. If you do two job submissions, will you have separate output files?</p>
+<h3 id="lots-of-jobs">Lots of jobs</h3>
+<p>Instead of specifying the Arguments multiple times with multiple <code>queue</code> statements, try this:</p>
+<pre><code>Arguments = $(Process) $(Cluster)
+queue 10
+</code></pre>
+
+<p>What does it mean? What happens? Does it work as you expect?</p>
+<p>(An aside: you might wish to be able to do math, something like <code>$(Process)+1</code>. Unfortunately, you can't do that.)</p>
+<h2 id="challenges">Challenges</h2>
+<p>If you have time and feel comfortable with the technical background, try these extra challenges. You'll need to peruse the Condor manual (particularly the <a href="http://www.cs.wisc.edu/condor/manual/v8.4/condor_submit.html">manual page for condor_submit</a>) to find answers. Feel free to ask Rob--he'd love to give you hints!</p>
+<ul>
+<li>Make another scientific program (probably just modify simple.c) that takes its input from a file. Now submit 3 copies of this program where each input file is in a separate directory. Use the initialdir option <a href="http://www.cs.wisc.edu/condor/manual/v8.4/condor_submit.html">described in the manual</a>. This will let you specify a directory for the input to the program. You can run specify the initialdir with <code>$(Process)</code>. You can specify extra files to copy with <code>transfer_input_files</code>. Now you're really learning the basics of running something like a real scientific job!</li>
+<li>Condor can send you email when a job finishes. How can you control this? </li>
+<li>You know that your job should never run for more than four hours. If it does, then the job should be killed because there is a problem. How can you tell Condor to do this for you? </li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/CODATA-RDA-DataScienceSchools/Materials/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>
