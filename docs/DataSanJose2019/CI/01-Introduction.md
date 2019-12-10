@@ -16,9 +16,7 @@ Condor has two coexisting types of releases at any given time: stable and develo
 
 Today you will log into training.osgconnect.net for all of your exercises.
 
-Login on submission node using the directions from yesterdays security session. They can be found at:
-
-https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/CI/00-Pre-Introduction-Login.md
+Login on submission node using the directions from yesterdays security session. They can be found [here](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/CI/00-Pre-Introduction-Login.md).
 
 When you login to the machine you will be in your "home directory".  We recommend that you work in this directory as nobody else can modify the files here.
 
