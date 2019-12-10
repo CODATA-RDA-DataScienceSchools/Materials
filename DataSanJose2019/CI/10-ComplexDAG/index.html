@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>A More Complex DAG - CODATA RDA Summer Schools Repo</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "A More Complex DAG";
+    var mkdocs_page_input_path = "DataSanJose2019/CI/10-ComplexDAG.md";
+    var mkdocs_page_url = "/Materials/DataSanJose2019/CI/10-ComplexDAG/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> CODATA RDA Summer Schools Repo</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">Home</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">CODATA RDA Summer Schools Repo</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>A More Complex DAG</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/CODATA-RDA-DataScienceSchools/Materials/edit/master/docs/DataSanJose2019/CI/10-ComplexDAG.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="a-more-complex-dag">A More Complex DAG</h1>
+<h3 id="objective">Objective</h3>
+<p>The objective of this exercise is to run a real set of jobs with DAGMan.</p>
+<h2 id="make-your-job-submission-files">Make your job submission files</h2>
+<p>We'll run our <code>goatbrot</code> example. If you didn't read about it yet, <a href="https://github.com/opensciencegrid/dosar/blob/master/docs/DataTrieste2018/08-Mandlebrot.md">please do so now</a>. We are going to make a DAG with four simultaneous jobs (<code>goatbrot</code>) and one final node to stitch them together (<code>montage</code>). This means we have five jobs. We're going to run <code>goatbrot</code> with more iterations (100,000) so it will take longer to run. </p>
+<p>You can create your five jobs. The goatbrot jobs very similar to each other, but they have slightly different parameters (arguments) and output files. </p>
+<p>I have placed the goatbrot executable in my public directory: <code>/stash/user/rquick/public/goatbrot-master/goatbrot</code></p>
+<h3 id="goatbrot1sub">goatbrot1.sub</h3>
+<pre><code>executable              = /stash/user/rquick/public/goatbrot-master/goatbrot
+arguments               = -i 100000 -c -0.75,0.75 -w 1.5 -s 500,500 -o tile_0_0.ppm
+log                     = goatbrot.log
+output                  = goatbrot.out.0.0
+error                   = goatbrot.err.0.0
+requirements = (HAS_MODULES =?= true) &amp;&amp; (OSGVO_OS_STRING == &quot;RHEL 6&quot;) &amp;&amp; (OpSys == &quot;LINUX&quot;)
+should_transfer_files   = YES
+when_to_transfer_output = ONEXIT
+queue
+</code></pre>
+
+<h3 id="goatbrot2sub">goatbrot2.sub</h3>
+<pre><code>executable              = /stash/user/rquick/public/goatbrot-master/goatbrot
+arguments               = -i 100000 -c 0.75,0.75 -w 1.5 -s 500,500 -o tile_0_1.ppm
+log                     = goatbrot.log
+output                  = goatbrot.out.0.1
+error                   = goatbrot.err.0.1
+requirements = (HAS_MODULES =?= true) &amp;&amp; (OSGVO_OS_STRING == &quot;RHEL 6&quot;) &amp;&amp; (OpSys == &quot;LINUX&quot;)
+should_transfer_files   = YES
+when_to_transfer_output = ONEXIT
+queue
+</code></pre>
+
+<h3 id="goatbrot3sub">goatbrot3.sub</h3>
+<pre><code>executable              = /stash/user/rquick/public/goatbrot-master/goatbrot
+arguments               = -i 100000 -c -0.75,-0.75 -w 1.5 -s 500,500 -o tile_1_0.ppm
+log                     = goatbrot.log
+output                  = goatbrot.out.1.0
+error                   = goatbrot.err.1.0
+requirements = (HAS_MODULES =?= true) &amp;&amp; (OSGVO_OS_STRING == &quot;RHEL 6&quot;) &amp;&amp; (OpSys == &quot;LINUX&quot;)
+should_transfer_files   = YES
+when_to_transfer_output = ONEXIT
+queue
+</code></pre>
+
+<h3 id="goatbrot4sub">goatbrot4.sub</h3>
+<pre><code>executable              = /stash/user/rquick/public/goatbrot-master/goatbrot
+arguments               = -i 100000 -c 0.75,-0.75 -w 1.5 -s 500,500 -o tile_1_1.ppm
+log                     = goatbrot.log
+output                  = goatbrot.out.1.1
+error                   = goatbrot.err.1.1
+requirements = (HAS_MODULES =?= true) &amp;&amp; (OSGVO_OS_STRING == &quot;RHEL 6&quot;) &amp;&amp; (OpSys == &quot;LINUX&quot;)
+should_transfer_files   = YES
+when_to_transfer_output = ONEXIT
+queue
+</code></pre>
+
+<h3 id="montagesub">montage.sub</h3>
+<p>You should notice a few things about the montage submission file:</p>
+<ol>
+<li>The <code>transfer_input_files</code> statement refers to the files created by the other jobs. </li>
+<li>We do <em>not</em> transfer the montage program because it is on OASIS.</li>
+</ol>
+<pre><code>universe                = vanilla
+executable              = wrapper_montage.sh
+arguments               = tile_0_0.ppm tile_0_1.ppm tile_1_0.ppm tile_1_1.ppm -mode Concatenate -tile 2x2 mandle.gif
+should_transfer_files   = YES
+when_to_transfer_output = ONEXIT
+transfer_input_files    = tile_0_0.ppm,tile_0_1.ppm,tile_1_0.ppm,tile_1_1.ppm
+transfer_executable     = true
+output                  = montage.out
+error                   = montage.err
+log                     = montage.log
+requirements = (HAS_MODULES =?= true) &amp;&amp; (OSGVO_OS_STRING == &quot;RHEL 6&quot;) &amp;&amp; (OpSys == &quot;LINUX&quot;)
+queue
+</code></pre>
+
+<h3 id="wrapper_montagesh">wrapper_montage.sh</h3>
+<p>Because we are using OASIS, we will need to create a wrapper script to load the ImageMagick module so that we can use it to create the montage.  Put the following lines into <code>wrapper_montage.sh</code>:</p>
+<pre><code>source /cvmfs/oasis.opensciencegrid.org/osg/modules/lmod/current/init/bash
+module load imagemagick
+montage tile_0_0.ppm tile_0_1.ppm tile_1_0.ppm tile_1_1.ppm -mode Concatenate -tile 2x2 mandle.gif
+</code></pre>
+
+<h2 id="make-your-dag">Make your DAG</h2>
+<p>In a file called <code>goatbrot.dag</code>, you have your DAG specification:</p>
+<pre><code>JOB g1 goatbrot1.sub
+JOB g2 goatbrot2.sub
+JOB g3 goatbrot3.sub
+JOB g4 goatbrot4.sub
+JOB montage montage.sub
+PARENT g1 g2 g3 g4 CHILD montage
+</code></pre>
+
+<p>Ask yourself: do you know how we ensure that all the <code>goatbrot</code> commands can run simultaneously and all of them will complete before we run the montage job?</p>
+<h2 id="running-the-dag">Running the DAG</h2>
+<p>Submit your DAG:</p>
+<pre><code>$ condor_submit_dag goatbrot.dag
+-----------------------------------------------------------------------
+File for submitting this DAG to Condor           : goatbrot.dag.condor.sub
+Log of DAGMan debugging messages                 : goatbrot.dag.dagman.out
+Log of Condor library output                     : goatbrot.dag.lib.out
+Log of Condor library error messages             : goatbrot.dag.lib.err
+Log of the life of condor_dagman itself          : goatbrot.dag.dagman.log
+
+Submitting job(s).
+1 job(s) submitted to cluster 71.
+
+-----------------------------------------------------------------------
+</code></pre>
+
+<h2 id="watch-your-dag">Watch your DAG</h2>
+<p>Watch with condor_q:</p>
+<pre><code>$ watch condor_q USER -nobatch
+</code></pre>
+
+<p>Here we see DAGMan running:</p>
+<pre><code>-- Submitter: kagross@frontal.cci.ucad.sn : &lt;172.16.200.1:9645&gt; : frontal.cci.ucad.sn
+ ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
+  68.0   kagross         8/19 11:38   0+00:00:10 R  0   0.3  condor_dagman
+
+1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended
+</code></pre>
+
+<p>DAGMan has submitted the goatbrot jobs, but they haven't started running yet (note that the <code>I</code> status stands for Idle):</p>
+<pre><code>-- Submitter: kagross@frontal.cci.ucad.sn : &lt;172.16.200.1:9645&gt; : frontal.cci.ucad.sn
+ ID  OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
+  68.0   kagross         8/19 11:38   0+00:00:10 R  0   0.3  condor_dagman
+  69.0   kagross         8/19 11:38   0+00:00:00 I  0   0.0  goatbrot -i 100000
+  70.0   kagross         8/19 11:38   0+00:00:00 I  0   0.0  goatbrot -i 100000
+  71.0   kagross         8/19 11:38   0+00:00:00 I  0   0.0  goatbrot -i 100000
+  72.0   kagross         8/19 11:38   0+00:00:00 I  0   0.0  goatbrot -i 100000
+
+6 jobs; 0 completed, 0 removed, 4 idle, 2 running, 0 held, 0 suspended
+</code></pre>
+
+<p>They're running!  (All four jobs are in state <code>R</code> - running)</p>
+<pre><code>-- Submitter: kagross@frontal.cci.ucad.sn : &lt;172.16.200.1:9645&gt; : frontal.cci.ucad.sn
+ ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
+  68.0   kagross         8/19 11:38   0+00:00:15 R  0   0.3  condor_dagman
+  69.0   kagross         8/19 11:38   0+00:00:05 R  0   0.0  goatbrot -i 100000
+  70.0   kagross         8/19 11:38   0+00:00:05 R  0   0.0  goatbrot -i 100000
+  71.0   kagross         8/19 11:38   0+00:00:05 R  0   0.0  goatbrot -i 100000
+  72.0   kagross         8/19 11:38   0+00:00:05 R  0   0.0  goatbrot -i 100000
+
+5 jobs; 0 completed, 0 removed, 0 idle, 5 running, 0 held, 0 suspended
+</code></pre>
+
+<p>Two of the jobs have finished, while the others are still running (remember that completed jobs disappear from <code>condor_q</code> output):</p>
+<pre><code>-- Submitter: kagross@frontal.cci.ucad.sn : &lt;172.16.200.1:9645&gt; : frontal.cci.ucad.sn
+ ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
+  68.0   kagross         8/19 11:38   0+00:00:20 R  0   0.3  condor_dagman
+  71.0   kagross         8/19 11:38   0+00:00:10 R  0   0.0  goatbrot -i 100000
+  72.0   kagross         8/19 11:38   0+00:00:10 R  0   0.0  goatbrot -i 100000
+
+3 jobs; 0 completed, 0 removed, 0 idle, 3 running, 0 held, 0 suspended
+</code></pre>
+
+<p>They finished, but DAGMan hasn't noticed yet. It only checks periodically:</p>
+<pre><code>-- Submitter: kagross@frontal.cci.ucad.sn : &lt;172.16.200.1:9645&gt; : frontal.cci.ucad.sn
+ ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
+  68.0   kagross         8/19 11:38   0+00:00:30 R  0   0.3  condor_dagman
+
+1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended
+</code></pre>
+
+<p>DAGMan submitted and ran the montage job. It ran so fast I didn't capture it running. DAGMan will finish up soon</p>
+<pre><code>-- Submitter: kagross@frontal.cci.ucad.sn : &lt;172.16.200.1:9645&gt; : frontal.cci.ucad.sn
+ ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
+  68.0   kagross         8/19 11:38   0+00:01:01 R  0   0.3  condor_dagman
+
+1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended
+</code></pre>
+
+<p>Now it's all done:</p>
+<pre><code>-- Submitter: kagross@frontal.cci.ucad.sn : &lt;172.16.200.1:9645&gt; : frontal.cci.ucad.sn
+ ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
+
+0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended
+</code></pre>
+
+<p>Examine your results. For some reason, goatbrot prints everything to stderr, not stdout. </p>
+<pre><code>$ cat goatbrot.err.0.0
+Complex image:
+            Center: -0.75 + 0.75i
+             Width: 1.5
+            Height: 1.5
+        Upper Left: -1.5 + 1.5i
+       Lower Right: 0 + 0i
+
+Output image:
+          Filename: tile_0_0.ppm
+     Width, Height: 500, 500
+             Theme: beej
+       Antialiased: no
+
+Mandelbrot:
+    Max Iterations: 100000
+        Continuous: no
+
+Goatbrot:
+    Multithreading: not supported in this build
+
+Completed: 100.0%  
+</code></pre>
+
+<p>Examine your log files (<code>goatbrot.log</code> and <code>montage.log</code>) and DAGMan output file (<code>goatbrot.dag.dagman.out</code>). Do they look as you expect? Can you see the progress of the DAG in the DAGMan output file?</p>
+<p>Does your final Mandlebrot image (<code>mandle.gif</code>) look correct? To view it we can use Stash.</p>
+<pre><code>$ cp mandle.gif ~/stash/public/
+</code></pre>
+
+<p>And now you can go to http://stash.osgconnect.net/~USER . You will see mandle.gif listed.  You can click on it to view it.</p>
+<p>Clean up your results. Be careful about deleting the goatbrot.dag.<em> files, you do not want to delete the goatbrot.dag file, just goatbrot.dag.</em> . </p>
+<pre><code>$ rm goatbrot.dag.*
+$ rm goatbrot.out.*
+$ rm goatbrot.err.*
+</code></pre>
+
+<h2 id="on-your-own">On your own.</h2>
+<ul>
+<li>Re-run your DAG. When jobs are running, try <code>condor_q -dag</code>. What does it do differently?</li>
+<li>Challenge, if you have time: Make a bigger DAG by making more tiles in the same area. </li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/CODATA-RDA-DataScienceSchools/Materials/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>
