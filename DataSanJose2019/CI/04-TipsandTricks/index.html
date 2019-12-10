@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>A few tips and tricks - CODATA RDA Summer Schools Repo</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "A few tips and tricks";
+    var mkdocs_page_input_path = "DataSanJose2019/CI/04-TipsandTricks.md";
+    var mkdocs_page_url = "/Materials/DataSanJose2019/CI/04-TipsandTricks/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> CODATA RDA Summer Schools Repo</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">Home</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">CODATA RDA Summer Schools Repo</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>A few tips and tricks</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/CODATA-RDA-DataScienceSchools/Materials/edit/master/docs/DataSanJose2019/CI/04-TipsandTricks.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="a-few-tips-and-tricks">A few tips and tricks</h1>
+<h3 id="objective">Objective</h3>
+<p>This exercise will teach you a few nifty commands to help you use Condor more easily.</p>
+<h2 id="tips-for-condor_q">Tips for condor_q</h2>
+<p><code>condor_q</code> can show you your job ClassAd. Recall back to the lecture and the discussion of ClassAds. For instance, you can look at the ClassAd for a single job:</p>
+<pre><code>$ condor_q -l YOUR_JOB_CLUSTER_NUMBER
+
+MaxHosts = 1
+User = &quot;kagross@frontal.cci.ucad.sn&quot;
+OnExitHold = false
+CoreSize = 0
+MachineAttrCpus0 = 1
+WantRemoteSyscalls = false
+MyType = &quot;Job&quot;
+Rank = 0.0
+CumulativeSuspensionTime = 0
+MinHosts = 1
+PeriodicHold = false
+PeriodicRemove = false
+Err = &quot;simple.49.error&quot;
+ProcId = 49
+EnteredCurrentStatus = 1408374244
+UserLog = &quot;/home/kagross/condor-test/s
+... output trimmed ... 
+</code></pre>
+
+<p>There are some interesting parts you can check out. </p>
+<p>How many CPUs is the job requesting. (This can be more than one, but for the exercises we will do today it will be 1)</p>
+<pre><code>$ condor_q -l YOUR_JOB_CLUSTER_NUMBER | grep RequestCpus
+RequestCpus = 1
+</code></pre>
+
+<p>Where is the user log for this job? This is helpful when you assist someone else in debugging and they're not sure.</p>
+<pre><code>$ condor_q -l YOUR_JOB_CLUSTER_NUMBER | grep UserLog
+UserLog = &quot;/home/kagross/condor-test/simple.47.log&quot;
+</code></pre>
+
+<p>What are the job's requirements? Condor automatically fills some in for you to make sure your job runs on a reasonable computer in our cluster, but you can override any of these. I've broken the output into multiple lines to explain it to you.</p>
+<pre><code>$ condor_q -l YOUR_JOB_CLUSTER_NUMBER | grep Requirements
+Requirements =( TARGET.Arch == &quot;X86_64&quot; ) &lt;em&gt;# Run on a 64-bit computer
+    &amp;&amp; ( TARGET.OpSys == &quot;LINUX&quot; )  &lt;em&gt;# Make sure you run on Linux
+    &amp;&amp; ( TARGET.Disk &gt;= RequestDisk ) &lt;em&gt;# Make sure the default disk Condor is on has enough disk space.
+    &amp;&amp; ( TARGET.Memory &gt;= RequestMemory )  &lt;em&gt;# Make sure the computer has enough memory
+    &amp;&amp; ( TARGET.HasFileTransfer )  &lt;em&gt;# Only run on a computer that can accept your files.
+</code></pre>
+
+<p>What else can you find that's interesting in the ClassAd?</p>
+<h2 id="removing-jobs">Removing jobs</h2>
+<p>If you submit a job that you realize has a problem, you can remove it with <code>condor_rm</code>. For example: </p>
+<pre><code>$ condor_q
+
+-- Submitter: osg-ss-submit.chtc.wisc.edu : &lt;128.104.100.55:9618?sock=28867_10e4_2&gt; : osg-ss-submit.chtc.wisc.edu
+ ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
+  29.0   roy             6/21 15:23   0+00:00:00 I  0   0.7  simple 60 10      
+
+1 jobs; 0 completed, 0 removed, 2 idle, 0 running, 0 held, 0 suspended
+
+$ condor_rm YOUR_JOB_CLUSTER_NUMBER
+Job 29.0 marked for removal
+
+$ condor_q
+
+-- Submitter: osg-ss-submit.chtc.wisc.edu : &lt;128.104.100.55:9618?sock=28867_10e4_2&gt; : osg-ss-submit.chtc.wisc.edu
+ ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
+
+0 jobs; 0 completed, 0 removed, 1 idle, 0 running, 0 held, 0 suspended
+</code></pre>
+
+<p>A few tips:</p>
+<ul>
+<li>You can remove all of your jobs with the <code>-all</code> option.</li>
+<li>You can't remove other users jobs.</li>
+<li>There are <a href="http://www.cs.wisc.edu/condor/manual/v8.4/condor_rm.html">fancy options to condor_rm</a>.  </li>
+</ul>
+<h2 id="historical-information">Historical information</h2>
+<p>You can see information about jobs that completed and are no longer in the queue with the <code>condor_history</code> command. It's rare that you want to see <em>all</em> the jobs, so try looking at jobs for just you:</p>
+<pre><code>$ condor_history USER
+</code></pre>
+
+<p>For example:</p>
+<pre><code>$ condor_history kagross
+   9.9   kagross         7/31 12:44   0+00:00:03 C   7/31 12:44 /home/kagross/simple 9 9
+   9.8   kagross         7/31 12:44   0+00:00:03 C   7/31 12:44 /home/kagross/simple 8 9
+   9.11  kagross         7/31 12:44   0+00:00:03 C   7/31 12:44 /home/kagross/simple 11 9
+   9.7   kagross         7/31 12:44   0+00:00:03 C   7/31 12:44 /home/kagross/simple 7 9
+   9.5   kagross         7/31 12:44   0+00:00:02 C   7/31 12:44 /home/kagross/simple 5 9
+   9.6   kagross         7/31 12:44   0+00:00:02 C   7/31 12:44 /home/kagross/simple 6 9
+   9.3   kagross         7/31 12:44   0+00:00:02 C   7/31 12:44 /home/kagross/simple 3 9
+   9.2   kagross         7/31 12:44   0+00:00:02 C   7/31 12:44 /home/kagross/simple 2 9
+   9.1   kagross         7/31 12:44   0+00:00:03 C   7/31 12:44 /home/kagross/simple 1 9
+   9.0   kagross         7/31 12:44   0+00:00:03 C   7/31 12:44 /home/kagross/simple 
+   9.4   kagross         7/31 12:44   0+00:00:01 C   7/31 12:44 /home/kagross/simple 4 9
+   8.0   kagross         7/31 12:42   0+00:00:07 C   7/31 12:42 /home/kagross/simple 4 10
+...
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/CODATA-RDA-DataScienceSchools/Materials/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>
