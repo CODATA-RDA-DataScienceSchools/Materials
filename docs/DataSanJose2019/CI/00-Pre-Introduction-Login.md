@@ -8,7 +8,8 @@ https://www.putty.org/
 
 [Direct link to executable](https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe)
 
-
+After opening the executable you should see the following screen:
+![Putty Screen shot](https://github.com/CODATA-RDA-DataScienceSchools/Materials/raw/master/docs/DataSanJose2019/CI/putty_screenshot.png)
 
 ## Authentication for CI Exercises
 
@@ -43,6 +44,14 @@ Due to the local network firewall setup (another security mechanism) and key ins
 ```
 ssh -o PreferredAuthentications=password osguserXX@200.145.46.31
 ```
+If you are using putty, you should fill the *Host Name (or IP address)* with the value `200.145.46.31` as seen below:
+![Putty with host information](https://github.com/CODATA-RDA-DataScienceSchools/Materials/raw/master/docs/DataSanJose2019/CI/putty_hostname.png)
+
+After hitting the *Open* button you may see the following message:
+![Accept new Host](https://github.com/CODATA-RDA-DataScienceSchools/Materials/raw/master/docs/DataSanJose2019/CI/accept_host.png)
+
+You should hit the *Yes* button.
+
 
 Login on our submission node using the following command along with the password you have been supplied. 
 
