@@ -14,7 +14,7 @@ Condor has two coexisting types of releases at any given time: stable and develo
 
 ## Where you will work
 
-Today you will log into training.osgconnect.net for all of your exercises, however, due to the local firewall and key setup, we will go to Brazil first (thanks to Raphael for setting up temporary VM). Replace XX with your osguser ID and use the password you have been supplied.
+Today you will log into training.osgconnect.net for all of your exercises. Due to the local network firewall setup and key setup, we will go to Brazil first (thanks to Raphael for setting up temporary VM). First be sure you are on the wireless network *Eventos CeNET*. Replace XX with your osguser ID and use the password you have been supplied with the following command. 
 
 ```
 ssh -o PreferredAuthentications=password osguserXX@200.145.46.31
