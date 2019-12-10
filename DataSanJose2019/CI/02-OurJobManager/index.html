@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Our Condor Installation - CODATA RDA Summer Schools Repo</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Our Condor Installation";
+    var mkdocs_page_input_path = "DataSanJose2019/CI/02-OurJobManager.md";
+    var mkdocs_page_url = "/Materials/DataSanJose2019/CI/02-OurJobManager/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> CODATA RDA Summer Schools Repo</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">Home</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">CODATA RDA Summer Schools Repo</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Our Condor Installation</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/CODATA-RDA-DataScienceSchools/Materials/edit/master/docs/DataSanJose2019/CI/02-OurJobManager.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="our-condor-installation">Our Condor Installation</h1>
+<h2 id="objective">Objective</h2>
+<p>This exercise should help you understand the basics of how Condor is installed, what Condor processes (a.k.a. daemons) are running, and what they do.</p>
+<h2 id="login-to-the-condor-submit-computer">Login to the Condor submit computer</h2>
+<p>Before you start, make sure you are logged into <code>user-training.osgconnect.net</code></p>
+<pre><code>$ hostname
+training.osgconnect.net
+</code></pre>
+
+<p>You should have been given your name and password when you arrived this afternoon. If you don't know them, talk to Rob.</p>
+<h2 id="looking-at-our-condor-installation">Looking at our Condor installation</h2>
+<p>How do you know what version of Condor you are using? Try <code>condor_version</code>: </p>
+<pre><code>$ condor_version
+$CondorVersion: 8.6.13 Jan 16 2019 $
+$CondorPlatform: X86_64-CentOS_7.6 $
+</code></pre>
+
+<p>Note that the "CondorPlatform" reports the type of computer we built it on, <em>not</em> the computer we're running on. It was built on CentOS_6.8, but you might notice that we're running on Scientific Linux 6.8, which is a free clone of Red Hat Enterprise Linux.</p>
+<h3 id="extra-tip-the-os-version">Extra Tip: The OS version</h3>
+<p>Do you know how to find the OS version? You can usually look in /etc/os-release to find out:</p>
+<pre><code>$ cat /etc/os-release
+</code></pre>
+
+<p>Or you can run:</p>
+<pre><code>$ hostnamectl
+</code></pre>
+
+<p>Where is Condor installed? </p>
+<pre><code># Show the location of the condor_q binary
+$ which condor_q
+/usr/bin/condor_q
+
+# Show which RPM installed Condor
+$ rpm -q condor
+condor-8.6.11-1.osg34.el6.x86_64
+</code></pre>
+
+<p>Condor has some configuration files that it needs to find. They are in the standard location, <code>/etc/condor</code></p>
+<pre><code>$ ls /etc/condor
+condor_config        condor_ssh_to_job_sshd_config_template  ganglia.d
+condor_config.local  config.d
+</code></pre>
+
+<p>Condor has some directories that it keeps records of jobs in. Remember that each submission computer keeps track of all jobs submitted to it. That's in the local directory: </p>
+<pre><code>$ condor_config_val -v LOCAL_DIR
+LOCAL_DIR = /var
+ # at: /etc/condor/condor_config, line 26
+ # raw: LOCAL_DIR = /var
+
+$ ls -CF /var/lib/condor
+execute/  spool/ spool.q1/ spool.q2/ spool.q3/ spool.q4/ spool.q5/
+</code></pre>
+
+<p>The spool directory is where Condor keeps the jobs you submit, while the execute directory is where Condor keeps running jobs. Since this is a submission-only computer, it should be empty.</p>
+<p>Check if Condor is running.  Your output will differ slightly, but you should see <code>condor_master</code> with the other Condor daemons listed under it:</p>
+<pre><code>$ ps auwx --forest | grep condor_ | grep -v grep
+condor   2299245  0.0  0.1  50972  7348 ?        Ss   Jul10   0:08 condor_master -pidfile /var/run/condor/condor_master.pid
+root     2299287  0.0  0.1  25924  5072 ?        S    Jul10   1:54  \_ condor_procd -A /var/run/condor/procd_pipe -L /var/log/condor/ProcLog -R 1000000 -S 60 -C 499
+condor   2299288  0.0  0.1  50596  7796 ?        Ss   Jul10   0:16  \_ condor_shared_port -f
+condor   2299289  0.0  0.2  70020  9100 ?        Ss   Jul10   0:13  \_ condor_collector -f
+condor   2299290  0.0  0.5 116132 23872 ?        Ss   Jul10   6:19  \_ condor_schedd -f
+condor   2299291  0.0  0.1  51056  7956 ?        Ss   Jul10   0:59  \_ condor_negotiator -f
+</code></pre>
+
+<p>For this version of Condor there are four processes running: the condor_master, the condor_schedd, the condor_procd, and condor_schedd. In general, you might see many different Condor processes. Here's a list of the processes:</p>
+<ul>
+<li><em>condor_master</em>: This program runs constantly and ensures that all other parts of Condor are running. If they hang or crash, it restarts them.</li>
+<li><em>condor_schedd</em>: If this program is running, it allows jobs to be submitted from this computer--that is, your computer is a "submit machine". This will advertise jobs to the central manager so that it knows about them. It will contact a condor_startd on other execute machines for each job that needs to be started.</li>
+<li><em>condor_procd:</em> This process helps Condor track process (from jobs) that it creates</li>
+<li><em>condor_collector:</em> This program is part of the Condor central manager. It collects information about all computers in the pool as well as which users want to run jobs. It is what normally responds to the condor_status command. At the school, it is running on a different computer, and you can figure out which one: </li>
+</ul>
+<p>Other daemons include:</p>
+<ul>
+<li><em>condor_negotiator:</em> This program is part of the Condor central manager. It decides what jobs should be run where. It is run on the same computer as the collector.</li>
+<li><em>condor_startd:</em> If this program is running, it allows jobs to be started up on this computer--that is, your computer is an "execute machine". This advertises your computer to the central manager so that it knows about this computer. It will start up the jobs that run.</li>
+<li><em>condor_shadow:</em> For each job that has been submitted from this computer, there is one condor_shadow running. It will watch over the job as it runs remotely. In some cases it will provide some assistance (see the standard universe later.) You may or may not see any condor_shadow processes running, depending on what is happening on the computer when you try it out. </li>
+<li><em>condor_shared_port:</em> Used to assist Condor with networking by allowing multiple Condor processes to share a single network port. </li>
+</ul>
+<h2 id="condor_q">condor_q</h2>
+<p>You can find out what jobs have been submitted on your computer with the condor_q command: </p>
+<pre><code>$ condor_q
+-- Schedd: user-training.osgconnect.net : &lt;128.135.158.195:9618?... @ 08/12/18 16:10:58
+OWNER BATCH_NAME      SUBMITTED   DONE   RUN    IDLE   HOLD  TOTAL JOB_IDS
+
+0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended
+</code></pre>
+
+<p>The output that you see will be different depending on what jobs are running. Notice what we can see from this:</p>
+<ul>
+<li><em>ID</em>: We can see each jobs cluster and process number. For the first job, the cluster is 60256 and the process is 0.</li>
+<li><em>OWNER</em>: We can see who owns the job.</li>
+<li><em>SUBMITTED</em>: We can see when the job was submitted</li>
+<li><em>RUN_TIME</em>: We can see how long the job has been running.</li>
+<li><em>ST</em>: We can see what the current state of the job is. I is idle, R is running.</li>
+<li><em>PRI</em>: We can see the priority of the job.</li>
+<li><em>SIZE</em>: We can see the memory consumption of the job.</li>
+<li><em>CMD</em>: We can see the program that is being executed. </li>
+</ul>
+<h3 id="extra-tip">Extra Tip</h3>
+<p>What else can you find out with condor_q? Try any one of:</p>
+<ul>
+<li><code>man condor_q</code></li>
+<li><code>condor_q -help</code></li>
+<li><a href="http://www.cs.wisc.edu/condor/manual/v8.0/condor_q.html">condor_q from the online manual</a></li>
+</ul>
+<h3 id="double-bonus-points">Double bonus points</h3>
+<p>How do you use the <code>-constraint</code> or <code>-format</code> options to <code>condor_q</code>? When would you want them? When would you use the -l option? This might be an easier exercise to try once you submit some jobs.</p>
+<h2 id="condor_status">condor_status</h2>
+<p>You can find out what computers are in your Condor pool. (A pool is similar to a cluster, but it doesn't have the connotation that all computers are dedicated full-time to computation: some may be desktop computers owned by users.) To look, use condor_status:</p>
+<pre><code>$ condor_status -pool flock.opensciencegrid.org
+Name                             OpSys      Arch   State     Activity LoadAv Mem    ActvtyTime
+
+slot1@amundsen.grid.uchicago.edu LINUX      X86_64 Owner     Idle      0.000 32768  1+02:46:31
+slot2@amundsen.grid.uchicago.edu LINUX      X86_64 Owner     Idle      0.000 32768  5+01:05:58
+slot1@c2                         LINUX      X86_64 Unclaimed Idle      0.000 48289  3+10:04:49
+slot1@dhcp-10-1-202-3            LINUX      X86_64 Unclaimed Idle      0.000  3251  0+08:10:13
+slot1_1@dhcp-10-1-202-3          LINUX      X86_64 Claimed   Busy      0.990  6144  0+01:09:46
+slot1_2@dhcp-10-1-202-3          LINUX      X86_64 Claimed   Busy      0.990  6144  0+00:46:46
+slot1_3@dhcp-10-1-202-3          LINUX      X86_64 Claimed   Busy      0.990  2048  0+00:53:08
+slot1_4@dhcp-10-1-202-3          LINUX      X86_64 Claimed   Busy      0.990  1024  0+05:48:14
+slot1_5@dhcp-10-1-202-3          LINUX      X86_64 Claimed   Busy      0.000  6144  0+00:16:48
+slot1_6@dhcp-10-1-202-3          LINUX      X86_64 Claimed   Busy      0.990  2816  0+13:16:34
+...
+</code></pre>
+
+<p>Let's look at exactly what you can see:</p>
+<ul>
+<li><em>Name</em>: The name of the computer. Sometimes this gets chopped off, like above.</li>
+<li><em>OpSys</em>: The operating system, though not at the granularity you may wish: It says "Linux" instead of which distribution and version of Linux.</li>
+<li><em>Arch</em>: The architecture, such as INTEL or PPC.</li>
+<li><em>State</em>: The state is often Claimed (when it is running a Condor job) or Unclaimed (when it is not running a Condor job). It can be in a few other states as well, such as Matched.</li>
+<li><em>Activity</em>: This is usually something like Busy or Idle. Sometimes you may see a computer that is Claimed, but no job has yet begun on the computer. Then it is Claimed/Idle. Hopefully this doesn't last very long.</li>
+<li><em>LoadAv</em>: The load average on the computer.</li>
+<li><em>Mem</em>: The computers memory in megabytes.</li>
+<li><em>ActvtyTime</em>: How long the computer has been doing what it's been doing. </li>
+</ul>
+<h3 id="extra-credit">Extra credit</h3>
+<p>What else can you find out with condor_status? Try any one of:</p>
+<ul>
+<li><code>man condor_status</code></li>
+<li><code>condor_status -help</code></li>
+<li><a href="http://www.cs.wisc.edu/condor/manual/v8.0/condor_status.html">condor_status from the online manual</a></li>
+</ul>
+<p>Note in particular the options like <code>-master</code> and <code>-schedd</code>. When would these be useful? When would the <code>-l</code> option be useful? </p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/CODATA-RDA-DataScienceSchools/Materials/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>
