@@ -1,6 +1,6 @@
 # 
 
-## Authentication
+## Authentication for CI Exercises
 
 You will receive login credentials at the beginning of this session. To authenticate (prove you who you say you are) you will need to tell the training login node three things:
 
@@ -35,10 +35,4 @@ Enter passphrase for key '/home/osguser01/.ssh/id_rsa':
 
 You may get a message asking you to establish the authenticity of this connection. Answer "yes". 
 
-When you login to the machine you will be in your "home directory".  We recommend that you work in this directory as nobody else can modify the files here.
-
-You can always return to your home directory by running the command
-
-```
-$ cd ~
-```
+When you login to the machine you will be in your "home directory".  We recommend that you work in this directory as nobody else can modify the files here (what security concept we covered today does this recommendation satisfy?).
