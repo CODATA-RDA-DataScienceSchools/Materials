@@ -94,6 +94,8 @@
 <p>Download and install a SSH Client. We recommend PuTTY, but any ssh client is acceptable. </p>
 <p>https://www.putty.org/ </p>
 <p><a href="https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe">Direct link to executable</a></p>
+<p>After opening the executable you should see the following screen:
+<img alt="Putty Screen shot" src="https://github.com/CODATA-RDA-DataScienceSchools/Materials/raw/master/docs/DataSanJose2019/CI/putty_screenshot.png" /></p>
 <h2 id="authentication-for-ci-exercises">Authentication for CI Exercises</h2>
 <p>You will receive login credentials at the beginning of this session. To authenticate (prove you who you say you are and establish what you are authorized to do) the bridgekeeper (login nodes) requires three bits of information: </p>
 <p>From Monty Python and the Holy Grail: </p>
@@ -117,6 +119,11 @@ ARTHUR: Well, you have to know these things when you're a king, you know. </p>
 <pre><code>ssh -o PreferredAuthentications=password osguserXX@200.145.46.31
 </code></pre>
 
+<p>If you are using putty, you should fill the <em>Host Name (or IP address)</em> with the value <code>200.145.46.31</code> as seen below:
+<img alt="Putty with host information" src="https://github.com/CODATA-RDA-DataScienceSchools/Materials/raw/master/docs/DataSanJose2019/CI/putty_hostname.png" /></p>
+<p>After hitting the <em>Open</em> button you may see the following message:
+<img alt="Accept new Host" src="https://github.com/CODATA-RDA-DataScienceSchools/Materials/raw/master/docs/DataSanJose2019/CI/accept_host.png" /></p>
+<p>You should hit the <em>Yes</em> button.</p>
 <p>Login on our submission node using the following command along with the password you have been supplied. </p>
 <pre><code>$ ssh training.osgconnect.net
 
