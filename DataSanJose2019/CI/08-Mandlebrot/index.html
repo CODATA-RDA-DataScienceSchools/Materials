@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>A brief detour through the Mandlebrot set - CODATA RDA Summer Schools Repo</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "A brief detour through the Mandlebrot set";
+    var mkdocs_page_input_path = "DataSanJose2019/CI/08-Mandlebrot.md";
+    var mkdocs_page_url = "/Materials/DataSanJose2019/CI/08-Mandlebrot/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> CODATA RDA Summer Schools Repo</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">Home</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">CODATA RDA Summer Schools Repo</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>A brief detour through the Mandlebrot set</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/CODATA-RDA-DataScienceSchools/Materials/edit/master/docs/DataSanJose2019/CI/08-Mandlebrot.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="a-brief-detour-through-the-mandlebrot-set">A brief detour through the Mandlebrot set</h1>
+<p>Before we dive into a more complicated DAG, let's get a more interesting job. I'm tired of this lazy, sleepy job that only does trivial mathematics. Let's make pretty pictures!</p>
+<p>We have a small program that draws pictures of the Mandlebrot set. You can <a href="https://secure.wikimedia.org/wikipedia/en/wiki/Mandelbrot_set">read about the Mandlebrot set on Wikipedia</a>, or you can simply appreciate the pretty pictures. It's a fractal. </p>
+<p>We have a simple program that can draw the Mandlebrot set. It's called <code>goatbrot</code>,</p>
+<h2 id="a-simple-invocation-of-goatbrot">A simple invocation of goatbrot</h2>
+<p>You can generate the Mandlebrot set with two simple commands. </p>
+<ol>
+<li>Generate a PPM image of the Mandlebrot set:</li>
+</ol>
+<pre><code>$ /stash/user/rquick/public/goatbrot-master/goatbrot -i 1000 -o tile_000000_000000.ppm -c 0,0 -w 3 -s 1000,1000
+</code></pre>
+
+<ol>
+<li>Add the Fast Fourier Transform and ImageMagick packages:</li>
+</ol>
+<pre><code>$ module load fftw
+</code></pre>
+
+<ol>
+<li>Convert it to a JPEG image and write into your home directory:</li>
+</ol>
+<pre><code>$ convert tile_000000_000000.ppm ~/mandle.gif
+</code></pre>
+
+<ol>
+<li><strong><em>Open a new terminal window</em></strong> and move the file to local machine for viewing (substitute your username in place of <code>USER</code>):</li>
+</ol>
+<pre><code>$ scp USER@training.osgconnect.net:/home/USER/mandle.gif ./
+</code></pre>
+
+<ol>
+<li>Point Browser at the file URL:</li>
+</ol>
+<pre><code>firefox ./mandle.gif
+</code></pre>
+
+<p>The <code>goatbroat</code> program takes several parameters. Let's break them down:</p>
+<ul>
+<li><code>-i 1000</code> The number of iterations. Bigger numbers generate more accurate images but are slower to run. </li>
+<li><code>-o tile_000000_000000.ppm</code> The output file to generate. </li>
+<li><code>-c 0,0</code> The center point of the image. Here it is the point (0,0).</li>
+<li><code>-w 3</code> The width of the image. Here is 3.</li>
+<li><code>-s 1000,1000</code> The size of the final image. Here we generate a picture that is 1000 pixels wide and 1000 pixels tall. </li>
+</ul>
+<h2 id="dividing-goatbrot-up">Dividing goatbrot up</h2>
+<p>The Mandlebrot set can take a while to create, particularly if you make the iterations large or the image size large. What if we broke the creation of the image into multiple invocations then stitched them together? Once we do that, we can run the each goatbroat in parallel in our cluster. Here's an example you can run by hand. </p>
+<ol>
+<li><em>Run goatbroat 4 times</em>: </li>
+</ol>
+<pre><code>$ /stash/user/rquick/public/goatbrot-master/goatbrot -i 1000 -o tile_000000_000000.ppm -c -0.75,0.75 -w 1.5 -s 500,500
+$ /stash/user/rquick/public/goatbrot-master/goatbrot -i 1000 -o tile_000000_000001.ppm -c 0.75,0.75 -w 1.5 -s 500,500
+$ /stash/user/rquick/public/goatbrot-master/goatbrot -i 1000 -o tile_000001_000000.ppm -c -0.75,-0.75 -w 1.5 -s 500,500
+$ /stash/user/rquick/public/goatbrot-master/goatbrot -i 1000 -o tile_000001_000001.ppm -c 0.75,-0.75 -w 1.5 -s 500,500
+</code></pre>
+
+<ol>
+<li><em>Stitch them together</em>: </li>
+</ol>
+<pre><code>$ montage tile_000000_000000.ppm tile_000000_000001.ppm tile_000001_000000.ppm tile_000001_000001.ppm -mode Concatenate -tile 2x2 ~/mandle.gif
+</code></pre>
+
+<p>This will produce the same image as above. We broke the image space into a 2 by 2 grid and ran <code>goatbrot</code> on each section of the grid. The <code>montage</code> program simply stitches the files together. </p>
+<h2 id="try-it">Try it!</h2>
+<p>Run the commands above, make sure you can create the Mandlebrot image. When you create the image, you might wonder how you can view it. </p>
+<p>The same way we did above, or more simply by moving the file to a web accessible location. </p>
+<ol>
+<li><code>cp mandle.gif ~/public</code></li>
+<li>point your browser at the stash web server:</li>
+</ol>
+<pre><code>http://stash.osgconnect.net/~USER
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/CODATA-RDA-DataScienceSchools/Materials/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>
