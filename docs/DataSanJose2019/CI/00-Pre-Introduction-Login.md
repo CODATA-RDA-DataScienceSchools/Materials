@@ -1,5 +1,11 @@
 # 
 
+## Install an SSH-Cleint
+
+Download and install a SSH Client. We recommend PuTTY, but any ssh client is acceptable. 
+
+https://www.putty.org/ 
+
 ## Authentication for CI Exercises
 
 You will receive login credentials at the beginning of this session. To authenticate (prove you who you say you are and establish what you are authorized to do) the bridgekeeper (login nodes) requires three bits of information: 
