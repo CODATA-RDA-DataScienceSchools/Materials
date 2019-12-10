@@ -14,7 +14,7 @@ Condor has two coexisting types of releases at any given time: stable and develo
 
 ## Where you will work
 
-Today you will log into training.osgconnect.net for all of your exercises:
+Today you will log into training.osgconnect.net for all of your exercises.
 
 Login on submission node using the directions from yesterdays security session. They can be found at:
 
