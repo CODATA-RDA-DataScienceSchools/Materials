@@ -6,6 +6,10 @@ Download and install a SSH Client. We recommend PuTTY, but any ssh client is acc
 
 https://www.putty.org/ 
 
+[Direct link to executable](https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe)
+
+
+
 ## Authentication for CI Exercises
 
 You will receive login credentials at the beginning of this session. To authenticate (prove you who you say you are and establish what you are authorized to do) the bridgekeeper (login nodes) requires three bits of information: 
@@ -34,7 +38,7 @@ Why do you need both a password and a key? What is the role of the password in t
 
 You will be logging into training.osgconnect.net for the CyberInfrastructure exercises. To confirm you have the proper authentication and authorization to do the exercises tomorrow and Friday we will test logins today. 
 
-Due to the local network firewall setup (another security mechanism) and key installation, we will go to Brazil first (thanks to Raphael for setting up temporary VM). First be sure you are on the wireless network *Eventos CeNET*. Replace XX with your osguser ID and use the password you have been supplied with the following command. 
+Due to the local network firewall setup (another security mechanism) and key installation, we will go to Brazil first (thanks to Raphael for setting up temporary VM). First be sure you are on the wireless network *Eventos CeNAT*. Replace XX with your osguser ID and use the password you have been supplied with the following command. 
 
 ```
 ssh -o PreferredAuthentications=password osguserXX@200.145.46.31
