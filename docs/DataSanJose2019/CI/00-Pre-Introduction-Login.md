@@ -22,8 +22,7 @@ or...
 2) Tell me something only you know.
 3) Show me someething only you have.  
 
-* Why do you need both a password and a key?
-* What is the role of the password in the public-private key scheme? 
+Why do you need both a password and a key? What is the role of the password in the public-private key scheme? 
 
 ## Where you will work
 
