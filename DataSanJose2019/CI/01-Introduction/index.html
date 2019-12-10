@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>High Throughput Computing and Condor Introduction - CODATA RDA Summer Schools Repo</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "High Throughput Computing and Condor Introduction";
+    var mkdocs_page_input_path = "DataSanJose2019/CI/01-Introduction.md";
+    var mkdocs_page_url = "/Materials/DataSanJose2019/CI/01-Introduction/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> CODATA RDA Summer Schools Repo</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">Home</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">CODATA RDA Summer Schools Repo</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>High Throughput Computing and Condor Introduction</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/CODATA-RDA-DataScienceSchools/Materials/edit/master/docs/DataSanJose2019/CI/01-Introduction.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="high-throughput-computing-and-condor-introduction">High Throughput Computing and Condor Introduction</h1>
+<h2 id="preliminaries">Preliminaries</h2>
+<p>You will receive login credentials at the beginning of this session. </p>
+<ul>
+<li>You might want to refer to the online <a href="http://research.cs.wisc.edu/htcondor/manual/v8.6/">Condor 8.6.13 manual</a>.<br></li>
+<li>You may enjoy browsing the <a href="http://www.cs.wisc.edu/condor/">Condor web page</a>.<br></li>
+</ul>
+<h2 id="which-condor">Which Condor?</h2>
+<p>We will be using Condor 8.6.13, which is a recent production version of Condor.</p>
+<p>Condor has two coexisting types of releases at any given time: stable and development. Condor 8.2.X and 7.8.x are considered stable releases, and you can know they are stable because the second digits (a 2 or a 8 in these cases) are  even numbers. In a given stable series, all versions have the same features (for example 7.8.0 and 7.8.1 have the same set of features) and differ only in bug fixes.</p>
+<h2 id="where-you-will-work">Where you will work</h2>
+<p>Today you will log into training.osgconnect.net for all of your exercises, however, due to the local firewall and key setup, we will go to Brazil first (thanks to Raphael for setting up temporary VM). Replace XX with your osguser ID and use the password you have been supplied.</p>
+<pre><code>ssh -o PreferredAuthentications=password osguserXX@200.145.46.31
+</code></pre>
+
+<p>Login on our submission node using the following command along with the password you have been supplied. </p>
+<pre><code>$ ssh training.osgconnect.net
+
+The authenticity of host 'training.osgconnect.net (128.135.158.220)' can't be established.
+ECDSA key fingerprint is SHA256:gielJSpIiZisxGna5ocHtiK+0zAqFTdcEkLBOgnDUsg.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'training.osgconnect.net,128.135.158.220' (ECDSA) to the list of known hosts.
+Enter passphrase for key '/home/osguser01/.ssh/id_rsa':
+</code></pre>
+
+<p>You may get a message asking you to establish the authenticity of this connection. Answer "yes". </p>
+<p>When you login to the machine you will be in your "home directory".  We recommend that you work in this directory as nobody else can modify the files here.</p>
+<p>You can always return to your home directory by running the command</p>
+<pre><code>$ cd ~
+</code></pre>
+
+<h2 id="the-exercises">The Exercises</h2>
+<p>Throughout the Condor exercises, you will be given a fair amount of guidance. In several spots, there are suggestions for extra exercises to do "on your own" or as "challenges". Since you aren't being graded, there is no extra credit for doing them, but we encourage you to try them out. If you prefer, you can come back to the extra credit after you've completed the basic exercises. If you simply cruise through the exercises, you'll probably have free time--we encourage you to delve in more deeply.</p>
+<p>For all of the exercises, we'll assume that you are logged into user-training.osgconnect.net. You should have received your name and password for user-training.osgconnect.net at the beginning of the Computation Infrastructures lecture.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/CODATA-RDA-DataScienceSchools/Materials/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>
