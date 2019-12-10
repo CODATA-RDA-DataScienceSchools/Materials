@@ -1,0 +1,1735 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Unit 4  Introduction to Python Session 1 - CODATA RDA Summer Schools Repo</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Unit 4  Introduction to Python Session 1";
+    var mkdocs_page_input_path = "DataSanJose2019/slides/Unit 4_ Introduction_to_Python_Session_1.md";
+    var mkdocs_page_url = "/Materials/DataSanJose2019/slides/Unit 4_ Introduction_to_Python_Session_1/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> CODATA RDA Summer Schools Repo</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">Home</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">CODATA RDA Summer Schools Repo</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Unit 4  Introduction to Python Session 1</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/CODATA-RDA-DataScienceSchools/Materials/edit/master/docs/DataSanJose2019/slides/Unit 4_ Introduction_to_Python_Session_1.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="session-1-session-1">Session 1<a href="#Session-1">¶</a> {#Session-1}</h1>
+<h2 id="plotting-and-programming-with-python-3-plotting-and-programming-with-python-3">Plotting and programming with Python 3<a href="#Plotting-and-programming-with-Python-3">¶</a> {#Plotting-and-programming-with-Python-3}</h2>
+<h3 id="open-a-jupyter-notebook-open-a-jupyter-notebook">Open a Jupyter Notebook<a href="#Open-a-Jupyter-Notebook">¶</a> {#Open-a-Jupyter-Notebook}</h3>
+<p>(10 minutes)</p>
+<p><a href="http://swcarpentry.github.io/python-novice-gapminder/01-run-quit/index.html">http://swcarpentry.github.io/python-novice-gapminder/01-run-quit/index.html</a></p>
+<p>Once you have your Notebook open let`s start with the session.</p>
+<p>Heo</p>
+<h1 id="variables-and-assignment-variables-and-assignment">Variables and Assignment<a href="#Variables-and-Assignment">¶</a> {#Variables-and-Assignment}</h1>
+<p>(15 min)</p>
+<p>Exercises (10min)</p>
+<p>Variables are names for determined values.</p>
+<p>Note:</p>
+<ul>
+<li>
+<p>To assing the value to a variable use = like this:</p>
+<p><em>variable = value</em></p>
+</li>
+<li>
+<p>The variable is created when a value is assingned.</p>
+</li>
+</ul>
+<p>For example let's type in our names and ages:</p>
+<p>In [2]:</p>
+<pre><code>age = 21
+name = 'Mariana'
+ejemplo= 5+5
+print(age, name, ejemplo)
+
+21 Mariana 10
+</code></pre>
+<p>In [4]:</p>
+<pre><code>#1variable = 1
+variable1 = 1
+</code></pre>
+<h3 id="variable-names-variable-names">Variable names<a href="#Variable-names">¶</a> {#Variable-names}</h3>
+<ul>
+<li>
+<p><strong>Only letters, digits and underscore _ (for long names)</strong></p>
+</li>
+<li>
+<p><strong>Do not start with a digit</strong></p>
+</li>
+<li>
+<p>It is possible to start with an underscore like <code>__real_age</code>, but
+    this has a special meaning.</p>
+</li>
+</ul>
+<p>(We won't do that yet)</p>
+<h3 id="display-values-with-display-values-with">Display values with:<a href="#Display-values-with:">¶</a> {#Display-values-with:}</h3>
+<pre><code>print()
+</code></pre>
+<p>This built-in function prints values as text</p>
+<p>Examples:</p>
+<p>In [5]:</p>
+<pre><code>print('My name is', name, ', I am ', age)
+
+My name is Mariana , I am  21
+</code></pre>
+<h3 id="please-remember-that-variables-must-be-created-before-they-are-used-please-remember-that-variables-must-be-created-before-they-are-used">Please remember that variables <em>must be created</em> before they are used<img alt="¶" src="#Please-remember-that-variables-must-be-created-before-they-are-used!" /> {#Please-remember-that-variables-must-be-created-before-they-are-used!}</h3>
+<p>Otherwise Python reports an error</p>
+<p>In [8]:</p>
+<pre><code>cat_name = "Salem"
+print(cat_name)
+
+Salem
+</code></pre>
+<p>Be aware that it is the <strong>order of execution</strong> of cells that is
+important in a Jupyter notebook, <strong>not the order in which they appear</strong>.</p>
+<p>Python will remember all the code that was run previously, including any
+variables you have defined, irrespective of the order in the notebook.
+Therefore if you define variables lower down the notebook and then
+(re)run cells further up, those defined further down will still be
+present.</p>
+<h3 id="variables-can-be-reused-variables-can-be-reused">Variables can be reused<a href="#Variables-can-be-reused">¶</a> {#Variables-can-be-reused}</h3>
+<p>In [9]:</p>
+<pre><code>age = age + 1 
+print('Next year I will be', age)
+
+Next year I will be 22
+</code></pre>
+<p>Also, you can index to get a single character from a string.</p>
+<ul>
+<li>
+<p>'AB' != 'BA' -> ordering matters, because we can treat the string
+    as a list of characters.</p>
+</li>
+<li>
+<p>Python uses zero-based indexing.</p>
+</li>
+<li>
+<p>Use square brackets to get a character in a specific position.</p>
+</li>
+</ul>
+<!-- -->
+
+<pre><code>atom_name = 'helium'
+print(atom_name[0])
+</code></pre>
+<p>In [11]:</p>
+<pre><code>atom_name = 'helium'
+print(atom_name)
+print(atom_name[0])
+
+helium
+h
+</code></pre>
+<h3 id="slicing-to-get-a-substring-slicing-to-get-a-substring">Slicing to get a substring<img alt="¶" src="#Slicing-to-get-a-substring!" /> {#Slicing-to-get-a-substring!}</h3>
+<ul>
+<li>
+<p><strong>Quick concepts</strong></p>
+<ul>
+<li>Substring:A part of a string. (1 to n number of characters)</li>
+<li>Element: An item on a list. In a string, the elements are the
+    characters.</li>
+<li>Slice: part of a string (or any list-like thing)</li>
+</ul>
+</li>
+</ul>
+<p>How to slice strings:</p>
+<ul>
+<li>
+<p><strong>[start:stop]</strong>, where <strong>start</strong> is replaced with the index of the
+    <strong>first element</strong> we want and <strong>stop</strong> is replaced with the index of
+    the <strong>element just after the last element we want</strong>.</p>
+</li>
+<li>
+<p>Taking a slice does not change the contents of the original string.
+    Instead, the slice is a copy of part of the original string.</p>
+</li>
+</ul>
+<p>In [13]:</p>
+<pre><code>atom_name = 'sodium'
+print(atom_name[0:3])
+
+# Use len to find the lenght of a string
+print(len('helium'))
+
+sod
+6
+</code></pre>
+<h3 id="final-considerations-final-considerations">Final considerations:<a href="#Final-considerations:">¶</a> {#Final-considerations:}</h3>
+<ul>
+<li>
+<p>Python is case-sensitive upper- and lower-case letters are
+    different. Name != name are different variables.</p>
+</li>
+<li>
+<p>Use meaningful variable names</p>
+</li>
+</ul>
+<!-- -->
+
+<pre><code>flabadab = 42
+ewr_422_yY = 'Ahmed'
+print(ewr_422_yY, 'is', flabadab, 'years old')
+</code></pre>
+<p>In [15]:</p>
+<pre><code>hola = 1
+
+HOLA= 2
+print(hola, HOLA)
+
+1 2
+</code></pre>
+<h2 id="excercises-excercises">Excercises<a href="#Excercises">¶</a> {#Excercises}</h2>
+<ul>
+<li>What is the final value of position in the program below? (Try to
+    predict the value without running the program, then check your
+    prediction.)</li>
+</ul>
+<!-- -->
+
+<pre><code>initial = 'left'
+position = initial
+initial = 'right'
+</code></pre>
+<p>In [18]:</p>
+<pre><code>initial = 'left'
+position = initial
+initial = 'right'
+print(initial, position)
+
+right left
+</code></pre>
+<ul>
+<li>If you assign <strong><code>a = 123</code></strong>, what happens if you try to get the
+    second digit of a via <strong><code>a[1]</code></strong>?</li>
+</ul>
+<p>In [19]:</p>
+<pre><code>a = 123
+a[1]
+
+----------------------------------------------------------------------
+TypeError                            Traceback (most recent call last)
+&lt;ipython-input-19-d77b277d0f9d&gt; in &lt;module&gt;()
+      1 a = 123
+----&gt; 2 a[1]
+
+TypeError: 'int' object is not subscriptable
+</code></pre>
+<ul>
+<li>What does the following program print?</li>
+</ul>
+<!-- -->
+
+<pre><code>atom_name = 'carbon'
+print('atom_name[1:3] is:', atom_name[1:3])
+</code></pre>
+<p>In [20]:</p>
+<pre><code>atom_name = 'carbon'
+print('atom_name[1:3] is:', atom_name[1:3])
+
+atom_name[1:3] is: ar
+</code></pre>
+<p>1.What does thing[low:high] do?</p>
+<p>2.What does thing[low:] (without a value after the colon) do?</p>
+<p>3.What does thing[:high] (without a value before the colon) do?</p>
+<p>4.What does thing[:] (just a colon) do?</p>
+<p>5.What does thing[number:some-negative-number] do?</p>
+<p>6.What happens when you choose a high value which is out of range?
+(i.e., try atom_name[0:15])</p>
+<h1 id="key-points-variable-and-assignment-key-points-variable-and-assignment">KEY POINTS - Variable and Assignment<a href="#KEY-POINTS---Variable-and-Assignment">¶</a> {#KEY-POINTS---Variable-and-Assignment}</h1>
+<p>Use variables to store values.</p>
+<p>Use print to display values.</p>
+<p>Variables persist between cells.</p>
+<p>Variables must be created before they are used.</p>
+<p>Variables can be used in calculations.</p>
+<p>Use an index to get a single character from a string.</p>
+<p>Use a slice to get a substring.</p>
+<p>Use the built-in function len to find the length of a string.</p>
+<p>Python is case-sensitive.</p>
+<p>Use meaningful variable names.</p>
+<h1 id="data-types-and-type-conversion-data-types-and-type-conversion">Data Types and Type Conversion<a href="#Data-Types-and-Type-Conversion">¶</a> {#Data-Types-and-Type-Conversion}</h1>
+<p>(10 min)</p>
+<p>Exercises (10min)</p>
+<h3 id="every-value-has-a-type-every-value-has-a-type">Every value has a type.<a href="#Every-value-has-a-type.">¶</a> {#Every-value-has-a-type.}</h3>
+<p>Existing types are:</p>
+<ul>
+<li>Integer <code>(int)</code>: positive or negative whole numbers</li>
+<li>Floating point numbers <code>(float)</code>: real numbers</li>
+<li>Character string <code>(str)</code>: text<ul>
+<li>Written in either single or double quotes (but they have to
+    match)</li>
+</ul>
+</li>
+</ul>
+<p>Use the built-in function <code>type</code> to find out what type a value or
+variable has</p>
+<pre><code>print(type(variable))
+</code></pre>
+<p>In [22]:</p>
+<pre><code>print(type(52))
+
+fitness = 'average'
+print(type(fitness))
+
+&lt;class 'float'&gt;
+&lt;class 'str'&gt;
+</code></pre>
+<h3 id="operations-or-methods-for-a-given-type-operations-or-methods-for-a-given-type">Operations or methods for a given type<a href="#Operations-or-methods-for-a-given-type">¶</a> {#Operations-or-methods-for-a-given-type}</h3>
+<p>Types control what operations (or methodds) can be performed on a given
+value</p>
+<ul>
+<li>A value’s type determines what the program can do to it.</li>
+</ul>
+<p>In [23]:</p>
+<pre><code>#This works
+print(5 - 3)
+
+2
+</code></pre>
+<p>In [24]:</p>
+<pre><code>#This works?
+print('hello' - 'h')
+
+----------------------------------------------------------------------
+TypeError                            Traceback (most recent call last)
+&lt;ipython-input-24-c60e4b1b64d0&gt; in &lt;module&gt;()
+      1 #This works?
+----&gt; 2 print('hello' - 'h')
+
+TypeError: unsupported operand type(s) for -: 'str' and 'str'
+</code></pre>
+<ul>
+<li>
+<p>Operators that can be used on strings</p>
+<ul>
+<li>+</li>
+<li>*</li>
+</ul>
+<p>"Adding" characters strings concatenates them.</p>
+</li>
+</ul>
+<p>In [26]:</p>
+<pre><code> full_name = 'Ahmed'+ 'Walsh'
+print(full_name)
+
+AhmedWalsh
+</code></pre>
+<p>Multiplying a character string by an integer N creates a new string that
+consists of that character string repeated N times.</p>
+<p>In [27]:</p>
+<pre><code>separator = '=' * 10
+print(separator)
+
+==========
+</code></pre>
+<ul>
+<li><strong>Try function len on strings and numbers</strong></li>
+</ul>
+<p>In [28]:</p>
+<pre><code>#Text
+print(len(full_name))
+
+10
+</code></pre>
+<p>In [29]:</p>
+<pre><code>#Number
+print(len(256))
+
+----------------------------------------------------------------------
+TypeError                            Traceback (most recent call last)
+&lt;ipython-input-29-00ccdb9afd37&gt; in &lt;module&gt;()
+      1 #Number
+----&gt; 2 print(len(256))
+
+TypeError: object of type 'int' has no len()
+</code></pre>
+<h2 id="excercises-excercises_1">Excercises<a href="#Excercises">¶</a> {#Excercises}</h2>
+<ol>
+<li>
+<p>What type of value is 3.4? How can you find out?</p>
+</li>
+<li>
+<p>What type of value is 3.25 + 4?</p>
+</li>
+<li>
+<p>What type of value (integer, floating point number, or character
+    string) would you use to represent each of the following? Try to
+    come up with more than one good answer for each problem. For
+    example, in # 1, when would counting days with a floating point
+    variable make more sense than using an integer?</p>
+</li>
+</ol>
+<p>Number of days since the start of the year.</p>
+<p>Time elapsed from the start of the year until now in days.</p>
+<p>Serial number of a piece of lab equipment.</p>
+<p>A lab specimen’s age Current population of a city.</p>
+<p>Average population of a city over time.</p>
+<ol>
+<li>Which of the following will return the floating point number <code>2.0</code>?
+    Note: there may be more than one right answer.</li>
+</ol>
+<!-- -->
+
+<pre><code>first = 1.0
+second = "1"
+third = "1.1"
+</code></pre>
+<p>1.first + float(second)</p>
+<p>2.float(second) + float(third)</p>
+<p>3.first + int(third)</p>
+<p>4.first + int(float(third))</p>
+<p>5.int(first) + int(float(third))</p>
+<ol>
+<li>2.0 * second</li>
+</ol>
+<h1 id="key-points-data-types-and-type-conversion-key-points-data-types-and-type-conversion">Key Points - Data Types and Type Conversion<a href="#Key-Points---Data-Types-and-Type-Conversion">¶</a> {#Key-Points---Data-Types-and-Type-Conversion}</h1>
+<ul>
+<li>
+<p>Every value has a type.</p>
+</li>
+<li>
+<p>Use the built-in function type to find the type of a value.</p>
+</li>
+<li>
+<p>Types control what operations can be done on values.</p>
+</li>
+<li>
+<p>Strings can be added and multiplied.</p>
+</li>
+<li>
+<p>Strings have a length (but numbers don’t).</p>
+</li>
+<li>
+<p>Must convert numbers to strings or vice versa when operating on
+    them.</p>
+</li>
+<li>
+<p>Can mix integers and floats freely in operations.</p>
+</li>
+<li>
+<p>Variables only change value when something is assigned to them.</p>
+</li>
+</ul>
+<h1 id="stretching-time-stretching-time">STRETCHING TIME<img alt="¶" src="#STRETCHING-TIME!" /> {#STRETCHING-TIME!}</h1>
+<h1 id="numpy-numpy">Numpy<a href="#Numpy">¶</a> {#Numpy}</h1>
+<p><a href="https://numpy.org/">NumPy</a> is the fundamental package for scientific
+computing with Python. It contains among other things:</p>
+<ul>
+<li>
+<p>a powerful N-dimensional array object</p>
+</li>
+<li>
+<p>sophisticated (broadcasting) functions</p>
+</li>
+<li>
+<p>tools for integrating C/C++ and Fortran code</p>
+</li>
+<li>
+<p>useful linear algebra, Fourier transform, and random number
+    capabilities</p>
+</li>
+</ul>
+<p>Besides its obvious scientific uses, NumPy can also be used as an
+efficient multi-dimensional container of generic data. Arbitrary
+data-types can be defined. This allows NumPy to seamlessly and speedily
+integrate with a wide variety of databases.</p>
+<p>We can create random numers easily</p>
+<p>In [34]:</p>
+<pre><code>import numpy as np
+</code></pre>
+<p>In [30]:</p>
+<pre><code>from numpy import random
+
+r = random.randint(1, 35)
+print(r)
+
+26
+</code></pre>
+<p>A very useful data structure, very similar to lists with a few
+exceptions such as:</p>
+<ul>
+<li>The number of elements in the array cannot be changed. (This means
+    we cant .append() or remove)</li>
+<li>All element in the arrays must be the type of variables</li>
+<li>Once the array is created we can't change the data type.</li>
+</ul>
+<p>Advantages over lists:</p>
+<ul>
+<li>Arrays can be n-dimensional (vector, matrix, tensor)</li>
+<li>Supports arithmetic algebraic</li>
+<li>Arrays work faster than lists</li>
+</ul>
+<p>In [32]:</p>
+<pre><code>mylist = [1,2,3,4 ]
+mylist
+</code></pre>
+<p>Out[32]:</p>
+<pre><code>[1, 2, 3, 4]
+</code></pre>
+<p>In [35]:</p>
+<pre><code> np.array(mylist)
+</code></pre>
+<p>Out[35]:</p>
+<pre><code>array([1, 2, 3, 4])
+</code></pre>
+<p>In [36]:</p>
+<pre><code>mymatrix = [[1,2,3], [4,5,6], [7,8,9]]
+mymatrix
+</code></pre>
+<p>Out[36]:</p>
+<pre><code>[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+</code></pre>
+<p>In [37]:</p>
+<pre><code>m = np.array(mymatrix)
+m
+</code></pre>
+<p>Out[37]:</p>
+<pre><code>array([[1, 2, 3],
+       [4, 5, 6],
+       [7, 8, 9]])
+</code></pre>
+<p>In [38]:</p>
+<pre><code> type(m)
+</code></pre>
+<p>Out[38]:</p>
+<pre><code>numpy.ndarray
+</code></pre>
+<p>There are many ways to create an array, let's try some:</p>
+<p>Let's asume <code>a</code> is any numpy array.</p>
+<p>Function        Description</p>
+<hr />
+<p><code>a.shape</code>       Returns a tuple with the numer of elements per dimension
+  <code>a.ndim</code>        Number of dimension
+  <code>a.size</code>        Number of elements in an array
+  <code>a.dtype</code>       Data type of the elements in the array
+  <code>a.T</code>           Transposes the array
+  <code>a.flat</code>        Collapses the array in 1 dimension
+  <code>a.copy()</code>      Returns a copy of the array
+  <code>a.fill()</code>      Fills the array with a determined value
+  <code>a.reshape()</code>   Returns an array with the same data but in the shape we indicate
+  <code>a.resize()</code>    Changes the shape of the array, but this does not creates a copy of the original array
+  <code>a.sort()</code>      Reorders the array</p>
+<p>In [43]:</p>
+<pre><code># Try some!
+print(m.dtype)
+print(m)
+
+int64
+[[1 2 3]
+ [4 5 6]
+ [7 8 9]]
+</code></pre>
+<h2 id="slicing-but-in-arrays-slicing-but-in-arrays">Slicing, but in arrays<a href="#Slicing,-but-in-arrays">¶</a> {#Slicing,-but-in-arrays}</h2>
+<p>It's more flexible. Slicings follows this structure:</p>
+<p><code>beginning:end:step</code></p>
+<p>In [52]:</p>
+<pre><code>a = np.linspace(0, 10, 11)
+#blank spaces mean "everthing"
+
+# all 
+print(a[1:11])
+
+[ 1.  2.  3.  4.  5.  6.  7.  8.  9. 10.]
+</code></pre>
+<p>In [0]:</p>
+<pre><code> #  3 to 8
+print(a[3:8])
+
+#  1 to 9 with steps of size 2 (odd)
+print(a[1:11:2])
+
+[3. 4. 5. 6. 7.]
+[1. 3. 5. 7. 9.]
+</code></pre>
+<p>In [54]:</p>
+<pre><code># conditionals 
+print(a[a &gt; 4])
+
+[ 5.  6.  7.  8.  9. 10.]
+</code></pre>
+<h2 id="exercises-exercises">Exercises<a href="#Exercises">¶</a> {#Exercises}</h2>
+<p>Try it yourself</p>
+<ol>
+<li>Create a non squared matrix, and print the dimensions (.shape)</li>
+<li>Use .reshape to change the shape of the array</li>
+<li>Try . size is equal to np.prod(a.shape)</li>
+</ol>
+<h1 id="built-in-functions-and-help-built-in-functions-and-help">Built-in Functions and Help<a href="#Built-in-Functions-and-Help">¶</a> {#Built-in-Functions-and-Help}</h1>
+<p>(10 min)</p>
+<p>Exercises (10 min)</p>
+<p>Arguments in a function</p>
+<ul>
+<li>
+<p>A function may take zero or more arguments</p>
+</li>
+<li>
+<p>An <strong>argument</strong> is a value passed into a function</p>
+</li>
+</ul>
+<p>For example some of the functions we used so far have arguments</p>
+<ul>
+<li><strong><code>len</code></strong> takes exactly one argument</li>
+</ul>
+<!-- -->
+
+<pre><code>len(_x_)
+</code></pre>
+<ul>
+<li>
+<p><strong>int, str and float</strong> create a new value from an existing one</p>
+</li>
+<li>
+<p><strong>print</strong> takes zero or more arguments</p>
+<ul>
+<li>With no arguments prints a blank line</li>
+<li>Must use the parethesis to use the function</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+
+<pre><code>print('before')
+print()
+print('after')
+</code></pre>
+<h3 id="commonly-used-built-in-functions-include-max-min-and-round-commonly-used-built-in-functions-include-max-min-and-round">Commonly-used built-in functions include <code>max</code>, <code>min</code> and <code>round</code><a href="#Commonly-used-built-in-functions-include-max,-min-and-round">¶</a> {#Commonly-used-built-in-functions-include-max,-min-and-round}</h3>
+<ul>
+<li><code>max()</code></li>
+<li><code>min()</code></li>
+<li><code>round()</code></li>
+</ul>
+<p>You can also combine some functions</p>
+<pre><code>print(max(1, 2, 3))
+print(min('a', 'A', '0'))
+</code></pre>
+<p>But these functions may only work for certain (combination of)
+arguments.</p>
+<p>For example:</p>
+<ul>
+<li>
+<p>max and min must be given at least one argument.</p>
+<ul>
+<li>“Largest of the empty set” is a meaningless question.</li>
+<li>And they must be given things that can meaningfully be compared.</li>
+</ul>
+</li>
+</ul>
+<p>In [59]:</p>
+<pre><code>print(max(1,4,6,9,100000))
+print(min('a', 'A', 0))
+
+100000
+
+----------------------------------------------------------------------
+TypeError                            Traceback (most recent call last)
+&lt;ipython-input-59-4a37fdd5cb05&gt; in &lt;module&gt;()
+      1 print(max(1,4,6,9,100000))
+----&gt; 2 print(min('a', 'A', 0))
+
+TypeError: '&lt;' not supported between instances of 'int' and 'str'
+</code></pre>
+<h3 id="functions-may-have-default-values-for-some-arguments-functions-may-have-default-values-for-some-arguments">Functions may have default values for some arguments<a href="#Functions-may-have-default-values-for-some-arguments">¶</a> {#Functions-may-have-default-values-for-some-arguments}</h3>
+<ul>
+<li><code>round</code> will round off a floating-point number.</li>
+<li>By default, rounds to zero decimal places.</li>
+</ul>
+<p>In [61]:</p>
+<pre><code>round(3.712)
+
+# We can specify the number of decimal places we want. Let's try:
+
+round(3.712, 2 )
+</code></pre>
+<p>Out[61]:</p>
+<pre><code>3.71
+</code></pre>
+<h3 id="you-can-use-the-built-in-function-help-to-get-help-for-a-function-you-can-use-the-built-in-function-help-to-get-help-for-a-function">You can use the built-in function <code>help</code> to get help for a function.<a href="#You-can-use-the-built-in-function-help-to-get-help-for-a-function.">¶</a> {#You-can-use-the-built-in-function-help-to-get-help-for-a-function.}</h3>
+<ul>
+<li>Every built-in has online documentation.</li>
+</ul>
+<p>In [62]:</p>
+<pre><code>help(round)
+
+Help on built-in function round in module builtins:
+
+round(...)
+    round(number[, ndigits]) -&gt; number
+
+    Round a number to a given precision in decimal digits (default 0 digits).
+    This returns an int when called with one argument, otherwise the
+    same type as the number. ndigits may be negative.
+</code></pre>
+<p>In [63]:</p>
+<pre><code>help(max)
+
+Help on built-in function max in module builtins:
+
+max(...)
+    max(iterable, *[, default=obj, key=func]) -&gt; value
+    max(arg1, arg2, *args, *[, key=func]) -&gt; value
+
+    With a single iterable argument, return its biggest item. The
+    default keyword-only argument specifies an object to return if
+    the provided iterable is empty.
+    With two or more arguments, return the largest argument.
+</code></pre>
+<h3 id="python-reports-a-syntax-error-when-it-cant-understand-the-source-of-a-program-python-reports-a-syntax-error-when-it-cant-understand-the-source-of-a-program">Python reports a syntax error when it can’t understand the source of a program.<a href="#Python-reports-a-syntax-error-when-it-can’t-understand-the-source-of-a-program.">¶</a> {#Python-reports-a-syntax-error-when-it-can’t-understand-the-source-of-a-program.}</h3>
+<pre><code># Forgot to close the quote marks around the string.
+name = 'Feng
+</code></pre>
+<p>Try it!</p>
+<p>In [66]:</p>
+<pre><code>name = 'Feng'
+print(name)
+
+Feng
+</code></pre>
+<ul>
+<li>The message indicates a problem on first line of the input (“line
+    1”).<ul>
+<li>In this case the “ipython-input” section of the file name tells
+    us that we are working with input into IPython, the Python
+    interpreter used by the Jupyter Notebook.</li>
+</ul>
+</li>
+<li>The -6- part of the filename indicates that the error occurred in
+    cell 6 of our Notebook.</li>
+<li>Next is the problematic line of code, indicating the problem with a
+    \^ pointer.</li>
+</ul>
+<h3 id="python-reports-a-runtime-error-when-something-goes-wrong-while-a-program-is-executing-python-reports-a-runtime-error-when-something-goes-wrong-while-a-program-is-executing">Python reports a runtime error when something goes wrong while a program is executing.<a href="#Python-reports-a-runtime-error-when-something-goes-wrong-while-a-program-is-executing.">¶</a> {#Python-reports-a-runtime-error-when-something-goes-wrong-while-a-program-is-executing.}</h3>
+<p>In [68]:</p>
+<pre><code>age = 53
+remaining = 100 - age # mis-spelled 'age'
+print(remaining)
+
+47
+</code></pre>
+<ul>
+<li>Fix syntax errors by reading the source and runtime errors by
+    tracing execution.</li>
+</ul>
+<h3 id="getting-help-in-jupyter-getting-help-in-jupyter">Getting help in Jupyter<a href="#Getting-help-in-Jupyter">¶</a> {#Getting-help-in-Jupyter}</h3>
+<p>There are 2 ways to get help in a Jupyter Notebook</p>
+<ol>
+<li>
+<p>Place the cursor anywhere in the function invocation (i.e., the
+    function name or its parameters), hold down <strong><em><code>shift</code></em></strong>, and press
+    <strong><em><code>tab</code></em></strong>.</p>
+</li>
+<li>
+<p>Or type a function name with a question mark after it.</p>
+</li>
+</ol>
+<p>Every function returns something</p>
+<ul>
+<li>Every function call produces some result.</li>
+<li>If the function doesn’t have a useful result to return, it usually
+    returns the special value <code>None</code>.</li>
+</ul>
+<p>In [69]:</p>
+<pre><code>max?
+</code></pre>
+<p>In [70]:</p>
+<pre><code>result = print('example')
+print('result of print is', result)
+
+example
+result of print is None
+</code></pre>
+<h2 id="excercises-excercises_2">Excercises<a href="#Excercises">¶</a> {#Excercises}</h2>
+<h3 id="what-happens-when-what-happens-when">What happens when...<a href="#What-happens-when...">¶</a> {#What-happens-when...}</h3>
+<ol>
+<li>Explain in simple terms the order of operations in the following
+    program: when does the addition happen, when does the subtraction
+    happen, when is each function called, etc.</li>
+<li>What is the final value of radiance?</li>
+</ol>
+<p>In [71]:</p>
+<pre><code>radiance = 1.0
+radiance = max(2.1, 2.0 + min(radiance, 1.1 * radiance - 0.5))
+# The value is ... 2.6
+print(radiance)
+
+2.6
+</code></pre>
+<h3 id="spot-the-difference-spot-the-difference">Spot the Difference<img alt="¶" src="#Spot-the-Difference!" /> {#Spot-the-Difference!}</h3>
+<ol>
+<li>Predict what each of the print statements in the program below will
+    print.</li>
+<li>Does max(len(rich), poor) run or produce an error message? If it
+    runs, does its result make any sense?</li>
+</ol>
+<!-- -->
+
+<pre><code>easy_string = "abc"
+print(max(easy_string))
+rich = "gold"
+poor = "tin"
+print(max(rich, poor))
+print(max(len(rich), len(poor)))
+</code></pre>
+<h3 id="why-not-why-not">Why not?<a href="#Why-not?">¶</a> {#Why-not?}</h3>
+<p>Why don’t max and min return None when they are given no arguments?</p>
+<h2 id="key-points-key-points">KEY POINTS<a href="#KEY-POINTS">¶</a> {#KEY-POINTS}</h2>
+<ul>
+<li>
+<p>Use comments to add documentation to programs.</p>
+</li>
+<li>
+<p>A function may take zero or more arguments.</p>
+</li>
+<li>
+<p>Commonly-used built-in functions include max, min, and round.</p>
+</li>
+<li>
+<p>Functions may only work for certain (combinations of) arguments.</p>
+</li>
+<li>
+<p>Functions may have default values for some arguments.</p>
+</li>
+<li>
+<p>Use the built-in function help to get help for a function.</p>
+</li>
+<li>
+<p>The Jupyter Notebook has two ways to get help.</p>
+</li>
+<li>
+<p>Every function returns something.</p>
+</li>
+<li>
+<p>Python reports a syntax error when it can’t understand the source of
+    a program.</p>
+</li>
+<li>
+<p>Python reports a runtime error when something goes wrong while a
+    program is executing.</p>
+</li>
+<li>
+<p>Fix syntax errors by reading the source code, and runtime errors by
+    tracing the program’s execution.</p>
+</li>
+</ul>
+<h1 id="libraries-libraries">Libraries<a href="#Libraries">¶</a> {#Libraries}</h1>
+<p>10 min</p>
+<p>Most of the power of a programming language is in its libraries.</p>
+<ul>
+<li>
+<p>Library = collection of files (modules) that functions for use by
+    other programs.</p>
+</li>
+<li>
+<p>The Python standard library is an extensive suite of modules that
+    comes with Python itself.</p>
+</li>
+</ul>
+<p>Other libraries available in PyPI (the Python Package Index).</p>
+<p>A program must import a library module before using it.</p>
+<ul>
+<li>Use import to load a library module into a program’s memory.</li>
+<li>Then refer to things from the module as module_name.thing_name.
+    Python uses . to mean “part of”.</li>
+</ul>
+<p>In [72]:</p>
+<pre><code>import math
+
+print('pi is', math.pi)
+print('cos(pi) is', math.cos(math.pi))
+
+pi is 3.141592653589793
+cos(pi) is -1.0
+</code></pre>
+<p>We can also use help() to learn about the content of a library module,
+just like we do with functions!</p>
+<p>In [73]:</p>
+<pre><code>help(math)
+
+Help on module math:
+
+NAME
+    math
+
+MODULE REFERENCE
+    https://docs.python.org/3.6/library/math
+
+    The following documentation is automatically generated from the Python
+    source files.  It may be incomplete, incorrect or include features that
+    are considered implementation detail and may vary between Python
+    implementations.  When in doubt, consult the module reference at the
+    location listed above.
+
+DESCRIPTION
+    This module is always available.  It provides access to the
+    mathematical functions defined by the C standard.
+
+FUNCTIONS
+    acos(...)
+        acos(x)
+
+        Return the arc cosine (measured in radians) of x.
+
+    acosh(...)
+        acosh(x)
+
+        Return the inverse hyperbolic cosine of x.
+
+    asin(...)
+        asin(x)
+
+        Return the arc sine (measured in radians) of x.
+
+    asinh(...)
+        asinh(x)
+
+        Return the inverse hyperbolic sine of x.
+
+    atan(...)
+        atan(x)
+
+        Return the arc tangent (measured in radians) of x.
+
+    atan2(...)
+        atan2(y, x)
+
+        Return the arc tangent (measured in radians) of y/x.
+        Unlike atan(y/x), the signs of both x and y are considered.
+
+    atanh(...)
+        atanh(x)
+
+        Return the inverse hyperbolic tangent of x.
+
+    ceil(...)
+        ceil(x)
+
+        Return the ceiling of x as an Integral.
+        This is the smallest integer &gt;= x.
+
+    copysign(...)
+        copysign(x, y)
+
+        Return a float with the magnitude (absolute value) of x but the sign 
+        of y. On platforms that support signed zeros, copysign(1.0, -0.0) 
+        returns -1.0.
+
+    cos(...)
+        cos(x)
+
+        Return the cosine of x (measured in radians).
+
+    cosh(...)
+        cosh(x)
+
+        Return the hyperbolic cosine of x.
+
+    degrees(...)
+        degrees(x)
+
+        Convert angle x from radians to degrees.
+
+    erf(...)
+        erf(x)
+
+        Error function at x.
+
+    erfc(...)
+        erfc(x)
+
+        Complementary error function at x.
+
+    exp(...)
+        exp(x)
+
+        Return e raised to the power of x.
+
+    expm1(...)
+        expm1(x)
+
+        Return exp(x)-1.
+        This function avoids the loss of precision involved in the direct evaluation of exp(x)-1 for small x.
+
+    fabs(...)
+        fabs(x)
+
+        Return the absolute value of the float x.
+
+    factorial(...)
+        factorial(x) -&gt; Integral
+
+        Find x!. Raise a ValueError if x is negative or non-integral.
+
+    floor(...)
+        floor(x)
+
+        Return the floor of x as an Integral.
+        This is the largest integer &lt;= x.
+
+    fmod(...)
+        fmod(x, y)
+
+        Return fmod(x, y), according to platform C.  x % y may differ.
+
+    frexp(...)
+        frexp(x)
+
+        Return the mantissa and exponent of x, as pair (m, e).
+        m is a float and e is an int, such that x = m * 2.**e.
+        If x is 0, m and e are both 0.  Else 0.5 &lt;= abs(m) &lt; 1.0.
+
+    fsum(...)
+        fsum(iterable)
+
+        Return an accurate floating point sum of values in the iterable.
+        Assumes IEEE-754 floating point arithmetic.
+
+    gamma(...)
+        gamma(x)
+
+        Gamma function at x.
+
+    gcd(...)
+        gcd(x, y) -&gt; int
+        greatest common divisor of x and y
+
+    hypot(...)
+        hypot(x, y)
+
+        Return the Euclidean distance, sqrt(x*x + y*y).
+
+    isclose(...)
+        isclose(a, b, *, rel_tol=1e-09, abs_tol=0.0) -&gt; bool
+
+        Determine whether two floating point numbers are close in value.
+
+           rel_tol
+               maximum difference for being considered "close", relative to the
+               magnitude of the input values
+            abs_tol
+               maximum difference for being considered "close", regardless of the
+               magnitude of the input values
+
+        Return True if a is close in value to b, and False otherwise.
+
+        For the values to be considered close, the difference between them
+        must be smaller than at least one of the tolerances.
+
+        -inf, inf and NaN behave similarly to the IEEE 754 Standard.  That
+        is, NaN is not close to anything, even itself.  inf and -inf are
+        only close to themselves.
+
+    isfinite(...)
+        isfinite(x) -&gt; bool
+
+        Return True if x is neither an infinity nor a NaN, and False otherwise.
+
+    isinf(...)
+        isinf(x) -&gt; bool
+
+        Return True if x is a positive or negative infinity, and False otherwise.
+
+    isnan(...)
+        isnan(x) -&gt; bool
+
+        Return True if x is a NaN (not a number), and False otherwise.
+
+    ldexp(...)
+        ldexp(x, i)
+
+        Return x * (2**i).
+
+    lgamma(...)
+        lgamma(x)
+
+        Natural logarithm of absolute value of Gamma function at x.
+
+    log(...)
+        log(x[, base])
+
+        Return the logarithm of x to the given base.
+        If the base not specified, returns the natural logarithm (base e) of x.
+
+    log10(...)
+        log10(x)
+
+        Return the base 10 logarithm of x.
+
+    log1p(...)
+        log1p(x)
+
+        Return the natural logarithm of 1+x (base e).
+        The result is computed in a way which is accurate for x near zero.
+
+    log2(...)
+        log2(x)
+
+        Return the base 2 logarithm of x.
+
+    modf(...)
+        modf(x)
+
+        Return the fractional and integer parts of x.  Both results carry the sign
+        of x and are floats.
+
+    pow(...)
+        pow(x, y)
+
+        Return x**y (x to the power of y).
+
+    radians(...)
+        radians(x)
+
+        Convert angle x from degrees to radians.
+
+    sin(...)
+        sin(x)
+
+        Return the sine of x (measured in radians).
+
+    sinh(...)
+        sinh(x)
+
+        Return the hyperbolic sine of x.
+
+    sqrt(...)
+        sqrt(x)
+
+        Return the square root of x.
+
+    tan(...)
+        tan(x)
+
+        Return the tangent of x (measured in radians).
+
+    tanh(...)
+        tanh(x)
+
+        Return the hyperbolic tangent of x.
+
+    trunc(...)
+        trunc(x:Real) -&gt; Integral
+
+        Truncates x to the nearest Integral toward 0. Uses the __trunc__ magic method.
+
+DATA
+    e = 2.718281828459045
+    inf = inf
+    nan = nan
+    pi = 3.141592653589793
+    tau = 6.283185307179586
+
+FILE
+    /usr/local/lib/python3.6/lib-dynload/math.cpython-36m-x86_64-linux-gnu.so
+</code></pre>
+<p>Import specific items from a library module to shorten programs.</p>
+<ul>
+<li>Use from ... import ... to load only specific items from a library
+    module.</li>
+<li>Then refer to them directly without library name as prefix.</li>
+</ul>
+<p>In [74]:</p>
+<pre><code>from math import cos, pi
+
+print('cos(pi) is', cos(pi))
+
+cos(pi) is -1.0
+</code></pre>
+<p>Create an alias for a library module when importing it to shorten
+programs.</p>
+<ul>
+<li>Use import ... as ... to give a library a short alias while
+    importing it.</li>
+<li>Then refer to items in the library using that shortened name.</li>
+</ul>
+<h2 id="exercises-exercises_1">Exercises<a href="#Exercises">¶</a> {#Exercises}</h2>
+<h3 id="exploring-the-math-module-exploring-the-math-module">Exploring the Math Module<a href="#Exploring-the-Math-Module">¶</a> {#Exploring-the-Math-Module}</h3>
+<ul>
+<li>What function from the math module can you use to calculate a square
+    root without using sqrt?</li>
+<li>Since the library contains this function, why does sqrt exist?</li>
+</ul>
+<h3 id="locating-the-right-module-locating-the-right-module">Locating the Right Module<a href="#Locating-the-Right-Module">¶</a> {#Locating-the-Right-Module}</h3>
+<p>You want to select a random character from a string:</p>
+<pre><code>bases = 'ACTTGCTTGAC'
+</code></pre>
+<ol>
+<li>Which standard library module could help you?</li>
+<li>Which function would you select from that module? Are there
+    alternatives?</li>
+<li>Try to write a program that uses the function.</li>
+</ol>
+<p>In [78]:</p>
+<pre><code>from random import randrange
+bases = 'ACTTGCTTGAC'
+print(bases[randrange(len(bases))])
+
+A
+</code></pre>
+<h3 id="jigsaw-puzzle-parsons-problem-jigsaw-puzzle-parsons-problem">Jigsaw Puzzle (Parson’s Problem)<a href="#Jigsaw-Puzzle-(Parson’s-Problem)">¶</a> {#Jigsaw-Puzzle-(Parson’s-Problem)}</h3>
+<p>Rearrange the following statements so that a random DNA base is printed
+and its index in the string. Not all statements may be needed. Feel free
+to use/add intermediate variables.</p>
+<p>In [ ]:</p>
+<pre><code>bases="ACTTGCTTGAC"
+import math
+import random
+___ = random.randrange(n_bases)
+___ = len(bases)
+print("random base ", bases[___], "base index", ___)
+</code></pre>
+<h3 id="importing-with-aliases-importing-with-aliases">Importing with aliases<a href="#Importing-with-aliases">¶</a> {#Importing-with-aliases}</h3>
+<ol>
+<li>Fill in the blanks so that the program below prints 90.0.</li>
+<li>Rewrite the program so that it uses import without as.</li>
+<li>Which form do you find easier to read?</li>
+</ol>
+<p>In [80]:</p>
+<pre><code>import math as m
+angle = m.degrees(m.pi / 2)
+print(angle)
+
+90.0
+</code></pre>
+<h3 id="importing-specific-items-importing-specific-items">Importing Specific Items<a href="#Importing-Specific-Items">¶</a> {#Importing-Specific-Items}</h3>
+<ol>
+<li>Fill in the blanks so that the program below prints 90.0.</li>
+<li>Do you find this version easier to read than preceding ones?</li>
+<li>Why wouldn’t programmers always use this form of import?</li>
+</ol>
+<p>In [ ]:</p>
+<pre><code>____ math import ____, ____
+angle = degrees(pi / 2)
+print(angle)
+</code></pre>
+<h3 id="reading-error-messages-reading-error-messages">Reading Error Messages<a href="#Reading-Error-Messages">¶</a> {#Reading-Error-Messages}</h3>
+<ol>
+<li>Read the code below and try to identify what the errors are without
+    running it.</li>
+<li>Run the code, and read the error message. What type of error is it?</li>
+</ol>
+<p>In [79]:</p>
+<pre><code>from math import log
+log(0)
+
+----------------------------------------------------------------------
+ValueError                           Traceback (most recent call last)
+&lt;ipython-input-79-d72e1d780bab&gt; in &lt;module&gt;()
+      1 from math import log
+----&gt; 2 log(0)
+
+ValueError: math domain error
+</code></pre>
+<h2 id="keypoints-keypoints">Keypoints<a href="#Keypoints">¶</a> {#Keypoints}</h2>
+<ul>
+<li>Most of the power of a programming language is in its libraries.</li>
+<li>A program must import a library module in order to use it.</li>
+<li>Use help to learn about the contents of a library module.</li>
+<li>Import specific items from a library to shorten programs.</li>
+<li>Create an alias for a library when importing it to shorten programs.</li>
+</ul>
+<h1 id="data-frames-data-frames">Data Frames<a href="#Data-Frames">¶</a> {#Data-Frames}</h1>
+<h2 id="reading-tabular-data-into-dataframe-reading-tabular-data-into-dataframe">Reading tabular data into DataFrame<a href="#Reading-tabular-data-into-DataFrame">¶</a> {#Reading-tabular-data-into-DataFrame}</h2>
+<p>(15 min)</p>
+<p>Exercises (10 min)</p>
+<h3 id="pandas-pandas">Pandas<a href="#Pandas">¶</a> {#Pandas}</h3>
+<p>A widely know library for statistics, particularly on tabular data.</p>
+<ul>
+<li>Borrows many features from R´s dataframes.</li>
+</ul>
+<p>Dataframe: A 2-dimensional table whose columns have names and
+potentially have different data types.</p>
+<p>In [81]:</p>
+<pre><code>#Let's import pandas
+import pandas as pd
+
+data = pd.read_csv('/home/mcubero/dataSanJose19/data/gapminder_gdp_oceania.csv')
+print(data)
+
+       country  gdpPercap_1952  gdpPercap_1957  gdpPercap_1962  \
+0    Australia     10039.59564     10949.64959     12217.22686   
+1  New Zealand     10556.57566     12247.39532     13175.67800
+
+   gdpPercap_1967  gdpPercap_1972  gdpPercap_1977  gdpPercap_1982  \
+0     14526.12465     16788.62948     18334.19751     19477.00928   
+1     14463.91893     16046.03728     16233.71770     17632.41040
+
+   gdpPercap_1987  gdpPercap_1992  gdpPercap_1997  gdpPercap_2002  \
+0     21888.88903     23424.76683     26997.93657     30687.75473   
+1     19007.19129     18363.32494     21050.41377     23189.80135
+
+   gdpPercap_2007  
+0     34435.36744  
+1     25185.00911
+</code></pre>
+<h4 id="file-not-found-file-not-found">File not found<a href="#File-not-found">¶</a> {#File-not-found}</h4>
+<p>Our lessons store their data files in a data sub-directory, which is why
+the path to the file is data/gapminder_gdp_oceania.csv. If you forget
+to include data/, or if you include it but your copy of the file is
+somewhere else, you will get a runtime error that ends with a line like
+this:</p>
+<pre><code>ERROR
+OSError: File b'gapminder_gdp_oceania.csv' does not exist
+</code></pre>
+<h3 id="use-index95col-to-specify-that-a-columns-values-should-be-used-as-row-headings-use-index_col-to-specify-that-a-columns-values-should-be-used-as-row-headings">Use index_col to specify that a column’s values should be used as row headings.<a href="#Use-index_col-to-specify-that-a-column’s-values-should-be-used-as-row-headings.">¶</a> {#Use-index_col-to-specify-that-a-column’s-values-should-be-used-as-row-headings.}</h3>
+<ul>
+<li>Row headings are numbers (0 and 1 in this case).</li>
+<li>Really want to index by country.</li>
+<li>Pass the name of the column to read_csv as its index_col parameter
+    to do this.</li>
+</ul>
+<p>In [84]:</p>
+<pre><code>data = pd.read_csv('/home/mcubero/dataSanJose19/data/gapminder_gdp_oceania.csv', index_col='country')
+data
+</code></pre>
+<p>Out[84]:</p>
+<p>gdpPercap_1952</p>
+<p>gdpPercap_1957</p>
+<p>gdpPercap_1962</p>
+<p>gdpPercap_1967</p>
+<p>gdpPercap_1972</p>
+<p>gdpPercap_1977</p>
+<p>gdpPercap_1982</p>
+<p>gdpPercap_1987</p>
+<p>gdpPercap_1992</p>
+<p>gdpPercap_1997</p>
+<p>gdpPercap_2002</p>
+<p>gdpPercap_2007</p>
+<p>country</p>
+<p>Australia</p>
+<p>10039.59564</p>
+<p>10949.64959</p>
+<p>12217.22686</p>
+<p>14526.12465</p>
+<p>16788.62948</p>
+<p>18334.19751</p>
+<p>19477.00928</p>
+<p>21888.88903</p>
+<p>23424.76683</p>
+<p>26997.93657</p>
+<p>30687.75473</p>
+<p>34435.36744</p>
+<p>New Zealand</p>
+<p>10556.57566</p>
+<p>12247.39532</p>
+<p>13175.67800</p>
+<p>14463.91893</p>
+<p>16046.03728</p>
+<p>16233.71770</p>
+<p>17632.41040</p>
+<p>19007.19129</p>
+<p>18363.32494</p>
+<p>21050.41377</p>
+<p>23189.80135</p>
+<p>25185.00911</p>
+<p>Use DataFrame.info to explore a little the dataframe</p>
+<p>In [85]:</p>
+<pre><code>data.info()
+
+&lt;class 'pandas.core.frame.DataFrame'&gt;
+Index: 2 entries, Australia to New Zealand
+Data columns (total 12 columns):
+gdpPercap_1952    2 non-null float64
+gdpPercap_1957    2 non-null float64
+gdpPercap_1962    2 non-null float64
+gdpPercap_1967    2 non-null float64
+gdpPercap_1972    2 non-null float64
+gdpPercap_1977    2 non-null float64
+gdpPercap_1982    2 non-null float64
+gdpPercap_1987    2 non-null float64
+gdpPercap_1992    2 non-null float64
+gdpPercap_1997    2 non-null float64
+gdpPercap_2002    2 non-null float64
+gdpPercap_2007    2 non-null float64
+dtypes: float64(12)
+memory usage: 208.0+ bytes
+</code></pre>
+<p>What we know?</p>
+<ul>
+<li><strong><em>data</em></strong> is a DataFrame</li>
+<li>It has two rows named 'Australia' and 'New Zealand'</li>
+<li>There are Twelve columns, each of which has two actual 64-bit
+    floating point values.</li>
+<li>No null values, aka no missing observations.</li>
+<li>Uses 208.0 bytes of memory</li>
+</ul>
+<h3 id="the-dataframecolumns-variable-stores-information-about-the-dataframes-columns-the-dataframecolumns-variable-stores-information-about-the-dataframes-columns">The DataFrame.columns variable stores information about the dataframe's columns<a href="#The-DataFrame.columns-variable-stores-information-about-the-dataframe's-columns">¶</a> {#The-DataFrame.columns-variable-stores-information-about-the-dataframe's-columns}</h3>
+<ul>
+<li>Note that this is data, not a method.<ul>
+<li>Like math.pi.</li>
+<li>So do not use () to try to call it.</li>
+</ul>
+</li>
+<li>Called a member variable, or just member.</li>
+</ul>
+<p><em>data</em> is the dataframe, not a method, don't use () to try to call it.</p>
+<p>In [86]:</p>
+<pre><code>print(data.columns)
+
+Index(['gdpPercap_1952', 'gdpPercap_1957', 'gdpPercap_1962', 'gdpPercap_1967',
+       'gdpPercap_1972', 'gdpPercap_1977', 'gdpPercap_1982', 'gdpPercap_1987',
+       'gdpPercap_1992', 'gdpPercap_1997', 'gdpPercap_2002', 'gdpPercap_2007'],
+      dtype='object')
+</code></pre>
+<p>Use DataFrame.T to transpose a dataframe</p>
+<ul>
+<li>Sometimes want to treat columns as rows and vice versa.</li>
+<li>Transpose (written .T) doesn’t copy the data, just changes the
+    program’s view of it.</li>
+<li>Like columns, it is a member variable.</li>
+</ul>
+<p>In [87]:</p>
+<pre><code>print(data.T)
+data.T
+
+country           Australia  New Zealand
+gdpPercap_1952  10039.59564  10556.57566
+gdpPercap_1957  10949.64959  12247.39532
+gdpPercap_1962  12217.22686  13175.67800
+gdpPercap_1967  14526.12465  14463.91893
+gdpPercap_1972  16788.62948  16046.03728
+gdpPercap_1977  18334.19751  16233.71770
+gdpPercap_1982  19477.00928  17632.41040
+gdpPercap_1987  21888.88903  19007.19129
+gdpPercap_1992  23424.76683  18363.32494
+gdpPercap_1997  26997.93657  21050.41377
+gdpPercap_2002  30687.75473  23189.80135
+gdpPercap_2007  34435.36744  25185.00911
+</code></pre>
+<p>Out[87]:</p>
+<p>country</p>
+<p>Australia</p>
+<p>New Zealand</p>
+<p>gdpPercap_1952</p>
+<p>10039.59564</p>
+<p>10556.57566</p>
+<p>gdpPercap_1957</p>
+<p>10949.64959</p>
+<p>12247.39532</p>
+<p>gdpPercap_1962</p>
+<p>12217.22686</p>
+<p>13175.67800</p>
+<p>gdpPercap_1967</p>
+<p>14526.12465</p>
+<p>14463.91893</p>
+<p>gdpPercap_1972</p>
+<p>16788.62948</p>
+<p>16046.03728</p>
+<p>gdpPercap_1977</p>
+<p>18334.19751</p>
+<p>16233.71770</p>
+<p>gdpPercap_1982</p>
+<p>19477.00928</p>
+<p>17632.41040</p>
+<p>gdpPercap_1987</p>
+<p>21888.88903</p>
+<p>19007.19129</p>
+<p>gdpPercap_1992</p>
+<p>23424.76683</p>
+<p>18363.32494</p>
+<p>gdpPercap_1997</p>
+<p>26997.93657</p>
+<p>21050.41377</p>
+<p>gdpPercap_2002</p>
+<p>30687.75473</p>
+<p>23189.80135</p>
+<p>gdpPercap_2007</p>
+<p>34435.36744</p>
+<p>25185.00911</p>
+<h3 id="use-dataframedescribe-to-get-summary-statistics-about-data-use-dataframedescribe-to-get-summary-statistics-about-data">Use DataFrame.describe to get summary statistics about data<a href="#Use-DataFrame.describe-to-get-summary-statistics-about-data">¶</a> {#Use-DataFrame.describe-to-get-summary-statistics-about-data}</h3>
+<p>DataFrame.describe() gets the summary statistics of only the columns
+that have numerical data. All other columns are ignored, unless you use
+the argument include='all'</p>
+<p>In [89]:</p>
+<pre><code>data.describe()
+</code></pre>
+<p>Out[89]:</p>
+<p>gdpPercap_1952</p>
+<p>gdpPercap_1957</p>
+<p>gdpPercap_1962</p>
+<p>gdpPercap_1967</p>
+<p>gdpPercap_1972</p>
+<p>gdpPercap_1977</p>
+<p>gdpPercap_1982</p>
+<p>gdpPercap_1987</p>
+<p>gdpPercap_1992</p>
+<p>gdpPercap_1997</p>
+<p>gdpPercap_2002</p>
+<p>gdpPercap_2007</p>
+<p>count</p>
+<p>2.000000</p>
+<p>2.000000</p>
+<p>2.000000</p>
+<p>2.000000</p>
+<p>2.00000</p>
+<p>2.000000</p>
+<p>2.000000</p>
+<p>2.000000</p>
+<p>2.000000</p>
+<p>2.000000</p>
+<p>2.000000</p>
+<p>2.000000</p>
+<p>mean</p>
+<p>10298.085650</p>
+<p>11598.522455</p>
+<p>12696.452430</p>
+<p>14495.021790</p>
+<p>16417.33338</p>
+<p>17283.957605</p>
+<p>18554.709840</p>
+<p>20448.040160</p>
+<p>20894.045885</p>
+<p>24024.175170</p>
+<p>26938.778040</p>
+<p>29810.188275</p>
+<p>std</p>
+<p>365.560078</p>
+<p>917.644806</p>
+<p>677.727301</p>
+<p>43.986086</p>
+<p>525.09198</p>
+<p>1485.263517</p>
+<p>1304.328377</p>
+<p>2037.668013</p>
+<p>3578.979883</p>
+<p>4205.533703</p>
+<p>5301.853680</p>
+<p>6540.991104</p>
+<p>min</p>
+<p>10039.595640</p>
+<p>10949.649590</p>
+<p>12217.226860</p>
+<p>14463.918930</p>
+<p>16046.03728</p>
+<p>16233.717700</p>
+<p>17632.410400</p>
+<p>19007.191290</p>
+<p>18363.324940</p>
+<p>21050.413770</p>
+<p>23189.801350</p>
+<p>25185.009110</p>
+<p>25%</p>
+<p>10168.840645</p>
+<p>11274.086022</p>
+<p>12456.839645</p>
+<p>14479.470360</p>
+<p>16231.68533</p>
+<p>16758.837652</p>
+<p>18093.560120</p>
+<p>19727.615725</p>
+<p>19628.685413</p>
+<p>22537.294470</p>
+<p>25064.289695</p>
+<p>27497.598692</p>
+<p>50%</p>
+<p>10298.085650</p>
+<p>11598.522455</p>
+<p>12696.452430</p>
+<p>14495.021790</p>
+<p>16417.33338</p>
+<p>17283.957605</p>
+<p>18554.709840</p>
+<p>20448.040160</p>
+<p>20894.045885</p>
+<p>24024.175170</p>
+<p>26938.778040</p>
+<p>29810.188275</p>
+<p>75%</p>
+<p>10427.330655</p>
+<p>11922.958888</p>
+<p>12936.065215</p>
+<p>14510.573220</p>
+<p>16602.98143</p>
+<p>17809.077557</p>
+<p>19015.859560</p>
+<p>21168.464595</p>
+<p>22159.406358</p>
+<p>25511.055870</p>
+<p>28813.266385</p>
+<p>32122.777857</p>
+<p>max</p>
+<p>10556.575660</p>
+<p>12247.395320</p>
+<p>13175.678000</p>
+<p>14526.124650</p>
+<p>16788.62948</p>
+<p>18334.197510</p>
+<p>19477.009280</p>
+<p>21888.889030</p>
+<p>23424.766830</p>
+<p>26997.936570</p>
+<p>30687.754730</p>
+<p>34435.367440</p>
+<h3 id="not-particularly-useful-with-just-two-records-but-very-helpful-when-there-are-thousands-not-particularly-useful-with-just-two-records-but-very-helpful-when-there-are-thousands">Not particularly useful with just two records, but very helpful when there are thousands<a href="#Not-particularly-useful-with-just-two-records,-but-very-helpful-when-there-are-thousands">¶</a> {#Not-particularly-useful-with-just-two-records,-but-very-helpful-when-there-are-thousands}</h3>
+<h3 id="exercises-exercises_2">Exercises<a href="#Exercises">¶</a> {#Exercises}</h3>
+<p>Read the data in <code>gapminder_gdp_americas.csv</code> (should be in the same
+directory as <code>gapminder_gdp_oceania.csv</code>)</p>
+<h5 id="tip-tip">Tip<a href="#Tip">¶</a> {#Tip}</h5>
+<p>check the parameters to define the index.</p>
+<p>Inspect the data.</p>
+<p>Use the function help(americas.head) and help(americas.tail) the answer:</p>
+<ol>
+<li>What method callwill display the first three rows of this data?</li>
+<li>What method call will display the last three columns of this data?</li>
+</ol>
+<h4 id="reading-files-in-other-directories-reading-files-in-other-directories">Reading files in other directories<a href="#Reading-files-in-other-directories">¶</a> {#Reading-files-in-other-directories}</h4>
+<p>The data for your current project is stored in a file called
+microbes.csv, which is located in a folder called field_data. You are
+doing analysis in a notebook called analysis.ipynb in a sibling folder
+called thesis:</p>
+<pre><code>your_home_directory
++-- field_data/
+|   +-- microbes.csv
++-- thesis/
+    +-- analysis.ipynb
+</code></pre>
+<p>What value(s) should you pass to read_csv to read microbes.csv in
+analysis.ipynb?</p>
+<h3 id="writing-data-writing-data">Writing Data<a href="#Writing-Data">¶</a> {#Writing-Data}</h3>
+<p>As well as the read_csv function for reading data from a file, Pandas
+provides a to_csv function to write dataframes to files. Applying what
+you’ve learned about reading from files, write one of your dataframes to
+a file called processed.csv. You can use help to get information on how
+to use to_csv.</p>
+<p>In [96]:</p>
+<pre><code>data2 = data.copy()
+#pd.to_csv
+#data2.to_csv?
+data2.to_csv('/home/mcubero/dataSanJose19/data/processed.csv')
+</code></pre>
+<h3 id="key-points-key-points_1">Key Points<a href="#Key-Points">¶</a> {#Key-Points}</h3>
+<ul>
+<li>
+<p>Use the Pandas library to get basic statistics out of tabular data.</p>
+</li>
+<li>
+<p>Use index_col to specify that a column’s values should be used as
+    row headings.</p>
+</li>
+<li>
+<p>Use DataFrame.info to find out more about a dataframe.</p>
+</li>
+<li>
+<p>The DataFrame.columns variable stores information about the
+    dataframe’s columns.</p>
+</li>
+<li>
+<p>Use DataFrame.T to transpose a dataframe.</p>
+</li>
+<li>
+<p>Use DataFrame.describe to get summary statistics about data.</p>
+</li>
+</ul>
+<h2 id="stretching-time-stretching-time_1">STRETCHING TIME<img alt="¶" src="#STRETCHING-TIME!" /> {#STRETCHING-TIME!}</h2>
+<h1 id="recap-recap">Recap<a href="#Recap">¶</a> {#Recap}</h1>
+<h3 id="feedback-questions-feedback-questions">Feedback &amp; questions<a href="#Feedback-&amp;-questions">¶</a> {#Feedback-&amp;-questions}</h3>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/CODATA-RDA-DataScienceSchools/Materials/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>

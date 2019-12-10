@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Unit 4   Introduction to Python  Final practice - CODATA RDA Summer Schools Repo</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Unit 4   Introduction to Python  Final practice";
+    var mkdocs_page_input_path = "DataSanJose2019/slides/Unit 4 _ Introduction_to_Python_ Final_practice.md";
+    var mkdocs_page_url = "/Materials/DataSanJose2019/slides/Unit 4 _ Introduction_to_Python_ Final_practice/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> CODATA RDA Summer Schools Repo</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">Home</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">CODATA RDA Summer Schools Repo</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Unit 4   Introduction to Python  Final practice</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/CODATA-RDA-DataScienceSchools/Materials/edit/master/docs/DataSanJose2019/slides/Unit 4 _ Introduction_to_Python_ Final_practice.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>In [ ]:</p>
+<pre><code>#General practice
+#Wrap-up
+#Feedback
+</code></pre>
+<h3 id="practice-practice">Practice<a href="#Practice">¶</a> {#Practice}</h3>
+<p>With the data in the file "Salaries.csv" in the folder data do the
+following:</p>
+<ol>
+<li>Load the data</li>
+<li>Check the structure of the file</li>
+<li>
+<p>Check the type of variables in the file</p>
+<ul>
+<li>Remember the method .info()</li>
+</ul>
+</li>
+<li>
+<p>Select the numeric variables in a separate dataframe *Remember
+    using columns</p>
+</li>
+<li>Check if there are some missing values</li>
+<li>IF you have missing values, correct them</li>
+<li>Make a quick plot for one of the variables, be creative!</li>
+<li>Rescale the data using the method preprocessing.MinMaxScaler()</li>
+</ol>
+<p>In [7]:</p>
+<pre><code># Load the data
+import pandas as pd
+data = pd.read_csv('/home/mcubero/dataSanJose19/data/Salaries.csv')
+#Check the structure of the file
+data.head()
+</code></pre>
+<p>Out[7]:</p>
+<p>Unnamed: 0</p>
+<p>rank</p>
+<p>discipline</p>
+<p>yrs.since.phd</p>
+<p>yrs.service</p>
+<p>sex</p>
+<p>salary</p>
+<p>0</p>
+<p>1</p>
+<p>Prof</p>
+<p>B</p>
+<p>19</p>
+<p>18</p>
+<p>Male</p>
+<p>139750</p>
+<p>1</p>
+<p>2</p>
+<p>Prof</p>
+<p>B</p>
+<p>20</p>
+<p>16</p>
+<p>Male</p>
+<p>173200</p>
+<p>2</p>
+<p>3</p>
+<p>AsstProf</p>
+<p>B</p>
+<p>4</p>
+<p>3</p>
+<p>Male</p>
+<p>79750</p>
+<p>3</p>
+<p>4</p>
+<p>Prof</p>
+<p>B</p>
+<p>45</p>
+<p>39</p>
+<p>Male</p>
+<p>115000</p>
+<p>4</p>
+<p>5</p>
+<p>Prof</p>
+<p>B</p>
+<p>40</p>
+<p>41</p>
+<p>Male</p>
+<p>141500</p>
+<p>In [6]:</p>
+<pre><code># Check the type of variables in the file
+data.info()
+
+&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 397 entries, 0 to 396
+Data columns (total 7 columns):
+Unnamed: 0       397 non-null int64
+rank             397 non-null object
+discipline       397 non-null object
+yrs.since.phd    397 non-null int64
+yrs.service      397 non-null int64
+sex              397 non-null object
+salary           397 non-null int64
+dtypes: int64(4), object(3)
+memory usage: 21.8+ KB
+</code></pre>
+<p>In [11]:</p>
+<pre><code>#Select the numeric variables in a separate dataframe *Remember using columns
+num = data.iloc[:,[3,4,6]]
+num.head()
+</code></pre>
+<p>Out[11]:</p>
+<p>yrs.since.phd</p>
+<p>yrs.service</p>
+<p>salary</p>
+<p>0</p>
+<p>19</p>
+<p>18</p>
+<p>139750</p>
+<p>1</p>
+<p>20</p>
+<p>16</p>
+<p>173200</p>
+<p>2</p>
+<p>4</p>
+<p>3</p>
+<p>79750</p>
+<p>3</p>
+<p>45</p>
+<p>39</p>
+<p>115000</p>
+<p>4</p>
+<p>40</p>
+<p>41</p>
+<p>141500</p>
+<p>In [13]:</p>
+<pre><code># Check if there are some missing values
+num.isna().sum()
+</code></pre>
+<p>Out[13]:</p>
+<pre><code>yrs.since.phd    0
+yrs.service      0
+salary           0
+dtype: int64
+</code></pre>
+<p>In [14]:</p>
+<pre><code>#Rescale the data using the method preprocessing.MinMaxScaler()
+from sklearn import preprocessing
+#Save columns names
+names = num.columns
+#Create scaler 
+scaler = preprocessing.MinMaxScaler() #StandardScaler() #MaxAbsScaler
+
+#Transform your data frame (numeric variables )
+data1 = num
+data1 = scaler.fit_transform(data1) 
+data1 = pd.DataFrame(data1, columns=names) 
+print(data1.head())
+print(num.head())
+
+   yrs.since.phd  yrs.service    salary
+0       0.327273     0.300000  0.471668
+1       0.345455     0.266667  0.664192
+2       0.054545     0.050000  0.126335
+3       0.800000     0.650000  0.329218
+4       0.709091     0.683333  0.481740
+   yrs.since.phd  yrs.service  salary
+0             19           18  139750
+1             20           16  173200
+2              4            3   79750
+3             45           39  115000
+4             40           41  141500
+</code></pre>
+<h2 id="wrap-up-wrap-up">Wrap-up<a href="#Wrap-up">¶</a> {#Wrap-up}</h2>
+<p>20 min</p>
+<h3 id="python-supports-a-large-and-diverse-community-across-academia-and-industry-python-supports-a-large-and-diverse-community-across-academia-and-industry">Python supports a large and diverse community across academia and industry.<a href="#Python-supports-a-large-and-diverse-community-across-academia-and-industry.">¶</a> {#Python-supports-a-large-and-diverse-community-across-academia-and-industry.}</h3>
+<p><a href="https://numpy.org/">NumPy</a></p>
+<ul>
+<li>
+<p>The <a href="https://docs.python.org/3/">Python 3 documentation</a> covers the
+    core language and the standard library.</p>
+</li>
+<li>
+<p><a href="https://pycon.org/">PyCon</a> is the largest annual conference for the
+    Python community.</p>
+</li>
+<li>
+<p><a href="https://scipy.org/">SciPy</a> is a rich collection of scientific
+    utilities. It is also the name of a series of annual
+    <a href="https://conference.scipy.org/">conferences</a>.</p>
+</li>
+<li>
+<p><a href="https://jupyter.org/">Jupyter</a> is the home of Project Jupyter.</p>
+</li>
+<li>
+<p><a href="https://pandas.pydata.org/">Pandas</a> is the home of the Pandas data
+    library.</p>
+</li>
+<li>
+<p>Stack Overflow’s <a href="https://stackoverflow.com/questions/tagged/python?tab=Votes">general
+    Python</a>
+    section can be helpful, as well as the sections on
+    <a href="https://stackoverflow.com/questions/tagged/numpy?tab=Votes">NumPy</a>,
+    <a href="https://stackoverflow.com/questions/tagged/scipy?tab=Votes">SciPy</a>,
+    and
+    <a href="https://stackoverflow.com/questions/tagged/pandas?tab=Votes">Pandas.</a></p>
+</li>
+</ul>
+<h1 id="key-points-key-points">KEY POINTS<a href="#KEY-POINTS">¶</a> {#KEY-POINTS}</h1>
+<ul>
+<li>Python supports a large and diverse community across academia and
+    industry.</li>
+</ul>
+<h1 id="feedback-feedback">Feedback<a href="#Feedback">¶</a> {#Feedback}</h1>
+<h1 id="thank-you-thank-you">THANK YOU<img alt="¶" src="#THANK-YOU!" /> {#THANK-YOU!}</h1>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/CODATA-RDA-DataScienceSchools/Materials/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>
