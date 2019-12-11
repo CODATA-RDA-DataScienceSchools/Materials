@@ -3,7 +3,7 @@
 We will be using OSG Connect for this set of sessions. Please visit [http://www.osgconnect.net](http://www.osgconnect.net) for more information.
 
 ## Wednesday Afternoon - Security and Setup - Session 0
-   * Security Lecture - Link to slides.
+   * Security Lecture - [Intro to Security](https://zenodo.org/record/3360480/files/IntroductionToSecurity.pdf)
    * [Authentication with Keys](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/CI/00-Pre-Introduction-Login.md)
 
 ## Thursday Morning - Computational Infrastructures - Session 1
