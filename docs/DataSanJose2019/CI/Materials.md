@@ -17,7 +17,7 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    
 ## Thursday Morning - Computational Infrastructures - Session 2
 
-   * Lecture 2 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/DataTrieste2019/RDA-Lecture2-Trieste-2019.pdf)
+   * Lecture 2 - [Slides](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/CI/RDA-Lecture2-SanJose-2019.pdf)
    * [A scripting job](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/CI/05-ScriptingJob.md)
    * [An R Job](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/CI/06-RJob.md)
    * [Working with file I/O](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/CI/07-WorkingwithFiles.md)
