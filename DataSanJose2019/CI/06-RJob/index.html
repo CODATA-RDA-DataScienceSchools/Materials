@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../../img/favicon.ico">
-  <title>Using scripting languages - CODATA RDA Summer Schools Repo</title>
+  <title>Running a job with R - CODATA RDA Summer Schools Repo</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
@@ -18,7 +18,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Using scripting languages";
+    var mkdocs_page_name = "Running a job with R";
     var mkdocs_page_input_path = "DataSanJose2019/CI/06-RJob.md";
     var mkdocs_page_url = "/Materials/DataSanJose2019/CI/06-RJob/";
   </script>
@@ -76,7 +76,7 @@
     
       
     
-    <li>Using scripting languages</li>
+    <li>Running a job with R</li>
     <li class="wy-breadcrumbs-aside">
       
         <a href="https://github.com/CODATA-RDA-DataScienceSchools/Materials/edit/master/docs/DataSanJose2019/CI/06-RJob.md"
@@ -89,32 +89,106 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="using-scripting-languages">Using scripting languages</h1>
-<h2 id="objective">Objective</h2>
-<p>The objective of this exercise is to demonstrate that you can submit jobs to Condor in any language, including scripting languages.</p>
-<p>At this point, you might be asking yourself, "This is all well and good, but I don't write programs in C. Can I use other languages?" Absolutely.</p>
-<p>Let's assume you like to write program in Bourne shell. Make sure your program begins with <code>#!/bin/sh</code>, and you're good to go. Save this example code into a file called <code>simple.sh</code> using nano or your favorite editor. </p>
-<pre><code>#!/bin/sh
+                <h1 id="running-a-job-with-r">Running a job with R</h1>
+<h3 id="objective">Objective</h3>
+<p>The objective of this exercise is to learn how to run a program that depends on a larger run-time environment that isn't already available on your cluster.  The run-time environment refers to all the hardware and software resources available on the machine where your job is running.  We will focus on the available software in this exercise.</p>
+<h2 id="the-problem">The Problem</h2>
+<p>Sometimes you want to run a program that depends on a larger run-time environment. For example, perhaps you wrote your program in Perl, but there is no Perl installed on the cluster. (That's an unlikely example, intended just to give you feel for what I mean by "run-time environment".) This is a common problem distributed computing users encounter. For example, many people like to use <a href="http://www.mathworks.com/">Matlab</a> (or its open-source cousin, <a href="http://www.gnu.org/software/octave/">Octave</a>) or <a href="http://www.r-project.org/">R</a> for doing calculations. These require a fair amount of run-time environment to run the programs you write. What do you do if they aren't installed?</p>
+<p>There are at least two possibilities:</p>
+<ol>
+<li>Ask your kindly system administrator to install it for you on all of the computers you might run on.</li>
+<li>Bring the environment (Such as Octave or R) along with your job. </li>
+</ol>
+<p>Before you read any further, please stop for a moment, and think about the tradeoffs between these two methodologies. They both have benefits and drawbacks. Why would you choose each of them? Why not? </p>
+<p>Here are some of my answers...</p>
+<h3 id="pros-and-cons-of-having-your-system-administrator-do-it-for-you">Pros and cons of having your system administrator do it for you</h3>
+<ul>
+<li>PRO - It's a lot easier for you.</li>
+<li>PRO - You have to transfer less data with each job.</li>
+<li>CON - You have to wait for the system administrator to install them.</li>
+<li>CON - If you want upgrades (or downgrades), you have to ask again and wait for them.</li>
+</ul>
+<h3 id="pros-and-cons-of-bringing-it-along">Pros and cons of bringing it along</h3>
+<ul>
+<li>CON - It's more complex for you.</li>
+<li>CON - You have to transfer the application and data with each job (or have a job that pre-stages it for you.)</li>
+<li>PRO - You are in complete control: when you need a tweak, an upgrade, or a downgrade, you can make it happen.</li>
+</ul>
+<p>Clearly, there is a choice here. I'd like to enable you to be able to bring along your run-time environment with you. In my experience, if you are capable of bringing it with you, you can take advantage of more computers: you don't have to wait for someone to build and install the environment for you. </p>
+<p>We'd like to demonstrate how to install one run-time environment called <a href="http://www.r-project.org/">R</a>. Don't worry if you have no experience with it: neither do I. It's a package for doing math and statistics and it lets you write programs in the R language. (Actually, it's the S language. Who chose names like this that are hard to Google?) We've built a minimal version of R that won't do graphical output, which makes it much less interesting, but it's good enough for our purposes.</p>
+<h2 id="setup">Setup</h2>
+<p>OSG's implementation of CVMFS is called OASIS and we will be using this to gain access to R. </p>
+<pre><code>$ source /cvmfs/oasis.opensciencegrid.org/osg/modules/lmod/5.6.2/init/bash
+</code></pre>
 
-if [ $# -ne 2 ]; then
-    echo &quot;Usage: simple.sh sleep-time integer&quot;
+<p>Let's look at what software is available:</p>
+<pre><code>$ module avail
+</code></pre>
+
+<p>And then we load the R module:</p>
+<pre><code>$ module load R 
+</code></pre>
+
+<p>You'll need an R program. After hours of <strike>combing the internet</strike> coding, I present to you my first R program. Save it in a file called <code>demo.r</code> using nano or your favorite editor:</p>
+<pre><code>len &lt;- 100
+fibvals &lt;- numeric(len)
+fibvals[1] &lt;- 1
+fibvals[2] &lt;- 1
+for (i in 3:len) { 
+   fibvals[i] &lt;- fibvals[i-1]+fibvals[i-2]
+} 
+print(&quot;First 100 Fibonacci numbers:&quot;)
+for (i in 1:len) { 
+    print(fibvals[i], digits = 21)
+}
+print(&quot;Number of possible combinations of cards in a 52 card deck:&quot;)
+comb &lt;- factorial(52)
+print(comb, digits = 21)
+</code></pre>
+
+<p>This program prints the first 100 <a href="http://en.wikipedia.org/wiki/Fibonacci_number">Fibonacci numbers</a>. These are the numbers that show up in the weirdest places, like pineapples and sunflowers. It's a sequence of numbers beginning with 0, 1, 1, 2, 3, 5, 8... where each successive number is the sum of the previous two numbers. It also prints 52 factorial, which is the number of possible combinations of a standard 52-card deck (not including the jokers, of course). </p>
+<p>R is a bit fussy about where it's been installed on disk, so I had to write a wrapper program so it will happily run wherever it lands in our cluster. I could make you work it out, but that seems unfair. Save this program in <code>run-r.sh</code>. If you're curious about exactly why it's needed, ask Rob. There are two important parts to it, and you should know what they are, at least conceptually because this is the magic you would need to do for any run-time environment you want to bring along.</p>
+<ol>
+<li>Load the R environment using <code>module</code>. In general you might have to do more work. </li>
+<li>Invoke R, using whatever magic is needed. In our case, I set up some environment variables and invoke the right executable.</li>
+</ol>
+<pre><code>#!/bin/sh -x
+
+if [ $# -ne 1 ]; then
+    echo &quot;Usage: run-r &quot;
     exit 1
 fi
 
-echo &quot;Thinking really hard for $1 seconds..&quot;
-sleep $1
-answer=$(( $2 * 2 ))
-echo &quot;We calculated $answer.&quot;
-exit 0
+# Step 1: Set up our environment, the R module.
+source /cvmfs/oasis.opensciencegrid.org/osg/modules/lmod/current/init/bash
+module load R
+module load libgfortran
+
+# Step 2, Invoke R with the proper environment
+R --slave --vanilla &lt; $1
 </code></pre>
 
-<p>This script will not be executable without changing the permissions.</p>
-<pre><code>$ chmod 755 simple.sh
+<p>You could easily execute this on OSG Connect locally by making the shell script executable and executing it.</p>
+<pre><code>$ chmod 755 run-r.sh
+$ ./run-r.sh demo.r
 </code></pre>
 
-<p>Can you write a submit file to run this job? This should be easy--the script is your <em>Executable</em>, not <code>/bin/sh</code>. You may also want to change the name of your <code>submit.log</code>, <code>submit.out</code>, and <code>submit.err</code> in your <code>submit</code> file to be sure they are not written over when you run this submission. </p>
-<h2 id="challenge">Challenge</h2>
-<p>Rewrite this script in Perl or Python (if you're comfortable with one of those languages). Does it still work for you?</p>
+<h2 id="on-your-own">On your own</h2>
+<p>Write a Condor submit file that will use R to run the <code>demo.r</code> program. </p>
+<p>Make sure you get back the output. Make sure you transfer the program. </p>
+<h2 id="the-answer">The answer</h2>
+<p>This should be easy for you now, but if it's not, here's the answer, just in case.</p>
+<pre><code>universe = vanilla
+executable = run-r.sh
++ProjectName = &quot;ConnectTrain&quot;
+arguments = demo.r
+transfer_input_files = demo.r
+log = R.log.$(Cluster).$(Process)
+error = R.err.$(Cluster).$(Process)
+output = R.out.$(Cluster).$(Process)
+requirements = (HAS_MODULES =?= true) &amp;&amp; (OSGVO_OS_STRING == &quot;RHEL 6&quot;) &amp;&amp; (OpSys == &quot;LINUX&quot;)
+queue  
+</code></pre>
               
             </div>
           </div>
