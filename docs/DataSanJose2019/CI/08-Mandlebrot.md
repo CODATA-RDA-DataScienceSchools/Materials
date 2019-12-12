@@ -31,7 +31,7 @@ $ convert tile_000000_000000.ppm ~/mandle.gif
 Run the commands above, make sure you can create the Mandlebrot image. When you create the image, you might wonder how you can view it.
 In order to view the image, you should move the file to a web accessible location. 
 
-   1. `cp mandle.gif ~/public`
+   1. `cp ~/mandle.gif ~/public`
    1. point your browser at the stash web server:
 
 ```
