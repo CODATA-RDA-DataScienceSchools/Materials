@@ -16,6 +16,6 @@ A 10-day workshop, organized by CODATA, RDA, CONARE and CeNAT, was conducted at 
    * Day 5 - [Open Science](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/slides/Unit_7_Ethics_Fri_presentation.pdf), [Data Management Plans]()
    * Day 6 - [Data Visualization](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/slides/Visualisation/Visualisation%20using%20Seaborn.md)
    * Day 7 - [Overview of Machine Learning]()
-   * Day 8 - [Artificial Neural Networks]()
+   * Day 8 - [Artificial Neural Networks](https://raphaelmcobe.github.io/dataSanJose2019_nn_presentation/#/)
    * Day 9 - Computational Infrastructures - [Lecture 1](https://opensciencegrid.org/dosar/DataSaoPaulo2018/Materials/#thursday-morning-computational-infrastructures-session-1), [Lecture 2](https://opensciencegrid.org/dosar/DataSaoPaulo2018/Materials/#thursday-morning-computational-infrastructures-session-2), [Lecture 3](https://opensciencegrid.org/dosar/DataSaoPaulo2018/Materials/#thursday-afternoon-computational-infrastructures-session-3), [Lecture 4](https://opensciencegrid.org/dosar/DataSaoPaulo2018/Materials/#thursday-aftenoon-computational-infrastructures-session-4)
    * Day 10 - Computational Infrastructures Wrap-Up - [Lecture 5](https://opensciencegrid.org/dosar/DataSaoPaulo2018/Materials/#friday-morning-computational-infrastructures-session-5), [Lecture 6](https://opensciencegrid.org/dosar/DataSaoPaulo2018/Materials/#friday-morning-computational-infrastructures-session-6) [School Close Out]()
