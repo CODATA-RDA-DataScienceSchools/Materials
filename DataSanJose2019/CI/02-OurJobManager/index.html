@@ -93,12 +93,12 @@
 <h2 id="objective">Objective</h2>
 <p>This exercise should help you understand the basics of how Condor is installed, what Condor processes (a.k.a. daemons) are running, and what they do.</p>
 <h2 id="login-to-the-condor-submit-computer">Login to the Condor submit computer</h2>
-<p>Before you start, make sure you are logged into <code>user-training.osgconnect.net</code></p>
+<p>Before you start, make sure you are logged into <code>training.osgconnect.net</code></p>
 <pre><code>$ hostname
 training.osgconnect.net
 </code></pre>
 
-<p>You should have been given your name and password when you arrived this afternoon. If you don't know them, talk to Rob.</p>
+<p>You should have been given your username and password when you arrived this afternoon. If you don't know them, talk to Rob.</p>
 <h2 id="looking-at-our-condor-installation">Looking at our Condor installation</h2>
 <p>How do you know what version of Condor you are using? Try <code>condor_version</code>: </p>
 <pre><code>$ condor_version
@@ -106,7 +106,7 @@ $CondorVersion: 8.6.13 Jan 16 2019 $
 $CondorPlatform: X86_64-CentOS_7.6 $
 </code></pre>
 
-<p>Note that the "CondorPlatform" reports the type of computer we built it on, <em>not</em> the computer we're running on. It was built on CentOS_6.8, but you might notice that we're running on Scientific Linux 6.8, which is a free clone of Red Hat Enterprise Linux.</p>
+<p>Note that the "CondorPlatform" reports the type of computer we built it on, <em>not</em> the computer we're running on. It was built on CentOS_7.6, but you might notice that we're running on CentOS Linux release 7.3.1.</p>
 <h3 id="extra-tip-the-os-version">Extra Tip: The OS version</h3>
 <p>Do you know how to find the OS version? You can usually look in /etc/os-release to find out:</p>
 <pre><code>$ cat /etc/os-release
@@ -123,7 +123,7 @@ $ which condor_q
 
 # Show which RPM installed Condor
 $ rpm -q condor
-condor-8.6.11-1.osg34.el6.x86_64
+condor-8.6.13-1.2.osg34.el7.x86_64
 </code></pre>
 
 <p>Condor has some configuration files that it needs to find. They are in the standard location, <code>/etc/condor</code></p>
