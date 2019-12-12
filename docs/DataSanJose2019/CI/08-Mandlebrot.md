@@ -28,16 +28,14 @@ $ module load fftw
 $ convert tile_000000_000000.ppm ~/mandle.gif
 ```
 
-4. **_Open a new terminal window_** and move the file to local machine for viewing (substitute your username in place of `USER`):
+Run the commands above, make sure you can create the Mandlebrot image. When you create the image, you might wonder how you can view it.
+In order to view the image, you should move the file to a web accessible location. 
+
+   1. `cp mandle.gif ~/public`
+   1. point your browser at the stash web server:
 
 ```
-$ scp USER@training.osgconnect.net:/home/USER/mandle.gif ./
-```
-
-5. Point Browser at the file URL:
-
-```
-firefox ./mandle.gif
+http://stash.osgconnect.net/~USER
 ```
 
 The `goatbroat` program takes several parameters. Let's break them down:
@@ -69,15 +67,4 @@ $ montage tile_000000_000000.ppm tile_000000_000001.ppm tile_000001_000000.ppm t
 
 This will produce the same image as above. We broke the image space into a 2 by 2 grid and ran `goatbrot` on each section of the grid. The `montage` program simply stitches the files together. 
 
-## Try it!
-
-Run the commands above, make sure you can create the Mandlebrot image. When you create the image, you might wonder how you can view it. 
-
-The same way we did above, or more simply by moving the file to a web accessible location. 
-
-   1. `cp mandle.gif ~/public`
-   1. point your browser at the stash web server:
-
-```
-http://stash.osgconnect.net/~USER
-```
+Check if the results are the same by copying the file to the `public` directory
