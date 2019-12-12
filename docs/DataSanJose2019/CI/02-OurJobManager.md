@@ -5,14 +5,14 @@
 This exercise should help you understand the basics of how Condor is installed, what Condor processes (a.k.a. daemons) are running, and what they do.
 
 ## Login to the Condor submit computer
-Before you start, make sure you are logged into `user-training.osgconnect.net`
+Before you start, make sure you are logged into `training.osgconnect.net`
 
 ```
 $ hostname
 training.osgconnect.net
 ```
 
-You should have been given your name and password when you arrived this afternoon. If you don't know them, talk to Rob.
+You should have been given your username and password when you arrived this afternoon. If you don't know them, talk to Rob.
 
 ## Looking at our Condor installation
 
@@ -24,7 +24,7 @@ $CondorVersion: 8.6.13 Jan 16 2019 $
 $CondorPlatform: X86_64-CentOS_7.6 $
 ```
 
-Note that the "CondorPlatform" reports the type of computer we built it on, _not_ the computer we're running on. It was built on CentOS_6.8, but you might notice that we're running on Scientific Linux 6.8, which is a free clone of Red Hat Enterprise Linux.
+Note that the "CondorPlatform" reports the type of computer we built it on, _not_ the computer we're running on. It was built on CentOS_7.6, but you might notice that we're running on CentOS Linux release 7.3.1.
 
 ### Extra Tip: The OS version
 
@@ -49,7 +49,7 @@ $ which condor_q
 
 # Show which RPM installed Condor
 $ rpm -q condor
-condor-8.6.11-1.osg34.el6.x86_64
+condor-8.6.13-1.2.osg34.el7.x86_64
 ```
 
 Condor has some configuration files that it needs to find. They are in the standard location, `/etc/condor`
