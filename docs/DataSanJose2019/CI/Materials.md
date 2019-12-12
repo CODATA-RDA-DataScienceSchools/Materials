@@ -24,7 +24,7 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    
 ## Thursday Afternoon - Computational Infrastructures - Session 3
 
-   * Lecture 3 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/DataTrieste2019/RDA-Lecture3-Trieste-2019.pdf)
+   * Lecture 3 - [Slides](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/CI/RDA-Lecture3-SanJose-2019.pdf)
    * [A brief detour through the Mandlebrot set](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/CI/08-Mandlebrot.md)
    * [Coordinating sets of jobs: A simple DAG](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/CI/09-SimpleDAG.md)
    * [A more complex DAG](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/CI/10-ComplexDAG.md)
