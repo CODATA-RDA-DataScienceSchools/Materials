@@ -14,6 +14,8 @@ The goal of this workshop is to train researchers in Research Data Science (RDS)
 
 A 10-day workshop, organized by CODATA, RDA, CONARE and CeNAT, was conducted at the CeNAT, San José to introduce participants to the skills of RDS. 
 
+[Etherpad Link]()
+
 ## Materials for the 2019 School of Research Data Science in San José
 
    * Day 1 -[Introduction](slides/Intro_dataSanJosé19Monday.pdf), [Open Science](slides/Unit%201_CR_Ethics_Mon_presentation_extended.pdf), [Intro Unix](slides/Unit2_TheRoadtoLinux2019.12.02.pdf), [UNIX Shell](http://swcarpentry.github.io/shell-novice/)
