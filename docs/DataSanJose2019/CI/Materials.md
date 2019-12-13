@@ -34,21 +34,14 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    * [Handling jobs that fail](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/CI/11-HandlingFailure.md)
    * [Variable Substitution](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/CI/12-VariableSubstitution.md)
    
-## Thursday Aftenoon - Computational Infrastructures - Session 4
+## Friday Morning - Computational Infrastructures - Session 4
 
    * Lecture 4 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/DataTrieste2019/RDA-Lecture4-Trieste-2019.pdf)
    * [Discipline specific tutorials](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/CI/13-DisciplineTutorials.md)
    * [Containers with Singularity](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/CI/14-Containers.md)
    
-## Bonus Lecture - Digital Object Architectures
+## Bonus Material - Data Infrastructure 
    * [DOA and RPID](https://github.com/opensciencegrid/dosar/blob/master/docs/DataTrieste2019/RPID-DOA-Trieste.pdf)
-   
-## Friday Morning - Computational Infrastructures - Session 5
-   * [Introduction to Cloud Computing](https://github.com/opensciencegrid/dosar/blob/master/docs/DataTrieste2019/CODATA-2019_Research-Computational-Infrastructures_Cloud-Infrastructures.pdf)
-   
-## Friday Morning - Computational Infrastructures - Session 6
-   * Close Out - What to do next? 
-
    
 ## Contact information
 
