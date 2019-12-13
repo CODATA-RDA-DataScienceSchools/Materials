@@ -36,7 +36,7 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    
 ## Friday Morning - Computational Infrastructures - Session 4
 
-   * Lecture 4 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/DataTrieste2019/RDA-Lecture4-Trieste-2019.pdf)
+   * Lecture 4 - [Slides](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/CI/RDA-Lecture4-SanJose-2019.pdf)
    * [Discipline specific tutorials](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/CI/13-DisciplineTutorials.md)
    * [Containers with Singularity](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/CI/14-Containers.md)
    
