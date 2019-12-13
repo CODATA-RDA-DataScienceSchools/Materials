@@ -48,4 +48,4 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    * Rob Quick - rquick@iu.edu
    * http://www.osgconnect.net/
    * DOSAR: Distributed Organization for Scientific and Academic Research. 
-   * If you want long‐term OSG access, you can go to http://www.osgconnect.net and sign up. Mention you attended Data Trieste 2019 and want to be added to the DOSAR Project. 
+   * If you want long‐term OSG access, you can go to http://www.osgconnect.net and sign up. Mention you attended Data San José 2019 and want to be added to the DOSAR Project. 
