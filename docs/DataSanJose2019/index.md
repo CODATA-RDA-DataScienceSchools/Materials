@@ -22,7 +22,7 @@ A 10-day workshop, organized by CODATA, RDA, CONARE and CeNAT, was conducted at 
    * Day 4 - [Author Carpentry](slides/Unit%205_AuthorCarpentry.pdf), [Intro to Research Data Management](slides/Unit%206_Intro_to_RDM_open_fair_dmp_part1.pdf), [DMP example 1](slides/Unit%206_atlantos_dmp.pdf), [DMP example 2](slides/Unit_6_woscap_dmp.pdf)
    * Day 5 - [Open Science](slides/Unit_7_Ethics_Fri_presentation.pdf), [Data Management Plans*](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/RDM_Reproduce.md)
    * Day 6 - [Data Visualization](slides/Visualisation/Visualisation_using_Seaborn.md)
-   * Day 7 - [Overview of Machine Learning*](https://drive.google.com/drive/folders/1co9IxN7JFwG-37PyrQbNOnMAIlj2d6HG?usp=sharing)
+   * Day 7 - [Overview of Machine Learning*](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/ML.md)
    * Day 8 - [Artificial Neural Networks](https://raphaelmcobe.github.io/dataSanJose2019_nn_presentation/#/)
    * Day 9 - Security and Computational Infrastructures - [All material](CI/Materials.md)
    * Day 10 - [School Close Out]()
