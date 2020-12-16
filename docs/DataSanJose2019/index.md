@@ -6,7 +6,7 @@ output:
 ---
 
 # San José School of Research Data Science 
-December 2 – 13, 2018
+December 2 – 13, 2019
 CeNAT, San José, Costa Rica
 
 ## Background and purpose 
