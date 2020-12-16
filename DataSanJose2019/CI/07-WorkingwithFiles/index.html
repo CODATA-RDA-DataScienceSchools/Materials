@@ -109,7 +109,6 @@ cat $1 | tr &quot;[:upper:]&quot; &quot;[:lower:]&quot; | tr -cs &quot;[:alpha:]
 
 sleep 5
 </code></pre>
-
 <p>You also need a file to analyze. Put the following text into a file called <code>gettysburg</code>.</p>
 <pre><code>Four score and seven years ago our fathers brought forth on this
 continent, a new nation, conceived in Liberty, and dedicated to the
@@ -137,7 +136,6 @@ this nation, under God, shall have a new birth of freedom -- and that
 government of the people, by the people, for the people, shall not
 perish from the earth.
 </code></pre>
-
 <p>Our submit file looks nearly identical to what we had before, except for the one bolded line that specifies the data file to transfer.  Put the following text into a file called <code>submit.speech</code>.</p>
 <pre><code>Universe        = vanilla
 Executable      = analyze.sh
@@ -152,7 +150,6 @@ WhenToTransferOutput = ON_EXIT
 transfer_input_files = gettysburg
 queue 
 </code></pre>
-
 <p>Notice that you just had to specify the input files and not the output files. Condor will automatically transfer back any new files, so you don't have to worry about it. Nifty, huh?</p>
 <p>Now run the job.</p>
 <pre><code>$ condor_submit submit.speech
@@ -164,7 +161,6 @@ $ ls -lh gettys*
 -rw-r--r--. 1 kagross kagross  120 Aug 18 15:42 gettysburg.10
 -rw-r--r--. 1 kagross kagross 1.5K Aug 18 15:42 gettysburg.upper
 </code></pre>
-
 <p>You got your files! Check them out--do they look okay?</p>
 <h2 id="on-your-own">On your own</h2>
 <p>Create several text files, then submit jobs (preferably from a single submit file) to analyze each of them. If you're at a loss to create some text files, here are a few for you.</p>

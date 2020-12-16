@@ -112,18 +112,15 @@ EnteredCurrentStatus = 1408374244
 UserLog = &quot;/home/kagross/condor-test/s
 ... output trimmed ... 
 </code></pre>
-
 <p>There are some interesting parts you can check out. </p>
 <p>How many CPUs is the job requesting. (This can be more than one, but for the exercises we will do today it will be 1)</p>
 <pre><code>$ condor_q -l YOUR_JOB_CLUSTER_NUMBER | grep RequestCpus
 RequestCpus = 1
 </code></pre>
-
 <p>Where is the user log for this job? This is helpful when you assist someone else in debugging and they're not sure.</p>
 <pre><code>$ condor_q -l YOUR_JOB_CLUSTER_NUMBER | grep UserLog
 UserLog = &quot;/home/kagross/condor-test/simple.47.log&quot;
 </code></pre>
-
 <p>What are the job's requirements? Condor automatically fills some in for you to make sure your job runs on a reasonable computer in our cluster, but you can override any of these. I've broken the output into multiple lines to explain it to you.</p>
 <pre><code>$ condor_q -l YOUR_JOB_CLUSTER_NUMBER | grep Requirements
 Requirements =( TARGET.Arch == &quot;X86_64&quot; ) &lt;em&gt;# Run on a 64-bit computer
@@ -132,7 +129,6 @@ Requirements =( TARGET.Arch == &quot;X86_64&quot; ) &lt;em&gt;# Run on a 64-bit 
     &amp;&amp; ( TARGET.Memory &gt;= RequestMemory )  &lt;em&gt;# Make sure the computer has enough memory
     &amp;&amp; ( TARGET.HasFileTransfer )  &lt;em&gt;# Only run on a computer that can accept your files.
 </code></pre>
-
 <p>What else can you find that's interesting in the ClassAd?</p>
 <h2 id="removing-jobs">Removing jobs</h2>
 <p>If you submit a job that you realize has a problem, you can remove it with <code>condor_rm</code>. For example: </p>
@@ -154,7 +150,6 @@ $ condor_q
 
 0 jobs; 0 completed, 0 removed, 1 idle, 0 running, 0 held, 0 suspended
 </code></pre>
-
 <p>A few tips:</p>
 <ul>
 <li>You can remove all of your jobs with the <code>-all</code> option.</li>
@@ -165,7 +160,6 @@ $ condor_q
 <p>You can see information about jobs that completed and are no longer in the queue with the <code>condor_history</code> command. It's rare that you want to see <em>all</em> the jobs, so try looking at jobs for just you:</p>
 <pre><code>$ condor_history USER
 </code></pre>
-
 <p>For example:</p>
 <pre><code>$ condor_history kagross
    9.9   kagross         7/31 12:44   0+00:00:03 C   7/31 12:44 /home/kagross/simple 9 9

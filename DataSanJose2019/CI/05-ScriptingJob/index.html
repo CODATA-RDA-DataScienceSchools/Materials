@@ -105,11 +105,9 @@ answer=$(( $2 * 2 ))
 echo &quot;We calculated $answer.&quot;
 exit 0
 </code></pre>
-
 <p>This script will not be executable without changing the permissions.</p>
 <pre><code>$ chmod 755 simple.sh
 </code></pre>
-
 <p>Can you write a submit file to run this job? This should be easy--the script is your <em>Executable</em>, not <code>/bin/sh</code>. You may also want to change the name of your <code>submit.log</code>, <code>submit.out</code>, and <code>submit.err</code> in your <code>submit</code> file to be sure they are not written over when you run this submission. </p>
 <h2 id="challenge">Challenge</h2>
 <p>Rewrite this script in Perl or Python (if you're comfortable with one of those languages). Does it still work for you?</p>

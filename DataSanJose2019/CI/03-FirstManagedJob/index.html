@@ -97,11 +97,9 @@
 <pre><code>$ mkdir -p ~/condor-test
 $ cd ~/condor-test
 </code></pre>
-
 <p>Use your preferred text editor to create this C program. (Shown below with nano.)</p>
 <pre><code>$ nano simple.c
 </code></pre>
-
 <p>Paste in the following C code. </p>
 <pre><code>#include &lt;stdio.h&gt;
 
@@ -126,19 +124,16 @@ int main(int argc, char **argv)
     return failure;
 }
 </code></pre>
-
 <p>Now compile that program:</p>
 <pre><code>$ gcc -o simple simple.c
 $ ls -lh simple
 -rwxrwxr-x 1 roy roy 595K Jun 20 11:12 simple
 </code></pre>
-
 <p>Finally, run the program and tell it to sleep for four seconds and calculate 10 * 2: </p>
 <pre><code>$ ./simple 4 10
 Thinking really hard for 4 seconds...
 We calculated: 20
 </code></pre>
-
 <p>Great! You just had a job run locally on the machine you are logged into (user-training.osgconnect.net). The next step is to run this job on a remote computer - and this is a job you can tell Condor to run! Although it clearly isn't an interesting job, it models some of the aspects of a real scientific program: it takes a while to run and it does a calculation. </p>
 <p>Think back to the lecture. I said that our first step was to have a job to run. Now we'll work on running it in Condor, and eventually running lots of copies of it.</p>
 <h2 id="submitting-your-job">Submitting your job</h2>
@@ -155,7 +150,6 @@ should_transfer_files   = YES
 when_to_transfer_output = ON_EXIT
 Queue
 </code></pre>
-
 <p>Let's examine each of these lines:</p>
 <ul>
 <li><em>Universe:</em> The vanilla universe means a plain old job. Later on, we'll encounter some special universes.</li>
@@ -172,7 +166,6 @@ Queue
 Submitting job(s).
 1 job(s) submitted to cluster 16.
 </code></pre>
-
 <p>Now, watch your job run (insert your username in the command below instead of <code>USER</code>.  If you forgot your username use the <code>whoami</code> command.  Note that most of your output will be different than the example, the important column to watch is the <code>ST</code> column - the job state):</p>
 <pre><code># Note the job state of 'I' means the job is idle - not yet running
 $ condor_q YOUR_USER_ID -nobatch
@@ -207,7 +200,6 @@ $ condor_q YOUR_USER_ID -nobatch
 Total for query: 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended 
 Total for all users: 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended
 </code></pre>
-
 <p><em>Tip</em>: While you are waiting for your job to run and complete you can check out <a href="https://twiki.grid.iu.edu/bin/view/Operations/HTCReviewCondorTips">"A few tips and tricks"</a> to learn how to user <code>condor_q</code> more effectively.</p>
 <p>When my job was done, it was no longer listed. Because I told Condor to log information about my job, I can see what happened: </p>
 <pre><code>$ cat simple.log
@@ -234,14 +226,12 @@ Total for all users: 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 
        Disk (KB)            :       15        7  17605109
        Memory (MB)          :        0        1      1900
 </code></pre>
-
 <p>That looks good: the job started up quickly, though you will often see slightly slower startups. Condor doesn't optimize for fast job startup, but for high throughput, The job ran for four seconds.</p>
 <p>Now take a look at the job's output:</p>
 <pre><code>$ cat simple.out
 Thinking really hard for 4 seconds...
 We calculated: 20
 </code></pre>
-
 <p>Excellent! We ran our sophisticated scientific job on a Condor pool! We've only run one job though. Can we run more?</p>
 <h2 id="doing-a-parameter-sweep">Doing a parameter sweep</h2>
 <p>If you only ever had to run a single job, you probably wouldn't need Condor. But we would like to have our program calculate a whole set of values for different inputs. How can we do that? Let's change our <code>submit</code> file to look like this: </p>
@@ -263,7 +253,6 @@ Queue
 Arguments = 4 12
 Queue
 </code></pre>
-
 <p>There are two important differences to notice here. First, the Log, Output and Error lines have the <code>$(Process)</code> macro in them. This means that the output and error files will be named according to the process number of the job. You'll see what this looks like in a moment. Second, we told Condor to run the same job an extra two times by adding extra <code>Arguments</code> and <code>Queue</code> statements. We are doing a parameter sweep on the values 10, 11, and 12. Let's see what happens: </p>
 <pre><code>$ condor_submit submit
 Submitting job(s)...
@@ -310,7 +299,6 @@ $ cat simple.2.out
 Thinking really hard for 4 seconds...
 We calculated: 24
 </code></pre>
-
 <p>Notice that we had three jobs with the same cluster number, but different process numbers. They have the same cluster number because they were all submitted from the same submit file. When the jobs ran, they created three different output files, each with the desired output.</p>
 <p>You are now ready to submit lots of jobs! Although this example was simple, Condor has many, many options so you can get a wide variety of behaviors. You can find many of these if you look at <a href="http://www.cs.wisc.edu/condor/manual/v8.6/condor_submit.html">the documentation for condor_submit</a>.</p>
 <h2 id="on-your-own">On your own</h2>
@@ -325,7 +313,6 @@ We calculated: 24
 <pre><code>Arguments = $(Process) $(Cluster)
 queue 10
 </code></pre>
-
 <p>What does it mean? What happens? Does it work as you expect?</p>
 <p>(An aside: you might wish to be able to do math, something like <code>$(Process)+1</code>. Unfortunately, you can't do that.)</p>
 <h2 id="challenges">Challenges</h2>

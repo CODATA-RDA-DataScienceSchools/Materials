@@ -105,7 +105,6 @@ log                     = goat.log
 requirements = (HAS_MODULES =?= true) &amp;&amp; (OSGVO_OS_STRING == &quot;RHEL 6&quot;) &amp;&amp; (OpSys == &quot;LINUX&quot;)
 queue
 </code></pre>
-
 <p>Submit the DAG again: </p>
 <pre><code>$ condor_submit_dag goatbrot.dag
 -----------------------------------------------------------------------
@@ -119,7 +118,6 @@ Submitting job(s).
 1 job(s) submitted to cluster 77.
 -----------------------------------------------------------------------
 </code></pre>
-
 <p>Use <code>watch</code> to watch the jobs until they finish.</p>
 <p>In a separate window, use <code>tail --lines=500 -f goatbrot.dag.dagman.out</code> to watch what DAGMan does. </p>
 <pre><code>06/22/12 17:57:41 Setting maximum accepts per cycle 8.
@@ -166,7 +164,6 @@ Submitting job(s).
 06/22/12 18:08:42 Note: 0 total POST script deferrals because of -MaxPost limit (0)
 06/22/12 18:08:42 **** condor_scheduniv_exec.77.0 (condor_DAGMAN) pid 26867 EXITING WITH STATUS 1
 </code></pre>
-
 <p>DAGMan notices that one of the jobs failed because it's exit code was non-zero. DAGMan ran as much of the DAG as possible and logged enough information to continue the run when the situation is resolved. Do you see the part where it wrote the resuce DAG?</p>
 <p>Look at the rescue DAG. It's called a partial DAG: it indicates what part of the DAG has already been completed. When you re-submit the original DAG, DAGMan will notice the rescue DAG and use it in combination with the original DAG. (The rescue DAG used to be the full DAG with nodes marked as done and you would ask DAGMan to run the new rescue DAG. For your simplicity DAGMan lets you resubmit the original DAG and it reads both files.)</p>
 <pre><code>$ cat goatbrot.dag.rescue001
@@ -185,7 +182,6 @@ DONE g2
 DONE g3
 DONE g4
 </code></pre>
-
 <p>From the comment near the top, we know that the montage node failed. Let's fix it by getting rid of the offending <code>-h</code> argument. Change <code>montage.sub</code> to look like:</p>
 <pre><code>universe                = vanilla
 executable              = wrapper_montage.sh
@@ -200,7 +196,6 @@ log                     = goat.log
 requirements = (HAS_MODULES =?= true) &amp;&amp; (OSGVO_OS_STRING == &quot;RHEL 6&quot;) &amp;&amp; (OpSys == &quot;LINUX&quot;)
 queue
 </code></pre>
-
 <p>Now we can re-submit our original DAG and DAGMan will pick up where it left off. It will automatically notice the rescue DAG If you didn't fix the problem, DAGMan would generate another rescue DAG.</p>
 <pre><code>$ condor_submit_dag goatbrot.dag
 Running rescue DAG 1
@@ -229,7 +224,6 @@ $ tail -f goatbrot.dag.dagman.out
 06/23/12 11:30:53 Using config source: /etc/condor/condor_config
 ...
 </code></pre>
-
 <p>Here is where DAGMAN notices that there is a rescue DAG:</p>
 <pre><code>06/23/12 11:30:53 Parsing 1 dagfiles
 06/23/12 11:30:53 Parsing goatbrot.dag ...
@@ -238,7 +232,6 @@ $ tail -f goatbrot.dag.dagman.out
 06/23/12 11:30:53 USING RESCUE DAG goatbrot.dag.rescue001
 06/23/12 11:30:53 Dag contains 5 total jobs
 </code></pre>
-
 <p>Shortly thereafter it sees that four jobs have already finished:</p>
 <pre><code>06/23/12 11:31:05 Bootstrapping...
 06/23/12 11:31:05 Number of pre-completed nodes: 4
@@ -246,7 +239,6 @@ $ tail -f goatbrot.dag.dagman.out
 06/23/12 11:31:06 Sleeping for one second for log file consistency
 06/23/12 11:31:07 MultiLogFiles: truncating log file /home/roy/condor/goatbrot/montage.log
 </code></pre>
-
 <p>Here is where DAGMan resubmits the montage job and waits for it to complete:</p>
 <pre><code>06/23/12 11:31:07 Submitting Condor Node montage job(s)...
 06/23/12 11:31:07 submitting: condor_submit 
@@ -276,7 +268,6 @@ $ tail -f goatbrot.dag.dagman.out
 06/23/12 11:40:22 Event: ULOG_IMAGE_SIZE for Condor Node montage (84.0.0)
 06/23/12 11:40:22 Event: ULOG_JOB_TERMINATED for Condor Node montage (84.0.0)
 </code></pre>
-
 <p>This is where the montage finished:</p>
 <pre><code>06/23/12 11:40:22 Node montage job proc (84.0.0) completed successfully.
 06/23/12 11:40:22 Node montage job completed
@@ -287,7 +278,6 @@ $ tail -f goatbrot.dag.dagman.out
 06/23/12 11:40:22     5       0        0       0       0          0        0
 06/23/12 11:40:22 0 job proc(s) currently held
 </code></pre>
-
 <p>And here DAGMan decides that the work is all done:</p>
 <pre><code>06/23/12 11:40:22 All jobs Completed!
 06/23/12 11:40:22 Note: 0 total job deferrals because of -MaxJobs limit (0)
@@ -297,7 +287,6 @@ $ tail -f goatbrot.dag.dagman.out
 06/23/12 11:40:22 Note: 0 total POST script deferrals because of -MaxPost limit (0)
 06/23/12 11:40:22 **** condor_scheduniv_exec.83.0 (condor_DAGMAN) pid 28576 EXITING WITH STATUS 0&lt;/pre&gt;
 </code></pre>
-
 <p>Success! Now go ahead and clean up. </p>
 <h2 id="challenge">Challenge</h2>
 <p>If you have time, add an extra node to the DAG. Copy our original <code>simple</code> program, but make it exit with a 1 instead of a 0. DAGMan would consider this a failure, but you'll tell DAGMan that it's really a success. This is reasonable--many real world programs use a variety of return codes, and you might need to help DAGMan distinguish success from failure.</p>

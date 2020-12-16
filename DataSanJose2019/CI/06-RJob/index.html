@@ -118,15 +118,12 @@
 <p>OSG's implementation of CVMFS is called OASIS and we will be using this to gain access to R. </p>
 <pre><code>$ source /cvmfs/oasis.opensciencegrid.org/osg/modules/lmod/5.6.2/init/bash
 </code></pre>
-
 <p>Let's look at what software is available:</p>
 <pre><code>$ module avail
 </code></pre>
-
 <p>And then we load the R module:</p>
 <pre><code>$ module load R 
 </code></pre>
-
 <p>You'll need an R program. After hours of <strike>combing the internet</strike> coding, I present to you my first R program. Save it in a file called <code>demo.r</code> using nano or your favorite editor:</p>
 <pre><code>len &lt;- 100
 fibvals &lt;- numeric(len)
@@ -143,7 +140,6 @@ print(&quot;Number of possible combinations of cards in a 52 card deck:&quot;)
 comb &lt;- factorial(52)
 print(comb, digits = 21)
 </code></pre>
-
 <p>This program prints the first 100 <a href="http://en.wikipedia.org/wiki/Fibonacci_number">Fibonacci numbers</a>. These are the numbers that show up in the weirdest places, like pineapples and sunflowers. It's a sequence of numbers beginning with 0, 1, 1, 2, 3, 5, 8... where each successive number is the sum of the previous two numbers. It also prints 52 factorial, which is the number of possible combinations of a standard 52-card deck (not including the jokers, of course). </p>
 <p>R is a bit fussy about where it's been installed on disk, so I had to write a wrapper program so it will happily run wherever it lands in our cluster. I could make you work it out, but that seems unfair. Save this program in <code>run-r.sh</code>. If you're curious about exactly why it's needed, ask Rob. There are two important parts to it, and you should know what they are, at least conceptually because this is the magic you would need to do for any run-time environment you want to bring along.</p>
 <ol>
@@ -165,12 +161,10 @@ module load libgfortran
 # Step 2, Invoke R with the proper environment
 R --slave --vanilla &lt; $1
 </code></pre>
-
 <p>You could easily execute this on OSG Connect locally by making the shell script executable and executing it.</p>
 <pre><code>$ chmod 755 run-r.sh
 $ ./run-r.sh demo.r
 </code></pre>
-
 <h2 id="on-your-own">On your own</h2>
 <p>Write a Condor submit file that will use R to run the <code>demo.r</code> program. </p>
 <p>Make sure you get back the output. Make sure you transfer the program. </p>

@@ -98,19 +98,16 @@
 </ol>
 <pre><code>$ /stash/user/rquick/public/goatbrot-master/goatbrot -i 1000 -o tile_000000_000000.ppm -c 0,0 -w 3 -s 1000,1000
 </code></pre>
-
 <ol>
 <li>Add the Fast Fourier Transform and ImageMagick packages:</li>
 </ol>
 <pre><code>$ module load fftw
 </code></pre>
-
 <ol>
 <li>Convert it to a JPEG image and write into your home directory:</li>
 </ol>
 <pre><code>$ convert tile_000000_000000.ppm ~/mandle.gif
 </code></pre>
-
 <p>Run the commands above, make sure you can create the Mandlebrot image. When you create the image, you might wonder how you can view it.
 In order to view the image, you should move the file to a web accessible location. </p>
 <ol>
@@ -119,7 +116,6 @@ In order to view the image, you should move the file to a web accessible locatio
 </ol>
 <pre><code>http://stash.osgconnect.net/~USER
 </code></pre>
-
 <p>The <code>goatbroat</code> program takes several parameters. Let's break them down:</p>
 <ul>
 <li><code>-i 1000</code> The number of iterations. Bigger numbers generate more accurate images but are slower to run. </li>
@@ -138,13 +134,11 @@ $ /stash/user/rquick/public/goatbrot-master/goatbrot -i 1000 -o tile_000000_0000
 $ /stash/user/rquick/public/goatbrot-master/goatbrot -i 1000 -o tile_000001_000000.ppm -c -0.75,-0.75 -w 1.5 -s 500,500
 $ /stash/user/rquick/public/goatbrot-master/goatbrot -i 1000 -o tile_000001_000001.ppm -c 0.75,-0.75 -w 1.5 -s 500,500
 </code></pre>
-
 <ol>
 <li><em>Stitch them together</em>: </li>
 </ol>
 <pre><code>$ montage tile_000000_000000.ppm tile_000000_000001.ppm tile_000001_000000.ppm tile_000001_000001.ppm -mode Concatenate -tile 2x2 ~/mandle.gif
 </code></pre>
-
 <p>This will produce the same image as above. We broke the image space into a 2 by 2 grid and ran <code>goatbrot</code> on each section of the grid. The <code>montage</code> program simply stitches the files together. </p>
 <p>Check if the results are the same by copying the file to the <code>public</code> directory</p>
               

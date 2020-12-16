@@ -105,7 +105,6 @@ should_transfer_files   = YES
 when_to_transfer_output = ONEXIT
 queue
 </code></pre>
-
 <h3 id="goatbrot2sub">goatbrot2.sub</h3>
 <pre><code>executable              = /stash/user/rquick/public/goatbrot-master/goatbrot
 arguments               = -i 100000 -c 0.75,0.75 -w 1.5 -s 500,500 -o tile_0_1.ppm
@@ -117,7 +116,6 @@ should_transfer_files   = YES
 when_to_transfer_output = ONEXIT
 queue
 </code></pre>
-
 <h3 id="goatbrot3sub">goatbrot3.sub</h3>
 <pre><code>executable              = /stash/user/rquick/public/goatbrot-master/goatbrot
 arguments               = -i 100000 -c -0.75,-0.75 -w 1.5 -s 500,500 -o tile_1_0.ppm
@@ -129,7 +127,6 @@ should_transfer_files   = YES
 when_to_transfer_output = ONEXIT
 queue
 </code></pre>
-
 <h3 id="goatbrot4sub">goatbrot4.sub</h3>
 <pre><code>executable              = /stash/user/rquick/public/goatbrot-master/goatbrot
 arguments               = -i 100000 -c 0.75,-0.75 -w 1.5 -s 500,500 -o tile_1_1.ppm
@@ -141,7 +138,6 @@ should_transfer_files   = YES
 when_to_transfer_output = ONEXIT
 queue
 </code></pre>
-
 <h3 id="montagesub">montage.sub</h3>
 <p>You should notice a few things about the montage submission file:</p>
 <ol>
@@ -161,14 +157,12 @@ log                     = montage.log
 requirements = (HAS_MODULES =?= true) &amp;&amp; (OSGVO_OS_STRING == &quot;RHEL 6&quot;) &amp;&amp; (OpSys == &quot;LINUX&quot;)
 queue
 </code></pre>
-
 <h3 id="wrapper_montagesh">wrapper_montage.sh</h3>
 <p>Because we are using OASIS, we will need to create a wrapper script to load the ImageMagick module so that we can use it to create the montage.  Put the following lines into <code>wrapper_montage.sh</code>:</p>
 <pre><code>source /cvmfs/oasis.opensciencegrid.org/osg/modules/lmod/current/init/bash
 module load imagemagick
 montage tile_0_0.ppm tile_0_1.ppm tile_1_0.ppm tile_1_1.ppm -mode Concatenate -tile 2x2 mandle.gif
 </code></pre>
-
 <h2 id="make-your-dag">Make your DAG</h2>
 <p>In a file called <code>goatbrot.dag</code>, you have your DAG specification:</p>
 <pre><code>JOB g1 goatbrot1.sub
@@ -178,7 +172,6 @@ JOB g4 goatbrot4.sub
 JOB montage montage.sub
 PARENT g1 g2 g3 g4 CHILD montage
 </code></pre>
-
 <p>Ask yourself: do you know how we ensure that all the <code>goatbrot</code> commands can run simultaneously and all of them will complete before we run the montage job?</p>
 <h2 id="running-the-dag">Running the DAG</h2>
 <p>Submit your DAG:</p>
@@ -195,12 +188,10 @@ Submitting job(s).
 
 -----------------------------------------------------------------------
 </code></pre>
-
 <h2 id="watch-your-dag">Watch your DAG</h2>
 <p>Watch with condor_q:</p>
 <pre><code>$ watch condor_q USER -nobatch
 </code></pre>
-
 <p>Here we see DAGMan running:</p>
 <pre><code>-- Submitter: kagross@frontal.cci.ucad.sn : &lt;172.16.200.1:9645&gt; : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
@@ -208,7 +199,6 @@ Submitting job(s).
 
 1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended
 </code></pre>
-
 <p>DAGMan has submitted the goatbrot jobs, but they haven't started running yet (note that the <code>I</code> status stands for Idle):</p>
 <pre><code>-- Submitter: kagross@frontal.cci.ucad.sn : &lt;172.16.200.1:9645&gt; : frontal.cci.ucad.sn
  ID  OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
@@ -220,7 +210,6 @@ Submitting job(s).
 
 6 jobs; 0 completed, 0 removed, 4 idle, 2 running, 0 held, 0 suspended
 </code></pre>
-
 <p>They're running!  (All four jobs are in state <code>R</code> - running)</p>
 <pre><code>-- Submitter: kagross@frontal.cci.ucad.sn : &lt;172.16.200.1:9645&gt; : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
@@ -232,7 +221,6 @@ Submitting job(s).
 
 5 jobs; 0 completed, 0 removed, 0 idle, 5 running, 0 held, 0 suspended
 </code></pre>
-
 <p>Two of the jobs have finished, while the others are still running (remember that completed jobs disappear from <code>condor_q</code> output):</p>
 <pre><code>-- Submitter: kagross@frontal.cci.ucad.sn : &lt;172.16.200.1:9645&gt; : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
@@ -242,7 +230,6 @@ Submitting job(s).
 
 3 jobs; 0 completed, 0 removed, 0 idle, 3 running, 0 held, 0 suspended
 </code></pre>
-
 <p>They finished, but DAGMan hasn't noticed yet. It only checks periodically:</p>
 <pre><code>-- Submitter: kagross@frontal.cci.ucad.sn : &lt;172.16.200.1:9645&gt; : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
@@ -250,7 +237,6 @@ Submitting job(s).
 
 1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended
 </code></pre>
-
 <p>DAGMan submitted and ran the montage job. It ran so fast I didn't capture it running. DAGMan will finish up soon</p>
 <pre><code>-- Submitter: kagross@frontal.cci.ucad.sn : &lt;172.16.200.1:9645&gt; : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
@@ -258,14 +244,12 @@ Submitting job(s).
 
 1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended
 </code></pre>
-
 <p>Now it's all done:</p>
 <pre><code>-- Submitter: kagross@frontal.cci.ucad.sn : &lt;172.16.200.1:9645&gt; : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
 
 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended
 </code></pre>
-
 <p>Examine your results. For some reason, goatbrot prints everything to stderr, not stdout. </p>
 <pre><code>$ cat goatbrot.err.0.0
 Complex image:
@@ -290,19 +274,16 @@ Goatbrot:
 
 Completed: 100.0%  
 </code></pre>
-
 <p>Examine your log files (<code>goatbrot.log</code> and <code>montage.log</code>) and DAGMan output file (<code>goatbrot.dag.dagman.out</code>). Do they look as you expect? Can you see the progress of the DAG in the DAGMan output file?</p>
 <p>Does your final Mandlebrot image (<code>mandle.gif</code>) look correct? To view it we can use Stash.</p>
 <pre><code>$ cp mandle.gif ~/stash/public/
 </code></pre>
-
 <p>And now you can go to http://stash.osgconnect.net/~USER . You will see mandle.gif listed.  You can click on it to view it.</p>
 <p>Clean up your results. Be careful about deleting the goatbrot.dag.<em> files, you do not want to delete the goatbrot.dag file, just goatbrot.dag.</em> . </p>
 <pre><code>$ rm goatbrot.dag.*
 $ rm goatbrot.out.*
 $ rm goatbrot.err.*
 </code></pre>
-
 <h2 id="on-your-own">On your own.</h2>
 <ul>
 <li>Re-run your DAG. When jobs are running, try <code>condor_q -dag</code>. What does it do differently?</li>

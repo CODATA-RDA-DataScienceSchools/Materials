@@ -107,13 +107,11 @@ should_transfer_files   = YES
 when_to_transfer_output = ON_EXIT
 Queue
 </code></pre>
-
 <p>Make sure you've built the <code>simple</code> program. If you need to, go back to <a href="https://github.com/opensciencegrid/dosar/blob/master/docs/DataTrieste2018/03-FirstManagedJob.md">the instructions for your first job</a> to do it again.</p>
 <p>We are going to get a bit more sophisticated in submitting our jobs now. Let's have three windows open. In one window you'll submit the job. In the second you will watch the queue.  And in the third you will watch what DAGMan does.</p>
 <p>First we will create the most minimal DAG that can be created: a DAG with just one node. Put the text below into a file named <code>simple.dag</code>.</p>
 <pre><code>job simple submit
 </code></pre>
-
 <p>In your first window, submit the DAG: </p>
 <pre><code>$ condor_submit_dag simple.dag
 -----------------------------------------------------------------------
@@ -127,7 +125,6 @@ Submitting job(s).
 1 job(s) submitted to cluster 61.
 -----------------------------------------------------------------------
 </code></pre>
-
 <p>In the second window, watch the queue (press Ctrl+C when finished watching to kill this process):</p>
 <pre><code>$ watch -n 10 condor_q USER -nobatch
 
@@ -158,7 +155,6 @@ Submitting job(s).
 
 Ctrl-C
 </code></pre>
-
 <p>In the third window, watch what DAGMan does: </p>
 <pre><code>$ tail -f --lines=500 simple.dag.dagman.out
 6/21/12 22:51:13 Setting maximum accepts per cycle 8.
@@ -295,7 +291,6 @@ Ctrl-C
 06/21/12 22:56:05 Note: 0 total POST script deferrals because of -MaxPost limit (0)
 06/21/12 22:56:05 **** condor_scheduniv_exec.61.0 (condor_DAGMAN) pid 5812 EXITING WITH STATUS 0
 </code></pre>
-
 <p>Now verify your results: </p>
 <pre><code>$ cat simple.log
 000 (062.000.000) 06/21 22:51:30 Job submitted from host: &lt;128.104.100.55:9618?sock=28867_10e4_2&gt;
@@ -331,7 +326,6 @@ $ cat simple.out
 Thinking really hard for 4 seconds...
 We calculated: 20
 </code></pre>
-
 <p>Looking at DAGMan's various files, we see that DAGMan itself ran as a Condor job (specifically, a scheduler universe job). </p>
 <pre><code>$ ls simple.dag.*
 simple.dag.condor.sub  simple.dag.dagman.log  simple.dag.dagman.out  simple.dag.lib.err  simple.dag.lib.out 
@@ -359,11 +353,9 @@ arguments   = &quot;-f -l . -Lockfile simple.dag.lock -AutoRescue 1 -DoRescueFro
 environment = _CONDOR_DAGMAN_LOG=simple.dag.dagman.out;_CONDOR_MAX_DAGMAN_LOG=0
 queue
 </code></pre>
-
 <p>Clean up some of these files: </p>
 <pre><code>$ rm simple.dag.*
 </code></pre>
-
 <h2 id="on-your-own">On your own</h2>
 <ul>
 <li>Why does DAGman run as a Condor job? </li>

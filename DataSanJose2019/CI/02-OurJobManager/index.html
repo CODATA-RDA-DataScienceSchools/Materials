@@ -95,7 +95,6 @@
 <pre><code>$ hostname
 training.osgconnect.net
 </code></pre>
-
 <p>You should have been given your username and password when you arrived this afternoon. If you don't know them, talk to Rob.</p>
 <h2 id="looking-at-our-condor-installation">Looking at our Condor installation</h2>
 <p>How do you know what version of Condor you are using? Try <code>condor_version</code>: </p>
@@ -103,17 +102,14 @@ training.osgconnect.net
 $CondorVersion: 8.6.13 Jan 16 2019 $
 $CondorPlatform: X86_64-CentOS_7.6 $
 </code></pre>
-
 <p>Note that the "CondorPlatform" reports the type of computer we built it on, <em>not</em> the computer we're running on. It was built on CentOS_7.6, but you might notice that we're running on CentOS Linux release 7.3.1.</p>
 <h3 id="extra-tip-the-os-version">Extra Tip: The OS version</h3>
 <p>Do you know how to find the OS version? You can usually look in /etc/os-release to find out:</p>
 <pre><code>$ cat /etc/os-release
 </code></pre>
-
 <p>Or you can run:</p>
 <pre><code>$ hostnamectl
 </code></pre>
-
 <p>Where is Condor installed? </p>
 <pre><code># Show the location of the condor_q binary
 $ which condor_q
@@ -123,13 +119,11 @@ $ which condor_q
 $ rpm -q condor
 condor-8.6.13-1.2.osg34.el7.x86_64
 </code></pre>
-
 <p>Condor has some configuration files that it needs to find. They are in the standard location, <code>/etc/condor</code></p>
 <pre><code>$ ls /etc/condor
 condor_config        condor_ssh_to_job_sshd_config_template  ganglia.d
 condor_config.local  config.d
 </code></pre>
-
 <p>Condor has some directories that it keeps records of jobs in. Remember that each submission computer keeps track of all jobs submitted to it. That's in the local directory: </p>
 <pre><code>$ condor_config_val -v LOCAL_DIR
 LOCAL_DIR = /var
@@ -139,7 +133,6 @@ LOCAL_DIR = /var
 $ ls -CF /var/lib/condor
 execute/  spool/ spool.q1/ spool.q2/ spool.q3/ spool.q4/ spool.q5/
 </code></pre>
-
 <p>The spool directory is where Condor keeps the jobs you submit, while the execute directory is where Condor keeps running jobs. Since this is a submission-only computer, it should be empty.</p>
 <p>Check if Condor is running.  Your output will differ slightly, but you should see <code>condor_master</code> with the other Condor daemons listed under it:</p>
 <pre><code>$ ps auwx --forest | grep condor_ | grep -v grep
@@ -150,7 +143,6 @@ condor   2299289  0.0  0.2  70020  9100 ?        Ss   Jul10   0:13  \_ condor_co
 condor   2299290  0.0  0.5 116132 23872 ?        Ss   Jul10   6:19  \_ condor_schedd -f
 condor   2299291  0.0  0.1  51056  7956 ?        Ss   Jul10   0:59  \_ condor_negotiator -f
 </code></pre>
-
 <p>For this version of Condor there are four processes running: the condor_master, the condor_schedd, the condor_procd, and condor_schedd. In general, you might see many different Condor processes. Here's a list of the processes:</p>
 <ul>
 <li><em>condor_master</em>: This program runs constantly and ensures that all other parts of Condor are running. If they hang or crash, it restarts them.</li>
@@ -173,7 +165,6 @@ OWNER BATCH_NAME      SUBMITTED   DONE   RUN    IDLE   HOLD  TOTAL JOB_IDS
 
 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended
 </code></pre>
-
 <p>The output that you see will be different depending on what jobs are running. Notice what we can see from this:</p>
 <ul>
 <li><em>ID</em>: We can see each jobs cluster and process number. For the first job, the cluster is 60256 and the process is 0.</li>
@@ -211,7 +202,6 @@ slot1_5@dhcp-10-1-202-3          LINUX      X86_64 Claimed   Busy      0.000  61
 slot1_6@dhcp-10-1-202-3          LINUX      X86_64 Claimed   Busy      0.990  2816  0+13:16:34
 ...
 </code></pre>
-
 <p>Let's look at exactly what you can see:</p>
 <ul>
 <li><em>Name</em>: The name of the computer. Sometimes this gets chopped off, like above.</li>
