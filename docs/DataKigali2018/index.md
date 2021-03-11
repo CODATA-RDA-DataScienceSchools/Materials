@@ -19,3 +19,5 @@ A 10-day workshop, organized by CODATA, RDA, ICTP and EAIFR, was conducted at th
    * Day 8 - [Artificial Neural Networks](slides/Artificial_Nueral_Networks.pdf)
    * Day 9 - Computational Infrastructures - [Lecture 1](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/RDA-Lecture1-Kigali-2018.pdf), [Lecture 2](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/RDA-Lecture2-Kigali-2018.pdf), [Lecture 3](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/RDA-Lecture3-Kigali-2018.pdf), 
    * Day 10 - Computational Infrastructures Wrap-Up - [Lecture 4](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/RDA-Lecture4-Kigali-2018.pdf), [School Close Out](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataKigali2018/slides/CloseOut-Kigali-2018.pdf)
+
+Some of the material in this curriculum was derived and adapted from work that is Copyright © Software Carpentry made available under the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/). 
