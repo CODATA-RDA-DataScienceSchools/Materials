@@ -28,3 +28,6 @@ A 10-day workshop, organized by CODATA, RDA, CONARE and CeNAT, was conducted at 
    * Day 8 - [Artificial Neural Networks](https://raphaelmcobe.github.io/dataSanJose2019_nn_presentation/#/)
    * Day 9 - Security and Computational Infrastructures - [All material](CI/Materials.md)
    * Day 10 - [School Close Out]()
+
+The material in this curriculum was derived and adapted from work that is Copyright © Software Carpentry made available under the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/). 
+
