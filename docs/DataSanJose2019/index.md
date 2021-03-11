@@ -29,5 +29,5 @@ A 10-day workshop, organized by CODATA, RDA, CONARE and CeNAT, was conducted at 
    * Day 9 - Security and Computational Infrastructures - [All material](CI/Materials.md)
    * Day 10 - [School Close Out]()
 
-The material in this curriculum was derived and adapted from work that is Copyright © Software Carpentry made available under the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/). 
+Some of the material in this curriculum was derived and adapted from work that is Copyright © Software Carpentry made available under the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/). 
 
