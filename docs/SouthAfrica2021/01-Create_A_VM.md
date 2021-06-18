@@ -18,7 +18,7 @@
       ![Instance_Details](Instance_Details.png)
       * Click _Next_.
    * You will be automatically moved to the next tab in the popup _Source_.
-   * Choose the _Ubuntu Server 20.04_ option by clicking on the up arrow button the the right of the _Ubuntu Server 20.04_ line. 
+   * Choose the _Ubuntu Server 20.04_ option by clicking on the up arrow button the the right of the _Ubuntu Server 20.04_ line. <img src="Up_Arrow.png" width="50"/>
 
 
    
