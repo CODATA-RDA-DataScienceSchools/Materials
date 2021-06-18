@@ -18,8 +18,14 @@
       ![Instance_Details](Instance_Details.png)
       * Click _Next_.
    * You will be automatically moved to the next tab in the popup _Source_.
-   * Choose the _Ubuntu Server 20.04_ option by clicking on the up arrow button the the right of the _Ubuntu Server 20.04_ line. <img src="Up_Arrow.png" width="30"/> We will use Ubuntu as that is what I'm most familiar with and what the following instructions for installing Python, R, and Jupyter will be written in.  If you are familiar with Debian or CentOS feel free to use it going forward, but you'll need to provide your own installation and configuration for the next exercises. 
+      * **NOTE on Sources:** We will use Ubuntu as that is what I'm most familiar with and what the following instructions for installing Python, R, and Jupyter will be written in.  If you are familiar with Debian or CentOS feel free to use it going forward, but you'll need to provide your own installation and configuration for the next exercises.
+      * Choose the _Ubuntu Server 20.04_ option by clicking on the up arrow button the the right of the _Ubuntu Server 20.04_ line. It looks like this: <img src="Up_Arrow.png" width="30"/>. This will move the line from the _Available_ section to the _Allocated_ section of the popup window.   
       * Click _Next_.
+    * You will be automatically moved to the next tab in the popup _Flavor_.
+       * **NOTE on Flavors:** We will use a _m1.small_ VM for this default exercise. If you are importing your own data for this exercise and need additional compute power, talk to your instructor. We'll advise you on the availability of additional resources. 
+       * Choose the _m1.small_ option by clicking on the up arrow to the right of the _m1.small_ option. This will move the line from the _Available_ section to the _Allocated_ section of the popup window.  
+       * Click _Next_.
+    * 
 
 
    
