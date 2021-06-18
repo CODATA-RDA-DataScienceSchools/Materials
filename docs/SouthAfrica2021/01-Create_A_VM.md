@@ -18,7 +18,8 @@
       ![Instance_Details](Instance_Details.png)
       * Click _Next_.
    * You will be automatically moved to the next tab in the popup _Source_.
-   * Choose the _Ubuntu Server 20.04_ option by clicking on the up arrow button the the right of the _Ubuntu Server 20.04_ line. <img src="Up_Arrow.png" width="50"/>
+   * Choose the _Ubuntu Server 20.04_ option by clicking on the up arrow button the the right of the _Ubuntu Server 20.04_ line. <img src="Up_Arrow.png" width="30"/> We will use Ubuntu as that is what I'm most familiar with and what the following instructions for installing Python, R, and Jupyter will be written in.  If you are familiar with Debian or CentOS feel free to use it going forward, but you'll need to provide your own installation and configuration for the next exercises. 
+      * Click _Next_.
 
 
    
