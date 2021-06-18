@@ -15,7 +15,10 @@
       * There is an optional _Description_ field. It is not necessary to add anything here, but you can.
       * The _Avaliability_ and _Count_ fields will be prepopulated. Be sure these are set to **nova** and **1** respectively. 
       * It should look similar to this:
-      *  
+      ![Instance_Details](Instance_Details.png)
+      * Click _Next_.
+   * You will be automatically moved to the next tab in the popup _Source_.
+   * Choose the _Ubuntu Server 20.04_ option by clicking on the up arrow button the the right of the _Ubuntu Server 20.04_ line. 
 
 
    
