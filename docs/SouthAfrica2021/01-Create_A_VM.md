@@ -21,11 +21,14 @@
       * **NOTE on Sources:** We will use Ubuntu as that is what I'm most familiar with and what the following instructions for installing Python, R, and Jupyter will be written in.  If you are familiar with Debian or CentOS feel free to use it going forward, but you'll need to provide your own installation and configuration for the next exercises.
       * Choose the _Ubuntu Server 20.04_ option by clicking on the up arrow button the the right of the _Ubuntu Server 20.04_ line. It looks like this: <img src="Up_Arrow.png" width="30"/>. This will move the line from the _Available_ section to the _Allocated_ section of the popup window.   
       * Click _Next_.
-    * You will be automatically moved to the next tab in the popup _Flavor_.
+   * You will be automatically moved to the next tab in the popup _Flavor_.
        * **NOTE on Flavors:** We will use a _m1.small_ VM for this default exercise. If you are importing your own data for this exercise and need additional compute power, talk to your instructor. We'll advise you on the availability of additional resources. 
        * Choose the _m1.small_ option by clicking on the up arrow to the right of the _m1.small_ option. This will move the line from the _Available_ section to the _Allocated_ section of the popup window.  
        * Click _Next_.
-    * 
+   * The _Network_, _Network Ports_, and _Security Groups_ are preconfigured by the OpenStack adimistrator. There is no need to adjust anything on these sections. 
+       * Click on the _Key Pairs_ tab on the left side menu. 
+   * In this step will will create a public and private key that will allow you to authenticate to the Virtual Machine you are creating. Keys may have been covered during the Security session in this class if not see the brief explanation of Key Pairs at this [link](http://www.crypto-it.net/eng/tools/key-based-authentication.html). 
+      *  **NOTE on Key Paris:** If you have an existing key pair, you can use it here. Try the _Import Key_ option. However, for this exercise we will assume you need a new key pair and proceed with that assumption.
 
 
    
