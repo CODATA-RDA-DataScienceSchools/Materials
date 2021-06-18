@@ -28,7 +28,13 @@
    * The _Network_, _Network Ports_, and _Security Groups_ are preconfigured by the OpenStack adimistrator. There is no need to adjust anything on these sections. 
        * Click on the _Key Pairs_ tab on the left side menu. 
    * In this step will will create a public and private key that will allow you to authenticate to the Virtual Machine you are creating. Keys may have been covered during the Security session in this class if not see the brief explanation of Key Pairs at this [link](http://www.crypto-it.net/eng/tools/key-based-authentication.html). 
-      *  **NOTE on Key Paris:** If you have an existing key pair, you can use it here. Try the _Import Key_ option. However, for this exercise we will assume you need a new key pair and proceed with that assumption.
+      *  **NOTE on Key Pairs:** If you have an existing key pair, you can use it here. Try the _Import Key_ option. However, for this exercise we will assume you need a new key pair and proceed with that assumption.
+      *  **NOTE on Key Securiy:** DO NOT SHARE YOUR PRIVATE KEY. This is rule #1 of key security. You will get a public portion of the key that is sharable, but never share the private portion of your key. 
+      *  Click the _+Create Key Pair_ button at the top of the screen. 
+      *  Give your key pair a name in the _Key Pair Name_ box. I've used **ICTP_OpenStack_Key** to identify it from the other keys I manage. 
+      *  Select _SSH Key_ from the _Key Type_ dropdown. 
+      *  Click _Create Keypair_
+      *  You will be presented with a Private Key copy it to your local machine using the _Copy Key to Clipboard_ option. 
 
 
    
