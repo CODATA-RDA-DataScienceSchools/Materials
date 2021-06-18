@@ -6,10 +6,14 @@ Prerequsites:
 
 **Notes on syntax:**
    * If you see ```text like this``` it is a command to enter directly into your terminal (it can be cut and pasted).
-   * If you see a ```%``` or ```$``` character before ```text like this``` it represents the prompt and should not be part of your text.
-   * If something is in brackets like ```<This_Text>``` it needs your unique text and should be replaced with the appropriate value. 
+   * If you see a ```%``` or ```$``` character before ```text like this``` it represents the prompt and should not be part of your text. Don't cut and paste this character!
+   * If something is in brackets like ```<This_Text>``` it needs your unique text and should be replaced with the appropriate value.
+
+**A Final Note:**
+   * Hopefully the UNIX session you've had covers most of the commands you see here. If it did not and you're curious, ask your instructor.  
 
 ## Connecting via SSH
+   * Open your terminal software and navigate to the directory where you've saved your OpenStack SSH Key. 
 
 ## Install Python
 
