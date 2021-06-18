@@ -25,15 +25,27 @@ Prerequsites:
    ```ubuntu@robtest4:~$```
 
 ## Preparing the OS for Software Installation
-   * We created the Ubuntu Virtual Machine using a pre-packaged image. We want to be sure it has all the latest software versions. We do this by running this command:
+   * We created the Ubuntu Virtual Machine using a pre-packaged image. We want to be sure it has all the latest software versions. We do this by running this command: <br>
    ```$ sudo apt update && sudo apt -y upgrade```
-   * This step will take about 2 minutes. You can watch all the updated packages being installed in the terminal. When it is done you will see this line:
-   ```$ ```
+   * This step will take about 3 minutes. You can watch all the updated packages being installed in the terminal. When it is done you will see this as the final line: <br>
+   ```$ update-initramfs: Generating /boot/initrd.img-5.4.0-74-generic```
 
 ## Install Python
+   * Install Python with this command: <br>
+   ```$ sudo apt install python3-pip python3-dev```
+   * Answer with a ```Y``` when asked if you want to continue. 
 
 ## Install R
+   * Install R with this command: <br>
+   ```sudo apt install r-base```
+   * Answer with a ```Y``` when asked if you want to continue.
 
 ## Install Jupyter Notebook
+
+**Note:** We'll use a Python Virtaul Environment when running our Jupyter Notebook. Why use a virtual environment? Isolation! A virtual environment is a Python tool for dependency management and project isolation. They allow Python site packages (third party libraries) to be installed locally in an isolated directory for a particular project, as opposed to being installed globally (i.e. as part of a system-wide Python). 
+   * Make sure you have the most recent version of the Pythong Package Manger using: <br>
+   ```sudo -H pip3 install --upgrade pip```
+   * Install the Virtual Environment package: <br>
+   ```sudo -H pip3 install virtualenv```
 
 ## Configure and Connect to Your Notebook
