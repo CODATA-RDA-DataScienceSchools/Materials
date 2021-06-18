@@ -38,7 +38,9 @@
       *  Write this key to a file on your local machine. This key will be necessary later to access your Virtual Machine and install the software you'll use for an analysis.
    * The rest of the options do not need modification and you are ready to launch your Virtual Machine. 
       * Click _Launch Instance_. 
-      * This will take a few moments, but when it's active you'll see something like this: ![](Instance_Running.png)    
+      * This will take a few moments, but when it's active you'll see something like this: ![](Instance_Running.png) 
+      * You have created a Cloud resource using OpenStack! Excellent work!
+      * Write down the IP Address, you will need this along with your private key to do the next step.    
 
 
    
