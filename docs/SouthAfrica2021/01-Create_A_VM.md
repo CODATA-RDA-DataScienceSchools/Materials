@@ -5,4 +5,17 @@
    * Log in with the credentials sent via email
       * We'll need to work out how to distribute credentials for the actual school
    * You'll be automatically presented with a pie chart visulaization of the current status of your OpenStack environment. It will looks something like the figure below, though it may differ. 
+   ![OpenStack Overview](OpenStack_Overview.png)
+
+   * Click _Instances_ in the left hand menu. This will show you all of the running instances, this may be empty if you are just starting. 
+   * At the right top of the screen you will have a _Launch Instance_ button. Click this button. 
+   * A new popup window will open with the _Details_ of the VM you will be creating. 
+      * The _Project Name_ field will be prepopulated.
+      * Add an _Instance Name_. Call this something with your name or something you can uniquely indetify as other student VMs may be listed here also. 
+      * There is an optional _Description_ field. It is not necessary to add anything here, but you can.
+      * The _Avaliability_ and _Count_ fields will be prepopulated. Be sure these are set to **nova** and **1** respectively. 
+      * It should look similar to this:
+      *  
+
+
    
