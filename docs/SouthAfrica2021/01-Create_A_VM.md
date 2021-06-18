@@ -33,8 +33,12 @@
       *  Click the _+Create Key Pair_ button at the top of the screen. 
       *  Give your key pair a name in the _Key Pair Name_ box. I've used **ICTP_OpenStack_Key** to identify it from the other keys I manage. 
       *  Select _SSH Key_ from the _Key Type_ dropdown. 
-      *  Click _Create Keypair_
+      *  Click _Create Keypair_.
       *  You will be presented with a Private Key copy it to your local machine using the _Copy Key to Clipboard_ option. 
+      *  Write this key to a file on your local machine. This key will be necessary later to access your Virtual Machine and install the software you'll use for an analysis.
+   * The rest of the options do not need modification and you are ready to launch your Virtual Machine. 
+      * Click _Launch Instance_. 
+      * This will take a few moments, but when it's active you'll see something like this: ![](Instance_Running.png)    
 
 
    
