@@ -37,15 +37,37 @@ Prerequsites:
 
 ## Install R
    * Install R with this command: <br>
-   ```sudo apt install r-base```
+   ```$ sudo apt install r-base```
    * Answer with a ```Y``` when asked if you want to continue.
 
 ## Install Jupyter Notebook
 
-**Note:** We'll use a Python Virtaul Environment when running our Jupyter Notebook. Why use a virtual environment? Isolation! A virtual environment is a Python tool for dependency management and project isolation. They allow Python site packages (third party libraries) to be installed locally in an isolated directory for a particular project, as opposed to being installed globally (i.e. as part of a system-wide Python). 
+**Note:** We'll use a Python Virtaul Environment when running our Jupyter Notebook. Why use a virtual environment? Isolation! A virtual environment is a Python tool for dependency management and project isolation. They allow Python site packages (third party libraries) to be installed locally in an isolated directory for a particular project, as opposed to being installed globally (i.e. as part of a system-wide Python). Since we will make this notebook available remotely (and anyone could potentially find it), we don't want our notebook to install in the system wide Python. 
    * Make sure you have the most recent version of the Pythong Package Manger using: <br>
-   ```sudo -H pip3 install --upgrade pip```
+   ```$ sudo -H pip3 install --upgrade pip```
    * Install the Virtual Environment package: <br>
-   ```sudo -H pip3 install virtualenv```
+   ```$ sudo -H pip3 install virtualenv```
+   * Create a directory for the virtual environment using: <br>
+   ```$ mkdir notebook```
+   * Move into this directory: <br>
+   ```$ cd notebook```
+   * Create this Virtual Environment (on a Virtual Machine): <br>
+   ```$ virtualenv jupyterenv```
+   * Activate your Virtual Environment: <br>
+   ```$ source jupyterenv/bin/activate```
+   * You should now see ```(jupyterenv)``` at the start of your prompt.
+   * Install Jupyter using: <br>
+   ```pip install jupyter```
+   * Add a password to your Jupyter Notebook using: <br>
+   ```$ jupyter notebook password```
+   * Enter and Verity a password. 
+   * Start your Jupyter Notebook and Allow Remote Connections with: <br>
+   ```$ jupyter notebook --no-browser --port 8888 --ip "<Your_VM_IP_Here>"```
+   
+##Connect to Your Notebook
 
-## Configure and Connect to Your Notebook
+   * Point your local browser at: http://<Your_VM_IP_Here>:8888/
+   * Enter the notebook password you just created a few steps earlier. 
+   * You should now be connected to a Jupyter Notebook on a cloud resources (at ICTP in Italy) and can use it's resoruces from your home browser!
+
+
