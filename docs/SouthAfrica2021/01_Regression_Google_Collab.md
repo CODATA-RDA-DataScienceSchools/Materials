@@ -9,13 +9,18 @@ We are going to use this free cloud resource to run a regression analysis on a c
    * Point your browser at the [Google Colab](https://colab.research.google.com) site.
    * If you are not signed in use the _Sign In_ button on the top right of the screen. 
    * You will be presented with a pop up box that allows importing a file or starting a new file. Hit the _Cancel_ button and take some time to read the _What is Coloaboratory?"_ document. 
-   * Once you have an general understanding of what Colab is, open a new file from the _File_ menu. 
-   * You will see a pop up that looks like this:
-   ![](Colab_Open.png)
-   * Click the _GitHub_ link on the top bar menu.
-
-## Start a Jupyter Notebook
+   * Once you have an general understanding of what Colab proceed to the next section.
 
 ## Import Code from GitHub
 
-## Run Regression Analysis
+   * Upload a file from the _File_ menu using the _Upload Notebook_ option. 
+   * You will see a pop up that looks like this:
+   ![](Colab_Open.png)
+   * Click the _GitHub_ link on the top bar menu.
+   * Enter this link: https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/SouthAfrica2021/Colab_Regression_Spark.ipynb into the search field.
+   * This will open the Notebook we will be looking at during this lesson.
+
+## Run Regression Analysis with Apache Spark
+   * Each step is explined in the document run each code section in order. 
+   * Read though the explanation of each step.
+   * Keep in mind you will be importing your own data set (or pick an example data set) in hands-on exercise 4 on your own an International Center for Theoretcial Physics (ICTP) OpenStack cloud resource, which you will create yourself. So while you can go through this lesson quickly take time to understand what is happening in each step. 
