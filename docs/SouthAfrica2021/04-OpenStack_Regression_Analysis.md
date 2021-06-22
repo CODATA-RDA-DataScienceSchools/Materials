@@ -18,5 +18,5 @@
    * It's not the same regression analysis, but take a look at these visualizations created with these datasets: https://www.kaggle.com/xiaokangqin/brics-development-indicators-data-visualization. Can you get this notebook to work? **Hint:** You may need to import some additional libraries. 
 
 ## Conculsion
-   * We've talked about how to think about your needs for computing resources. As your research gains complexity so will your computing needs. We've introduced you to several options and shown you with hands-on exercises how to do some simple analysis tasks in cloud environements. 
+   * We've talked about how to think about your needs for cyberinfrastructure. As your research gains complexity so will your computing needs. You will often start on your own laptop, but find you need more computing power and need to leverage Institutional Clusters, High Throughput Computing, High Performance Computing, Cloud Computing, or even more likely some combination of several.  We've introduced you to several options and shown you with hands-on exercises how to do some simple analysis tasks in cloud environements. 
    * Good luck and happy computing!!
