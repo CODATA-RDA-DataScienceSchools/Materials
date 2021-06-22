@@ -15,7 +15,7 @@ We are going to use this free cloud resource to run a regression analysis on a c
 
    * Upload a file from the _File_ menu using the _Upload Notebook_ option. 
    * You will see a pop up that looks like this:
-   ![](Colab_Open.png)
+   <img src="Colab_Open.png" width="200"/>
    * Click the _GitHub_ link on the top bar menu.
    * Enter this link: https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/SouthAfrica2021/Colab_Regression_Spark.ipynb into the search field.
    * This will open the Apache Spark based Regression Analysis Notebook we will be looking at during this lesson.
