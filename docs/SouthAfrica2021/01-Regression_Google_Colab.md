@@ -25,3 +25,5 @@ We are going to use this free cloud resource to run a regression analysis on a c
    * **NOTE:** You must do the steps in order as software packages will be installed on the cloud resource and later steps will not work if you do not complete the earlier steps. 
    * Read though the explanation of each step.
    * Keep in mind you will be importing your own data set (or pick an example data set) in hands-on exercise 4 on your own International Center for Theoretcial Physics (ICTP) OpenStack cloud resource, which you will create yourself. So while you can go through this lesson quickly, take time to understand what is happening in each step. 
+
+[Return to CI Overview](00-Hands_on_Exercise_Overview.md)
