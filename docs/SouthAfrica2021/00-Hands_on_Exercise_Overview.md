@@ -16,4 +16,4 @@ In [Exercise 3](03-Connect_And_Install.md) you will use the VM you created in Ex
 
 ## Exercise 4 - Regression Analysis Using Jupyter
 
-We return to the method used in Exercise 1 to recreate a new regression analysis on the VM you've created to do your own work in [Exercise 4](04-OpenStack_Regression.md)
+We return to the method used in Exercise 1 to recreate a new regression analysis on the VM you've created to do your own work in [Exercise 4](04-OpenStack_Regression_Analysis.md)
