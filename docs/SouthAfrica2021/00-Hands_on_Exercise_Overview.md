@@ -1,4 +1,4 @@
-# Overview of the Hands-on Cyberinfrstructure Exercises
+# Overview of the Hands-on Cyberinfrastructure Exercises
 
 ## Exercise 1 - Regression Analysis Using Google Colab
 
@@ -8,7 +8,7 @@ All steps and code necessary to complete this analysis can be found at [Exercise
 
 ## Exercise 2 - Setting Up A Cloud Resource Using OpenStack
 
-[Exercise 2](02-Create_A_VM.md) will walk you through creating a Virtual Machine (VM) using the OpenStack browser based API. Upon completion you will have created and securely connected to a cloud resource hosted by the International Center of Theoretical Physis in Trieste, Italy. 
+[Exercise 2](02-Create_A_VM.md) will walk you through creating a Virtual Machine (VM) using the OpenStack browser based API. Upon completion you will have created and securely connected to a cloud resource hosted by the International Center of Theoretical Physics in Trieste, Italy. 
 
 ## Exercise 3 - Creating A Cloud Based Jupyter Notebook
 
