@@ -69,6 +69,6 @@ Prerequisites:
 
    * Point your local browser at: http://<Your_VM_IP_Here>:8888/
    * Enter the notebook password you just created a few steps earlier. 
-   * You should now be connected to a Jupyter Notebook on a cloud resource (at ICTP in Italy) and can use it's resoruces from your home browser!
+   * You should now be connected to a Jupyter Notebook on a cloud resource (at ICTP in Italy) and can use its resources from your home browser!
 
 [Return to CI Overview](00-Hands_on_Exercise_Overview.md)
