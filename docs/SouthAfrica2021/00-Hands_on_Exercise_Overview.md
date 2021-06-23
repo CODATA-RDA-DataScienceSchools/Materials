@@ -12,7 +12,7 @@ All steps and code necessary to complete this analysis can be found at [Exercise
 
 ## Exercise 3 - Creating A Cloud Based Jupyter Notebook
 
-In [Exercise 3](03-Create_A_Notebook.md) you will use the VM you created in Exercise 2 to set up an online Jupyter Notebook. This notebook will be used in the next exercise to recreate the regression analysis from Exercise 1, this time with a new data set of your choosing. 
+In [Exercise 3](03-Connect_And_Install.md) you will use the VM you created in Exercise 2 to set up an online Jupyter Notebook. This notebook will be used in the next exercise to recreate the regression analysis from Exercise 1, this time with a new data set of your choosing. 
 
 ## Exercise 4 - Regression Analysis Using Jupyter
 
