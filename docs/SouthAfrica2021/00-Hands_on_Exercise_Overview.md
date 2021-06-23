@@ -2,7 +2,7 @@
 
 ## Exercise 1 - Regression Analysis Using Google Colab
 
-[Exercise 1](01-Regression_Analysis_Colab.md)
+[Exercise 1](01-Regression_Google_Colab.md)
 
 ## Exercise 2 - Setting Up A Cloud Resource Using OpenStack
 
