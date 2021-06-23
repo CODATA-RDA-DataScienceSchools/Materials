@@ -42,5 +42,4 @@
       * You have created a Cloud resource using OpenStack! Excellent work!
       * Write down the IP Address, you will need this along with your private key to do the next step.    
 
-
-   
+[Return to CI Overview](00-Hands_on_Exercise_Overview.md)
