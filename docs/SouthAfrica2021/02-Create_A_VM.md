@@ -3,7 +3,7 @@
 ## Connect to the OpenStack API
    * Point your browser at https://osc2.ictp.it
    * Log in with the credentials sent via email
-      * We'll need to work out how to distribute credentials for the actual school
+      * If you did not receive an email with a username, password, and domain please contact your instructor. 
    * You'll be automatically presented with a pie chart visualization of the current status of your OpenStack environment. It will look something like the figure below, though it may differ. 
    ![OpenStack Overview](OpenStack_Overview.png)
 
