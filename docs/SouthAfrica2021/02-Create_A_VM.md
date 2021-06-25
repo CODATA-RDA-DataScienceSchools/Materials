@@ -4,6 +4,7 @@
    * Point your browser at https://osc2.ictp.it
    * Log in with the credentials sent via email
       * If you did not receive an email with a username, password, and domain please contact your instructor. 
+      * The email will have come from the address clement.onime@ictp.it. He is the OpenStack administrator at ICTP. 
    * You'll be automatically presented with a pie chart visualization of the current status of your OpenStack environment. It will look something like the figure below, though it may differ. 
    ![OpenStack Overview](OpenStack_Overview.png)
 
