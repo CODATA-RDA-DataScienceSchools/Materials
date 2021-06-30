@@ -14,7 +14,7 @@ also exercise our R knowledge by building a few data visualizations
   the screen. 
 * You will be presented with a popup box that allows importing a file or
   starting a new file. Hit the _Cancel_ button and take some time to read
-  the _"What is Colaboratory?"_ document. 
+  the _"What is Colaboratory?"_ document located [here](https://colab.research.google.com/notebooks/intro.ipynb#scrollTo=5fCEDCU_qrC0). 
 * Once you have a general understanding of what Colab is, proceed to the
   next section.
 
