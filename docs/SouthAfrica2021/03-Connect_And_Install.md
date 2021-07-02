@@ -65,7 +65,7 @@ Prerequisites:
    * Start your Jupyter Notebook and Allow Remote Connections with: <br>
    ```$ jupyter notebook --no-browser --port 8888 --ip "<Your_VM_IP_Here>"```
    
-##Connect to Your Notebook
+## Connect to Your Notebook
 
    * Point your local browser at: http://<Your_VM_IP_Here>:8888/
    * Enter the notebook password you just created a few steps earlier. 
