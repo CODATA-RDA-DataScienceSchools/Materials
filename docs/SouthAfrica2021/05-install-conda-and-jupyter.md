@@ -6,6 +6,7 @@ Before installing and configuring the *Jupyter Notebook Server* we need to alloc
 #### 1. Instantiating the Virtual Machine
 
 For instantiating a new VM, we should head to the ***Instances*** menu item as show in the image bellow: 
+
 ![](img/01.png)
 
 After that we are going to create a new VM by clicking at the *Launch Instances*
@@ -26,6 +27,7 @@ For more details on how to create a VM, please refer to [Exercise 2](02-Create_A
 #### 2. Accessing the VM
 We are going to use the [ssh protocol](https://en.wikipedia.org/wiki/Secure_Shell_Protocol) to access the VM. 
 Before accessing the machine we have to find its IP address at the Openstack interface. Under the ***Instances*** tab we should see the *Jupyter* VM. As seen in the image below:
+
 ![](img/02.png)
 
 For more information about how to connect to the VM that we've just created please review the [Exercise 3](03-Connect_And_Install.md).
