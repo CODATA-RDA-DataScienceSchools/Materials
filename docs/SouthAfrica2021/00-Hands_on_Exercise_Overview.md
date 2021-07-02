@@ -33,3 +33,11 @@ time with a new data set of your choosing.
 We return to the method used in Exercise 1 to recreate a new regression
 analysis on the VM you've created to do your own work in [Exercise
 4](04-OpenStack_Regression_Analysis.md)
+
+## Advanced topics
+
+#### 1. [Deploying a *Jupyter Notebook Server* at an *IaaS* platform using the 
+*conda* environment manager](05-install-conda-and-jupyter.md)
+
+#### 2. [Deploying a *Jupyter Notebook Server* at an *IaaS* platform using
+*Docker* containers](06-install-conda-inside-docker.md);
