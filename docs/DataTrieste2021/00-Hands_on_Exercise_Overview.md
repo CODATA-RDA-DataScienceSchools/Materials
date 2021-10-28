@@ -36,7 +36,7 @@ analysis on the VM you've created to do your own work in [Exercise
 
 ## Advanced topics
 
-#### 1. [Numerical analysis using R Kernel in jupyter notebook](08-analysis-using-r-kernel.md)
+#### 1. [Data aggregation and plot using R Kernel in jupyter notebook](08-analysis-using-r-kernel.md)
 
 #### 2. [Deploying a *Jupyter Notebook Server* at an *IaaS* platform using *Docker* containers](06-install-conda-inside-docker.md)
 
