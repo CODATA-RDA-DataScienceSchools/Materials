@@ -16,7 +16,7 @@
       * There is an optional _Description_ field. It is not necessary to add anything here, but you can if you want to.
       * The _Availability_ and _Count_ fields will be prepopulated. Be sure these are set to **nova** and **1**, respectively. 
       * It should look similar to this:
-      ![Instance_Details](Instance_Details.png)
+      ![Instance_Details](Instance_Details2.png)
       * Click _Next_.
    * You will be automatically moved to the next tab in the popup _Source_.
       * **NOTE on Sources:** We will use Ubuntu. The following installation instructions are written in Python, R, and Jupyter.  If you are familiar with Debian or CentOS feel free to use it going forward, but you'll need to provide your own installation and configuration for the next exercises.
