@@ -24,7 +24,7 @@
    ```Are you sure you want to continue connecting (yes/no/[fingerprint])?```
    * Answer ```yes```. 
    * You are now connected to your VM. You will see a prompt like this: <br>
-   ```ubuntu@robtest4:~$```
+   ```ubuntu@testvm1:~$```
 
 ### Preparing the OS for Software Installation
    * We created the Ubuntu Virtual Machine using a pre-packaged image. We want to be sure it has all the latest software versions. We do this by running this command: <br>
