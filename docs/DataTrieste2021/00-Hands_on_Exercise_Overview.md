@@ -21,9 +21,9 @@ Machine (VM) using the OpenStack browser based API. Upon completion you will
 have created and securely connected to a cloud resource hosted by the
 International Center of Theoretical Physics in Trieste, Italy. 
 
-## Exercise 3 - Creating A Cloud Based Jupyter Notebook
+## Exercise 3 - Creating A Cloud Based Jupyter Notebook using the *conda* environment manager
 
-In [Exercise 3](03-Connect_And_Install.md) you will use the VM you created in
+In [Exercise 3](07-install-jupyter-with-conda.md) you will use the VM you created in
 Exercise 2 to set up an online Jupyter Notebook. This notebook will be used in
 the next exercise to recreate the regression analysis from Exercise 1, this
 time with a new data set of your choosing. 
