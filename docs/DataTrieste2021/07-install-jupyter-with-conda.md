@@ -31,6 +31,8 @@
    ```$ sudo apt update && sudo apt -y upgrade```
    * This step will take about 3 minutes. You can watch all the updated packages being installed in the terminal. When it is done you will see this as the final line: <br>
    ```$ update-initramfs: Generating /boot/initrd.img-5.4.0-74-generic```
+   * install the base fonts into the sysytem
+    ```$ sudo apt install fontconfig```
 
 Our next step would be to install the *conda environment manager* tool.
 
