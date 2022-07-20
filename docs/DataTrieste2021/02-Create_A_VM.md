@@ -1,7 +1,7 @@
 # Create A New Virtual Machine (VM) on the ICTP OpenStack Cloud
 
 ## Connect to the OpenStack API
-   * Point your browser at https://osc2.ictp.it
+   * Point your browser at https://osc2.ictp.it/horizon
    * Log in with the credentials sent via email
       * If you did not receive an email with a username, password, and domain please contact your instructor. 
       * The email will have come from the address clement.onime@ictp.it. He is the OpenStack administrator at ICTP. 
