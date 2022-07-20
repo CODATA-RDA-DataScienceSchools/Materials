@@ -139,7 +139,9 @@ After activating the *jupyter* environment we are going to use the `conda instal
 We can install all the needed software at once by performing the command:
 
 ```bash=
-$ conda install notebook r r-irkernel
+$ conda install notebook 
+$ conda install r 
+$ conda instaall r-irkernel
 ```
 We can check if the notebook was correctly installed by using the `conda list` command combined with the `grep` command:
 
