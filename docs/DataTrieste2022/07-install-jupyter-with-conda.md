@@ -141,7 +141,7 @@ We can install all the needed software at once by performing the command:
 ```bash=
 $ conda install notebook 
 $ conda install r 
-$ conda instaall r-irkernel
+$ conda install r-irkernel
 ```
 We can check if the notebook was correctly installed by using the `conda list` command combined with the `grep` command:
 
