@@ -41,6 +41,17 @@
       * Click _Launch Instance_. 
       * This will take a few minutes, but when it's active you'll see something like this: ![](Instance_Running2.png) 
       * You have created a Cloud resource using OpenStack! Excellent work!
-      * Write down the IP Address, you will need this along with your private key to do the next step.    
+      * Write down the IP Address, you will need this along with your private key to do the next step. 
+   * The final step is to open two ports in the firewall to allow you to connect via a terminal and to allow browser access for a Jupyter notebook.
+      * Click the _Security Groups_ option in the left hand menu.
+      * You will have one group named default, click on the button labeled _Manage Rules_ to the right on the default group. 
+      * Click the _Add Rule_ button. 
+      * Use the dropdown menu to select _SSH_. This will automatically open port 22 the standard port used to securely connect to a VM. 
+      * Click _Add_. You should now see an Ingress for port 22 in your rules list. 
+      * Click the _Add Rule_ button again. 
+      * Select _Custom TCP Rule_ from the dropdown menu. 
+      * In the port box enter _8888_. This is the standard port used to connect to Jupyter Notebooks. 
+      * Click _Add_.
+   * You are now ready to connect to a Jupyter Notebook on the Virutal Machine you created. 
 
 [Return to CI Overview](00-Hands_on_Exercise_Overview.md)
