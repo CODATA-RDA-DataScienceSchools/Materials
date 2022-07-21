@@ -5,7 +5,7 @@
 
 ## Import the Notebook
 
-   * The OpenStack recreation of the Google Colab regression analysis is available at: [https://raw.githubusercontent.com/CODATA-RDA-DataScienceSchools/Materials/master/docs/SouthAfrica2021/OpenStack_Regression.ipynb](https://raw.githubusercontent.com/CODATA-RDA-DataScienceSchools/Materials/master/docs/SouthAfrica2021/OpenStack_Regression.ipynb)
+   * The OpenStack recreation of the Google Colab regression analysis is available at: [https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2021/OpenStack_Regression.ipynb](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2021/OpenStack_Regression.ipynb)
    * Download this file to your local machine and save it. 
    * Use the _Upload_ button in your notebook to upload the analysis code. 
    * After uploading, the file will appear in your notebook. Click on the file to open it. 
