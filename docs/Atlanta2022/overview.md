@@ -1,9 +1,9 @@
-+ School Overview
+# School Overview
 
-++ Detailed Schedule
+## Detailed Schedule
 
-++ Video Materials
+## Video Materials
 
-++ Prerequsites
+## Prerequsites
 
-++ Contact Points
+## Contacts
