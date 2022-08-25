@@ -5,15 +5,30 @@ The South Big Data Hub in collaboration with the CODATA-RDA Schools of Research 
 ## Schedule
 
 ### Week One - September 5-9 - Introduction to UNIX and Git 
+   * Link to Video Lectures Here
+   * Link to Hands on Exercises Here
+   * Link to Slides Here
    * Live Session Monday (5-Sept 12:00 ET) - Welcomoe and Introduction
    * Live Sessions Wednesday and Friday (7-Sept and 9-Sept 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 ### Week Two - September 12-16 - The R Language for Statistical Computing
+   * Link to Video Lectures Here
+   * Link to Hands on Exercises Here
+   * Link to Slides Here
    * Live Sessions Wednesday and Friday (14-Sept and 16-Sept 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 ### Week Three - September 19-23 - Machine Learning and Recommender Systems
+   * Link to Video Lectures Here
+   * Link to Hands on Exercises Here
+   * Link to Slides Here
    * Live Sessions Wednesday and Friday (21-Sept and 23-Sept 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 ### Week Four - September 26-30 - Neural Networks
+   * Link to Video Lectures Here
+   * Link to Hands on Exercises Here
+   * Link to Slides Here
    * Live Sessions Wednesday and Friday (28-Sept and 30-Sept 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 ### Week Five - October 3-7 - Computational Infrastructures
+   * Link to Video Lectures Here
+   * Link to Hands on Exercises Here
+   * Link to Slides Here
    * Live Sessions Wednesday and Friday (5-Oct and 7-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 
 ## Important Links
