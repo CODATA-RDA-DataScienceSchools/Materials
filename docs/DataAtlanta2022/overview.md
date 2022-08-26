@@ -4,11 +4,15 @@ The South Big Data Hub in collaboration with the CODATA-RDA Schools of Research 
 
 ## Schedule
 
+### Before we start
+   * Welcome video - [start here!](https://vimeo.com/743584505)
+   * A road map for the course - link to Video Here
+   * A road map for the course - link to Presentation Here
 ### Week One - September 5-9 - Introduction to UNIX and Git 
    * Link to Video Lectures Here
    * Link to Hands on Exercises Here
    * Link to Slides Here
-   * Live Session Monday (5-Sept 12:00 ET) - Welcomoe and Introduction
+   * Live Session Monday (5-Sept 12:00 ET) - Welcome and Introduction
    * Live Sessions Wednesday and Friday (7-Sept and 9-Sept 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 ### Week Two - September 12-16 - The R Language for Statistical Computing
    * Link to Video Lectures Here
