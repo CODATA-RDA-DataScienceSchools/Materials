@@ -34,6 +34,31 @@ This is a guide to navigate the mini-lectures for the class **R for Social Scien
 
 Please watch the videos in order, and solve the exercises that are described at the end of each mini-lecture. 
 
+* R for Social Sciences 00 - [00.Welcome]()
+* R for Social Sciences 01 - [01](https://vimeo.com/598885768)
+* R for Social Sciences 02 - [02](https://vimeo.com/598889009)
+* R for Social Sciences 03 - [03](https://vimeo.com/598891422)
+* R for Social Sciences 04 - [04](https://vimeo.com/598892643)
+* R for Social Sciences 05 - [05](https://vimeo.com/598894951)
+* R for Social Sciences 06 - [06](https://vimeo.com/598895743)
+* R for Social Sciences 07 - [07](https://vimeo.com/598956939)
+* R for Social Sciences 08 - [08](https://vimeo.com/598958829)
+* R for Social Sciences 09 - [09](https://vimeo.com/598960357)
+* R for Social Sciences 10 - [10](https://vimeo.com/598933766)
+* R for Social Sciences 11 - [11](https://vimeo.com/598937484)
+* R for Social Sciences 12 - [12](https://vimeo.com/598940004)
+* R for Social Sciences 13 - [13](https://vimeo.com/598940953)
+* R for Social Sciences 14 - [14](https://vimeo.com/598942737)
+* R for Social Sciences 15 - [15](https://vimeo.com/598943287)
+* R for Social Sciences 16 - [16](https://vimeo.com/598944486)
+* R for Social Sciences 17 - [17](https://vimeo.com/598949130)
+* R for Social Sciences 18 - [18](https://vimeo.com/598950881)
+* R for Social Sciences 19 - [19](https://vimeo.com/598952240)
+* R for Social Sciences 20 - [20](https://vimeo.com/598953816)
+* R for Social Sciences 21 - [21](https://vimeo.com/598955359)
+* R for Social Sciences 22 - [22.Closing](https://vimeo.com/598956731)
+
+
 
 <table style="width:100%">
   <tr>
