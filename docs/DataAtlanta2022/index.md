@@ -9,7 +9,7 @@ The South Big Data Hub in collaboration with the CODATA-RDA Schools of Research 
    * A road map for the course - link to Video Here
    * A road map for the course - link to Presentation Here
 ### Week One - September 5-9 - Introduction to UNIX and Git 
-   * Link to Video Lectures Here
+   * Link to Video Lectures [Here](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2022/week1.md)
    * Link to Hands on Exercises Here
    * Link to Slides Here
    * Live Session Monday (5-Sept 12:00 ET) - Welcome and Introduction
