@@ -32,6 +32,8 @@ R lectures have two versions: Natural Sciences or Social Sciences. Please choose
 * R for Natural Sciences 25 - [Additional resources and summary](https://vimeo.com/599098385)
 * R for Natural Sciences 26 - [R and SQL](https://vimeo.com/599098581)
 
+Materials prepared by [Bianca Peterson, Ph.D.](https://twitter.com/binxiepeterson?lang=en)
+
 
 ### Video Lecture Guide R for Social Sciences
 
@@ -122,3 +124,5 @@ Please watch the videos in order, and solve the exercises that are described at 
   </tr>
 </table>
 
+
+Materials prepared by [Marcela Alfaro Córdoba, Ph.D.](https://malfaro.netlify.app/)
