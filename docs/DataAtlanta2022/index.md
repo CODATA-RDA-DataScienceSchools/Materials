@@ -10,7 +10,7 @@ The South Big Data Hub in collaboration with the CODATA-RDA Schools of Research 
             - link to Video Here
             - link to Presentation Here
 ### Week One - September 5-9 - Introduction to UNIX and Git 
-   * Link to Video Lectures [Here](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2022/week1.md)
+   * Link to Video Lectures [Here](week1.md)
    * Link to Slides [Here](https://github.com/CODATA-RDA-DataScienceSchools/Materials/tree/master/docs/DataAtlanta2022/presentations_week1)
    * Live Session Monday (5-Sept 12:00 ET) - Welcome and Introduction
    * Live Sessions Wednesday and Friday (7-Sept and 9-Sept 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
