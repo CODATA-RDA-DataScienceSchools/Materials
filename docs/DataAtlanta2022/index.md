@@ -16,9 +16,9 @@ The South Big Data Hub in collaboration with the CODATA-RDA Schools of Research 
    * Live Session Monday (5-Sept 12:00 ET) - Welcome and Introduction
    * Live Sessions Wednesday and Friday (7-Sept and 9-Sept 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 ### Week Two - September 12-16 - The R Language for Statistical Computing
-   * Link to Video Lectures Here
+   * Link to Video Lectures [Here](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2022/week2.md)
    * Link to Hands on Exercises Here
-   * Link to Slides Here
+   * Link to Slides [Here](https://github.com/CODATA-RDA-DataScienceSchools/Materials/tree/master/docs/DataAtlanta2022/presentations_week2)
    * Live Sessions Wednesday and Friday (14-Sept and 16-Sept 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 ### Week Three - September 19-23 - Machine Learning and Recommender Systems
    * Link to Video Lectures Here
