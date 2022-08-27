@@ -19,28 +19,28 @@ The South Big Data Hub in collaboration with the CODATA-RDA Schools of Research 
    * Link to Video Lectures Natural Sciences Track [Here](week2_NS.md)
    * Link to Slides [Here](presentations_week2)
    * Link to Video Lectures Social Sciences Track [Here](week2_SS.md)
-   * Live Sessions Wednesday and Friday (14-Sept and 16-Sept 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
+   * Live Sessions Monday, Wednesday and Friday (12, 14, and 16-Sept 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 ### Week Three - September 19-23 - Machine Learning and Recommender Systems
    * Link to Video Lectures [Here](week3.md)
    * Link to Slides [Here](presentations_week3)
-   * Live Sessions Wednesday and Friday (21-Sept and 23-Sept 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
+   * Live Sessions Monday, Wednesday and Friday (19, 21, and 23-Sept 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 ### Week Four - September 26-30 - Neural Networks
    * Link to Video Lectures [Here](week4.md)
-   * Live Sessions Wednesday and Friday (28-Sept and 30-Sept 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
+   * Live Sessions Monday, Wednesday and Friday (26, 28, and 30-Sept 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 ### Week Five - October 3-7 - Computational Infrastructures
    * Link to Video Lectures Here (TBU)
    * Link to Slides Here (TBU)
-   * Live Sessions Wednesday and Friday (5-Oct and 7-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
+   * Live Sessions Monday, Wednesday and Friday (3, 5, and 7-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 ### Week Six - October 10-14 - In Person
    * Link to Slides Here (TBU)
 ### Week Seven - October 17-21 - Visualization
    * Link to Video Lectures Here (TBU)
    * Link to Slides Here (TBU)
-   * Live Sessions Wednesday and Friday (19-Oct and 21-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
+   * Live Sessions Monday, Wednesday and Friday (17, 19, and 21-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 ### Week Eight - October 24-28 - Information Security
    * Link to Video Lectures Here (TBU)
    * Link to Slides Here (TBU)
-   * Live Sessions Wednesday and Friday (16-Oct and 28-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
+   * Live Sessions Monday, Wednesday and Friday (14, 16, and 28-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 
 ## Important Links
 
