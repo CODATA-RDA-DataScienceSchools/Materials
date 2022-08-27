@@ -26,6 +26,8 @@
 * Unix Shell 5.1 - [Extra 1](https://vimeo.com/614320025)
 * Unix Shell 5.2 - [Extra 2](https://vimeo.com/614321508)
 
+Materials prepared by [Raphael Cobe, PhD](https://www.rd-alliance.org/users/raphaelmcobe)
+
 ### Video Lectures Guide Git
 
 * Git 00 - [Introduction](https://vimeo.com/617998578)
@@ -39,3 +41,5 @@
 * Git 08 - [Collaborating](https://vimeo.com/616920803)
 * Git 09 - [Conflicts](https://vimeo.com/616907781)
 * Git 10 - [Special Files and conclusion](https://vimeo.com/616929742)
+
+Materials prepared by [Bertie Seyffert](https://twitter.com/tjips_?lang=en)
