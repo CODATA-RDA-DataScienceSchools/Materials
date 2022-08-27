@@ -14,8 +14,10 @@ The South Big Data Hub in collaboration with the CODATA-RDA Schools of Research 
    * Live Session Monday (5-Sept 12:00 ET) - Welcome and Introduction
    * Live Sessions Wednesday and Friday (7-Sept and 9-Sept 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 ### Week Two - September 12-16 - The R Language for Statistical Computing
+   * You can choose your preferred track in week two: social sciences or natural sciences.
    * Link to Video Lectures Natural Sciences Track [Here](week2_NS.md)
    * Link to Slides [Here](presentations_week2)
+   * Link to Video Lectures Social Sciences Track [Here](week2_SS.md)
    * Live Sessions Monday, Wednesday and Friday (12, 14, and 16-Sept 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 ### Week Three - September 19-23 - Machine Learning and Recommender Systems
    * Link to Video Lectures [Here](week3.md)
