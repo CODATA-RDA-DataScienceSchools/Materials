@@ -28,9 +28,19 @@ The South Big Data Hub in collaboration with the CODATA-RDA Schools of Research 
    * Link to Video Lectures [Here](week4.md)
    * Live Sessions Wednesday and Friday (28-Sept and 30-Sept 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 ### Week Five - October 3-7 - Computational Infrastructures
-   * Link to Video Lectures Here
-   * Link to Slides Here
+   * Link to Video Lectures Here (TBU)
+   * Link to Slides Here (TBU)
    * Live Sessions Wednesday and Friday (5-Oct and 7-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
+### Week Six - October 10-14 - In Person
+   * Link to Slides Here (TBU)
+### Week Seven - October 17-21 - Visualization
+   * Link to Video Lectures Here (TBU)
+   * Link to Slides Here (TBU)
+   * Live Sessions Wednesday and Friday (19-Oct and 21-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
+### Week Eight - October 24-28 - Information Security
+   * Link to Video Lectures Here (TBU)
+   * Link to Slides Here (TBU)
+   * Live Sessions Wednesday and Friday (16-Oct and 28-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 
 ## Important Links
 
