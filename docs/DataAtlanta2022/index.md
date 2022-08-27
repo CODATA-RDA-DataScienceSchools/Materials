@@ -7,8 +7,7 @@ The South Big Data Hub in collaboration with the CODATA-RDA Schools of Research 
 ### Before we start
    * Welcome video - [start here!](https://vimeo.com/743584505)
    * A road map for the course 
-            - link to Video Here
-            - link to Presentation Here
+            - link to Video Here and link to Presentation Here (**TBU**)
 ### Week One - September 5-9 - Introduction to UNIX and Git 
    * Link to Video Lectures [Here](week1.md)
    * Link to Slides [Here](presentations_week1)
@@ -28,11 +27,11 @@ The South Big Data Hub in collaboration with the CODATA-RDA Schools of Research 
    * Link to Video Lectures [Here](week4.md)
    * Live Sessions Monday, Wednesday and Friday (26, 28, and 30-Sept 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 ### Week Five - October 3-7 - Computational Infrastructures
-   * Link to Video Lectures Here (TBU)
-   * Link to Slides Here (TBU)
+   * Link to Video Lectures Here (**TBU**)
+   * Link to Slides Here (**TBU**)
    * Live Sessions Monday, Wednesday and Friday (3, 5, and 7-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 ### Week Six - October 10-14 - In Person
-   * Link to Slides Here (TBU)
+   * Link to Slides Here (**TBU**)
 ### Week Seven - October 17-21 - Visualization
    * Link to Video Lectures [Here](week7.md)
    * Link to Slides [Here](presentations_week7)
