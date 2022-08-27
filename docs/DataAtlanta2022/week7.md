@@ -2,7 +2,7 @@
 
 ### Video Lectures Guide Visualization
 
-* [Tutorial]([http://htmlpreview.github.io/?[presentations_week7/DataVizpracticalGuideP.html](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2022/presentations_week7/DataVizpracticalGuideP.html)](https://htmlpreview.github.io/?https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2022/presentations_week7/DataVizpracticalGuideP.html))
+* [Tutorial](https://htmlpreview.github.io/?https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2022/presentations_week7/DataVizpracticalGuideP.html)
 * Visualization 00 [Introduction](https://vimeo.com/614283163)
 * Visualization 01 [Overview](https://vimeo.com/614281266)
 * Visualization 02 [Trends and Future Developments](https://vimeo.com/614282363)
