@@ -47,13 +47,13 @@ Please watch the videos in order, and solve the exercises that are described at 
     <td width="10%">    <a href="https://github.com/malfaro2/Trieste2021_R/blob/main/code/script3.R"> script3.R </a>  </td>
   </tr>
   <tr>
-    <td width="30%">  <a href="https://datacarpentry.org/r-socialsci/04-ggplot2/index.html">Data Visualisation with ggplot2</a>  </td>
+    <td width="30%">  <a href="https://datacarpentry.org/r-socialsci/04-ggplot2/index.html">Data Visualization with ggplot2</a>  </td>
     <td width="25%">  17, 18, 19, 20 </td>
     <td width="5%">  75:11 </td> 
     <td width="10%">    <a href="https://github.com/malfaro2/Trieste2021_R/blob/main/code/script4.R"> script4.R </a>  </td>
   </tr>
   <tr>
-    <td width="30%"> <a href="https://datacarpentry.org/r-socialsci/05-json/index.html">Processing JSON data</a>  </td>
+    <td width="30%"> <a href="https://datacarpentry.org/r-socialsci/05-json/index.html">Processing JSON files</a>  </td>
     <td width="25%"> 21  </td>
     <td width="5%"> 14:41 </td>
     <td width="10%">    <a href="https://github.com/malfaro2/Trieste2021_R/blob/main/code/script5.R"> script5.R </a>  </td>
@@ -66,28 +66,28 @@ Please watch the videos in order, and solve the exercises that are described at 
   </tr>
 </table>
 
-* R for Social Sciences 00 - [00.Welcome]()
-* R for Social Sciences 01 - [01](https://vimeo.com/598885768)
-* R for Social Sciences 02 - [02](https://vimeo.com/598889009)
-* R for Social Sciences 03 - [03](https://vimeo.com/598891422)
-* R for Social Sciences 04 - [04](https://vimeo.com/598892643)
-* R for Social Sciences 05 - [05](https://vimeo.com/598894951)
-* R for Social Sciences 06 - [06](https://vimeo.com/598895743)
-* R for Social Sciences 07 - [07](https://vimeo.com/598956939)
-* R for Social Sciences 08 - [08](https://vimeo.com/598958829)
-* R for Social Sciences 09 - [09](https://vimeo.com/598960357)
-* R for Social Sciences 10 - [10](https://vimeo.com/598933766)
-* R for Social Sciences 11 - [11](https://vimeo.com/598937484)
-* R for Social Sciences 12 - [12](https://vimeo.com/598940004)
-* R for Social Sciences 13 - [13](https://vimeo.com/598940953)
-* R for Social Sciences 14 - [14](https://vimeo.com/598942737)
-* R for Social Sciences 15 - [15](https://vimeo.com/598943287)
-* R for Social Sciences 16 - [16](https://vimeo.com/598944486)
-* R for Social Sciences 17 - [17](https://vimeo.com/598949130)
-* R for Social Sciences 18 - [18](https://vimeo.com/598950881)
-* R for Social Sciences 19 - [19](https://vimeo.com/598952240)
-* R for Social Sciences 20 - [20](https://vimeo.com/598953816)
-* R for Social Sciences 21 - [21](https://vimeo.com/598955359)
-* R for Social Sciences 22 - [22.Closing](https://vimeo.com/598956731)
+* R for Social Sciences 00 - [Welcome and Setup](https://vimeo.com/743833067)
+* R for Social Sciences 01 - [Before we Start 1](https://vimeo.com/598885768)
+* R for Social Sciences 02 - [Before we Start 2](https://vimeo.com/598889009)
+* R for Social Sciences 03 - [Before we Start 3](https://vimeo.com/598891422)
+* R for Social Sciences 04 - [Introduction to R 1](https://vimeo.com/598892643)
+* R for Social Sciences 05 - [Introduction to R 2](https://vimeo.com/598894951)
+* R for Social Sciences 06 - [Introduction to R 3](https://vimeo.com/598895743)
+* R for Social Sciences 07 - [Introduction to R 4](https://vimeo.com/598956939)
+* R for Social Sciences 08 - [Introduction to R 5](https://vimeo.com/598958829)
+* R for Social Sciences 09 - [Introduction to R 6](https://vimeo.com/598960357)
+* R for Social Sciences 10 - [Starting with Data 1](https://vimeo.com/598933766)
+* R for Social Sciences 11 - [Starting with Data 2](https://vimeo.com/598937484)
+* R for Social Sciences 12 - [Starting with Data 3](https://vimeo.com/598940004)
+* R for Social Sciences 13 - [Data Wrangling with dplyr and tidyr 1](https://vimeo.com/598940953)
+* R for Social Sciences 14 - [Data Wrangling with dplyr and tidyr 2](https://vimeo.com/598942737)
+* R for Social Sciences 15 - [Data Wrangling with dplyr and tidyr 3](https://vimeo.com/598943287)
+* R for Social Sciences 16 - [Data Wrangling with dplyr and tidyr 4](https://vimeo.com/598944486)
+* R for Social Sciences 17 - [Data Visualization with ggplot2](https://vimeo.com/598949130)
+* R for Social Sciences 18 - [Data Visualization with ggplot2](https://vimeo.com/598950881)
+* R for Social Sciences 19 - [Data Visualization with ggplot2](https://vimeo.com/598952240)
+* R for Social Sciences 20 - [Data Visualization with ggplot2](https://vimeo.com/598953816)
+* R for Social Sciences 21 - [Processing JSON files](https://vimeo.com/598955359)
+* R for Social Sciences 22 - [Closing](https://vimeo.com/598956731)
 
 Materials prepared by [Marcela Alfaro Córdoba, Ph.D.](https://malfaro.netlify.app/)
