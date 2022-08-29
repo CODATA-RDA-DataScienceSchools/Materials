@@ -7,7 +7,7 @@ The South Big Data Hub in collaboration with the CODATA-RDA Schools of Research 
 ### Before we start
    * Welcome video - [start here!](https://vimeo.com/743584505)
    * A road map for the course 
-            - link to Video Here and link to Presentation Here (**TBU**)
+            - link to Video [Here](https://vimeo.com/744027623) and link to Presentation [Here](https://malfaro2.github.io/Atlanta2022/AuthorCarpentry.html#/title-slide) 
 ### Week One - September 5-9 - Introduction to UNIX and Git 
    * Link to Video Lectures [Here](week1.md)
    * Link to Slides [Here](presentations_week1)
@@ -16,8 +16,8 @@ The South Big Data Hub in collaboration with the CODATA-RDA Schools of Research 
 ### Week Two - September 12-16 - The R Language for Statistical Computing
    * You can choose your preferred track in week two: social sciences or natural sciences.
    * Link to Video Lectures Natural Sciences Track [Here](week2_NS.md)
-   * Link to Slides [Here](presentations_week2)
    * Link to Video Lectures Social Sciences Track [Here](week2_SS.md)
+   * Link to Slides [Here](presentations_week2)
    * Live Sessions Monday, Wednesday and Friday (12, 14, and 16-Sept 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 ### Week Three - September 19-23 - Machine Learning and Recommender Systems
    * Link to Video Lectures [Here](week3.md)
