@@ -8,6 +8,7 @@ The South Big Data Hub in collaboration with the CODATA-RDA Schools of Research 
    * Welcome video - [start here!](https://vimeo.com/743584505)
    * A road map for the course 
             - link to Video [Here](https://vimeo.com/744027623) and link to Presentation [Here](https://malfaro2.github.io/Atlanta2022/AuthorCarpentry.html#/title-slide) 
+   * Installation party - Checklist
 ### Week One - September 5-9 - Introduction to UNIX and Git 
    * Link to Video Lectures [Here](week1.md)
    * Link to Slides [Here](presentations_week1)
