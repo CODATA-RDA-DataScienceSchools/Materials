@@ -8,11 +8,11 @@ The [South Big Data Hub](https://southbigdatahub.org/) in collaboration with the
    * Welcome video - [start here!](https://vimeo.com/743584505)
    * A road map for the course 
             - link to Video [Here](https://vimeo.com/744027623) and link to Presentation [Here](https://malfaro2.github.io/Atlanta2022/AuthorCarpentry.html#/title-slide) 
-   * Installation party - Checklist
+   * Installation party [Checklist]() - Bring your questions about this next Friday
 ### Week One - September 5-9 - Introduction to UNIX and Git 
+   * Live Session Wednesday (7-Sept 12:00 ET) - Welcome and Introduction
    * Link to Video Lectures [Here](week1.md)
    * Link to Slides [Here](presentations_week1)
-   * Live Session Wednesday (7-Sept 12:00 ET) - Welcome and Introduction
    * Live Session Friday (9-Sept 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 ### Week Two - September 12-16 - The R Language for Statistical Computing
    * You can choose your preferred track in week two: social sciences or natural sciences.
