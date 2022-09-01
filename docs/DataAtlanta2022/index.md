@@ -6,11 +6,12 @@ The [South Big Data Hub](https://southbigdatahub.org/) in collaboration with the
 
 ### Before we start
    * Welcome videos:
-              - From [SMART-DART](SMART-DART Intro video)
+   
+              - From [SMART-DART](https://youtu.be/klMTfLyhUqM)
               - From [CODATA-RDA Schools](https://vimeo.com/743584505)
    * A road map for the course 
             - link to Video [Here](https://vimeo.com/744027623) and link to Presentation [Here](https://malfaro2.github.io/Atlanta2022/AuthorCarpentry.html#/title-slide) 
-   * Installation party [Checklist]() - Bring your questions about this next Friday
+   * Installation party [Checklist](checklist.md) - Bring your questions about this next Friday
 ### Week One - September 5-9 - Introduction to UNIX and Git 
    * Live Session Wednesday (7-Sept 12:00 ET) - Welcome and Introduction
    * Link to Video Lectures [Here](week1.md)
