@@ -5,7 +5,9 @@ The [South Big Data Hub](https://southbigdatahub.org/) in collaboration with the
 ## Schedule
 
 ### Before we start
-   * Welcome video - [start here!](https://vimeo.com/743584505)
+   * Welcome videos:
+              - From [SMART-DART](SMART-DART Intro video)
+              - From [CODATA-RDA Schools](https://vimeo.com/743584505)
    * A road map for the course 
             - link to Video [Here](https://vimeo.com/744027623) and link to Presentation [Here](https://malfaro2.github.io/Atlanta2022/AuthorCarpentry.html#/title-slide) 
    * Installation party [Checklist]() - Bring your questions about this next Friday
