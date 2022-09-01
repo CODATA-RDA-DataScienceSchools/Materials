@@ -1,4 +1,4 @@
-Installation party Checklist
+## Installation party Checklist
 
 
 Please make sure you have the following installed on your computer. The instructions to install each program have been added. If you run into problems, please bring your questions about this next Friday
