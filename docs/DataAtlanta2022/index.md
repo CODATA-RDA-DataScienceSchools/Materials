@@ -53,6 +53,6 @@ The [South Big Data Hub](https://southbigdatahub.org/) in collaboration with the
 
 ## Additional Materials
 
-* [Ten simple rules for teaching yourself R](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010372)
+* [Ten Simple Rules for Teaching yourself R](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010372)
 * [Ten Simple Rules for Reproducible Computational Research](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285)
 * [The Turing Way](https://the-turing-way.netlify.app/welcome)
