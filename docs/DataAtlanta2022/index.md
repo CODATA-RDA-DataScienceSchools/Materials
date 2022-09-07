@@ -33,6 +33,10 @@ Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.d
    * Link to Video Lectures [Here](week4.md)
    * Live Sessions Wednesday and Friday (28, and 30-Sept 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 ### Week Five - October 10-14 - In Person
+   * Open and Responsible Research
+   * Research Data Management
+   * Train the Trainers
+   * Panel on Health Equity
    * Link to Slides Here (**TBU**)
 ### Week Six - October 17-21 - Computational Infrastructures
    * Link to Video Lectures Here (**TBU**)
