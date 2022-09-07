@@ -2,6 +2,8 @@
 
 The [South Big Data Hub](https://southbigdatahub.org/) in collaboration with the [CODATA-RDA Schools of Research Data Science](https://www.datascienceschools.org/), [AIM-AHEAD Southeast Hub at Morehouse School of Medicine](https://aim-ahead.net/), and [Microsoft](https://www.microsoft.com/en-us/education?icid=CNavMSCOML0_Studentsandeducation) to host an 10-week Researcher Data Science Training through a mix of virtual and in-person instruction. This will be the first CODATA-RDA School run in the United States and research and will include teams from universities with the AIM-AHEAD Southeast Hub. The SMART-DART: Health Equity Cohort will focus on growing the competence of Health Equity researchers in accessing, analyzing, visualizing, and publishing data. It is open to participants from minority serving institutions (MSIs), described in eligibility below. This activity will cover topics on principles and practice of Open Science, research data management and curation, use of a range of research compute infrastructures, large scale analysis, statistics, visualization and modeling techniques, automation and scripting.
 
+Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.datascienceschools.org/). 
+
 ## Schedule
 
 ### Start here
@@ -46,7 +48,9 @@ The [South Big Data Hub](https://southbigdatahub.org/) in collaboration with the
 
 ## Important Links
 
+* [CODATA/RDA Schools of Research Data Science](https://www.datascienceschools.org/)
 * [RDA Groups](https://www.rd-alliance.org/groups)
+* [The Committee on Data for the International Science Council](https://www.codata.org)
 * [The Carpentries](https://carpentries.org/)
 
 ## Contacts 
