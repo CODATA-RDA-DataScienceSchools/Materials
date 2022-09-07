@@ -49,6 +49,7 @@ Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.d
 ## Important Links
 
 * [CODATA/RDA Schools of Research Data Science](https://www.datascienceschools.org/)
+* [South BD Hub](https://southbigdatahub.org)
 * [RDA Groups](https://www.rd-alliance.org/groups)
 * [The Committee on Data for the International Science Council](https://www.codata.org)
 * [The Carpentries](https://carpentries.org/)
