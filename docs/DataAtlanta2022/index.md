@@ -15,6 +15,7 @@ Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.d
             - link to Video [Here](https://vimeo.com/744027623) and link to Presentation [Here](https://malfaro2.github.io/Atlanta2022/AuthorCarpentry.html#/title-slide) 
    * Installation party [Checklist](checklist.md) - Bring your questions about this next Friday
    * Live Session Wednesday (7-Sept 12:00 ET) - Welcome and Introduction
+   * Live Session Friday (9-Sept 12:00 ET) - Installatioin Party - [Video Link](https://drive.google.com/file/d/1livzliF0Pua6z8K0WJTXUav1i46ADtB_/view?usp=sharing)
 ### Week One - September 12-16 - Introduction to UNIX and Git 
    * Link to Video Lectures [Here](week1.md)
    * Link to Slides [Here](presentations_week1)
