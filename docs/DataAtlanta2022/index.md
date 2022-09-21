@@ -20,6 +20,8 @@ Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.d
    * Link to Video Lectures [Here](week1.md)
    * Link to Slides [Here](presentations_week1)
    * Live Session Wednesday and Friday (14, 16-Sept 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
+   * [Video Link - Wednesday Session](https://drive.google.com/file/d/1hKqt3u7N-lNpFst-vkVLsNkQjpWVesWI/view?usp=sharing)
+   * [Video Link - Friday Session](https://drive.google.com/file/d/1sit4DF5E4XUcTqVzZQEiBofcVO4k7sxR/view?usp=sharing)
 ### Week Two - September 19-23 - The R Language for Statistical Computing
    * You can choose your preferred track in week two: social sciences or natural sciences.
    * Link to Video Lectures Natural Sciences Track [Here](week2_NS.md)
