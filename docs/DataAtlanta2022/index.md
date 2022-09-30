@@ -35,6 +35,7 @@ Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.d
    * Link to Slides [Here](presentations_week3)
    * Live Sessions Wednesday and Friday (28, and 30-Sept 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
    * [Video Link - Wednesday Session](https://drive.google.com/file/d/1dUs4l90G_jdF3iTPl1s0m-xmJ68lpQjr/view?usp=sharing)
+   * [Video Link - Friday Session](https://drive.google.com/file/d/1j_xNO3KfTuxon6GcYDLXiVN5BLxcYAqB/view?usp=sharing)
 ### Week Four - October 3-7 - Neural Networks
    * Link to Video Lectures [Here](week4.md)
    * Live Sessions Wednesday and Friday (5, and 7-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
