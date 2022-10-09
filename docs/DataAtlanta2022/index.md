@@ -45,17 +45,17 @@ Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.d
    * Train the Trainers
    * Panel on Health Equity
    * Link to Slides Here (**TBU**)
-### Week Six - October 17-21 - Computational Infrastructures
-   * Link to Video Lectures Here (**TBU**)
-   * Link to Slides Here (**TBU**)
-   * Live Sessions Wednesday and Friday (19, and 21-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
-### Week Seven - October 24-28 - Visualization
+### Week Six - October 17-21 - Visualization
    * Link to Video Lectures [Here](week7.md)
    * Link to Slides [Here](presentations_week7)
    * Live Sessions Wednesday and Friday (26, and 28-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
-### Week Eight - October 31- November 3 - Information Security
+### Week Seven - October 24-28 - Information Security
    * Link to Video Lectures [Here](week8.md)
    * Live Sessions Wednesday and Friday (1, and 3-Nov 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
+### Week Eight - October 31- November 3 - Computational Infrastructures
+   * Link to Video Lectures Here (**TBU**)
+   * Link to Slides Here (**TBU**)
+   * Live Sessions Wednesday and Friday (19, and 21-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 
 ## Important Links
 
