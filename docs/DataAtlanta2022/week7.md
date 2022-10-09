@@ -1,4 +1,4 @@
-## Week Eight - October 24-28 - Information Security
+## Week Seven - October 24-28 - Information Security
 
 ### Video Lectures Information Security
 
