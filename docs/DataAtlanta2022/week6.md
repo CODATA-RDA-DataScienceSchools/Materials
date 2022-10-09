@@ -1,4 +1,4 @@
-## Week Seven - October 17-21 - Visualization
+## Week Six - October 17-21 - Visualization
 
 ### Video Lectures Guide Visualization
 
