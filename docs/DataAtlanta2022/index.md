@@ -71,3 +71,4 @@ Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.d
 * [Ten Simple Rules for Teaching yourself R](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010372)
 * [Ten Simple Rules for Reproducible Computational Research](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285)
 * [The Turing Way](https://the-turing-way.netlify.app/welcome)
+* [Map Form Entry](https://docs.google.com/forms/d/19V46loM5kSaS2w2GONPcixNhmrDrRQ8weI7O552jiHY/edit)
