@@ -43,7 +43,7 @@ Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.d
    * [Open and Responsible Research](presentations_in-person/Ethics_Atlanta2022.pdf)
    * Panel on Health Equity
    * Research Data Management
-   * Train the Trainers
+   * [Train the Trainers](presentations_in-person/Train_the_Trainer_Atlanta.pdf)
 ### Week Six - October 17-21 - Visualization
    * Link to Video Lectures [Here](week6.md)
    * Link to Slides [Here](presentations_week7)
