@@ -47,6 +47,7 @@ Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.d
 ### Week Six - October 17-21 - Visualization
    * Link to Video Lectures [Here](week6.md)
    * Link to Slides [Here](presentations_week7)
+   * Link to web page [Here](https://htmlpreview.github.io/?https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2022/presentations_week7/DataVizpracticalGuideP.html)
    * Live Sessions Wednesday and Friday (26, and 28-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 ### Week Seven - October 24-28 - Information Security
    * Link to Video Lectures [Here](week7.md)
