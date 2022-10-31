@@ -53,6 +53,7 @@ Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.d
    * Link to Video Lectures [Here](week7.md)
    * Live Sessions Wednesday and Friday (1, and 3-Nov 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 ### Week Eight - October 31- November 3 - Computational Infrastructures
+   * NOTE: Due to unexpected travel and other unforeseen circumstatnces the Computational Infrastructures lessons will not be fully posted until Tuesday, November 1st. 
    * Link to Video Lectures Here (**TBU**)
    * Link to Slides Here (**TBU**)
    * Live Sessions Wednesday and Friday (19, and 21-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
