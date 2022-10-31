@@ -59,7 +59,7 @@ Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.d
    * NOTE: Due to unexpected travel and other unforeseen circumstatnces the Computational Infrastructures lessons will not be fully posted until Tuesday, November 1st. 
    * Link to Video Lectures
       * [Lecture 1](https://iu.mediaspace.kaltura.com/media/t/1_2ubckhgo) - What is Cyberinfrasture with Examples
-   * Link to Slides Here [Link](https://docs.google.com/presentation/d/1uYgYjT8yKhNLk9IPaMpD6YanRjwy5cIQsQa52RIEJdM/edit?usp=sharing)
+   * Link to Slides [Here](https://docs.google.com/presentation/d/1uYgYjT8yKhNLk9IPaMpD6YanRjwy5cIQsQa52RIEJdM/edit?usp=sharing)
    * Live Sessions Wednesday and Friday (19, and 21-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 
 ## Important Links
