@@ -48,14 +48,18 @@ Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.d
    * Link to Video Lectures [Here](week6.md)
    * Link to Slides [Here](presentations_week7)
    * Link to web page [Here](https://htmlpreview.github.io/?https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2022/presentations_week7/DataVizpracticalGuideP.html)
-   * Live Sessions Wednesday and Friday (26, and 28-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
+   * Live Sessions Wednesday and Friday (19, and 21-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
+   * [Video Link - Wednesday Session](https://iu.mediaspace.kaltura.com/media/t/1_wuu4hmf1)
+   * [Video Link - Friday Session](https://iu.mediaspace.kaltura.com/media/t/1_4zoket4g)
 ### Week Seven - October 24-28 - Information Security
    * Link to Video Lectures [Here](week7.md)
    * Live Sessions Wednesday and Friday (1, and 3-Nov 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
+   * [Video Link - Friday Sessioni](https://iu.mediaspace.kaltura.com/media/t/1_7lsx7q3w)
 ### Week Eight - October 31- November 3 - Computational Infrastructures
    * NOTE: Due to unexpected travel and other unforeseen circumstatnces the Computational Infrastructures lessons will not be fully posted until Tuesday, November 1st. 
-   * Link to Video Lectures Here (**TBU**)
-   * Link to Slides Here (**TBU**)
+   * Link to Video Lectures
+      * [Lecture 1](https://iu.mediaspace.kaltura.com/media/t/1_2ubckhgo) - What is Cyberinfrasture with Examples
+   * Link to Slides Here [Link](https://docs.google.com/presentation/d/1uYgYjT8yKhNLk9IPaMpD6YanRjwy5cIQsQa52RIEJdM/edit?usp=sharing)
    * Live Sessions Wednesday and Friday (19, and 21-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 
 ## Important Links
