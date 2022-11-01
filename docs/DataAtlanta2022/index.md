@@ -61,7 +61,7 @@ Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.d
       * [Lecture 1](https://iu.mediaspace.kaltura.com/media/t/1_2ubckhgo) - What is Cyberinfrastructure with Examples
       * [Lecture 2](https://iu.mediaspace.kaltura.com/media/t/1_j6lx5stm) - Types of Cyberinfrastructure
       * [Lecture 3](https://iu.mediaspace.kaltura.com/media/t/1_q7o7qhsh) - Profiling Your Cyberinfrastructure Needs
-      * Lecture 4 - Coming November 1
+      * [Lecture 4](https://iu.mediaspace.kaltura.com/media/t/1_6cxqm2z9) - Cyberinfrastuctures for US Researchers
    * Link to Slides [Here](https://docs.google.com/presentation/d/1uYgYjT8yKhNLk9IPaMpD6YanRjwy5cIQsQa52RIEJdM/edit?usp=sharing)
    * Live Sessions Wednesday and Friday (19, and 21-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
 
