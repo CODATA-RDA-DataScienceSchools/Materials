@@ -44,6 +44,7 @@ Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.d
    * Panel on Health Equity
    * [Research Data Management](presentations_in-person/RDM_Diggs-SC_2022-10-12.SoRDS-Atlanta.pdf)
    * [Train the Trainers](presentations_in-person/Train_the_Trainer_Atlanta.pdf)
+   * No recordings were made during the live sessions.
 ### Week Six - October 17-21 - Visualization
    * Link to Video Lectures [Here](week6.md)
    * Link to Slides [Here](presentations_week7)
@@ -53,8 +54,9 @@ Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.d
    * [Video Link - Friday Session](https://iu.mediaspace.kaltura.com/media/t/1_4zoket4g)
 ### Week Seven - October 24-28 - Information Security
    * Link to Video Lectures [Here](week7.md)
-   * Live Sessions Wednesday and Friday (1, and 3-Nov 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
-   * [Video Link - Friday Sessioni](https://iu.mediaspace.kaltura.com/media/t/1_7lsx7q3w)
+   * Live Sessions Wednesday and Friday (26, and 28-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
+   * Video for the Wednesday Session was not recorded. 
+   * [Video Link - Friday Session](https://iu.mediaspace.kaltura.com/media/t/1_7lsx7q3w)
 ### Week Eight - October 31- November 3 - Computational Infrastructures
    * NOTE: Due to unexpected travel and other unforeseen circumstatnces the Computational Infrastructures lessons will not be fully posted until Tuesday, November 1st. 
    * Link to Video Lectures
@@ -66,6 +68,8 @@ Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.d
    * There are no required Hands-On lessons this week. 
       * However, if you'd like to play around with a Python Notebook that analyzes the Boston housing market by comparing multiple regressoin techniques, I've retested the hands-on lesson [here](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/SouthAfrica2021/Colab_Regression_Spark.ipynb) and it is a good example of using a clound-based CI. 
    * Live Sessions Wednesday and Friday (19, and 21-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
+   * [Video Link - Wednesday Session](https://iu.mediaspace.kaltura.com/media/t/1_zrfxh0be)
+   * [Video Link - Friday Session](Comiing Soon)
 
 ## Important Links
 
@@ -74,6 +78,7 @@ Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.d
 * [RDA Groups](https://www.rd-alliance.org/groups)
 * [The Committee on Data for the International Science Council](https://www.codata.org)
 * [The Carpentries](https://carpentries.org/)
+* [Ethics Slides](https://docs.google.com/presentation/d/1Hi2wSfae9iNedbIwzV2K0UoKxoWWeVb_/edit?usp=sharing&ouid=110678776512411560114&rtpof=true&sd=true)
 
 ## Contacts 
 
