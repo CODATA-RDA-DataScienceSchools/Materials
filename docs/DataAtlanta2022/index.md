@@ -4,6 +4,8 @@ The [South Big Data Hub](https://southbigdatahub.org/) in collaboration with the
 
 Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.datascienceschools.org/). 
 
+![Image](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2022/IMG_3404.jpg)
+
 ## Schedule
 
 ### Start here
