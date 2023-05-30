@@ -21,13 +21,8 @@ Machine (VM) using the OpenStack browser based API. Upon completion you will
 have created and securely connected to a cloud resource hosted by the
 CHPC. 
 
-[Exercise 2](02-Create_A_VM.md) will walk you through creating a Virtual
-Machine (VM) using the OpenStack browser based API. Upon completion you will
-have created and securely connected to a cloud resource hosted by the
-CHPC. 
-
 After creating the machine, the next exercise, the [Exercise
-3](Connect_And_Install.md) - Connect to Your OpenStack VM and prepare it for
+3](03-Connect_And_Install.md) - Connect to Your OpenStack VM and prepare it for
 installing a Jupyter Notebook.
 
 ## Exercise 4 - Creating A Cloud Based Jupyter Notebook
