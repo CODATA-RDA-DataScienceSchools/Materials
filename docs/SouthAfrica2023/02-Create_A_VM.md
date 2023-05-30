@@ -1,7 +1,7 @@
 # Create A New Virtual Machine (VM) on the CHPC OpenStack Cloud
 
 ## Connect to the OpenStack API
-   * Point your browser at [](https://sebowa.nicis.ac.za/)
+   * Point your browser to https://sebowa.nicis.ac.za/
    * Log in with the credentials sent via email
       * If you did not receive an email with a username, password, and domain please contact your instructor. 
       * The email will have come from the address nmonama@csir.co.za. He is the OpenStack administrator at the CHPC facility. 
