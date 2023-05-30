@@ -224,16 +224,33 @@ If you can see the following message, it means that the installation worked:
  To access the notebook, open this file in a browser:
      file:///home/ubuntu/.local/share/jupyter/runtime/nbserver-19589-open.html
  Or copy and paste one of these URLs:
-     http://xxx.xxx.xxx.xxx:8888/?token=2a3df1887c3a9acc7aa81673c348d3d205d220a81ec99788
-  or http://127.0.0.1:8888/?token=2a3df1887c3a9acc7aa81673c348d3d205d220a81ec99788
+  or http://127.0.0.1:8083/?token=2a3df1887c3a9acc7aa81673c348d3d205d220a81ec99788
 
 ```
-The line containing the `xxx.xxx.xxx.xxx` address will be the one that we should use to access our *jupyter server*. We just need to copy the whole line and paste it into a web browser. The interface that you will see is show at the figure bellow:
+In order to access the jupyter server we should user a web browser and access the address `http://Your_IP_Address:8083`. The `Your_IP_Address` address is listed at the openstack instances tab and should start with `154.114` and have the format `xxx.xxx.xxx.xxx`.
+
+After accessing the page you should see a request for password or token:
+
+![](img/jupyter_server1.png)
+
+The token is the parameter right after the word `token=` at the output of the
+`jupyter notebook` command. E.g.:
+
+![](img/jupyter_server2.png)
+
+
+You should copy the token value and paste it at the Password/Token field. After
+that you will be redirected to a page that displays the list of notebooks that
+you have in your system:
 
 ![](img/04.png)
 
 
-Now we can either upload one of the notebooks that we worked during the previous exercises (for this, use the ***Upload*** button at the top right of the page); or we can create a notebook from scratch. For this, access the drop down menu to check what kernels are installed on the server. If our R installation worked we should be able to see both *python* and *R* *kernels*:
+Now we can either upload one of the notebooks that we worked during the
+previous exercises (for this, use the ***Upload*** button at the top right of
+the page); or we can create a notebook from scratch. For this, access the drop
+down menu to check what kernels are installed on the server. If our R
+installation worked we should be able to see both *python* and *R* *kernels*:
 
 ![](img/05.png)
 
