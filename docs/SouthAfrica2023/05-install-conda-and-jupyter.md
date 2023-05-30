@@ -190,7 +190,8 @@ After activating the *jupyter* environment we are going to use the `conda instal
 We can install all the needed software at once by performing the command:
 
 ```bash=
-$ conda install notebook r r-irkernel
+$ conda install r-irkernel
+$ conda install notebook
 ```
 We can check if the notebook was correctly installed by using the `conda list` command combined with the `grep` command:
 
@@ -214,7 +215,7 @@ $ sudo apt install libxrender1
 After installing the library we can start our *jupyter server*. One of the parameter needed for starting the server is the the IP address of the VM. That address is the same we used in the `ssh` command and has the format: `xxx.xxx.xxx.xxx`. That information is available inside the ***Instances*** tab at the *openstack* webpage. The command to start the server then should be:
 
 ```bash=
-$ jupyter notebook --ip=xxx.xxx.xxx.xxx
+$ jupyter notebook --ip=0.0.0.0 --port 8083
 ```
 
 If you can see the following message, it means that the installation worked:
