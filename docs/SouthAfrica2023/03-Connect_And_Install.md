@@ -1,4 +1,4 @@
-# Connect to Your OpenStack VM and Install Python and/or R and Jupyter Notebook
+# Connect to Your OpenStack VM and prepare it for installing the Jupyter Notebook
 
 Prerequisites: 
    * The software that will allow you to connect to your VM. This is called _Terminal_ and installed by default on a Mac. If you are on a Windows based machine, you should use an appropriate terminal software. I suggest PuTTY for new users. 
