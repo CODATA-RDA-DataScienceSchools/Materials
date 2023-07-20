@@ -4,17 +4,17 @@ author:
   - "Marcela Alfaro Cordoba, Ph.D."
   - "Bianca Peterson, Ph.D."
 editor: visual
-format: gfm
+format: html
 jupyter: python3
 editor_options:
   markdown:
     wrap: 72
 ---
 
-
 ## Schedule
 
--   **Thursday 14:00 - 16:00 - [Workshop Reproducible Writing](https://CODATA-RDA-DataScienceSchools.github.io/Materials/blob/master/docs/DataTrieste2023/Quarto/AuthorCarpentry.html):**
+-   **Thursday 14:00 - 16:00 - [Workshop Reproducible
+    Writing](https://CODATA-RDA-DataScienceSchools.github.io/Materials/blob/master/docs/DataTrieste2023/Quarto/AuthorCarpentry.html):**
 
     -   Scientific writing in useful, powerful, and open mark-up
         languages such as Markdown in Quarto.
@@ -37,7 +37,7 @@ editor_options:
 
 -   **Thursday 17:00 - 18:00 - Talk I**
 
-    -   “How to avoid ‘predatory’ journals” - [Andy
+    -   "How to avoid 'predatory' journals" - [Andy
         Nobes](https://www.inasp.info/staff/andy-nobes-0)
 
 ## Set Up
@@ -57,7 +57,7 @@ editor_options:
 ### Test Activity
 
 Please complete these activities on the same computer you are going to
-use on Thursday. Let me know if there’s something that is not working
+use on Thursday. Let me know if there's something that is not working
 before then.
 
 1.  Open RStudio.
@@ -65,8 +65,8 @@ before then.
 3.  Type a title for your Quarto document and click **Create**.
 4.  Click the **Render** button and name the file as `report.qmd`.
 
-A `report.html` document will be generated in your working directory that includes both content and the output
-of embedded code. 
+A `report.html` document will be generated in your working directory
+that includes both content and the output of embedded code.
 
 You can embed code like this:
 
