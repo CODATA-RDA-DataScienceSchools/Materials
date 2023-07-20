@@ -1,8 +1,10 @@
 ---
-title: "Data Trieste 2022 - Author Carpentry"
-author: "Marcela Alfaro Cordoba, Ph.D."
+title: "Data Trieste 2023 - Author Carpentry"
+author: 
+  - "Marcela Alfaro Cordoba, Ph.D."
+  - "Bianca Peterson, Ph.D."
 editor: visual
-format: gfm
+format: html
 jupyter: python3
 editor_options:
   markdown:
