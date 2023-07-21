@@ -9,6 +9,7 @@ authors:
       - University of California, Santa Cruz
   - name: Bianca Peterson (Ph.D.)
     orcid: 0000-0001-6927-9159
+    email: bianca@fathomdata.dev
     affiliations:
       - Fathom Data
 bibliography: authorcarpentry.bib
@@ -34,14 +35,14 @@ format:
 
 -   Find your ORCiD link and prepare to post it on the etherpad, next to your name.
 -   Questions to discuss in pairs and/or in the chat:
-      * Have you used ORCiD to link your publications?
-      * Do you think it's important to have and use one?
+    -   Have you used ORCiD to link your publications?
+    -   Do you think it's important to have and use one?
 
 ## What are we going to do this afternoon?
 
-1. Discuss workflows for academic publishing.
-2. Learn how to use Quarto for reproducible reports - how to include bibliography from .bib files, and how to cite data and/or software, and more.
-3. Discuss authorship, and contributorship in collaborative research projects.
+1.  Discuss workflows for academic publishing.
+2.  Learn how to use Quarto for reproducible reports - how to include bibliography from .bib files, and how to cite data and/or software, and more.
+3.  Discuss authorship, and contributorship in collaborative research projects.
 
 ## Workflows
 
@@ -53,97 +54,98 @@ format:
 
 ![https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html](https://the-turing-way.netlify.app/_images/reproducible-definition-grid.svg)
 
-
 ## Why do we want to work on repro-mode?
 
 ![https://the-turing-way.netlify.app/reproducible-research/overview/overview-benefit.html](https://the-turing-way.netlify.app/_images/reasons-reproducibility.png)
-
 
 ## What is Quarto? (1/3)
 
 -   Quarto is an open-source scientific and technical publishing system built on Pandoc (same as LateX).
 -   Create dynamic content with Python, R, Julia, and Observable (JavaScript).
--   Author documents as plain text markdown or Jupyter notebooks.
+-   Author documents using Jupyter notebooks or with plain text markdown using your favorite editor (e.g. VS Code, RStudio, Jupyter Lab, etc.).
 
 ## What is Quarto? (2/3)
 
 -   Publish high-quality articles, reports, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.
 -   Author with scientific markdown, including equations, citations, figure panels, advanced layout, and more.
 
-## What is Quarto? (2/3)
+## What is Quarto? (3/3)
 
-Some examples: 
+Some examples:
 
-- This presentation is done in Quarto :)
-- You can produce html reports such as [this one](https://quarto-dev.github.io/quarto-gallery/page-layout/tufte.html)
-- Other examples: <https://quarto.org/docs/gallery/>
+-   This presentation was done in Quarto. 😃
 
-## What did we use before Quarto?
+-   You can produce HTML reports such as [this one](https://quarto-dev.github.io/quarto-gallery/page-layout/tufte.html).
 
--  Word processor (Microsoft Word, Open Office, Google Docs, etc.)
--  Jupyter Notebooks
--  R Markdown
--  LaTeX (Overleaf, TeXstudio, etc.)
--  Any other? - type it in the chat (online) or say it out loud (in class)
+-   Other examples: <https://quarto.org/docs/gallery/>
+
+    👁️‍🗨️ If you want to look at the code for these examples, click on the `</>` icon.
+
+## What tools did we use before Quarto?
+
+-   Word processor (Microsoft Word, Open Office, Google Docs, etc.)
+-   Jupyter Notebooks
+-   R Markdown
+-   LaTeX (Overleaf, TeXstudio, etc.)
+-   Any other? Type it in the chat (online) or say it out loud (in class).
 
 ## What changed?
 
-![https://the-turing-way.netlify.app/_images/reproducibility.jpg](https://the-turing-way.netlify.app/_images/reproducibility.jpg)
+![](https://the-turing-way.netlify.app/_images/reproducibility.jpg)
 
 ## Anatomy of a Quarto document
 
--   **YAML**: "YAML is a data serialization language that is often used for writing configuration files. Depending on whom you ask, YAML stands for yet another markup language or YAML ain’t markup language (a recursive acronym), which emphasizes that YAML is for data, not documents". From [Red Hat](https://www.redhat.com/en/topics/automation/what-is-yaml)
--   **Main Body**: What you would write in any other document - Text
--   **Code Chunks**: Code in different languages (depending on what you have installed on your computer)
-
+-   **YAML**: "YAML is a human-readable data serialization language that is often used for writing configuration files. It contains the metadata (title, tags, and descriptions) for the document. There are several other optional and cosmetic items that can be added to the YAML header, such as the font, font size, spacing, margins, themes, styling sheets, etc.
+-   **Main Body**: Text, which may include in-line code, written in [markdown](https://quarto.org/docs/authoring/markdown-basics.html) (plain text formatting) syntax.
+-   **Code Chunks**: Code in different languages (depending on what you have installed on your computer) that can be executed when the document is rendered.
 
 ## Let's do it!
 
 Follow these steps:
 
-1. Open RStudio.
-2. Create a New Project: Click **File** > **New Project** > **New Directory** > **Quarto Project** > Name your Directory and click on **Create git repository** > **Create Project**.
-3. Let's click on **Render** to test that the most basic Quarto document renders on your computer.
-4. If it worked, you should see a "repo_example.html" file in your local folder. You can open it in your Web Browser to see what it looks like.
+1.  Open RStudio.
+2.  Create a New Project: Click **File** \> **New Project** \> **New Directory** \> **Quarto Project** \> Name your Directory and click on **Create git repository** \> **Create Project**.
+3.  Let's click on **Render** to test that the most basic Quarto document renders on your computer.
+4.  If it worked, you should see a `repo_example.html` file in your local folder. You can open it in your Web Browser to see what it looks like.
 
 ## Let's start with YAML
 
+-   Be careful with the indentation!
 
-- Be careful with the indentation!
-- Let's add: title, author, and date.
-- 2 minutes 
+-   Let's add: title, author, and date.
 
-```{}
+    ⏰ 2 minutes
+
+```         
 ---
 title: "Reproducible Report Example"
 author: Your name
-date: 2022/07/14
+date: 2023/08/03
 format: gfm 
 ---
 ```
 
 ## YAML details
 
-It depends on the format you want to work in: 
+It depends on the format you want to work in:
 
-* [Markdown](https://quarto.org/docs/output-formats/gfm.html)
-* [HTML](https://quarto.org/docs/output-formats/html-basics.html) 
-* [PDF](https://quarto.org/docs/output-formats/pdf-basics.html)
-* [MS Word](https://quarto.org/docs/output-formats/ms-word.html)
-* Other formats (Presentations, Open Office, ePub, etc.)
+-   [Markdown](https://quarto.org/docs/output-formats/gfm.html)
+-   [HTML](https://quarto.org/docs/output-formats/html-basics.html)
+-   [PDF](https://quarto.org/docs/output-formats/pdf-basics.html)
+-   [MS Word](https://quarto.org/docs/output-formats/ms-word.html)
+-   Other formats (Presentations, Open Office, ePub, etc.)
 
 ## We will continue to work in HTML
 
-- Why? Because it's more flexible.
-- Nevertheless, you can also use `gfm` format to create `Readme.md` files for your repo on GitHub or GitLab.
-- It is possible to deploy as a webpage on GitHub/GitLab.
-- Data and code are available from your repo as a [Webpage](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
-- You can also [add a DOI](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content).
+-   Why? Because it's more flexible.
+-   Nevertheless, you can also use `gfm` format to create `Readme.md` files for your repo on GitHub or GitLab.
+-   It is possible to deploy as a webpage on GitHub/GitLab.
+-   Data and code are available from your repo as a [Webpage](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
+-   You can also [add a DOI](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content).
 
+## Now let's add text in the Main Body
 
-## Now let's add text in the Main Body 
-
-```{} 
+```         
 ## Introduction
 
 This is a Quarto document. To learn more about Quarto see <https://quarto.org>.
@@ -151,20 +153,22 @@ This is a Quarto document. To learn more about Quarto see <https://quarto.org>.
 Another way to create links is to use: [a label with a link](https://quarto.org)
 ```
 
+🤓 Go through [this tutorial](https://commonmark.org/help/tutorial/) to learn markdown in a fun, interactive way!
+
 ## And now, the code chunks:
 
-```{} 
-Here we call the R `summary()` function---the function's output is included immediately below:
-```
+Here we call the R \`summary()\` function
+
+The function's output is included immediately below the code.
 
 ```{r echo=TRUE}
 #| code-fold: true
 summary(cars)
 ```
 
-How much do you want to see? 
+How much do you want to see?
 
-#| code-fold: true
+#\| code-fold: true
 
 ## Plot Output
 
@@ -199,8 +203,6 @@ plt.plot([1,2,3,4])
 plt.show()
 ```
 
-
-
 ## Tables
 
 Use the `knitr::kable()` function to print tables as HTML:
@@ -213,14 +215,22 @@ knitr::kable(head(ggplot2::diamonds))
 
 You can also include LaTeX math:
 
+```{bash}
+#| eval: false
+
+$$
+P\left(A=2\middle|\frac{A^2}{B}>4\right)
+$$
+```
+
+
 $$
 P\left(A=2\middle|\frac{A^2}{B}>4\right)
 $$
 
-
 ## Add bibliography
 
-This is the list of articles for tomorrow. I'm going to use them as an example for how to add bibliography.
+This is the list of articles we'll use:
 
 0.  They can be found in [this folder](https://drive.google.com/drive/folders/14QsEDkAoyEt4eeobQFJi6o-reHYC03Nx?usp=sharing)
 1.  @Doney2009
@@ -231,11 +241,10 @@ This is the list of articles for tomorrow. I'm going to use them as an example f
 
 ## .bib files
 
-The easiest way to do this is maintaining a `.bib` file. You can create it using Zotero, or you can create it by hand using <https://www.doi2bib.org/>.
+The easiest way to do this is maintaining a `.bib` file. You can create it using Zotero, or you can create it manually using <https://www.doi2bib.org/>.
 
-* Zotero: Select the library you wish to export to BibTex in Zotero.
-* Create a file in any Text editor -> paste the bibs using <https://www.doi2bib.org/> and save it as `<filename>.bib` in the same project folder.
-
+-   Zotero: Select the library you wish to export to BibTex in Zotero.
+-   Create a file in any Text editor -\> paste the bibs using <https://www.doi2bib.org/> and save it as `<filename>.bib` in the same project folder.
 
 ## References
 
@@ -244,17 +253,19 @@ The easiest way to do this is maintaining a `.bib` file. You can create it using
 
 ## Citing software and data
 
-* From IEEE: <https://ieeexplore.ieee.org/document/9018356>
-* From PeerJ: <https://peerj.com/articles/cs-86/>
-* Persistent identifiers for code and data. How? Zenodo, FigShare, Institutional Repository, GitHub/DOI. 
-
+-   From IEEE: <https://ieeexplore.ieee.org/document/9018356>
+-   From PeerJ: <https://peerj.com/articles/cs-86/>
+-   Persistent identifiers for code and data. How? Zenodo, FigShare, Institutional Repository, GitHub/DOI.
 
 ## Now, let's go back to the author process
 
+![https://the-turing-way.netlify.app/collaboration/collaboration.html](https://the-turing-way.netlify.app/_images/collaboration.svg)
 
 ## Group Discussion (1/2)
 
 You are about to start an interdisciplinary project with 5 collaborators. They are from different areas of expertise, a couple of them are from different countries. You want to keep working with a reproducible workflow, but you know most of them are not proficient in some of the tools you use.
+
+--
 
 Q1. How/when do you negotiate which tools you are going to use to work on the project? Which factors do you need to take into account when deciding which tools to use?
 
@@ -262,27 +273,29 @@ Q1. How/when do you negotiate which tools you are going to use to work on the pr
 
 Q2. When and how would you discuss the author contributions in the paper? You can use this as a guide: <https://credit.niso.org/>
 
+--
+
 Q3. How/when should you decide which journals do you want to publish in?
 
 ## Where do we publish it? More about workflows!
 
-* We'll have the following guest talk:
+-   We'll have the following guest talk:
 
-    -   “How to avoid ‘predatory’ journals” - [Andy
-        Nobes](https://www.inasp.info/staff/andy-nobes-0)
-        
+    -   "How to avoid 'predatory' journals" - [Andy Nobes](https://www.inasp.info/staff/andy-nobes-0)
+
 ## Thank you!
 
 Marcela Alfaro Córdoba, Ph.D.
 
-[`r icons::icon_style(icons::fontawesome("twitter"), fill="white")` macordob](https://twitter.com/macordob)  
-[`r icons::icon_style(icons::fontawesome("envelope-open", style = "solid"), fill="white")` macordob@ucsc.edu](mailto:macordob@ucsc.edu)  
-[`r icons::icon_style(icons::fontawesome("rocket", style = "solid"), fill="white")` https://malfaro.netlify.app/](https://malfaro.netlify.app/) 
+[`r icons::icon_style(icons::fontawesome("twitter"), fill="white")` macordob](https://twitter.com/macordob)\
+[`r icons::icon_style(icons::fontawesome("envelope-open", style = "solid"), fill="white")` macordob\@ucsc.edu](mailto:macordob@ucsc.edu)\
+[`r icons::icon_style(icons::fontawesome("rocket", style = "solid"), fill="white")` https://malfaro.netlify.app/](https://malfaro.netlify.app/)
+
+--
 
 Bianca Peterson, Ph.D.
 
-[`r icons::icon_style(icons::fontawesome("twitter"), fill="white")` binxiepeterson](https://twitter.com/binxiepeterson)  
-[`r icons::icon_style(icons::fontawesome("envelope-open", style = "solid"), fill="white")` bianca@fathomdata.dev](mailto:bianca@fathomdata.dev)
+[`r icons::icon_style(icons::fontawesome("twitter"), fill="white")` binxiepeterson](https://twitter.com/binxiepeterson)\
+[`r icons::icon_style(icons::fontawesome("envelope-open", style = "solid"), fill="white")` bianca\@fathomdata.dev](mailto:bianca@fathomdata.dev)
 
-[`r icons::icon_style(icons::fontawesome("rocket", style = "solid"), fill="white")` https://binxiepeterson.github.io/](https://binxiepeterson.github.io/) 
-
+[`r icons::icon_style(icons::fontawesome("rocket", style = "solid"), fill="white")` https://binxiepeterson.github.io/](https://binxiepeterson.github.io/)

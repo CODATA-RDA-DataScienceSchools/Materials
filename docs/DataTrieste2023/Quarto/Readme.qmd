@@ -4,7 +4,7 @@ author:
   - "Marcela Alfaro Cordoba, Ph.D."
   - "Bianca Peterson, Ph.D."
 editor: visual
-format: html
+format: gfm
 jupyter: python3
 editor_options:
   markdown:

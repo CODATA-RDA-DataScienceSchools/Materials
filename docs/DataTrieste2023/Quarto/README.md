@@ -80,11 +80,12 @@ You can add options to executable code like this
 The `echo: false` option disables the printing of code (only output is
 displayed).
 
-Also, it will include the output from this Python code:
+Also, it will include the output from this Python code (if you have Python installed):
 
 ```{python}
 #| label: fig-polar
 #| fig-cap: "A line plot on a polar axis"
+#| echo: true
 
 import numpy as np
 import matplotlib.pyplot as plt
