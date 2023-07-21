@@ -1,8 +1,16 @@
 ---
 title: "Author Carpentry"
 subtitle: "Workshop on Reproducible Writing"
-author: 
-  - Marcela Alfaro Córdoba (Ph.D.) & Bianca Peterson (Ph.D.)
+authors: 
+  - name: Marcela Alfaro Córdoba (Ph.D.)
+    orcid: 0000-0002-7703-3578
+    email: macordob@ucsc.edu
+    affiliations:
+      - University of California, Santa Cruz
+  - name: Bianca Peterson (Ph.D.)
+    orcid: 0000-0001-6927-9159
+    affiliations:
+      - Fathom Data
 bibliography: authorcarpentry.bib
 format:
   revealjs: 

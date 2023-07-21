@@ -2,7 +2,7 @@
 
 - `authorcarpentry.bib`: BibTeX file (specially formatted text file) containing a list of bibliographic citations.
 - `AuthorCarpentry.html`: presentation rendered from `AuthorCarpentry.qmd`.
-- `AuthorCarpentry.qmd`: source file (Quarto) for the presentation.
+- `AuthorCarpentry.qmd`: source file (Quarto markdown file) for the presentation.
 - `Quarto.Rproj`: R project file.
 - `Readme.html`: HTML format of the Readme, rendered from `Readme.qmd`.
 - `Readme.qmd`: a copy of `README.md`, but in Quarto format.
