@@ -34,7 +34,7 @@ format:
 
 -   Find your ORCiD link and prepare to post it on the etherpad, next to your name.
 -   Questions to discuss in pairs and/or in the chat:
-      * Have you used ORCiD for publishing papers?
+      * Have you used ORCiD to link your publications?
       * Do you think it's important to have and use one?
 
 ## What are we going to do this afternoon?
@@ -51,7 +51,7 @@ format:
 
 ## Reproducible Reports
 
-![https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html](https://the-turing-way.netlify.app/_images/reproducible-definition-grid.jpg)
+![https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html](https://the-turing-way.netlify.app/_images/reproducible-definition-grid.svg)
 
 
 ## Why do we want to work on repro-mode?
