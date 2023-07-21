@@ -22,7 +22,7 @@ format:
     preview-links: auto
     logo: images/logo.png
     css: styles.css
-    footer: <https://bit.ly/3yWQlBV>
+    footer: <https://bit.ly/3pUP3G5>
 ---
 
 ## Introduction
@@ -48,15 +48,17 @@ format:
 
 -   Discuss in pairs and/or in the chat: [what's your workflow?](https://101innovations.wordpress.com/workflows/)
 -   If you could describe your workflow for Discovery - Analysis - Writing - Publication - Outreach - Assessment, what would it look like?
--   Describe it in the etherpad. You have 10 mins.
+-   Describe it in the etherpad.
+
+⏰ 10 minutes
 
 ## Reproducible Reports
 
-![https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html](https://the-turing-way.netlify.app/_images/reproducible-definition-grid.svg)
+[![The Turing Way: Reproducible Research](https://the-turing-way.netlify.app/_images/reproducible-definition-grid.svg){fig-align="center"}](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html)
 
 ## Why do we want to work on repro-mode?
 
-![https://the-turing-way.netlify.app/reproducible-research/overview/overview-benefit.html](https://the-turing-way.netlify.app/_images/reasons-reproducibility.png)
+[![The Turing Way: Advantages of Reproducible Research](https://the-turing-way.netlify.app/_images/reasons-reproducibility.png){fig-align="center"}](https://the-turing-way.netlify.app/reproducible-research/overview/overview-benefit.html)
 
 ## What is Quarto? (1/3)
 
@@ -91,22 +93,22 @@ Some examples:
 
 ## What changed?
 
-![](https://the-turing-way.netlify.app/_images/reproducibility.jpg)
+[![The Turing Way: Guide for Reproducible Research](https://the-turing-way.netlify.app/_images/reproducibility.jpg){fig-align="center"}](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html)
 
 ## Anatomy of a Quarto document
 
--   **YAML**: "YAML is a human-readable data serialization language that is often used for writing configuration files. It contains the metadata (title, tags, and descriptions) for the document. There are several other optional and cosmetic items that can be added to the YAML header, such as the font, font size, spacing, margins, themes, styling sheets, etc.
--   **Main Body**: Text, which may include in-line code, written in [markdown](https://quarto.org/docs/authoring/markdown-basics.html) (plain text formatting) syntax.
--   **Code Chunks**: Code in different languages (depending on what you have installed on your computer) that can be executed when the document is rendered.
+-   **`YAML`**: "YAML is a human-readable data serialization language that is often used for writing configuration files. It contains the metadata (title, tags, and descriptions) for the document.
+-   **`Main Body`**: Text, which may include in-line code, written in [markdown](https://quarto.org/docs/authoring/markdown-basics.html) (plain text formatting) syntax.
+-   **`Code Chunks`**: Code in different languages (depending on what you have installed on your computer) that can be executed when the document is rendered.
 
 ## Let's do it!
 
 Follow these steps:
 
 1.  Open RStudio.
-2.  Create a New Project: Click **File** \> **New Project** \> **New Directory** \> **Quarto Project** \> Name your Directory and click on **Create git repository** \> **Create Project**.
-3.  Let's click on **Render** to test that the most basic Quarto document renders on your computer.
-4.  If it worked, you should see a `repo_example.html` file in your local folder. You can open it in your Web Browser to see what it looks like.
+2.  Click **`File`** \> **`New Project`** \> **`New Directory`** \> **`Quarto Project`** \> Name your Directory and click on **`Create git repository`** \> **`Create Project`**.
+3.  Click on **`Render`** to test that the most basic Quarto document renders on your computer.
+4.  If it worked, you should see a `<filename>.html` file in your local folder. Open it in your Web Browser.
 
 ## Let's start with YAML
 
@@ -114,7 +116,7 @@ Follow these steps:
 
 -   Let's add: title, author, and date.
 
-    ⏰ 2 minutes
+⏰ 2 minutes
 
 ```         
 ---
@@ -203,7 +205,7 @@ plt.plot([1,2,3,4])
 plt.show()
 ```
 
-## Tables
+## Tables {.smaller}
 
 Use the `knitr::kable()` function to print tables as HTML:
 
@@ -215,18 +217,19 @@ knitr::kable(head(ggplot2::diamonds))
 
 You can also include LaTeX math:
 
-```{bash}
-#| eval: false
-
+:::: {.columns}
+::: {.column width="50%"}
+\$\$
+  P\\left(A=2\\middle\|\\frac{A\^2}{B}\>4\\right)
+  
+\$\$
+:::
+::: {.column width="50%"}
 $$
 P\left(A=2\middle|\frac{A^2}{B}>4\right)
 $$
-```
-
-
-$$
-P\left(A=2\middle|\frac{A^2}{B}>4\right)
-$$
+:::
+::::
 
 ## Add bibliography
 
@@ -246,9 +249,9 @@ The easiest way to do this is maintaining a `.bib` file. You can create it using
 -   Zotero: Select the library you wish to export to BibTex in Zotero.
 -   Create a file in any Text editor -\> paste the bibs using <https://www.doi2bib.org/> and save it as `<filename>.bib` in the same project folder.
 
-## References
+## References {.smaller}
 
-::: {#refs}
+::: {#refs style="font-size: 80%;"}
 :::
 
 ## Citing software and data

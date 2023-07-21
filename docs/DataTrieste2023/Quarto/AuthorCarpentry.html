@@ -472,17 +472,18 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <ul>
 <li>Discuss in pairs and/or in the chat: <a href="https://101innovations.wordpress.com/workflows/">what’s your workflow?</a></li>
 <li>If you could describe your workflow for Discovery - Analysis - Writing - Publication - Outreach - Assessment, what would it look like?</li>
-<li>Describe it in the etherpad. You have 10 mins.</li>
+<li>Describe it in the etherpad.</li>
 </ul>
+<p>⏰ 10 minutes</p>
 </section>
 <section id="reproducible-reports" class="slide level2">
 <h2>Reproducible Reports</h2>
 
-<img data-src="https://the-turing-way.netlify.app/_images/reproducible-definition-grid.svg" class="r-stretch quarto-figure-center"><p class="caption">https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html</p></section>
+<img data-src="https://the-turing-way.netlify.app/_images/reproducible-definition-grid.svg" class="r-stretch quarto-figure-center"><p class="caption">The Turing Way: Reproducible Research</p></section>
 <section id="why-do-we-want-to-work-on-repro-mode" class="slide level2">
 <h2>Why do we want to work on repro-mode?</h2>
 
-<img data-src="https://the-turing-way.netlify.app/_images/reasons-reproducibility.png" class="r-stretch quarto-figure-center"><p class="caption">https://the-turing-way.netlify.app/reproducible-research/overview/overview-benefit.html</p></section>
+<img data-src="https://the-turing-way.netlify.app/_images/reasons-reproducibility.png" class="r-stretch quarto-figure-center"><p class="caption">The Turing Way: Advantages of Reproducible Research</p></section>
 <section id="what-is-quarto-13" class="slide level2">
 <h2>What is Quarto? (1/3)</h2>
 <ul>
@@ -521,13 +522,13 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <section id="what-changed" class="slide level2">
 <h2>What changed?</h2>
 
-<img data-src="https://the-turing-way.netlify.app/_images/reproducibility.jpg" class="r-stretch"></section>
+<img data-src="https://the-turing-way.netlify.app/_images/reproducibility.jpg" class="r-stretch quarto-figure-center"><p class="caption">The Turing Way: Guide for Reproducible Research</p></section>
 <section id="anatomy-of-a-quarto-document" class="slide level2">
 <h2>Anatomy of a Quarto document</h2>
 <ul>
-<li><strong>YAML</strong>: “YAML is a human-readable data serialization language that is often used for writing configuration files. It contains the metadata (title, tags, and descriptions) for the document. There are several other optional and cosmetic items that can be added to the YAML header, such as the font, font size, spacing, margins, themes, styling sheets, etc.</li>
-<li><strong>Main Body</strong>: Text, which may include in-line code, written in <a href="https://quarto.org/docs/authoring/markdown-basics.html">markdown</a> (plain text formatting) syntax.</li>
-<li><strong>Code Chunks</strong>: Code in different languages (depending on what you have installed on your computer) that can be executed when the document is rendered.</li>
+<li><strong><code>YAML</code></strong>: “YAML is a human-readable data serialization language that is often used for writing configuration files. It contains the metadata (title, tags, and descriptions) for the document.</li>
+<li><strong><code>Main Body</code></strong>: Text, which may include in-line code, written in <a href="https://quarto.org/docs/authoring/markdown-basics.html">markdown</a> (plain text formatting) syntax.</li>
+<li><strong><code>Code Chunks</code></strong>: Code in different languages (depending on what you have installed on your computer) that can be executed when the document is rendered.</li>
 </ul>
 </section>
 <section id="lets-do-it" class="slide level2">
@@ -535,18 +536,18 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <p>Follow these steps:</p>
 <ol type="1">
 <li>Open RStudio.</li>
-<li>Create a New Project: Click <strong>File</strong> &gt; <strong>New Project</strong> &gt; <strong>New Directory</strong> &gt; <strong>Quarto Project</strong> &gt; Name your Directory and click on <strong>Create git repository</strong> &gt; <strong>Create Project</strong>.</li>
-<li>Let’s click on <strong>Render</strong> to test that the most basic Quarto document renders on your computer.</li>
-<li>If it worked, you should see a <code>repo_example.html</code> file in your local folder. You can open it in your Web Browser to see what it looks like.</li>
+<li>Click <strong><code>File</code></strong> &gt; <strong><code>New Project</code></strong> &gt; <strong><code>New Directory</code></strong> &gt; <strong><code>Quarto Project</code></strong> &gt; Name your Directory and click on <strong><code>Create git repository</code></strong> &gt; <strong><code>Create Project</code></strong>.</li>
+<li>Click on <strong><code>Render</code></strong> to test that the most basic Quarto document renders on your computer.</li>
+<li>If it worked, you should see a <code>&lt;filename&gt;.html</code> file in your local folder. Open it in your Web Browser.</li>
 </ol>
 </section>
 <section id="lets-start-with-yaml" class="slide level2">
 <h2>Let’s start with YAML</h2>
 <ul>
 <li><p>Be careful with the indentation!</p></li>
-<li><p>Let’s add: title, author, and date.</p>
-<p>⏰ 2 minutes</p></li>
+<li><p>Let’s add: title, author, and date.</p></li>
 </ul>
+<p>⏰ 2 minutes</p>
 <pre><code>---
 title: "Reproducible Report Example"
 author: Your name
@@ -630,7 +631,7 @@ Another way to create links is to use: [a label with a link](https://quarto.org)
 <p>Or using Python, if you prefer:</p>
 
 <img data-src="AuthorCarpentry_files/figure-revealjs/A%20plot-1.png" width="960" class="r-stretch"></section>
-<section id="tables" class="slide level2">
+<section id="tables" class="slide level2 smaller">
 <h2>Tables</h2>
 <p>Use the <code>knitr::kable()</code> function to print tables as HTML:</p>
 <div class="cell">
@@ -743,9 +744,16 @@ Another way to create links is to use: [a label with a link](https://quarto.org)
 <section id="latex-math" class="slide level2">
 <h2>LaTeX Math</h2>
 <p>You can also include LaTeX math:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>$$ P\left(A=2\middle|\frac{A^2}{B}&gt;4\right)</p>
+<p>$$</p>
+</div><div class="column" style="width:50%;">
 <p><span class="math display">\[
 P\left(A=2\middle|\frac{A^2}{B}&gt;4\right)
 \]</span></p>
+</div>
+</div>
 </section>
 <section id="add-bibliography" class="slide level2">
 <h2>Add bibliography</h2>
@@ -769,7 +777,7 @@ P\left(A=2\middle|\frac{A^2}{B}&gt;4\right)
 </section>
 <section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" style="font-size: 80%;" role="list">
 <div id="ref-Doney2009" class="csl-entry" role="listitem">
 Doney, Scott C., Victoria J. Fabry, Richard A. Feely, and Joan A. Kleypas. 2009. <span>“Ocean Acidification: The Other CO2 Problem.”</span> <em>Annual Review of Marine Science</em> 1 (1): 169–92. <a href="https://doi.org/10.1146/annurev.marine.010908.163834">https://doi.org/10.1146/annurev.marine.010908.163834</a>.
 </div>
@@ -833,7 +841,7 @@ Resplandy, L., R. F. Keeling, Y. Eddebbar, M. K. Brooks, R. Wang, L. Bopp, M. C.
 <p><a href="https://binxiepeterson.github.io/"><svg viewbox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:white;" xmlns="http://www.w3.org/2000/svg"> <path d="M505.12019,19.09375c-1.18945-5.53125-6.65819-11-12.207-12.1875C460.716,0,435.507,0,410.40747,0,307.17523,0,245.26909,55.20312,199.05238,128H94.83772c-16.34763.01562-35.55658,11.875-42.88664,26.48438L2.51562,253.29688A28.4,28.4,0,0,0,0,264a24.00867,24.00867,0,0,0,24.00582,24H127.81618l-22.47457,22.46875c-11.36521,11.36133-12.99607,32.25781,0,45.25L156.24582,406.625c11.15623,11.1875,32.15619,13.15625,45.27726,0l22.47457-22.46875V488a24.00867,24.00867,0,0,0,24.00581,24,28.55934,28.55934,0,0,0,10.707-2.51562l98.72834-49.39063c14.62888-7.29687,26.50776-26.5,26.50776-42.85937V312.79688c72.59753-46.3125,128.03493-108.40626,128.03493-211.09376C512.07526,76.5,512.07526,51.29688,505.12019,19.09375ZM384.04033,168A40,40,0,1,1,424.05,128,40.02322,40.02322,0,0,1,384.04033,168Z"></path></svg> https://binxiepeterson.github.io/</a></p>
 
 <img src="images/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
-<p><a href="https://bit.ly/3yWQlBV" class="uri">https://bit.ly/3yWQlBV</a></p>
+<p><a href="https://bit.ly/3pUP3G5" class="uri">https://bit.ly/3pUP3G5</a></p>
 </div>
 </section>
     </div>
