@@ -448,6 +448,14 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 </div>
 </div>
 </section>
+<section id="install-required-r-packages" class="slide level2">
+<h2>Install required R packages</h2>
+</section>
+<section id="download-the-data" class="slide level2 hcenter">
+<h2>Download the data</h2>
+<p>We will download the data directly from R during the lessons. However, if you are expecting problems with the network, it may be better to download the data beforehand and store it on your machine.</p>
+<p>The data files for the lesson can be downloaded manually here: https://doi.org/10.6084/m9.figshare.1314459</p>
+</section>
 <section id="objectives-1" class="slide level2 smaller hcenter">
 <h2>Objectives</h2>
 <div class="columns">
@@ -546,7 +554,7 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <h2>What can you do in RStudio?</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/rmarkdown.png"></p>
+<p><img data-src="images/rmarkdown.png" width="900"></p>
 </figure>
 </div>
 </section>
@@ -554,7 +562,7 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <h2>What can you do in RStudio?</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/presentation.png"></p>
+<p><img data-src="images/presentation.png" width="700"></p>
 </figure>
 </div>
 </section>
@@ -695,7 +703,7 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <h2>Absolute vs relative paths</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/Absolute_vs_relative.PNG" width="900"></p>
+<p><img data-src="images/Absolute_vs_relative.PNG" width="800"></p>
 </figure>
 </div>
 </section>
@@ -711,12 +719,10 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <h2>Your working directory should look like this</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/File_structure.PNG"></p>
+<p><img data-src="images/File_structure.PNG" width="400"></p>
 </figure>
 </div>
-<ul>
-<li><span class="red">Working directory</span> = where R looks for files that you ask it to load, and where it will put any files that you ask it to save.</li>
-</ul>
+<p><span class="red">Working directory</span> = where R looks for files that you ask it to load, and where it will put any files that you ask it to save.</p>
 </section>
 <section id="interacting-with-r" class="slide level2 smaller hcenter">
 <h2>Interacting with R</h2>
@@ -775,14 +781,13 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <li>Google <code>R &lt;task&gt;</code></li>
 <li>Many packages also have websites with additional help, tutorials, etc.</li>
 </ul></li>
-<li>Dealing with error messages
-<ul>
-<li>Errors are common when programming</li>
-<li>The problem is often a typo</li>
-<li>Fixing errors is part of any programmers daily work</li>
-<li>Watch for red x’s next to your code</li>
-</ul></li>
+<li>Dealing with error messages</li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/errors.png"></p>
+</figure>
+</div>
 </section>
 <section id="seeking-help-33" class="slide level2 smaller hcenter">
 <h2>Seeking help (3/3)</h2>
@@ -1077,6 +1082,14 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <li><p>Trim whitespace: <code>read_csv("data.csv", trim_ws = TRUE)</code></p></li>
 </ul>
 </section>
+<section id="data-frames" class="slide level2 hcenter">
+<h2>Data frames</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/dataframe2.png"></p>
+</figure>
+</div>
+</section>
 <section id="tidy-data" class="slide level2 hcenter">
 <h2>Tidy data</h2>
 <div class="quarto-figure quarto-figure-center">
@@ -1159,7 +1172,7 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/Handbag2.png"></p>
+<p><img data-src="images/Handbag2.png" width="300"></p>
 </figure>
 </div>
 </section>
@@ -1255,7 +1268,7 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 </div>
 </div>
 </section>
-<section id="data-manipulation-using-dplyr-and-tidyr" class="slide level2 hcenter">
+<section id="data-manipulation-using-dplyr-and-tidyr" class="slide level2 hcenter smaller">
 <h2>Data manipulation using <code>dplyr</code> and <code>tidyr</code></h2>
 <ul>
 <li>dplyr package makes tabular data manipulation easier</li>
@@ -1295,10 +1308,10 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <h2>Split-apply-combine analysis</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/split-apply-combine.png"></p>
+<p><img data-src="images/split-apply-combine.png" width="800"></p>
 </figure>
 </div>
-<p><span class="small">It collapses each group into a single-row summary of that group</span></p>
+<p><span class="verysmall">It collapses each group into a single-row summary of that group</span></p>
 <p><span class="verysmall">Credit: Modified from <a href="https://agron590-isu.github.io/materials/week_08/dplyr/slides_dplyr.html">Ranae Dietzel &amp; Andee Kaplan</a></span></p>
 </section>
 <section id="time-for-10" class="slide level2 hcenter">
@@ -1313,7 +1326,7 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <h2>Reshaping your data: <code>pivot_wider</code></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/spread.png"></p>
+<p><img data-src="images/pivot_wider_graphic.png"></p>
 </figure>
 </div>
 </section>
@@ -1329,7 +1342,7 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <h2>Reshaping your data: <code>pivot_longer</code></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/gather.png"></p>
+<p><img data-src="images/pivot_longer_graphic.png"></p>
 </figure>
 </div>
 </section>
@@ -1345,7 +1358,7 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <h2>Cleaning and subsetting data</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/Surveys_complete.PNG"></p>
+<p><img data-src="images/Surveys_complete.PNG" width="700"></p>
 </figure>
 </div>
 </section>
@@ -1394,23 +1407,26 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <section id="data-visualisation-grammar-of-graphics" class="slide level2 hcenter smaller">
 <h2>Data visualisation: grammar of graphics</h2>
 <p>Grammar of graphics = a framework which follows a layered approach to describe and construct visualisations or graphics in a structured manner</p>
-<h3 id="plot-data-aesthetics-geometry">plot = <span class="red">data</span> + <span class="green">aesthetics</span> + <span class="blue">geometry</span></h3>
+<p>plot = <span class="red">data</span> + <span class="green">aesthetics</span> + <span class="blue">geometry</span></p>
 <ul>
 <li><code>&lt;data&gt;</code> = refers to a data frame (data set)</li>
 <li><code>&lt;aesthetics&gt;</code> = indicates x and y variables &amp; how data should be displayed in the plot (e.g.&nbsp;color, size, shape)</li>
 <li><code>&lt;geometry&gt;</code> = refers to the type of graphics (bar chart, histogram, box plot, line plot, density plot, etc.)</li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/grammar_of_graphics.PNG"></p>
-</figure>
-</div>
 </section>
 <section id="data-visualisation-grammar-of-graphics-1" class="slide level2 hcenter">
 <h2>Data visualisation: grammar of graphics</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/grammar_of_graphics3.png" width="700"></p>
+<p><img data-src="images/grammar_of_graphics.PNG" width="600"></p>
+</figure>
+</div>
+</section>
+<section id="data-visualisation-grammar-of-graphics-2" class="slide level2 hcenter">
+<h2>Data visualisation: grammar of graphics</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/grammar_of_graphics3.png" width="600"></p>
 </figure>
 </div>
 </section>
@@ -1567,7 +1583,7 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <h2>Joins</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/joins.png" width="600"></p>
+<p><img data-src="images/joins.png" width="450"></p>
 </figure>
 </div>
 </section>
@@ -1608,7 +1624,7 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <span id="cb9-13"><a href="#cb9-13"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="writing-your-own-function" class="slide level2 hcenter">
+<section id="writing-your-own-function" class="slide level2 hcenter smaller">
 <h2>Writing your own function</h2>
 <ul>
 <li>Functions allow you to automate common tasks instead of copy-and-pasting</li>
@@ -1640,7 +1656,7 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <span id="cb10-15"><a href="#cb10-15"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="useful-shortcuts" class="slide level2 hcenter">
+<section id="useful-shortcuts" class="slide level2 hcenter smaller">
 <h2>Useful shortcuts</h2>
 <ul>
 <li><code>Ctrl + Shift + N</code> = New script</li>
@@ -1690,12 +1706,6 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <section id="additional-resources" class="slide level2 hcenter smaller">
 <h2>Additional Resources</h2>
 <ul>
-<li>Interactive learning
-<ul>
-<li><code>install.packages("swirl")</code></li>
-<li><code>library(swirl)</code></li>
-<li>Follow the on-screen instructions</li>
-</ul></li>
 <li>RStudio Resources
 <ul>
 <li><a href="https://www.r-graph-gallery.com/">R Graph Gallery</a></li>
@@ -1704,6 +1714,17 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <li><a href="https://rstudio.com/resources/cheatsheets/">Cheat Sheets</a></li>
 <li><a href="https://education.rstudio.com/">Educational Material for Learners or Teachers</a></li>
 <li><a href="https://resources.rstudio.com/webinars/a-gentle-introduction-to-tidy-statistics-in-r">A Gentle Introduction to Tidy Statistics in R</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="additional-resources-1" class="slide level2 hcenter smaller">
+<h2>Additional Resources</h2>
+<ul>
+<li>Interactive learning
+<ul>
+<li><code>install.packages("swirl")</code></li>
+<li><code>library(swirl)</code></li>
+<li>Follow the on-screen instructions</li>
 </ul></li>
 <li><a href="https://rstudio.com/resources/books/">Books</a></li>
 <li><a href="https://cran.r-project.org/doc/manuals/R-intro.pdf">Introduction to R</a></li>
@@ -1758,17 +1779,9 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <li>Only ever use relative paths, not absolute paths</li>
 </ul></li>
 </ul>
-</section>
-<section id="summary-1" class="slide level2 hcenter">
-<h2>Summary</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/Final_summary.PNG" width="700"></p>
-</figure>
-</div>
 <p><img src="images/logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p><a href="https://bit.ly/3pUP3G5" class="uri">https://bit.ly/3pUP3G5</a></p>
+<p><a href="https://bit.ly/3ODtPGj" class="uri">https://bit.ly/3ODtPGj</a></p>
 </div>
 </section>
     </div>

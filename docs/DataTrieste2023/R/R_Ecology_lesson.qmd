@@ -16,7 +16,7 @@ format:
     auto-stretch: false
     css: styles.css
     logo: images/logo.png
-    footer: <https://bit.ly/3pUP3G5>
+    footer: <https://bit.ly/3ODtPGj>
 ---
 
 ```{r, cache = FALSE, include=FALSE}
@@ -149,11 +149,11 @@ The data files for the lesson can be downloaded manually here: https://doi.org/1
 
 ## What can you do in RStudio? {.smaller .hcenter}
 
-![](images/rmarkdown.png){fig-align="center"}
+![](images/rmarkdown.png){fig-align="center" width="900"}
 
 ## What can you do in RStudio? {.smaller .hcenter}
 
-![](images/presentation.png){fig-align="center"}
+![](images/presentation.png){fig-align="center" width="700"}
 
 ## What can you do in RStudio? {.smaller .hcenter}
 
@@ -253,7 +253,7 @@ The data files for the lesson can be downloaded manually here: https://doi.org/1
 
 ## Absolute vs relative paths {.hcenter}
 
-![](images/Absolute_vs_relative.PNG){fig-align="center" width="900"}
+![](images/Absolute_vs_relative.PNG){fig-align="center" width="800"}
 
 ## Time for... {.hcenter}
 
@@ -261,9 +261,9 @@ The data files for the lesson can be downloaded manually here: https://doi.org/1
 
 ## Your working directory should look like this {.smaller .hcenter}
 
-![](images/File_structure.PNG){fig-align="center"}
+![](images/File_structure.PNG){fig-align="center" width="400"}
 
--   [Working directory]{.red} = where R looks for files that you ask it to load, and where it will put any files that you ask it to save.
+[Working directory]{.red} = where R looks for files that you ask it to load, and where it will put any files that you ask it to save.
 
 ## Interacting with R {.smaller .hcenter}
 
@@ -546,7 +546,7 @@ Data types:
 
 ## Data frames {.hcenter}
 
-![](images/dataframe.svg){fig-align="center"}
+![](images/dataframe2.png){fig-align="center"}
 
 ## Tidy data {.hcenter}
 
@@ -612,7 +612,7 @@ x <- factor(c("wallet", "gum", "lotion", "sanitiser", "lip-gloss"))
 levels(x)
 ```
 
-![](images/Handbag2.png){fig-align="center"}
+![](images/Handbag2.png){fig-align="center" width="300"}
 
 ## Time for... {.hcenter}
 
@@ -686,7 +686,7 @@ levels(x)
 :::
 :::
 
-## Data manipulation using `dplyr` and `tidyr` {.hcenter}
+## Data manipulation using `dplyr` and `tidyr` {.hcenter .smaller}
 
 -   dplyr package makes tabular data manipulation easier
 -   tidyr package enables you to convert between different data formats for plotting and analysis
@@ -710,9 +710,9 @@ levels(x)
 
 ## Split-apply-combine analysis {.hcenter}
 
-![](images/split-apply-combine.png){fig-align="center"}
+![](images/split-apply-combine.png){fig-align="center" width="800"}
 
-[It collapses each group into a single-row summary of that group]{.small}
+[It collapses each group into a single-row summary of that group]{.verysmall}
 
 [Credit: Modified from [Ranae Dietzel & Andee Kaplan](https://agron590-isu.github.io/materials/week_08/dplyr/slides_dplyr.html)]{.verysmall}
 
@@ -738,7 +738,7 @@ levels(x)
 
 ## Cleaning and subsetting data {.hcenter}
 
-![](images/Surveys_complete.PNG){fig-align="center"}
+![](images/Surveys_complete.PNG){fig-align="center" width="700"}
 
 ## Time for... {.hcenter}
 
@@ -778,17 +778,19 @@ levels(x)
 
 Grammar of graphics = a framework which follows a layered approach to describe and construct visualisations or graphics in a structured manner
 
-### plot = [data]{.red} + [aesthetics]{.green} + [geometry]{.blue}
+plot = [data]{.red} + [aesthetics]{.green} + [geometry]{.blue}
 
 -   `<data>` = refers to a data frame (data set)
 -   `<aesthetics>` = indicates x and y variables & how data should be displayed in the plot (e.g. color, size, shape)
 -   `<geometry>` = refers to the type of graphics (bar chart, histogram, box plot, line plot, density plot, etc.)
 
-![](images/grammar_of_graphics.PNG){fig-align="center"}
+## Data visualisation: grammar of graphics {.hcenter}
+
+![](images/grammar_of_graphics.PNG){fig-align="center" width="600"}
 
 ## Data visualisation: grammar of graphics {.hcenter}
 
-![](images/grammar_of_graphics3.png){fig-align="center" width="700"}
+![](images/grammar_of_graphics3.png){fig-align="center" width="600"}
 
 ## Time for... {.hcenter}
 
@@ -954,7 +956,7 @@ setdiff(x, y)   #return observations in x that are not in y.
 
 ## Joins {.hcenter}
 
-![](images/joins.png){fig-align="center" width="600"}
+![](images/joins.png){fig-align="center" width="450"}
 
 ## IF statements {.hcenter}
 
@@ -999,7 +1001,7 @@ if (temp <= 0) {
 }
 ```
 
-## Writing your own function {.hcenter}
+## Writing your own function {.hcenter .smaller}
 
 -   Functions allow you to automate common tasks instead of copy-and-pasting
 -   Writing a function has 3 main advantages over using copy-and-paste:
@@ -1030,7 +1032,7 @@ get_species <- function(x) {
 }
 ```
 
-## Useful shortcuts {.hcenter}
+## Useful shortcuts {.hcenter .smaller}
 
 -   `Ctrl + Shift + N` = New script
 -   `Alt + "-"` = Assignment operator `<-`
@@ -1073,10 +1075,6 @@ get_species <- function(x) {
 
 ## Additional Resources {.hcenter .smaller}
 
--   Interactive learning
-    -   `install.packages("swirl")`
-    -   `library(swirl)`
-    -   Follow the on-screen instructions
 -   RStudio Resources
     -   [R Graph Gallery](https://www.r-graph-gallery.com/)
     -   [RStudio Primers](https://rstudio.cloud/learn/primers)
@@ -1084,6 +1082,13 @@ get_species <- function(x) {
     -   [Cheat Sheets](https://rstudio.com/resources/cheatsheets/)
     -   [Educational Material for Learners or Teachers](https://education.rstudio.com/)
     -   [A Gentle Introduction to Tidy Statistics in R](https://resources.rstudio.com/webinars/a-gentle-introduction-to-tidy-statistics-in-r)
+
+## Additional Resources {.hcenter .smaller}
+
+-   Interactive learning
+    -   `install.packages("swirl")`
+    -   `library(swirl)`
+    -   Follow the on-screen instructions
 -   [Books](https://rstudio.com/resources/books/)
 -   [Introduction to R](https://cran.r-project.org/doc/manuals/R-intro.pdf)
 -   [R FAQ](https://cran.r-project.org/doc/FAQ/R-FAQ.html)
@@ -1128,7 +1133,3 @@ get_species <- function(x) {
     -   Keep scripts there
     -   Save your outputs (plots and cleaned data) there
     -   Only ever use relative paths, not absolute paths
-
-## Summary {.hcenter}
-
-![](images/Final_summary.PNG){fig-align="center" width="700"}
