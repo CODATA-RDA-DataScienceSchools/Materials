@@ -8,6 +8,10 @@
 - `Readme.html`: HTML format of the Readme, rendered from `Readme.qmd`.
 - `Readme.qmd`: a copy of `README.md`, but in Quarto format.
 
+## Presentation
+
+The presentation can be viewed at [https://bit.ly/3pUP3G5](https://bit.ly/3pUP3G5).
+
 ## Schedule
 
 -   **Thursday 14:00 - 16:00 - [Workshop Reproducible
