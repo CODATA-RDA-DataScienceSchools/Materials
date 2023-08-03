@@ -547,6 +547,9 @@ levels(sex_data)[2] <- "male"
 # OR rename both at the same time
 levels(sex_data)[1:2] <- c("female", "male")
 
+# OR recode the levels by name
+levels(sex_data) <- list(female = "F", male = "M")
+
 # 7.2. Check that the levels have been renamed
 levels(sex_data)
 
