@@ -546,9 +546,15 @@ levels(sex_data)[2] <- "male"
 
 # OR rename both at the same time
 levels(sex_data)[1:2] <- c("female", "male")
+levels(sex_data)[c(1,2)] <- c("female", "male")
 
-# OR recode the levels by name
-levels(sex_data) <- list(female = "F", male = "M")
+# OR recode the levels by name using list
+levels(sex_data) <- list(female = "F",
+                         male = "M",
+                         undetermined = NA)
+
+# OR recode the levels with recode_factor
+
 
 # 7.2. Check that the levels have been renamed
 levels(sex_data)
@@ -777,7 +783,7 @@ surveys %>%
 # Create a new data frame from survey data with the following:
 #       * New column called "hindfoot_cm" containing the hindfoot_length values (currently in mm) converted to centimeters
 #       * In the hindfoot_cm column, there are no NAs and all values are less than 3
-#       * Only keep the species_id and hindfoot_half columns
+#       * Only keep the species_id and hindfoot_cm columns
 
 surveys_hindfoot_cm <- surveys %>%
   filter(!is.na(hindfoot_length)) %>%  # first remove missing hindfoot_length values
