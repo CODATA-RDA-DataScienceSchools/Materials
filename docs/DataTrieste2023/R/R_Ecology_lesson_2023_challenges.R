@@ -157,7 +157,7 @@ country_climate <- data.frame(country=c("Canada", "Panama", "South Africa", "Aus
 # Create a new data frame from survey data with the following:
 #       * New column called "hindfoot_cm" containing the hindfoot_length values (currently in mm) converted to centimeters
 #       * In the hindfoot_cm column, there are no NAs and all values are less than 3
-#       * Only keep the species_id and hindfoot_half columns
+#       * Only keep the species_id and hindfoot_cm columns
 
 
 
