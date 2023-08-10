@@ -25,7 +25,7 @@ also exercise our R knowledge by building a few data visualizations
 
 * Click the _GitHub_ link on the top bar menu.
 * Enter this link:
-  `https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2023/Colab_R_Demo.ipynb`
+  `https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/SouthAfrica2021/Colab_R_Demo.ipynb`
   into the search field.
 * This will open the Google Colaboratory Demo Notebook we will
   be looking at during this lesson.
