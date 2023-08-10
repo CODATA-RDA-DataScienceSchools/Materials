@@ -35,12 +35,6 @@ Do you know how to find the OS version? You can usually look in /etc/os-release 
 $ cat /etc/os-release
 ```
 
-Or you can run:
-
-```
-$ hostnamectl
-```
-
 Where is Condor installed? 
 
 ```
