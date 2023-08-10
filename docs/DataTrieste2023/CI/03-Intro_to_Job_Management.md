@@ -16,7 +16,7 @@ Condor has two coexisting types of releases at any given time: stable and develo
 
 Today you will log into Jupyter Lab OSPool system. 
 
-Login on submission node by going to [The OSG Notebook Launch Site](https://notebook.ospool.osg-htc.org).
+Login on submission node by going to [The OSG Notebook Launch Site](https://notebook.ospool.osg-htc.org). You can use a Google account or you ORCID to login.
 
 When you login to the machine you will be in your "home directory".  We recommend that you work in this directory as nobody else can modify the files here.
 
