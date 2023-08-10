@@ -5,7 +5,8 @@
 This exercise should help you understand the basics of how Condor is installed, what Condor processes (a.k.a. daemons) are running, and what they do.
 
 ## Login to the Condor submit computer
-Before you start, make sure you are logged into `training.osgconnect.net`
+
+Continuuijng from the terminal you opened in Hands-on Exercise 3.
 
 ```
 $ hostname
