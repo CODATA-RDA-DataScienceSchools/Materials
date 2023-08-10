@@ -212,12 +212,13 @@ The result should look somewhat like this:
 
 ```
 /home/USER/.gnupg/pubring.kbx
-------------------------------
+
 sec   rsa3072/91A8A2BC 2023-08-06 [SC] [expires: 2025-08-05]
       0B02D50E37F5C9D6A4678200DCEEF79B91A8A2BC
 uid         [ultimate] USER_NAME <USER_EMAIL@DOMAIN.com>
 ssb   rsa3072/C8149F9C 2023-08-06 [E] [expires: 2025-08-05]
 ```
+
 In your output you should be able to see your Name on it is listed `USER_NAME` and your email where it is listed `USER_EMAIL`. In this case, the _key id_ for this private key is `91A8A2BC`.
 
 Now we can export our private key by running the command:
