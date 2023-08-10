@@ -186,6 +186,23 @@ $ gpg --encrypt --armor -r "riley@domain.com" file.txt
 ```
 The comman won't generate any output, but a new file will be created in the directory you are in named: `file.txt.asc`.
 
+In case we've received the encrypted file and want to decrypt it, we need to run the command:
+
+```
+$ gpg --decrypt --output file.txt file.txt.asc
+```
+
+The output should look something like: 
+
+```
+gpg: encrypted with 3072-bit RSA key, ID 2E1F20E6D74CF66A, created 2023-08-06
+      "Riley <riley@domain.com>"
+```
+Where in the bottom line you should be able to see the name and the email of the person that sent you the encrypted message. In this case, we've receied this file from _Riley_.
+
+# 5.
+
+
 
 
 
