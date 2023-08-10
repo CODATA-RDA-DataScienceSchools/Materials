@@ -8,15 +8,15 @@ You will receive login credentials at the beginning of this session.
    * You may enjoy browsing the [Condor web page](http://www.cs.wisc.edu/condor/).<br>
 
 ## Which Condor?
-We will be using Condor 8.6.13, which is a recent production version of Condor.
+We will be using Condor 10.6.0, which is a recent production version of Condor.
 
-Condor has two coexisting types of releases at any given time: stable and development. Condor 8.2.X and 7.8.x are considered stable releases, and you can know they are stable because the second digits (a 2 or a 8 in these cases) are  even numbers. In a given stable series, all versions have the same features (for example 7.8.0 and 7.8.1 have the same set of features) and differ only in bug fixes.
+Condor has two coexisting types of releases at any given time: stable and development. Condor 10.6.0 is considered a stable releases, and you can know they are stable because the second digits (a 6 in these cases) are  even numbers. In a given stable series, all versions have the same features (for example 10.6.0 and 10.6.1 have the same set of features) and differ only in bug fixes.
 
 ## Where you will work
 
-Today you will log into training.osgconnect.net for all of your exercises.
+Today you will log into Jupyter Lab OSPool system. 
 
-Login on submission node using the directions from yesterdays security session. They can be found [here](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataSanJose2019/CI/00-Pre-Introduction-Login.md).
+Login on submission node by going to [The OSG Notebook Launch Site](https://notebook.ospool.osg-htc.org).
 
 When you login to the machine you will be in your "home directory".  We recommend that you work in this directory as nobody else can modify the files here.
 
