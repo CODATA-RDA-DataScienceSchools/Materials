@@ -18,6 +18,8 @@ Today you will log into Jupyter Lab OSPool system.
 
 Login on submission node by going to [The OSG Notebook Launch Site](https://notebook.ospool.osg-htc.org). You can use a Google account or you ORCID to login.
 
+Once you are logged in use the "Terminal" box to open a Unix prompt. 
+
 When you login to the machine you will be in your "home directory".  We recommend that you work in this directory as nobody else can modify the files here.
 
 You can always return to your home directory by running the command
