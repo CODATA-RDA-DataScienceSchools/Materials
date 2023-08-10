@@ -13,7 +13,7 @@ Create a directory to work in:
 
 ```
 $ mkdir -p condor_example
-$cd condor_example
+$ cd condor_example
 ```
 
 Use your preferred text editor to create this C program. (Shown below with nano.)
