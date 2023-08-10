@@ -31,5 +31,3 @@ $ cd ~
 ## The Exercises
 
 Throughout the Condor exercises, you will be given a fair amount of guidance. In several spots, there are suggestions for extra exercises to do "on your own" or as "challenges". Since you aren't being graded, there is no extra credit for doing them, but we encourage you to try them out. If you prefer, you can come back to the extra credit after you've completed the basic exercises. If you simply cruise through the exercises, you'll probably have free time--we encourage you to delve in more deeply.
-
-For all of the exercises, we'll assume that you are logged into user-training.osgconnect.net. You should have received your name and password for user-training.osgconnect.net at the beginning of the Computation Infrastructures lecture.
