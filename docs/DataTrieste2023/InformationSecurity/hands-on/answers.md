@@ -202,8 +202,30 @@ Where in the bottom line you should be able to see the name and the email of the
 
 # 5.
 
+In order to export your private key, we first need to discover our private _key id_. THus, we need to run the following:
 
+``
+$ gpg --list-secret-keys --keyid-format short
+```
 
+The result should look somewhat like this: 
+
+```
+/home/USER/.gnupg/pubring.kbx
+------------------------------
+sec   rsa3072/91A8A2BC 2023-08-06 [SC] [expires: 2025-08-05]
+      0B02D50E37F5C9D6A4678200DCEEF79B91A8A2BC
+uid         [ultimate] USER_NAME <USER_EMAIL@DOMAIN.com>
+ssb   rsa3072/C8149F9C 2023-08-06 [E] [expires: 2025-08-05]
+```
+In your output you should be able to see your Name on it is listed `USER_NAME` and your email where it is listed `USER_EMAIL`. In this case, the _key id_ for this private key is `91A8A2BC`.
+
+Now we can export our private key by running the command:
+
+```
+$ gpg --export-secret-keys -a 91A8A2BC > prv.key
+```
+After running this command you will notice that a file named `prv.key` has been created in the current directory. This is your private key. **Be very carefull no to lose it**. Remember that this is a digital identity, thus, if it falls in the wrong hands, a lot of harm can be done.
 
 
 
