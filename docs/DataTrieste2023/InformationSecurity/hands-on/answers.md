@@ -204,7 +204,7 @@ Where in the bottom line you should be able to see the name and the email of the
 
 In order to export your private key, we first need to discover our private _key id_. THus, we need to run the following:
 
-``
+```
 $ gpg --list-secret-keys --keyid-format short
 ```
 
@@ -212,7 +212,7 @@ The result should look somewhat like this:
 
 ```
 /home/USER/.gnupg/pubring.kbx
-
+-----------------------------
 sec   rsa3072/91A8A2BC 2023-08-06 [SC] [expires: 2025-08-05]
       0B02D50E37F5C9D6A4678200DCEEF79B91A8A2BC
 uid         [ultimate] USER_NAME <USER_EMAIL@DOMAIN.com>
