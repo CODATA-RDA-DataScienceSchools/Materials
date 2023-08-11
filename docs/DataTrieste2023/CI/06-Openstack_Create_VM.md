@@ -2,7 +2,7 @@
 
 ## Connect to the OpenStack API
    * Point your browser to osc2.ictp.it/horizon
-   * Log in with your ICTP credentials and the domain "smr3861"
+   * Log in with your ICTP registration email and the domain "smr3861"
    * You'll be automatically presented with a pie chart visualization of the current status of your OpenStack environment. It will look something like the figure below, though it may differ. 
    ![OpenStack Overview](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/SouthAfrica2023/OpenStack_Overview.png)
 
