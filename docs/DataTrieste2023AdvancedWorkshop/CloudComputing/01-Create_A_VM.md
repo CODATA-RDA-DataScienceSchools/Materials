@@ -1,4 +1,4 @@
-# Create A New Virtual Machine (VM) on the CHPC OpenStack Cloud
+# Create A New Virtual Machine (VM) on the ICTP OpenStack Cloud
 
 ## Connect to the OpenStack API
    * Point your browser to the [ICTP OpenStack Cloud](https://osc2.ictp.it/horizon/)
@@ -31,7 +31,7 @@
       *  **NOTE on Key Pairs:** If you have an existing key pair, you can use it here. Try the _Import Key_ option. However, for this exercise we will assume you need a new key pair and proceed with that assumption.
       *  **NOTE on Key Security:** DO NOT SHARE YOUR PRIVATE KEY. This is rule #1 of key security. You will get a public portion of the key that is sharable, but never share the private portion of your key. 
       *  Click the _+Create Key Pair_ button at the top of the screen. 
-      *  Give your key pair a name in the _Key Pair Name_ box. I've used **CHPC_OpenStack_Key** to identify it from the other keys I manage. 
+      *  Give your key pair a name in the _Key Pair Name_ box. I've used **ICTP_OpenStack_Key** to identify it from the other keys I manage. 
       *  Select _SSH Key_ from the _Key Type_ dropdown. 
       *  Click _Create Keypair_.
       *  You will be presented with a Private Key - copy it to your local machine using the _Copy Key to Clipboard_ option. 
