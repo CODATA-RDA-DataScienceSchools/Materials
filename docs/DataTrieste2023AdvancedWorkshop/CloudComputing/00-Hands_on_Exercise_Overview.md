@@ -28,5 +28,4 @@ analysis on the VM you've created to do your own work in [Exercise
 
 ## Advanced topics
 
-#### 1. [Deploying a *Jupyter Notebook Server* at an *IaaS* platform using
-*Docker* containers](05-install-conda-inside-docker.md)
+#### 1. [Deploying a *Jupyter Notebook Server* at an *IaaS* platform using *Docker* containers](05-install-conda-inside-docker.md)
