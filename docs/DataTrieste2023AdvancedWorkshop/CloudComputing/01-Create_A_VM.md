@@ -24,7 +24,7 @@
    * You will be automatically moved to the next tab in the popup _Flavor_.
        * **NOTE on Flavors:** We will use a _m2.medium_ VM for this default exercise. If you are importing your own data for this exercise and need additional compute power, talk to your instructor. We'll advise you on the availability of additional resources. 
        * Click _Next_.
-   * The _Network_ we will be using for this set of exercise is called _workshop-vxlan_.
+   * The _Network_ we will be using for this set of exercise is called _provider_.
    * The _Network Ports_, and _Security Groups_ are preconfigured by the OpenStack administrator. There is no need to adjust anything on these sections. 
        * Click on the _Key Pairs_ tab on the left side menu. 
    * In this step a public and private key will be created that will allow you to authenticate to the Virtual Machine you are creating. Keys may have been covered during the Security session in this class, but if not, see the brief explanation of Key Pairs at this [link](http://www.crypto-it.net/eng/tools/key-based-authentication.html). 
