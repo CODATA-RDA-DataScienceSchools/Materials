@@ -14,38 +14,6 @@ Prerequisites:
 **A Final Note:**
    * Hopefully the UNIX session you've completed covers most of the commands you see here. If it did not and you're curious, ask your instructor.  
 
-## Allocating an IP (Internet Protocol) address to your virtual machine
-
-In order to allocate a real Internet Address to the virtual machine we've just
-created we have to use a feature named `Floating IP`. This feature selects an
-address from the pool of available addresses and allocate such address to you
-virtual machine. This is an important step, since the number of available IP
-addresses is finite. 
-This is done by accessing the drop down menu beside the `Create Snapshot`
-button at the list of virtual machines. Make sure that your accessing this menu
-for the Virtual Machine that you've just created. The option we will use is the
-`Associate Floating IP` as can be seen in the picture:
-<center><img src="./img/floating_ip1.png" /></center>
-
-After selecting that option you should see the following window. You should
-select the plus sign:
-
-<center><img src="./img/floating_ip2.png" /></center>
-
-In the next window, in the dropdown menu, select the `publicnet` and click on
-the `Allocate IP` button. 
-
-<center><img src="./img/floating_ip3.png" /></center>
-
-You will be redirected to the previous screen. It should look like this:
-
-<center><img src="./img/floating_ip4.png" /></center>
-
-You should select the `Associate` button. The list of instances should display
-your recently created Virtual Machine and under the _IP Addresses_ column you
-should see two entries. We will use the address starting with the `154.114` to
-access our virtual machine (we will refer to this as `Your_IP_Address`).
-
 ## Connecting via SSH
    * Open your terminal software and navigate to the directory where you've saved your OpenStack SSH Key. 
    * Your key will not work if it's permission is not set correctly. This is a security precaution. Use this command to hide your key from anyone but yourself: <br>
