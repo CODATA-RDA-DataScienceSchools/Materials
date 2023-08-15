@@ -109,7 +109,7 @@ Now, watch your job run (insert your username in the command below instead of `U
 
 ```
 # Note the job state of 'I' means the job is idle - not yet running
-$ condor_q YOUR_USER_ID -nobatch
+$ condor_q 
 
 -- Schedd: user-training.osgconnect.net : <192.170.227.119:9618?... @ 07/19/17 03:41:08
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
@@ -121,7 +121,7 @@ Total for all users: 1 jobs; 0 completed, 0 removed, 1 idle, 0 running, 0 held, 
 1 jobs; 0 completed, 0 removed, 1 idle, 0 running, 0 held, 0 suspended
 
 # After some time your job will enter the 'R' state which means it is currently running
-$ condor_q YOUR_USER_ID -nobatch
+$ condor_q 
 
 -- Schedd: user-training.osgconnect.net : <192.170.227.119:9618?... @ 07/19/17 03:41:14
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
@@ -133,7 +133,7 @@ Total for all users: 1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 
 1 jobs; 0 completed, 0 removed, 1 idle, 0 running, 0 held, 0 suspended
 
 # When your job disappears from the queue that means it completed.
-$ condor_q YOUR_USER_ID -nobatch
+$ condor_q 
 
 -- Schedd: user-training.osgconnect.net : <192.170.227.119:9618?... @ 07/19/17 03:41:21
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
@@ -212,7 +212,7 @@ $ condor_submit submit
 Submitting job(s)...
 3 job(s) submitted to cluster 18.
 
-$ condor_q -nobatch
+$ condor_q
 -- Submitter: frontal.cci.ucad.sn : <10.0.0.252:9645> : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
             
@@ -222,7 +222,7 @@ $ condor_q -nobatch
 
 3 jobs; 0 completed, 0 removed, 4 idle, 0 running, 0 held, 0 suspended
 
-$ condor_q USER -nobatch
+$ condor_q 
 -- Submitter: frontal.cci.ucad.sn : <10.0.0.252:9645> : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
             
@@ -232,7 +232,7 @@ $ condor_q USER -nobatch
 
 3 jobs; 0 completed, 0 removed, 0 idle, 4 running, 0 held, 0 suspended
 
-$ condor_q USER -nobatch
+$ condor_q 
 -- Submitter: frontal.cci.ucad.sn : <10.0.0.252:9645> : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
 
@@ -287,8 +287,8 @@ What does it mean? What happens? Does it work as you expect?
 
 ## Challenges
 
-If you have time and feel comfortable with the technical background, try these extra challenges. You'll need to peruse the Condor manual (particularly the [manual page for condor_submit](http://www.cs.wisc.edu/condor/manual/v8.4/condor_submit.html)) to find answers. Feel free to ask Rob--he'd love to give you hints!
+If you have time and feel comfortable with the technical background, try these extra challenges. You'll need to peruse the Condor manual (particularly the [manual page for condor_submit](https://htcondor.readthedocs.io/en/latest/man-pages/condor_submit.html)) to find answers. Feel free to ask Rob--he'd love to give you hints!
 
-   * Make another scientific program (probably just modify simple.c) that takes its input from a file. Now submit 3 copies of this program where each input file is in a separate directory. Use the initialdir option [described in the manual](http://www.cs.wisc.edu/condor/manual/v8.4/condor_submit.html). This will let you specify a directory for the input to the program. You can run specify the initialdir with `$(Process)`. You can specify extra files to copy with `transfer_input_files`. Now you're really learning the basics of running something like a real scientific job!
+   * Make another scientific program (probably just modify simple.c) that takes its input from a file. Now submit 3 copies of this program where each input file is in a separate directory. Use the initialdir option [described in the manual](https://htcondor.readthedocs.io/en/latest/man-pages/condor_submit.html). This will let you specify a directory for the input to the program. You can run specify the initialdir with `$(Process)`. You can specify extra files to copy with `transfer_input_files`. Now you're really learning the basics of running something like a real scientific job!
    * Condor can send you email when a job finishes. How can you control this? 
    * You know that your job should never run for more than four hours. If it does, then the job should be killed because there is a problem. How can you tell Condor to do this for you? 
