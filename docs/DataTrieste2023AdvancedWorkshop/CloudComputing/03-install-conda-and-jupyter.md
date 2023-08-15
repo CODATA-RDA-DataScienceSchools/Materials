@@ -29,7 +29,7 @@ Before accessing the machine we have to find its IP address at the Openstack int
 
 ![](img/02.png)
 
-For more information about how to connect to the VM that we've just created please review the [Exercise 3](03-Connect_And_Install.md).
+For more information about how to connect to the VM that we've just created please review the [Exercise 2](02-Connect_And_Install.md).
 
 We need to update the Firewall rules in order to have an instance of a jupyter
 notebook running on our Virtual Machine. We have to access the `Edit Security
@@ -214,7 +214,7 @@ $ sudo apt install libxrender1
 After installing the library we can start our *jupyter server*. One of the parameter needed for starting the server is the the IP address of the VM. That address is the same we used in the `ssh` command and has the format: `xxx.xxx.xxx.xxx`. That information is available inside the ***Instances*** tab at the *openstack* webpage. The command to start the server then should be:
 
 ```bash=
-$ jupyter notebook --ip=0.0.0.0 --port 8083
+$ jupyter notebook --ip=0.0.0.0 --port 8888
 ```
 
 If you can see the following message, it means that the installation worked:
