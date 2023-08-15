@@ -22,7 +22,9 @@ choosing.
 
 ## Exercise 4 - Regression Analysis Using Jupyter
 
-We return to the method used in Exercise 1 to recreate a new regression
+We can start with an R and data analysis refresher by revisiting the BRICS dataset analysis on [Google Colab](06-warmup-google-colab.md)
+
+We return to the Spark data Analysis task to recreate a new regression
 analysis on the VM you've created to do your own work in [Exercise
 4](04-OpenStack_Regression_Analysis.md)
 
