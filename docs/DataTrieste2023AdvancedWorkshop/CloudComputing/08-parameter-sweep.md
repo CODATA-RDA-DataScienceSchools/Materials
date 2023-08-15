@@ -86,10 +86,11 @@ library("e1071")
 data(iris)
 parameters = read.csv("parameters.csv")
 kernel = as.character(parameters$kernel[[1]])
+gamma = as.numeric(parameters$gamma[[1]])
 train = sample(1:nrow(iris), round(nrow(iris)*0.75))
 train_iris = iris[train,]
 test_iris = iris[-train,]
-svm1 = svm(Species ~., data = train_iris, kernel = kernel)
+svm1 = svm(Species ~., data = train_iris, kernel = kernel, gamma = gamma)
 pred = predict(svm1, test_iris)
 library(caret)
 results = confusionMatrix(test_iris$Species, pred)
@@ -157,6 +158,10 @@ $ cat results2.csv
 "AccuracyPValue",7.82023378165494e-13
 "McnemarPValue",NA
 ```
+
+## Exercise
+1. Change also the type of kernel used by the `svm`. Try with `linear` kernel.
+2. Redo the same analysis by running a Tree Classifier using the `rpart` package;
 
 
 
