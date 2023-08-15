@@ -25,7 +25,7 @@ $CondorVersion: 10.6.0 2023-06-29 BuildID: 658549 PackageID: 10.6.0-1.1 $
 $CondorPlatform: X86_64-Ubuntu_22.04 $
 ```
 
-Note that the "CondorPlatform" reports the type of computer we built it on, _not_ the computer we're running on. It was built on CentOS_7.6, but you might notice that we're running on CentOS Linux release 7.3.1.
+Note that the "CondorPlatform" reports the type of computer we built it on, _not_ the computer we're running on. It was built on Ubuntu 22.04.
 
 ### Extra Tip: The OS version
 
@@ -116,9 +116,8 @@ The output that you see will be different depending on what jobs are running. No
 
 What else can you find out with condor_q? Try any one of:
 
-   * `man condor_q`
    * `condor_q -help`
-   * [condor_q from the online manual](http://www.cs.wisc.edu/condor/manual/v8.0/condor_q.html)
+   * [condor_q from the online manual](https://htcondor.readthedocs.io/en/latest/man-pages/condor_q.html)
 
 ### Double bonus points
 
@@ -130,9 +129,8 @@ How do you use the `-constraint` or `-format` options to `condor_q`? When would 
 
 What else can you find out with condor_status? Try any one of:
 
-   * `man condor_status`
    * `condor_status -help`
-   * [condor_status from the online manual](http://www.cs.wisc.edu/condor/manual/v8.0/condor_status.html)
+   * [condor_status from the online manual](https://htcondor.readthedocs.io/en/latest/man-pages//condor_status.html)
 
 Note in particular the options like `-master` and `-schedd`. When would these be useful? When would the `-l` option be useful? 
 
