@@ -14,7 +14,6 @@ For the instance creation we are going to use the following parameters:
 * **Instance Name**: Jupyter
 * **Source**:
     * Select `Image`  under the *Select Boot Source* menu;
-    * Select `No` under the *Create New Volume* option;
     * Select the `Ubuntu Server 20.04` for booting;
 * **Flavor**: Select the `m2.medium` flavor;
 * **Key Pair**: Select the *Key Pair* generated in previous exercises (the file should be named `id_rsa`);
