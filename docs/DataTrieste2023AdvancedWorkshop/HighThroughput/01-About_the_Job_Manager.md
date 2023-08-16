@@ -6,14 +6,12 @@ This exercise should help you understand the basics of how Condor is installed, 
 
 ## Login to the Condor submit computer
 
-Continuuijng from the terminal you opened in Hands-on Exercise 3.
+At this ponit you should be logged onto the OSPool Jupyter Lab site. Select the "Terminal" option to begin the lessons below.
 
 ```
 $ hostname
 jupyter-eppn-3arobquick-40access-2dci-2eorg
 ```
-
-You should have been given your username and password when you arrived this afternoon. If you don't know them, talk to Rob.
 
 ## Looking at our Condor installation
 
