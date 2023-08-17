@@ -7,11 +7,6 @@ Most of this content has been copied from the chpc [wiki page](https://wiki.chpc
 
 # High Performance Computing
 
-
-## Table of Contents
-
-[TOC]
-
 ## A few words about High Performance Computing - HPC
 
 Frequently, research problems that use computing can outgrow the capabilities of the desktop or laptop computer where they started:
