@@ -734,7 +734,7 @@ We will use the `doParallel` [package](https://cran.r-project.org/web/packages/d
 library(foreach)
 library(doParallel)
 library(iterators)
-library(metrics)
+library(Metrics)
 args = commandArgs(trailingOnly=TRUE)
 workers = as.numeric(args[1])
 registerDoParallel(workers)
@@ -742,32 +742,41 @@ formulas <- c("Species ~ Sepal.Length", "Species ~ Sepal.Width", "Species ~ Peta
 x <- iris[which(iris[,5] != "setosa"),]
 system.time({
   r <- foreach(i=1:length(formulas), .combine=c) %dopar% {
-    model <- glm(eval(parse(text=formulas[i])), 
-                     data = x,
-                     family="binomial") 
-    accuracy(model)
+    r2 <- foreach(icount(1000), .combine=rbind) %do% {
+        ind <- sample(100, 100, replace=TRUE)
+        model <- glm(eval(parse(text=formulas[i])),
+                         data = x[ind,],
+                         family="binomial")
+        predictions = predict(model, x, type = "response")
+        predictions[predictions>=0.5] = "virginica"
+        predictions[predictions<0.5] = "versicolor"
+        acc = accuracy(predictions, x$Species)
+        acc
+    }
+    print(paste(formulas[i]," - ",median(r2)))
+    median(r2)
   }
 })
 ```
 and the submission file:
 
 ```bash=
+$ cat job_omp_r_optim.sh 
 #!/bin/bash -l
-#SBATCH --job-name=demo_r_omp	# Name of your job
-#SBATCH --partition=testing    	# Run on long
-#SBATCH --output=%x_%j.out	    # Output file
-#SBATCH --error=%x_%j.err	    # Error file
-#SBATCH --time=0-00:10:00	    # 10 minute time limit
-##SBATCH --nodes=1		        # 1 node
-#SBATCH --ntasks=1		        # 1 tasks 
-#SBATCH --cpus-per-task=2	    # 4 processes
-#SBATCH --mem-per-cpu=1g	    # 1GB RAM per CPU
+#SBATCH --job-name=optim_r_omp	# Name of your job
+#SBATCH --partition=testing	# Run on long
+#SBATCH --output=%x_%j.out	# Output file
+#SBATCH --error=%x_%j.err	# Error file
+#SBATCH --time=0-00:10:00	# 10 minute time limit
+##SBATCH --nodes=1		# 1 node
+#SBATCH --ntasks=1		# 1 tasks 
+#SBATCH --cpus-per-task=1	# 4 processes
+#SBATCH --mem-per-cpu=1g	# 1GB RAM per CPU
 
 module load anaconda3
-
 conda activate r-analysis
 
-srun Rscript --vanilla r_dopar.R 2
+srun Rscript --vanilla r_dopar.R $SLURM_CPUS_PER_TASK
 ```
 
 Make sure to create the `r-analysis` environment. It must contain the packages:
@@ -777,6 +786,11 @@ Make sure to create the `r-analysis` environment. It must contain the packages:
 * *r-iterators*
 * *r-metrics*
 
+In order to do that you have to load the `anaconda3` module: 
+
+```bash
+$ module load anaconda3
+```
 
 #### Exercises
 1. Try increasing the number of CPUs and check if that affects the time;
