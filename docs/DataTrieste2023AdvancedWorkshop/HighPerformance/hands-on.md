@@ -705,7 +705,7 @@ Notice the `#SBATCH --array=1-4`. This tells Slurm to execute a job array, basic
 
 The expected output should look like this: 
 
-```r=
+```R=
 [1] "SEED:  4"
 [1] 0.2167549
 [1] -0.5424926
@@ -730,7 +730,7 @@ The expected output should look like this:
 
 We will use the `doParallel` [package](https://cran.r-project.org/web/packages/doParallel/index.html) for running for loops in parallel by means of the `%dopar%` operator.
 
-```r=
+```R=
 library(foreach)
 library(doParallel)
 library(iterators)
