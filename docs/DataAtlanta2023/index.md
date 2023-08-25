@@ -8,62 +8,82 @@ Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.d
 
 ### Week One - September 14-15 - In-person sessions 
    * Check your travel arrangements with Carolyn.Young@gtri.gatech.edu
-   * In-person Session Thursday (14-Sept 9:00 - 17:00 ET)
-        * 9:00 - Intro and welcome
-        * 9:45 - Author Carpentry
-        * 10:15 - Coffee break
-        * 10:30 - Open and Responsible Research
-        * 12:00 - Lunch Break
-        * 13:00 - Open and Responsible Research
-        * 14:30 - Research Data Management
-        * 17:30 - Group Dinner
-   * In-person Session Friday (15-Sept 9:00 - 17:00 ET)
-        * 9:00 - Research Data Management - Presentations
-        * 10:15 - Coffee break
-        * 10:30 - Train the trainer
-        * 12:00 - Lunch Break
-        * 13:00 - Local Panel
-        * 16:00 - Wrapup and Tour
+
+| Time           | Session                        | Materials |
+|----------------|--------------------------------|-----------|
+| September 14th |                                |           |
+| 9:00 - 9:45    | Intro and welcome              | [Link]()  |
+| 9:45 - 10:15   | Author Carpentry               | [Link]()  |
+| 10:15 - 10:30  | Coffee break                   |           |
+| 10:30 - 12:00  | Open and Responsible Research  | [Link]()  |
+| 12:00 - 13:00  | Lunch Break                    |           |
+| 13:00 - 14:30  | Open and Responsible Research  | [Link]()  |
+| 14:30 - 17:30  | Research Data Management       | [Link]()  |
+| 17:30          | Group Dinner                   |           |
+| September 15th |                                |           |
+| 9:00 - 10:15   | Research Data Management - Presentations | [Link]() |
+| 10:15 - 10:30  | Coffee break                   |           |
+| 10:30 - 12:00  | Train the trainer              | [Link]()  |
+| 12:00 - 13:00  | Lunch Break                    |           |
+| 13:00 - 16:00  | Local Panel                    | [Link]()  |
+| 16:00 - 17:00  | Wrapup and Tour                |           |
+
 ### Week Two - September 18-22 - Introduction to UNIX and Git 
-   * Link to Video Lectures [Here]()
-   * Link to Slides [Here]()
-   * Live Session Wednesday and Friday (20, 22-Sept 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
-   * [Video Link - Wednesday Session]()
-   * [Video Link - Friday Session]()
+
+| Day             | Activity             | Link to Materials                |
+|-----------------|----------------------|----------------------------------|
+| Sunday, Sept 17 | Materials are posted | [Video Lectures]() and [Slides]()|
+| Wed, Sept 20    | Live Q&A at 12:00 ET | [Video link]() and [Slides]()    |
+| Fri, Sept 22    | Live Q&A at 12:00 ET | [Video link]() and [Slides]()    |
+
 ### Week Three - September 25-29 - The R Language for Statistical Computing
    * You can choose your preferred track in week two: social sciences or natural sciences.
-   * Link to Video Lectures Natural Sciences Track [Here](week2_NS.md)
-   * Link to Video Lectures Social Sciences Track [Here](week2_SS.md)
-   * Link to Slides [Here](presentations_week2)
-   * Live Sessions Wednesday and Friday (27, and 29-Sept 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
-   * [Video Link - Wednesday Session]()
-   * [Video Link - Thursday Session]()
+     
+| Day             | Activity             | Link to Materials                          |
+|-----------------|----------------------|--------------------------------------------|
+| Sunday, Sept 24 | Materials are posted | [Natural Science]() and [Social Sciences]()|
+| Wed, Sept 27    | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
+| Fri, Sept 29    | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
+
 ### Week Four - October 2-6 - Machine Learning and Recommender Systems
-   * Link to Video Lectures [Here]()
-   * Link to Slides [Here]()
-   * Live Sessions Wednesday and Friday (4, and 6-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
-   * [Video Link - Wednesday Session]()
-   * [Video Link - Friday Session]()
+
+| Day             | Activity             | Link to Materials                          |
+|-----------------|----------------------|--------------------------------------------|
+| Sunday, Oct 1   | Materials are posted | [Video Lectures]() and [Slides]()          |
+| Wed, Oct 4      | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
+| Fri, Oct 6      | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
+
 ### Week Five - October 9-13 - Neural Networks
-   * Link to Video Lectures [Here]()
-   * Live Sessions Wednesday and Friday (11, and 13-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
+
+| Day             | Activity             | Link to Materials                          |
+|-----------------|----------------------|--------------------------------------------|
+| Sunday, Oct 8   | Materials are posted | [Video Lectures]() and [Slides]()          |
+| Wed, Oct 11     | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
+| Fri, Oct 13     | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
+
 ### Week Six - October 16-20 - Visualization
-   * Link to Video Lectures [Here](week6.md)
-   * Link to Slides [Here]()
-   * Link to web page [Here](https://htmlpreview.github.io/?https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2022/presentations_week7/DataVizpracticalGuideP.html)
-   * Live Sessions Wednesday and Friday (18, and 20-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
-   * [Video Link - Wednesday Session]()
-   * [Video Link - Friday Session]()
+
+| Day             | Activity             | Link to Materials                          |
+|-----------------|----------------------|--------------------------------------------|
+| Sunday, Oct 15  | Materials are posted | [Video Lectures](week6.md) and [Slides](https://htmlpreview.github.io/?https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2022/presentations_week7/DataVizpracticalGuideP.html)    |
+| Wed, Oct 18     | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
+| Fri, Oct 20     | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
+
 ### Week Seven - October 23-27 - Information Security
-   * Link to Video Lectures [Here]()
-   * Live Sessions Wednesday and Friday (25, and 27-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
-   * [Video Link - Wednesday Session]()
-   * [Video Link - Friday Session]()
+
+| Day             | Activity             | Link to Materials                          |
+|-----------------|----------------------|--------------------------------------------|
+| Sunday, Oct 22  | Materials are posted | [Video Lectures]() and [Slides]()          |
+| Wed, Oct 25     | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
+| Fri, Oct 27     | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
+
 ### Week Eight - October 30- November 3 - Computational Infrastructures
-   * Link to Video Lectures [Here]()
-   * Live Sessions Wednesday and Friday (1, and 3-Nov 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
-   * [Video Link - Wednesday Session]()
-   * [Video Link - Friday Session]()
+
+| Day             | Activity             | Link to Materials                          |
+|-----------------|----------------------|--------------------------------------------|
+| Sunday, Oct 29  | Materials are posted | [Video Lectures]() and [Slides]()          |
+| Wed, Nov 1      | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
+| Fri, Nov 3      | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
 
 ## Important Links
 
