@@ -6,6 +6,8 @@ Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.d
 
 ## Schedule
 
+This links will be updated at the end of the previous week
+
 ### Week One - September 14-15 - In-person sessions 
    * Check your travel arrangements with Carolyn.Young@gtri.gatech.edu
 
