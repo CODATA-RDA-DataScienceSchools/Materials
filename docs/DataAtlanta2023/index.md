@@ -14,19 +14,21 @@ This links will be updated at the end of the previous week
 | Time           | Session                        | Materials |
 |----------------|--------------------------------|-----------|
 | September 14th |                                |           |
+| 8:30 - 9:00    | Gathering and Breakfast        | Breakfast Provided | 
 | 9:00 - 9:45    | Intro and welcome              | [Link]()  |
 | 9:45 - 10:15   | Author Carpentry               | [Link](https://malfaro2.github.io/Atlanta2022/AuthorCarpentry.html#/title-slide)  |
 | 10:15 - 10:30  | Coffee break                   |           |
 | 10:30 - 12:00  | Open and Responsible Research  | [Link]()  |
-| 12:00 - 13:00  | Lunch Break                    |           |
+| 12:00 - 13:00  | Lunch Break                    | Lunch Provided |
 | 13:00 - 14:30  | Open and Responsible Research  | [Link]()  |
 | 14:30 - 17:30  | Research Data Management       | [Link]()  |
-| 17:30          | Group Dinner                   |           |
-| September 15th |                                |           |
+| 17:30          | Group Dinner - Optional        | Dinner Not-Provided |
+| September 15th | 
+| 8:30 - 9:00    | Gathering and Breakfast        | Breakfast Provided |
 | 9:00 - 10:15   | Research Data Management - Presentations | [Link]() |
 | 10:15 - 10:30  | Coffee break                   |           |
 | 10:30 - 12:00  | Train the trainer              | [Link]()  |
-| 12:00 - 13:00  | Lunch Break                    |           |
+| 12:00 - 13:00  | Lunch Break                    | Lunch Provided |
 | 13:00 - 16:00  | Local Panel                    | [Link]()  |
 | 16:00 - 17:00  | Wrapup and Tour                |           |
 
