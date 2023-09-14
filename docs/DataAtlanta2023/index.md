@@ -41,6 +41,8 @@ Instructors from the in-person week:
 | Marcela Alfaro Córdoba      | University of California, Santa Cruz | [here](https://malfaro.netlify.app/)                              |
 | Ayishih Bellew              | University of the Virgin Islands     | [here](https://www.uvi.edu/directory/staff/ayishih-k-bellew.html) |
 | Nii Tawiah                  | Delaware State Univers               | ntawiah@desu.edu                                                  |
+| Steve Diggs                 | University of California             | [here](https://www.ucop.edu/directory-search/index.php)           |
+
 
 ### Week Two - September 18-22 - Introduction to UNIX and Git 
 
