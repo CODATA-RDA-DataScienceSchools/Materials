@@ -20,8 +20,8 @@ This links will be updated at the end of the previous week
 | 10:15 - 10:30  | Coffee break                   |           |
 | 10:30 - 12:00  | Open and Responsible Research  | [Link](OpenScience_EthicsATL2023.pdf)  |
 | 12:00 - 13:00  | Lunch Break                    | Lunch Provided |
-| 13:00 - 14:30  | Open and Responsible Research  | [Link]()  |
-| 14:30 - 17:30  | Research Data Management       | [Link]()  |
+| 13:00 - 14:30  | Open and Responsible Research  | [Link](OpenScience_EthicsATL2023.pdf)  |
+| 14:30 - 17:30  | Research Data Management       | [Link](RDM_Diggs.pdf)  |
 | 17:30          | Group Dinner - Optional        | Dinner Not-Provided |
 | September 15th | 
 | 8:30 - 9:00    | Gathering and Breakfast        | Breakfast Provided |
