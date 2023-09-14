@@ -18,7 +18,7 @@ This links will be updated at the end of the previous week
 | 9:00 - 9:45    | Intro and welcome              |           |
 | 9:45 - 10:15   | Author Carpentry               | [Link](https://malfaro2.github.io/Atlanta2022/AuthorCarpentry.html#/title-slide)  |
 | 10:15 - 10:30  | Coffee break                   |           |
-| 10:30 - 12:00  | Open and Responsible Research  | [Link]()  |
+| 10:30 - 12:00  | Open and Responsible Research  | [Link](OpenScience_EthicsATL2023.pdf)  |
 | 12:00 - 13:00  | Lunch Break                    | Lunch Provided |
 | 13:00 - 14:30  | Open and Responsible Research  | [Link]()  |
 | 14:30 - 17:30  | Research Data Management       | [Link]()  |
