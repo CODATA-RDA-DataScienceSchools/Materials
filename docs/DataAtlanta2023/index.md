@@ -15,7 +15,7 @@ This links will be updated at the end of the previous week
 |----------------|--------------------------------|-----------|
 | September 14th |                                |           |
 | 8:30 - 9:00    | Gathering and Breakfast        | Breakfast Provided | 
-| 9:00 - 9:45    | Intro and welcome              | [Link]()  |
+| 9:00 - 9:45    | Intro and welcome              |           |
 | 9:45 - 10:15   | Author Carpentry               | [Link](https://malfaro2.github.io/Atlanta2022/AuthorCarpentry.html#/title-slide)  |
 | 10:15 - 10:30  | Coffee break                   |           |
 | 10:30 - 12:00  | Open and Responsible Research  | [Link]()  |
