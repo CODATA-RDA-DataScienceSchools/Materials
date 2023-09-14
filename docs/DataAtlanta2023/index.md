@@ -33,6 +33,15 @@ This links will be updated at the end of the previous week
 | 13:00 - 16:00  | Local Panel                    |           |
 | 16:00 - 17:00  | Wrapup and Tour                |           |
 
+Instructors from the in-person week: 
+
+| Name                        | Affiliation                          | Contact Info |
+|-----------------------------|--------------------------------------|--------------|
+| Rob Quick                   | Indiana University                   | [here](https://directory.iu.edu/person/details/rquick)            |
+| Marcela Alfaro Córdoba      | University of California, Santa Cruz | [here](https://malfaro.netlify.app/)                              |
+| Ayishih Bellew              | University of the Virgin Islands     | [here](https://www.uvi.edu/directory/staff/ayishih-k-bellew.html) |
+| Nii Tawiah                  | Delaware State Univers               | ntawiah@desu.edu                                                  |
+
 ### Week Two - September 18-22 - Introduction to UNIX and Git 
 
 | Day             | Activity             | Link to Materials                |
