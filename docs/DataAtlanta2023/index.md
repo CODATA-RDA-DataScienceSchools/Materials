@@ -10,6 +10,7 @@ This links will be updated at the end of the previous week
 
 ### Week One - September 14-15 - In-person sessions 
    * Check your travel arrangements with Carolyn.Young@gtri.gatech.edu
+   * Before you leave, please make sure you have everything you need to follow the materials in the next weeks installed on your laptop. Here's the [Checklist](Checklist.md)
 
 | Time           | Session                        | Materials |
 |----------------|--------------------------------|-----------|
