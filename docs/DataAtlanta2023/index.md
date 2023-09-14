@@ -25,11 +25,11 @@ This links will be updated at the end of the previous week
 | 17:30          | Group Dinner - Optional        | Dinner Not-Provided |
 | September 15th | 
 | 8:30 - 9:00    | Gathering and Breakfast        | Breakfast Provided |
-| 9:00 - 10:15   | Research Data Management - Presentations | [Link]() |
+| 9:00 - 10:15   | Research Data Management - Presentations | [Link](https://docs.google.com/presentation/d/1xi46w0PSdiYNlVJsHtR7KpinmNV3p_73_vPLVf4HpPE/edit#slide=id.gf09b2bc2c9_0_50) |
 | 10:15 - 10:30  | Coffee break                   |           |
 | 10:30 - 12:00  | Train the trainer              | [Link]()  |
 | 12:00 - 13:00  | Lunch Break                    | Lunch Provided |
-| 13:00 - 16:00  | Local Panel                    | [Link]()  |
+| 13:00 - 16:00  | Local Panel                    |           |
 | 16:00 - 17:00  | Wrapup and Tour                |           |
 
 ### Week Two - September 18-22 - Introduction to UNIX and Git 
