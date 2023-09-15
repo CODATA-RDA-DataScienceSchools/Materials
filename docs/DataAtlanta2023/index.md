@@ -34,16 +34,6 @@ This links will be updated at the end of the previous week (Friday or Sunday).
 | 13:00 - 16:00  | Local Panel                    |           |
 | 16:00 - 17:00  | Wrapup and Tour                |           |
 
-Instructors from the in-person week: 
-
-| Name                        | Affiliation                          | Contact Info |
-|-----------------------------|--------------------------------------|--------------|
-| Rob Quick                   | Indiana University                   | [here](https://directory.iu.edu/person/details/rquick)            |
-| Marcela Alfaro Córdoba      | University of California, Santa Cruz | [here](https://malfaro.netlify.app/)                              |
-| Ayishih Bellew              | University of the Virgin Islands     | [here](https://www.uvi.edu/directory/staff/ayishih-k-bellew.html) |
-| Nii Tawiah                  | Delaware State Univers               | ntawiah@desu.edu                                                  |
-| Steve Diggs                 | University of California             | [here](https://www.ucop.edu/directory-search/index.php)           |
-
 **Before you leave**, please make sure you:
 
 * Have everything you need to follow the materials in the next weeks installed on your laptop. Here's the [Checklist](Checklist.md)
@@ -117,6 +107,16 @@ Instructors from the in-person week:
 * [Ethics Slides](https://docs.google.com/presentation/d/1Hi2wSfae9iNedbIwzV2K0UoKxoWWeVb_/edit?usp=sharing&ouid=110678776512411560114&rtpof=true&sd=true)
 
 ## Contacts 
+
+Instructors from the in-person week: 
+
+| Name                        | Affiliation                          | Contact Info |
+|-----------------------------|--------------------------------------|--------------|
+| Rob Quick                   | Indiana University                   | [here](https://directory.iu.edu/person/details/rquick)            |
+| Marcela Alfaro Córdoba      | University of California, Santa Cruz | [here](https://malfaro.netlify.app/)                              |
+| Ayishih Bellew              | University of the Virgin Islands     | [here](https://www.uvi.edu/directory/staff/ayishih-k-bellew.html) |
+| Nii Tawiah                  | Delaware State Univers               | ntawiah@desu.edu                                                  |
+| Steve Diggs                 | University of California             | [here](https://www.ucop.edu/directory-search/index.php)           |
 
 ## Additional Materials
 
