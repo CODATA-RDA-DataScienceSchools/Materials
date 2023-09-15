@@ -10,7 +10,6 @@ This links will be updated at the end of the previous week (Friday or Sunday).
 
 ### Week One - September 14-15 - In-person sessions 
    * Check your travel arrangements with Carolyn.Young@gtri.gatech.edu
-   * Before you leave, please make sure you have everything you need to follow the materials in the next weeks installed on your laptop. Here's the [Checklist](Checklist.md)
 
 | Time           | Session                        | Materials |
 |----------------|--------------------------------|-----------|
@@ -42,6 +41,11 @@ Instructors from the in-person week:
 | Ayishih Bellew              | University of the Virgin Islands     | [here](https://www.uvi.edu/directory/staff/ayishih-k-bellew.html) |
 | Nii Tawiah                  | Delaware State Univers               | ntawiah@desu.edu                                                  |
 | Steve Diggs                 | University of California             | [here](https://www.ucop.edu/directory-search/index.php)           |
+
+**Before you leave**, please make sure you:
+
+* Have everything you need to follow the materials in the next weeks installed on your laptop. Here's the [Checklist](Checklist.md)
+* Fill in this survey to evaluate the in-person session: [survery](https://forms.gle/cJ8PKU7aCUr6qAmg9)
 
 
 ### Week Two - September 18-22 - Introduction to UNIX and Git 
