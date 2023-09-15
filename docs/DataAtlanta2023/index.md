@@ -4,7 +4,7 @@ The [South Big Data Hub](https://southbigdatahub.org/) in collaboration with the
 
 Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.datascienceschools.org/). 
 
-<img src="photo.jpeg" alt="group photo" width="800" class="center"/>
+<img src="photo.jpeg" alt="group photo" width="1000" class="center"/>
 
 ## Schedule
 
@@ -13,7 +13,16 @@ This links will be updated at the end of the previous week (Friday or Sunday).
 ### Table of contents
 1. [Week 1: In-person sessions](#w1)
 2. [Week 2: Unix and Git](#w2)
-3. [Week3: R](#w3)
+3. [Week 3: R](#w3)
+4. [Week 4: ML and Recommender Systems](#w4)
+5. [Week 5: Neural Networks](#w5)
+6. [Week 6: Visualization](#w6)
+7. [Week 7: Information Security](#w7)
+8. [Week 8: Computational Structures](#w8)
+9. [Important Links](#links)
+10. [Contacts](#contacts)
+11. [Additional Materials](#+materials)
+
 
 ### Week One - September 14-15 - In-person sessions <a name="w1"></a>
    * Check your travel arrangements with Carolyn.Young@gtri.gatech.edu
