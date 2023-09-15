@@ -4,7 +4,7 @@ The [South Big Data Hub](https://southbigdatahub.org/) in collaboration with the
 
 Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.datascienceschools.org/). 
 
-<img src="photo.jpeg" alt="group photo" width="500" class="center"/>
+<img src="photo.jpeg" alt="group photo" width="800" class="center"/>
 
 ## Schedule
 
