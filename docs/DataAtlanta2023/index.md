@@ -28,7 +28,7 @@ This links will be updated at the end of the previous week
 | 8:30 - 9:00    | Gathering and Breakfast        | Breakfast Provided |
 | 9:00 - 10:15   | Research Data Management - Presentations | [Link](https://docs.google.com/presentation/d/1xi46w0PSdiYNlVJsHtR7KpinmNV3p_73_vPLVf4HpPE/edit#slide=id.gf09b2bc2c9_0_50) |
 | 10:15 - 10:30  | Coffee break                   |           |
-| 10:30 - 12:00  | Train the trainer              | [Link](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2023/DataAtlanta%20Train%20the%20Trainer%202023.pptx.pdf)  |
+| 10:30 - 12:00  | Train the trainer              | [Link]((https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2023/DataAtlanta_Train.pdf))  |
 | 12:00 - 13:00  | Lunch Break                    | Lunch Provided |
 | 13:00 - 16:00  | Local Panel                    |           |
 | 16:00 - 17:00  | Wrapup and Tour                |           |
