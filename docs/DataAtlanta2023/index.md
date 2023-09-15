@@ -10,7 +10,12 @@ Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.d
 
 This links will be updated at the end of the previous week (Friday or Sunday). 
 
-### Week One - September 14-15 - In-person sessions 
+### Table of contents
+1. [Week 1: In-person sessions](#w1)
+2. [Week 2: Unix and Git](#w2)
+3. [Week3: R](#w3)
+
+### Week One - September 14-15 - In-person sessions <a name="w1"></a>
    * Check your travel arrangements with Carolyn.Young@gtri.gatech.edu
 
 | Time           | Session                        | Materials |
@@ -40,7 +45,7 @@ This links will be updated at the end of the previous week (Friday or Sunday).
 * Fill in this survey to evaluate the in-person session: [survery](https://forms.gle/cJ8PKU7aCUr6qAmg9)
 
 
-### Week Two - September 18-22 - Introduction to UNIX and Git 
+### Week Two - September 18-22 - Introduction to UNIX and Git <a name="w2"></a>
 
 | Day             | Activity             | Link to Materials                |
 |-----------------|----------------------|----------------------------------|
@@ -48,7 +53,7 @@ This links will be updated at the end of the previous week (Friday or Sunday).
 | Wed, Sept 20    | Live Q&A at 12:00 ET | [Video link]() and [Slides]()    |
 | Fri, Sept 22    | Live Q&A at 12:00 ET | [Video link]() and [Slides]()    |
 
-### Week Three - September 25-29 - The R Language for Statistical Computing
+### Week Three - September 25-29 - The R Language for Statistical Computing <a name="w3"></a>
    * You can choose your preferred track in week two: social sciences or natural sciences.
      
 | Day             | Activity             | Link to Materials                          |
@@ -57,7 +62,7 @@ This links will be updated at the end of the previous week (Friday or Sunday).
 | Wed, Sept 27    | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
 | Fri, Sept 29    | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
 
-### Week Four - October 2-6 - Machine Learning and Recommender Systems
+### Week Four - October 2-6 - Machine Learning and Recommender Systems <a name="w4"></a>
 
 | Day             | Activity             | Link to Materials                          |
 |-----------------|----------------------|--------------------------------------------|
@@ -65,7 +70,7 @@ This links will be updated at the end of the previous week (Friday or Sunday).
 | Wed, Oct 4      | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
 | Fri, Oct 6      | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
 
-### Week Five - October 9-13 - Neural Networks
+### Week Five - October 9-13 - Neural Networks <a name="w5"></a>
 
 | Day             | Activity             | Link to Materials                          |
 |-----------------|----------------------|--------------------------------------------|
@@ -73,7 +78,7 @@ This links will be updated at the end of the previous week (Friday or Sunday).
 | Wed, Oct 11     | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
 | Fri, Oct 13     | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
 
-### Week Six - October 16-20 - Visualization
+### Week Six - October 16-20 - Visualization <a name="w6"></a>
 
 | Day             | Activity             | Link to Materials                          |
 |-----------------|----------------------|--------------------------------------------|
@@ -81,7 +86,7 @@ This links will be updated at the end of the previous week (Friday or Sunday).
 | Wed, Oct 18     | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
 | Fri, Oct 20     | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
 
-### Week Seven - October 23-27 - Information Security
+### Week Seven - October 23-27 - Information Security <a name="w7"></a>
 
 | Day             | Activity             | Link to Materials                          |
 |-----------------|----------------------|--------------------------------------------|
@@ -89,7 +94,7 @@ This links will be updated at the end of the previous week (Friday or Sunday).
 | Wed, Oct 25     | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
 | Fri, Oct 27     | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
 
-### Week Eight - October 30- November 3 - Computational Infrastructures
+### Week Eight - October 30- November 3 - Computational Infrastructures <a name="w8"></a>
 
 | Day             | Activity             | Link to Materials                          |
 |-----------------|----------------------|--------------------------------------------|
@@ -97,7 +102,7 @@ This links will be updated at the end of the previous week (Friday or Sunday).
 | Wed, Nov 1      | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
 | Fri, Nov 3      | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
 
-## Important Links
+## Important Links <a name="links"></a>
 
 * [CODATA/RDA Schools of Research Data Science](https://www.datascienceschools.org/)
 * [South BD Hub](https://southbigdatahub.org)
@@ -106,7 +111,7 @@ This links will be updated at the end of the previous week (Friday or Sunday).
 * [The Carpentries](https://carpentries.org/)
 * [Ethics Slides](https://docs.google.com/presentation/d/1Hi2wSfae9iNedbIwzV2K0UoKxoWWeVb_/edit?usp=sharing&ouid=110678776512411560114&rtpof=true&sd=true)
 
-## Contacts 
+## Contacts <a name="contacts"></a>
 
 Instructors from the in-person week: 
 
@@ -118,7 +123,7 @@ Instructors from the in-person week:
 | Nii Tawiah                  | Delaware State Univers               | ntawiah@desu.edu                                                  |
 | Steve Diggs                 | University of California             | [here](https://www.ucop.edu/directory-search/index.php)           |
 
-## Additional Materials
+## Additional Materials <a name="+materials"></a>
 
 * [Ten Simple Rules for Teaching yourself R](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010372)
 * [Ten Simple Rules for Reproducible Computational Research](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285)
