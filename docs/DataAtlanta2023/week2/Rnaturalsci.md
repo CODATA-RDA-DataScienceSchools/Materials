@@ -1,6 +1,6 @@
 ## Week Two - September 12-16 - The R Language for Statistical Computing ' R for Natural Sciences
 
-R lectures have two tracks: Natural Sciences or Social Sciences. Please choose and complete only ONE track. The contents are very similar in terms of R concepts, but differ in the application. This is the Natural Sciences Track.
+R lectures have two tracks: Natural Sciences or Social Sciences. Please choose and complete only ONE track. The contents are very similar in terms of R concepts, but differ in the application. This is the Natural Sciences Track. You can find the presentations [here](https://github.com/CODATA-RDA-DataScienceSchools/Materials/tree/master/docs/DataAtlanta2023/week2)
 
 ### Video Lecture Guide R for Natural Sciences
 
