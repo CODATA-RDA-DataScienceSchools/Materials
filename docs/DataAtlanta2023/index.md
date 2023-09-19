@@ -63,11 +63,11 @@ This links will be updated at the end of the previous week (Friday or Sunday).
 | Fri, Sept 22    | Live Q&A at 12:00 ET | [Video link]() and [Slides]()    |
 
 ### Week Three - September 25-29 - The R Language for Statistical Computing <a name="w3"></a>
-   * You can choose your preferred track in week two: social sciences or natural sciences.
+   * You can choose your preferred track in week two: social sciences or natural sciences. Please pick ONLY one. 
      
 | Day             | Activity             | Link to Materials                          |
 |-----------------|----------------------|--------------------------------------------|
-| Sunday, Sept 24 | Materials are posted | [Natural Science]() and [Social Sciences]()|
+| Sunday, Sept 24 | Materials are posted | [Natural Science]() OR [Social Sciences]()|
 | Wed, Sept 27    | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
 | Fri, Sept 29    | Live Q&A at 12:00 ET | [Video link]() and [Slides]()              |
 
