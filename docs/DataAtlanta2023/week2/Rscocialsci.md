@@ -31,7 +31,7 @@ Please watch the videos in order, and solve the exercises that are described in 
     <td width="30%">  <a href="https://datacarpentry.org/r-socialsci/01-intro-to-r.html">Introduction to R</a>  </td>
     <td width="25%">  <a href="https://vimeo.com/manage/videos/851552372"> Part 2 </a> </td>
     <td width="5%">  55:23 </td>
-    <td width="10%">    <a href="script2.R"> script2.R </a>  </td>
+    <td width="10%">    <a href="script2.R"> scripts/script2.R </a>  </td>
   </tr>
   <tr>
     <td width="30%">  <a href="https://datacarpentry.org/r-socialsci/02-starting-with-data.html">Starting with Data</a>  </td>
