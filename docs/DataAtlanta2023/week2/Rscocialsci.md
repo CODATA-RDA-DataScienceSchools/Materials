@@ -17,7 +17,7 @@ Please watch the videos in order, and solve the exercises that are described in 
   </tr>
   <tr>
     <td width="30%">  <a href="https://datacarpentry.org/r-socialsci/index.html"> Setup</a> </td>
-    <td width="25%">  <a href=" "> Welcome </a> </td>
+    <td width="25%">  <a href="https://vimeo.com/manage/videos/866179764"> Welcome </a> </td>
     <td width="5%">    </td>
     <td width="10%">  - </td>
   </tr>
