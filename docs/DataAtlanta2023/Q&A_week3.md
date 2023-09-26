@@ -13,7 +13,7 @@
 ### Session Objectives:
 
 * Provide a platform for participants to ask questions and seek clarification on workshop content.
-* Foster engagement and interaction among participants, particulary around the topics of R and ethical uses of data.
+* Foster engagement and interaction among participants, particularly around the topics of R and ethical uses of data.
 * Ensure everyone is on track and understands the material covered so far.
 
 ### Agenda:
@@ -22,8 +22,8 @@
 
 2. Review of Previous Week's Content (20 minutes)
 
-[Wedesday] Recap key points and concepts covered in this week's materials. Invite any questions or concerns related to the previous content.
-[Friday] Live demonstration of a key concept + ethics discussion.
+* [Wedesday] Recap key points and concepts covered in this week's materials. Invite any questions related to the concepts.
+* [Friday] Live demonstration of a key concept + ethics discussion.
 
 3. Open Q&A Session (30 minutes)
 
