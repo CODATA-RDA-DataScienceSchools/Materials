@@ -69,7 +69,7 @@ This links will be updated at the end of the previous week (Friday or Sunday).
      
 | Day             | Activity             | Link to Materials                          |
 |-----------------|----------------------|--------------------------------------------|
-| Sunday, Sept 24 | Materials are posted | [Natural Science](week2/Rnaturalsci.md) OR [Social Sciences](week2/Rscocialsci.md)|
+| Sunday, Sept 24 | Materials are posted | [Natural Sciences](week2/Rnaturalsci.md) OR [Social Sciences](week2/Rscocialsci.md)|
 | Wed, Sept 27    | Live Q&A at 12:00 ET | [Recording]()      |
 | Fri, Sept 29    | Live Q&A at 12:00 ET | [Recording]()      |
 
