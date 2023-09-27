@@ -51,7 +51,7 @@ This links will be updated at the end of the previous week (Friday or Sunday).
 **Before you leave**, please make sure you:
 
 * Have everything you need to follow the materials in the next weeks installed on your laptop. Here's the [Checklist](Checklist.md)
-* Fill in this survey to evaluate the in-person session: [survery](https://forms.gle/cJ8PKU7aCUr6qAmg9)
+* Fill in this survey to evaluate the in-person session: [survey](https://forms.gle/cJ8PKU7aCUr6qAmg9)
 
 
 ### Week Two - September 18-22 - Introduction to UNIX and Git <a name="w2"></a>
