@@ -58,7 +58,7 @@ This links will be updated at the end of the previous week (Friday or Sunday).
 
 | Day             | Activity             | Link to Materials                |
 |-----------------|----------------------|----------------------------------|
-| Sunday, Sept 17 | Materials are posted | [Video link](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2023/Week1/Week1.md) and [Slide Set 1](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2022/presentations_week1/Unix%20-%20Shell%20-%20Start%20Here.pdf) and [Slide Set 2](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2022/presentations_week1/Unix%20Shell%20-%20Introduction.pdf)|
+| Sunday, Sept 17 | Materials are posted | [Video link](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2023/Week2/Week2.md) and [Slide Set 1](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2022/presentations_week1/Unix%20-%20Shell%20-%20Start%20Here.pdf) and [Slide Set 2](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2022/presentations_week1/Unix%20Shell%20-%20Introduction.pdf)|
 | Wed, Sept 20    | Live Q&A at 12:00 ET | [Recording]()      |
 | Fri, Sept 22    | Live Q&A at 12:00 ET | [Recording]()      |
 
@@ -69,7 +69,7 @@ This links will be updated at the end of the previous week (Friday or Sunday).
      
 | Day             | Activity             | Link to Materials                          |
 |-----------------|----------------------|--------------------------------------------|
-| Sunday, Sept 24 | Materials are posted | [Natural Sciences](week2/Rnaturalsci.md) OR [Social Sciences](week2/Rscocialsci.md)|
+| Sunday, Sept 24 | Materials are posted | [Natural Sciences](week3/Rnaturalsci.md) OR [Social Sciences](week3/Rscocialsci.md)|
 | Wed, Sept 27    | Live Q&A at 12:00 ET | [Recording]()      |
 | Fri, Sept 29    | Live Q&A at 12:00 ET | [Recording]()      |
 
