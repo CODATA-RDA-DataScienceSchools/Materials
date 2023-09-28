@@ -1,6 +1,6 @@
 Week Three - September 25-29 - The R Language for Statistical Computing - R for Natural Sciences
 
-R lectures have two tracks: Natural Sciences or Social Sciences. Please choose and complete only ONE track. The contents are very similar in terms of R concepts, but differ in the application. This is the Natural Sciences Track. You can find the presentations [here](https://github.com/CODATA-RDA-DataScienceSchools/Materials/tree/master/docs/DataAtlanta2023/week3)
+R lectures have two tracks: Natural Sciences or Social Sciences. Please choose and complete only ONE track. The contents are very similar in terms of R concepts, but differ in the application. This is the Natural Sciences Track. You can find the presentations [here](https://github.com/CODATA-RDA-DataScienceSchools/Materials/tree/master/docs/DataAtlanta2023/week3). If you have trouble with the pdf version of 02_R_Ecology_lesson_2021 you can access an html version [here](https://bit.ly/3ODtPGj) 
 
 ### Video Lecture Guide R for Natural Sciences
 
