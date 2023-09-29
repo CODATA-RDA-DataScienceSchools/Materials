@@ -71,7 +71,7 @@ This links will be updated at the end of the previous week (Friday or Sunday).
 |-----------------|----------------------|--------------------------------------------|
 | Sunday, Sept 24 | Materials are posted | [Natural Sciences](week3/Rnaturalsci.md) OR [Social Sciences](week3/Rscocialsci.md)|
 | Wed, Sept 27    | Live Q&A at 12:00 ET | [Recording]()      |
-| Fri, Sept 29    | Live Q&A at 12:00 ET | [Recording]()      |
+| Fri, Sept 29    | Live Q&A at 12:00 ET | [Recording](https://iu.mediaspace.kaltura.com/media/t/1_t2ybuqag)      |
 
 * Zoom invitations was sent via calendar
   
