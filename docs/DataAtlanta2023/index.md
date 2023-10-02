@@ -60,7 +60,7 @@ This links will be updated at the end of the previous week (Friday or Sunday).
 |-----------------|----------------------|----------------------------------|
 | Sunday, Sept 17 | Materials are posted | [Video link](week2/Week2.md) and [Slide Set 1](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2022/presentations_week1/Unix%20-%20Shell%20-%20Start%20Here.pdf) and [Slide Set 2](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2022/presentations_week1/Unix%20Shell%20-%20Introduction.pdf)|
 | Wed, Sept 20    | Live Q&A at 12:00 ET | [Recording](https://drive.google.com/file/d/1lD1fmRqCMx0JgJMDyxrma1EhaXlzHm0B/view?usp=drive_link)      |
-| Fri, Sept 22    | Live Q&A at 12:00 ET | [Recording]()      |
+| Fri, Sept 22    | Live Q&A at 12:00 ET | [Recording](https://drive.google.com/file/d/1r-3cs6g6gDcugl88or2GV5dFnX3deydR/view?usp=drive_link)      |
 
 * Zoom invitations was sent via calendar
 
