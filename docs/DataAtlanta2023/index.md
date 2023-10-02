@@ -59,7 +59,7 @@ This links will be updated at the end of the previous week (Friday or Sunday).
 | Day             | Activity             | Link to Materials                |
 |-----------------|----------------------|----------------------------------|
 | Sunday, Sept 17 | Materials are posted | [Video link](week2/Week2.md) and [Slide Set 1](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2022/presentations_week1/Unix%20-%20Shell%20-%20Start%20Here.pdf) and [Slide Set 2](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2022/presentations_week1/Unix%20Shell%20-%20Introduction.pdf)|
-| Wed, Sept 20    | Live Q&A at 12:00 ET | [Recording]()      |
+| Wed, Sept 20    | Live Q&A at 12:00 ET | [Recording](https://drive.google.com/file/d/1lD1fmRqCMx0JgJMDyxrma1EhaXlzHm0B/view?usp=drive_link)      |
 | Fri, Sept 22    | Live Q&A at 12:00 ET | [Recording]()      |
 
 * Zoom invitations was sent via calendar
@@ -70,7 +70,7 @@ This links will be updated at the end of the previous week (Friday or Sunday).
 | Day             | Activity             | Link to Materials                          |
 |-----------------|----------------------|--------------------------------------------|
 | Sunday, Sept 24 | Materials are posted | [Natural Sciences](week3/Rnaturalsci.md) OR [Social Sciences](week3/Rscocialsci.md)|
-| Wed, Sept 27    | Live Q&A at 12:00 ET | [Recording]()      |
+| Wed, Sept 27    | Live Q&A at 12:00 ET | [Recording](https://drive.google.com/file/d/1_dPqfdrJL7AFZ1FHYLzlkMsJtSztBGAC/view?usp=drive_link)      |
 | Fri, Sept 29    | Live Q&A at 12:00 ET | [Recording](https://iu.mediaspace.kaltura.com/media/t/1_t2ybuqag)      |
 
 * Zoom invitations was sent via calendar
