@@ -80,7 +80,7 @@ This links will be updated at the end of the previous week (Friday or Sunday).
 | Day             | Activity             | Link to Materials                          |
 |-----------------|----------------------|--------------------------------------------|
 | Sunday, Oct 1   | Materials are posted | [Video Lectures](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2023/Week4/VideoLectures.md) and [Slides](https://github.com/CODATA-RDA-DataScienceSchools/Materials/tree/master/docs/DataAtlanta2022/presentations_week3)          |
-| Wed, Oct 4      | Live Q&A at 12:00 ET | [Recording]()      |
+| Wed, Oct 4      | Live Q&A at 12:00 ET | [Recording](https://iu.mediaspace.kaltura.com/media/t/1_lna0km5p)      |
 | Fri, Oct 6      | Live Q&A at 12:00 ET | [Recording]()      |
 
 * Zoom invitations was sent via calendar
