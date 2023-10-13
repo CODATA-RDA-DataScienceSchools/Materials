@@ -13,3 +13,10 @@ Materials prepared by [Roger Barlow, PhD](https://rogerjbarlow.com/)
 ### Slides
 
 * [Neural Network Slides](https://raphaelmcobe.github.io/datatrieste_nn_23/#)
+
+### Links Suggested During Live Session
+* [Python Introduction](https://swcarpentry.github.io/python-novice-inflammation/)
+* [Python Text](https://wesmckinney.com/book/)
+* [Corsera Math of ML and DS](https://www.coursera.org/specializations/mathematics-for-machine-learning-and-data-science)
+* [Python for ML](https://www.w3schools.com/python/python_ml_getting_started.asp)
+* [Intro to ML in Python](https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1492032646)
