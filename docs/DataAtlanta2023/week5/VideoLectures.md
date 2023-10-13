@@ -9,3 +9,7 @@
 * [Neural Networks 05](https://vimeo.com/598850397)
                                                       
 Materials prepared by [Roger Barlow, PhD](https://rogerjbarlow.com/)
+
+### Slides
+
+* [Neural Network Slides](https://raphaelmcobe.github.io/datatrieste_nn_23/#)
