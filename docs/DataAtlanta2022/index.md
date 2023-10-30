@@ -60,7 +60,7 @@ Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.d
    * Video for the Wednesday Session was not recorded. 
    * [Video Link - Friday Session](https://iu.mediaspace.kaltura.com/media/t/1_7lsx7q3w)
 ### Week Eight - October 31- November 3 - Computational Infrastructures
-   * NOTE: Due to unexpected travel and other unforeseen circumstatnces the Computational Infrastructures lessons will not be fully posted until Tuesday, November 1st. 
+   * NOTE: Due to unexpected travel and other unforeseen circumstances the Computational Infrastructures lessons will not be fully posted until Tuesday, November 1st. 
    * Link to Video Lectures
       * [Lecture 1](https://iu.mediaspace.kaltura.com/media/t/1_2ubckhgo) - What is Cyberinfrastructure with Examples
       * [Lecture 2](https://iu.mediaspace.kaltura.com/media/t/1_j6lx5stm) - Types of Cyberinfrastructure
@@ -68,7 +68,7 @@ Learn more about the CODATA/RDA Schools or [Research Data Science](https://www.d
       * [Lecture 4](https://iu.mediaspace.kaltura.com/media/t/1_6cxqm2z9) - Cyberinfrastuctures for US Researchers
    * Link to Slides [Here](https://docs.google.com/presentation/d/1uYgYjT8yKhNLk9IPaMpD6YanRjwy5cIQsQa52RIEJdM/edit?usp=sharing)
    * There are no required Hands-On lessons this week. 
-      * However, if you'd like to play around with a Python Notebook that analyzes the Boston housing market by comparing multiple regressoin techniques, I've retested the hands-on lesson [here](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/SouthAfrica2021/Colab_Regression_Spark.ipynb) and it is a good example of using a clound-based CI. 
+      * However, if you'd like to play around with a Python Notebook that analyzes the Boston housing market by comparing multiple regression techniques, I've retested the hands-on lesson [here](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/SouthAfrica2021/Colab_Regression_Spark.ipynb) and it is a good example of using a clound-based CI. 
    * Live Sessions Wednesday and Friday (19, and 21-Oct 12:00 ET) - Questions on Video Lectures and Hands-on Exercises
    * [Video Link - Wednesday Session](https://iu.mediaspace.kaltura.com/media/t/1_zrfxh0be)
    * [Video Link - Friday Session](Comiing Soon)
