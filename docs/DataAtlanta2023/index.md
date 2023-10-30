@@ -113,7 +113,7 @@ This links will be updated at the end of the previous week (Friday or Sunday).
 
 | Day             | Activity             | Link to Materials                          |
 |-----------------|----------------------|--------------------------------------------|
-| Sunday, Oct 29  | Materials are posted | [Video Lectures](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2023/Week8/Week8.md) and [Slides]()          |
+| Sunday, Oct 29  | Materials are posted | [Video Lectures](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2023/Week8/Week8.md) and [Slides](https://docs.google.com/presentation/d/1uYgYjT8yKhNLk9IPaMpD6YanRjwy5cIQsQa52RIEJdM/edit#slide=id.p)          |
 | Wed, Nov 1      | Live Q&A at 12:00 ET | [Recording]()      |
 | Fri, Nov 3      | Live Q&A at 12:00 ET | [Recording]()      |
 
