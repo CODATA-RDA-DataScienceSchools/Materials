@@ -69,6 +69,7 @@ All Data Carpentry instructional material is made available under the Creative C
 ## Install required R packages
 
 ```{r}
+#| echo: true
 #| eval: false
 
 install.packages(c("tidyverse", "hexbin", "patchwork"))

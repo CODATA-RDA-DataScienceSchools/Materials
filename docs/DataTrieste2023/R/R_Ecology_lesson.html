@@ -450,6 +450,9 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 </section>
 <section id="install-required-r-packages" class="slide level2">
 <h2>Install required R packages</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"tidyverse"</span>, <span class="st">"hexbin"</span>, <span class="st">"patchwork"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 <section id="download-the-data" class="slide level2 hcenter">
 <h2>Download the data</h2>
@@ -1164,8 +1167,8 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <section id="factors" class="slide level2 hcenter">
 <h2>Factors</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>x <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">"wallet"</span>, <span class="st">"gum"</span>, <span class="st">"lotion"</span>, <span class="st">"sanitiser"</span>, <span class="st">"lip-gloss"</span>))</span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">levels</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>x <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">"wallet"</span>, <span class="st">"gum"</span>, <span class="st">"lotion"</span>, <span class="st">"sanitiser"</span>, <span class="st">"lip-gloss"</span>))</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="fu">levels</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "gum"       "lip-gloss" "lotion"    "sanitiser" "wallet"   </code></pre>
 </div>
@@ -1483,100 +1486,100 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <section id="some-other-useful-functions-15" class="slide level2 hcenter">
 <h2>Some other useful functions (1/5)</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># Import data by browsing for file</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a>my_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">file.choose</span>(<span class="at">new =</span> <span class="cn">TRUE</span>))</span>
-<span id="cb3-3"><a href="#cb3-3"></a></span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="co"># Import Excel file (per sheet)</span></span>
-<span id="cb3-5"><a href="#cb3-5"></a><span class="fu">library</span>(readxl)</span>
-<span id="cb3-6"><a href="#cb3-6"></a></span>
-<span id="cb3-7"><a href="#cb3-7"></a><span class="fu">read_excel</span>(<span class="st">"data/my_data.xlsx"</span>, <span class="at">sheet =</span> <span class="st">"Sheet1"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># Import data by browsing for file</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>my_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">file.choose</span>(<span class="at">new =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb4-3"><a href="#cb4-3"></a></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="co"># Import Excel file (per sheet)</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb4-6"><a href="#cb4-6"></a></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="fu">read_excel</span>(<span class="st">"data/my_data.xlsx"</span>, <span class="at">sheet =</span> <span class="st">"Sheet1"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="some-other-useful-functions-25" class="slide level2 hcenter">
 <h2>Some other useful functions (2/5)</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># Update a package</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="fu">tidyverse_update</span>()</span>
-<span id="cb4-3"><a href="#cb4-3"></a></span>
-<span id="cb4-4"><a href="#cb4-4"></a><span class="co"># Helper function to use within filter():</span></span>
-<span id="cb4-5"><a href="#cb4-5"></a><span class="fu">between</span>(weight, <span class="dv">30</span>, <span class="dv">50</span>)</span>
-<span id="cb4-6"><a href="#cb4-6"></a></span>
-<span id="cb4-7"><a href="#cb4-7"></a><span class="co"># Helper functions to use within select():</span></span>
-<span id="cb4-8"><a href="#cb4-8"></a><span class="fu">ends_with</span>(<span class="st">"xyz"</span>)</span>
-<span id="cb4-9"><a href="#cb4-9"></a><span class="fu">contains</span>(<span class="st">"cde"</span>)</span>
-<span id="cb4-10"><a href="#cb4-10"></a><span class="fu">select</span>(df, col5, col6, <span class="fu">everything</span>())</span>
-<span id="cb4-11"><a href="#cb4-11"></a></span>
-<span id="cb4-12"><a href="#cb4-12"></a><span class="co"># Create and keep only the new column:</span></span>
-<span id="cb4-13"><a href="#cb4-13"></a><span class="fu">transmute</span>(df, <span class="at">new_column =</span> old_column<span class="sc">*</span><span class="dv">2</span>)</span>
-<span id="cb4-14"><a href="#cb4-14"></a></span>
-<span id="cb4-15"><a href="#cb4-15"></a><span class="co"># Global substitutions (i.e. find and replace):</span></span>
-<span id="cb4-16"><a href="#cb4-16"></a><span class="fu">gsub</span>(pattern, replacement, data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="co"># Update a package</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="fu">tidyverse_update</span>()</span>
+<span id="cb5-3"><a href="#cb5-3"></a></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="co"># Helper function to use within filter():</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="fu">between</span>(weight, <span class="dv">30</span>, <span class="dv">50</span>)</span>
+<span id="cb5-6"><a href="#cb5-6"></a></span>
+<span id="cb5-7"><a href="#cb5-7"></a><span class="co"># Helper functions to use within select():</span></span>
+<span id="cb5-8"><a href="#cb5-8"></a><span class="fu">ends_with</span>(<span class="st">"xyz"</span>)</span>
+<span id="cb5-9"><a href="#cb5-9"></a><span class="fu">contains</span>(<span class="st">"cde"</span>)</span>
+<span id="cb5-10"><a href="#cb5-10"></a><span class="fu">select</span>(df, col5, col6, <span class="fu">everything</span>())</span>
+<span id="cb5-11"><a href="#cb5-11"></a></span>
+<span id="cb5-12"><a href="#cb5-12"></a><span class="co"># Create and keep only the new column:</span></span>
+<span id="cb5-13"><a href="#cb5-13"></a><span class="fu">transmute</span>(df, <span class="at">new_column =</span> old_column<span class="sc">*</span><span class="dv">2</span>)</span>
+<span id="cb5-14"><a href="#cb5-14"></a></span>
+<span id="cb5-15"><a href="#cb5-15"></a><span class="co"># Global substitutions (i.e. find and replace):</span></span>
+<span id="cb5-16"><a href="#cb5-16"></a><span class="fu">gsub</span>(pattern, replacement, data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="some-other-useful-functions-35" class="slide level2 hcenter">
 <h2>Some other useful functions (3/5)</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="co"># Remove an object from the environment</span></span>
-<span id="cb5-2"><a href="#cb5-2"></a><span class="fu">rm</span>(object_name)</span>
-<span id="cb5-3"><a href="#cb5-3"></a></span>
-<span id="cb5-4"><a href="#cb5-4"></a><span class="co"># Detach (i.e. "unload") a package</span></span>
-<span id="cb5-5"><a href="#cb5-5"></a><span class="fu">detach</span>(tidyverse)</span>
-<span id="cb5-6"><a href="#cb5-6"></a></span>
-<span id="cb5-7"><a href="#cb5-7"></a><span class="co"># Pick the top one (from arranged data)</span></span>
-<span id="cb5-8"><a href="#cb5-8"></a>dataframe <span class="sc">%&gt;%</span></span>
-<span id="cb5-9"><a href="#cb5-9"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(var1)) <span class="sc">%&gt;%</span> </span>
-<span id="cb5-10"><a href="#cb5-10"></a>  <span class="fu">arrange</span>(var1, var2, var3) <span class="sc">%&gt;%</span> </span>
-<span id="cb5-11"><a href="#cb5-11"></a>  <span class="fu">slice</span>(<span class="dv">1</span>)</span>
-<span id="cb5-12"><a href="#cb5-12"></a></span>
-<span id="cb5-13"><a href="#cb5-13"></a>dataframe <span class="sc">%&gt;%</span></span>
-<span id="cb5-14"><a href="#cb5-14"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(var1)) <span class="sc">%&gt;%</span> </span>
-<span id="cb5-15"><a href="#cb5-15"></a>  <span class="fu">arrange</span>(var1, var2, var3) <span class="sc">%&gt;%</span> </span>
-<span id="cb5-16"><a href="#cb5-16"></a>  <span class="fu">top_n</span>(<span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="co"># Remove an object from the environment</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="fu">rm</span>(object_name)</span>
+<span id="cb6-3"><a href="#cb6-3"></a></span>
+<span id="cb6-4"><a href="#cb6-4"></a><span class="co"># Detach (i.e. "unload") a package</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a><span class="fu">detach</span>(tidyverse)</span>
+<span id="cb6-6"><a href="#cb6-6"></a></span>
+<span id="cb6-7"><a href="#cb6-7"></a><span class="co"># Pick the top one (from arranged data)</span></span>
+<span id="cb6-8"><a href="#cb6-8"></a>dataframe <span class="sc">%&gt;%</span></span>
+<span id="cb6-9"><a href="#cb6-9"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(var1)) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-10"><a href="#cb6-10"></a>  <span class="fu">arrange</span>(var1, var2, var3) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-11"><a href="#cb6-11"></a>  <span class="fu">slice</span>(<span class="dv">1</span>)</span>
+<span id="cb6-12"><a href="#cb6-12"></a></span>
+<span id="cb6-13"><a href="#cb6-13"></a>dataframe <span class="sc">%&gt;%</span></span>
+<span id="cb6-14"><a href="#cb6-14"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(var1)) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-15"><a href="#cb6-15"></a>  <span class="fu">arrange</span>(var1, var2, var3) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-16"><a href="#cb6-16"></a>  <span class="fu">top_n</span>(<span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="some-other-useful-functions-45" class="slide level2 hcenter">
 <h2>Some other useful functions (4/5)</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="co"># Divide data into categories:</span></span>
-<span id="cb6-2"><a href="#cb6-2"></a><span class="fu">mutate</span>(<span class="at">category =</span> <span class="fu">case_when</span>(weight <span class="sc">&lt;=</span> <span class="dv">100</span> <span class="sc">~</span> <span class="st">"small"</span>,</span>
-<span id="cb6-3"><a href="#cb6-3"></a>                            weight <span class="sc">&gt;</span> <span class="dv">100</span> <span class="sc">&amp;</span> weight <span class="sc">&lt;</span> <span class="dv">200</span> <span class="sc">~</span> <span class="st">"medium"</span>,</span>
-<span id="cb6-4"><a href="#cb6-4"></a>                            weight <span class="sc">&gt;</span> <span class="dv">200</span> <span class="sc">~</span> <span class="st">"large"</span>))</span>
-<span id="cb6-5"><a href="#cb6-5"></a></span>
-<span id="cb6-6"><a href="#cb6-6"></a><span class="co"># Rename specific column headers:</span></span>
-<span id="cb6-7"><a href="#cb6-7"></a><span class="fu">rename</span>(df, <span class="at">new_name =</span> old_name)</span>
-<span id="cb6-8"><a href="#cb6-8"></a></span>
-<span id="cb6-9"><a href="#cb6-9"></a><span class="co"># Top 10 heaviest animals:</span></span>
-<span id="cb6-10"><a href="#cb6-10"></a><span class="fu">top_n</span>(df, <span class="dv">10</span>, weight)</span>
-<span id="cb6-11"><a href="#cb6-11"></a></span>
-<span id="cb6-12"><a href="#cb6-12"></a><span class="co"># Separate (i.e. split) one column into multiple:</span></span>
-<span id="cb6-13"><a href="#cb6-13"></a><span class="fu">separate</span>(column, <span class="at">into =</span> <span class="fu">c</span>(<span class="st">"col1"</span>, <span class="st">"col2"</span>))</span>
-<span id="cb6-14"><a href="#cb6-14"></a></span>
-<span id="cb6-15"><a href="#cb6-15"></a><span class="co"># Bind tables on columns or rows</span></span>
-<span id="cb6-16"><a href="#cb6-16"></a><span class="fu">cbind</span>(df1, df2, ...)</span>
-<span id="cb6-17"><a href="#cb6-17"></a><span class="fu">rbind</span>(df1, df2, ...)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="co"># Divide data into categories:</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="fu">mutate</span>(<span class="at">category =</span> <span class="fu">case_when</span>(weight <span class="sc">&lt;=</span> <span class="dv">100</span> <span class="sc">~</span> <span class="st">"small"</span>,</span>
+<span id="cb7-3"><a href="#cb7-3"></a>                            weight <span class="sc">&gt;</span> <span class="dv">100</span> <span class="sc">&amp;</span> weight <span class="sc">&lt;</span> <span class="dv">200</span> <span class="sc">~</span> <span class="st">"medium"</span>,</span>
+<span id="cb7-4"><a href="#cb7-4"></a>                            weight <span class="sc">&gt;</span> <span class="dv">200</span> <span class="sc">~</span> <span class="st">"large"</span>))</span>
+<span id="cb7-5"><a href="#cb7-5"></a></span>
+<span id="cb7-6"><a href="#cb7-6"></a><span class="co"># Rename specific column headers:</span></span>
+<span id="cb7-7"><a href="#cb7-7"></a><span class="fu">rename</span>(df, <span class="at">new_name =</span> old_name)</span>
+<span id="cb7-8"><a href="#cb7-8"></a></span>
+<span id="cb7-9"><a href="#cb7-9"></a><span class="co"># Top 10 heaviest animals:</span></span>
+<span id="cb7-10"><a href="#cb7-10"></a><span class="fu">top_n</span>(df, <span class="dv">10</span>, weight)</span>
+<span id="cb7-11"><a href="#cb7-11"></a></span>
+<span id="cb7-12"><a href="#cb7-12"></a><span class="co"># Separate (i.e. split) one column into multiple:</span></span>
+<span id="cb7-13"><a href="#cb7-13"></a><span class="fu">separate</span>(column, <span class="at">into =</span> <span class="fu">c</span>(<span class="st">"col1"</span>, <span class="st">"col2"</span>))</span>
+<span id="cb7-14"><a href="#cb7-14"></a></span>
+<span id="cb7-15"><a href="#cb7-15"></a><span class="co"># Bind tables on columns or rows</span></span>
+<span id="cb7-16"><a href="#cb7-16"></a><span class="fu">cbind</span>(df1, df2, ...)</span>
+<span id="cb7-17"><a href="#cb7-17"></a><span class="fu">rbind</span>(df1, df2, ...)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="some-other-useful-functions-55" class="slide level2 hcenter">
 <h2>Some other useful functions (5/5)</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="co"># Mutating joins: combine variables from two data.frames</span></span>
-<span id="cb7-2"><a href="#cb7-2"></a><span class="fu">inner_join</span>(x, y, <span class="at">by =</span> <span class="st">"key"</span>) <span class="co">#keeps all observations in both x and y.</span></span>
-<span id="cb7-3"><a href="#cb7-3"></a><span class="fu">left_join</span>(x, y, <span class="at">by =</span> <span class="st">"key"</span>)  <span class="co">#keeps all observations in x.</span></span>
-<span id="cb7-4"><a href="#cb7-4"></a><span class="fu">right_join</span>(x, y, <span class="at">by =</span> <span class="st">"key"</span>) <span class="co">#keeps all observations in y.</span></span>
-<span id="cb7-5"><a href="#cb7-5"></a><span class="fu">full_join</span>(x, y, <span class="at">by =</span> <span class="st">"key"</span>)  <span class="co">#keeps all observations in x and y.</span></span>
-<span id="cb7-6"><a href="#cb7-6"></a></span>
-<span id="cb7-7"><a href="#cb7-7"></a><span class="co"># Filtering joins: keep cases from the left-hand data.frame</span></span>
-<span id="cb7-8"><a href="#cb7-8"></a><span class="fu">semi_join</span>(x, y) <span class="co">#keeps all observations in x that have a match in y.</span></span>
-<span id="cb7-9"><a href="#cb7-9"></a><span class="fu">anti_join</span>(x, y) <span class="co">#drops all observations in x that have a match in y.</span></span>
-<span id="cb7-10"><a href="#cb7-10"></a></span>
-<span id="cb7-11"><a href="#cb7-11"></a><span class="co"># Nesting joins: create a list column of data.frames</span></span>
-<span id="cb7-12"><a href="#cb7-12"></a><span class="fu">nest_join</span>(x, y, <span class="at">by =</span> <span class="st">"key"</span>) <span class="co">#keeps all rows and all columns from x </span></span>
-<span id="cb7-13"><a href="#cb7-13"></a>                            <span class="co">#and adds a list column of tibbles</span></span>
-<span id="cb7-14"><a href="#cb7-14"></a></span>
-<span id="cb7-15"><a href="#cb7-15"></a><span class="co"># Set operations: compare values of every variable</span></span>
-<span id="cb7-16"><a href="#cb7-16"></a><span class="fu">intersect</span>(x, y) <span class="co">#return only observations in both x and y.</span></span>
-<span id="cb7-17"><a href="#cb7-17"></a><span class="fu">union</span>(x, y)     <span class="co">#return unique observations in x and y.</span></span>
-<span id="cb7-18"><a href="#cb7-18"></a><span class="fu">setdiff</span>(x, y)   <span class="co">#return observations in x that are not in y.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="co"># Mutating joins: combine variables from two data.frames</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="fu">inner_join</span>(x, y, <span class="at">by =</span> <span class="st">"key"</span>) <span class="co">#keeps all observations in both x and y.</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a><span class="fu">left_join</span>(x, y, <span class="at">by =</span> <span class="st">"key"</span>)  <span class="co">#keeps all observations in x.</span></span>
+<span id="cb8-4"><a href="#cb8-4"></a><span class="fu">right_join</span>(x, y, <span class="at">by =</span> <span class="st">"key"</span>) <span class="co">#keeps all observations in y.</span></span>
+<span id="cb8-5"><a href="#cb8-5"></a><span class="fu">full_join</span>(x, y, <span class="at">by =</span> <span class="st">"key"</span>)  <span class="co">#keeps all observations in x and y.</span></span>
+<span id="cb8-6"><a href="#cb8-6"></a></span>
+<span id="cb8-7"><a href="#cb8-7"></a><span class="co"># Filtering joins: keep cases from the left-hand data.frame</span></span>
+<span id="cb8-8"><a href="#cb8-8"></a><span class="fu">semi_join</span>(x, y) <span class="co">#keeps all observations in x that have a match in y.</span></span>
+<span id="cb8-9"><a href="#cb8-9"></a><span class="fu">anti_join</span>(x, y) <span class="co">#drops all observations in x that have a match in y.</span></span>
+<span id="cb8-10"><a href="#cb8-10"></a></span>
+<span id="cb8-11"><a href="#cb8-11"></a><span class="co"># Nesting joins: create a list column of data.frames</span></span>
+<span id="cb8-12"><a href="#cb8-12"></a><span class="fu">nest_join</span>(x, y, <span class="at">by =</span> <span class="st">"key"</span>) <span class="co">#keeps all rows and all columns from x </span></span>
+<span id="cb8-13"><a href="#cb8-13"></a>                            <span class="co">#and adds a list column of tibbles</span></span>
+<span id="cb8-14"><a href="#cb8-14"></a></span>
+<span id="cb8-15"><a href="#cb8-15"></a><span class="co"># Set operations: compare values of every variable</span></span>
+<span id="cb8-16"><a href="#cb8-16"></a><span class="fu">intersect</span>(x, y) <span class="co">#return only observations in both x and y.</span></span>
+<span id="cb8-17"><a href="#cb8-17"></a><span class="fu">union</span>(x, y)     <span class="co">#return unique observations in x and y.</span></span>
+<span id="cb8-18"><a href="#cb8-18"></a><span class="fu">setdiff</span>(x, y)   <span class="co">#return observations in x that are not in y.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="joins" class="slide level2 hcenter">
@@ -1590,38 +1593,38 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <section id="if-statements" class="slide level2 hcenter">
 <h2>IF statements</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="cf">if</span> (condition) {</span>
-<span id="cb8-2"><a href="#cb8-2"></a>  <span class="co"># code executed when condition is TRUE</span></span>
-<span id="cb8-3"><a href="#cb8-3"></a>} <span class="cf">else</span> {</span>
-<span id="cb8-4"><a href="#cb8-4"></a>  <span class="co"># code executed when condition is FALSE</span></span>
-<span id="cb8-5"><a href="#cb8-5"></a>}</span>
-<span id="cb8-6"><a href="#cb8-6"></a></span>
-<span id="cb8-7"><a href="#cb8-7"></a></span>
-<span id="cb8-8"><a href="#cb8-8"></a><span class="cf">if</span> (this) {</span>
-<span id="cb8-9"><a href="#cb8-9"></a>  <span class="co"># do this</span></span>
-<span id="cb8-10"><a href="#cb8-10"></a>} <span class="cf">else</span> <span class="cf">if</span> (that) {</span>
-<span id="cb8-11"><a href="#cb8-11"></a>  <span class="co"># do that</span></span>
-<span id="cb8-12"><a href="#cb8-12"></a>} <span class="cf">else</span> {</span>
-<span id="cb8-13"><a href="#cb8-13"></a>  <span class="co"># do something else</span></span>
-<span id="cb8-14"><a href="#cb8-14"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="cf">if</span> (condition) {</span>
+<span id="cb9-2"><a href="#cb9-2"></a>  <span class="co"># code executed when condition is TRUE</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a>} <span class="cf">else</span> {</span>
+<span id="cb9-4"><a href="#cb9-4"></a>  <span class="co"># code executed when condition is FALSE</span></span>
+<span id="cb9-5"><a href="#cb9-5"></a>}</span>
+<span id="cb9-6"><a href="#cb9-6"></a></span>
+<span id="cb9-7"><a href="#cb9-7"></a></span>
+<span id="cb9-8"><a href="#cb9-8"></a><span class="cf">if</span> (this) {</span>
+<span id="cb9-9"><a href="#cb9-9"></a>  <span class="co"># do this</span></span>
+<span id="cb9-10"><a href="#cb9-10"></a>} <span class="cf">else</span> <span class="cf">if</span> (that) {</span>
+<span id="cb9-11"><a href="#cb9-11"></a>  <span class="co"># do that</span></span>
+<span id="cb9-12"><a href="#cb9-12"></a>} <span class="cf">else</span> {</span>
+<span id="cb9-13"><a href="#cb9-13"></a>  <span class="co"># do something else</span></span>
+<span id="cb9-14"><a href="#cb9-14"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="if-statements-1" class="slide level2 hcenter">
 <h2>IF statements</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>temp <span class="ot">&lt;-</span> <span class="dv">15</span></span>
-<span id="cb9-2"><a href="#cb9-2"></a></span>
-<span id="cb9-3"><a href="#cb9-3"></a><span class="cf">if</span> (temp <span class="sc">&lt;=</span> <span class="dv">0</span>) {</span>
-<span id="cb9-4"><a href="#cb9-4"></a>  <span class="st">"freezing"</span></span>
-<span id="cb9-5"><a href="#cb9-5"></a>} <span class="cf">else</span> <span class="cf">if</span> (temp <span class="sc">&lt;=</span> <span class="dv">10</span>) {</span>
-<span id="cb9-6"><a href="#cb9-6"></a>  <span class="st">"cold"</span></span>
-<span id="cb9-7"><a href="#cb9-7"></a>} <span class="cf">else</span> <span class="cf">if</span> (temp <span class="sc">&lt;=</span> <span class="dv">20</span>) {</span>
-<span id="cb9-8"><a href="#cb9-8"></a>  <span class="st">"cool"</span></span>
-<span id="cb9-9"><a href="#cb9-9"></a>} <span class="cf">else</span> <span class="cf">if</span> (temp <span class="sc">&lt;=</span> <span class="dv">30</span>) {</span>
-<span id="cb9-10"><a href="#cb9-10"></a>  <span class="st">"warm"</span></span>
-<span id="cb9-11"><a href="#cb9-11"></a>} <span class="cf">else</span> {</span>
-<span id="cb9-12"><a href="#cb9-12"></a>  <span class="st">"hot"</span></span>
-<span id="cb9-13"><a href="#cb9-13"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a>temp <span class="ot">&lt;-</span> <span class="dv">15</span></span>
+<span id="cb10-2"><a href="#cb10-2"></a></span>
+<span id="cb10-3"><a href="#cb10-3"></a><span class="cf">if</span> (temp <span class="sc">&lt;=</span> <span class="dv">0</span>) {</span>
+<span id="cb10-4"><a href="#cb10-4"></a>  <span class="st">"freezing"</span></span>
+<span id="cb10-5"><a href="#cb10-5"></a>} <span class="cf">else</span> <span class="cf">if</span> (temp <span class="sc">&lt;=</span> <span class="dv">10</span>) {</span>
+<span id="cb10-6"><a href="#cb10-6"></a>  <span class="st">"cold"</span></span>
+<span id="cb10-7"><a href="#cb10-7"></a>} <span class="cf">else</span> <span class="cf">if</span> (temp <span class="sc">&lt;=</span> <span class="dv">20</span>) {</span>
+<span id="cb10-8"><a href="#cb10-8"></a>  <span class="st">"cool"</span></span>
+<span id="cb10-9"><a href="#cb10-9"></a>} <span class="cf">else</span> <span class="cf">if</span> (temp <span class="sc">&lt;=</span> <span class="dv">30</span>) {</span>
+<span id="cb10-10"><a href="#cb10-10"></a>  <span class="st">"warm"</span></span>
+<span id="cb10-11"><a href="#cb10-11"></a>} <span class="cf">else</span> {</span>
+<span id="cb10-12"><a href="#cb10-12"></a>  <span class="st">"hot"</span></span>
+<span id="cb10-13"><a href="#cb10-13"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="writing-your-own-function" class="slide level2 hcenter smaller">
@@ -1639,21 +1642,21 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <section id="writing-your-own-function-1" class="slide level2 hcenter">
 <h2>Writing your own function</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a>function_name <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb10-2"><a href="#cb10-2"></a>  y <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(x)</span>
-<span id="cb10-3"><a href="#cb10-3"></a>  </span>
-<span id="cb10-4"><a href="#cb10-4"></a>  y <span class="sc">%&gt;%</span> </span>
-<span id="cb10-5"><a href="#cb10-5"></a>    <span class="fu">count</span>(variable)</span>
-<span id="cb10-6"><a href="#cb10-6"></a>}</span>
-<span id="cb10-7"><a href="#cb10-7"></a></span>
-<span id="cb10-8"><a href="#cb10-8"></a><span class="co"># Example</span></span>
-<span id="cb10-9"><a href="#cb10-9"></a></span>
-<span id="cb10-10"><a href="#cb10-10"></a>get_species <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb10-11"><a href="#cb10-11"></a>  y <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(x)</span>
-<span id="cb10-12"><a href="#cb10-12"></a>  </span>
-<span id="cb10-13"><a href="#cb10-13"></a>  y <span class="sc">%&gt;%</span> </span>
-<span id="cb10-14"><a href="#cb10-14"></a>    <span class="fu">count</span>(species)</span>
-<span id="cb10-15"><a href="#cb10-15"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a>function_name <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb11-2"><a href="#cb11-2"></a>  y <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(x)</span>
+<span id="cb11-3"><a href="#cb11-3"></a>  </span>
+<span id="cb11-4"><a href="#cb11-4"></a>  y <span class="sc">%&gt;%</span> </span>
+<span id="cb11-5"><a href="#cb11-5"></a>    <span class="fu">count</span>(variable)</span>
+<span id="cb11-6"><a href="#cb11-6"></a>}</span>
+<span id="cb11-7"><a href="#cb11-7"></a></span>
+<span id="cb11-8"><a href="#cb11-8"></a><span class="co"># Example</span></span>
+<span id="cb11-9"><a href="#cb11-9"></a></span>
+<span id="cb11-10"><a href="#cb11-10"></a>get_species <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb11-11"><a href="#cb11-11"></a>  y <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(x)</span>
+<span id="cb11-12"><a href="#cb11-12"></a>  </span>
+<span id="cb11-13"><a href="#cb11-13"></a>  y <span class="sc">%&gt;%</span> </span>
+<span id="cb11-14"><a href="#cb11-14"></a>    <span class="fu">count</span>(species)</span>
+<span id="cb11-15"><a href="#cb11-15"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="useful-shortcuts" class="slide level2 hcenter smaller">
