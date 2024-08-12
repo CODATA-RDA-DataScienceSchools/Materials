@@ -1,0 +1,3 @@
+http://personal.rhul.ac.uk/upac/004/git-novice/ Introduction to Git
+
+https://swcarpentry.github.io/git-novice/ Software Carpentry Introduction to Git that the above is based on.
