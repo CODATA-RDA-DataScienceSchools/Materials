@@ -31,28 +31,27 @@ To set up your Python development environment locally, you will need to install 
 
 - [Anaconda - all-in-one installer](https://datacarpentry.org/python-ecology-lesson/#installing-anaconda)
 - [Python 3](https://code.visualstudio.com/docs/python/python-tutorial#_install-a-python-interpreter)
-- [VS Code](https://code.visualstudio.com/)
+- [VS Code](https://code.visualstudio.com/) or another IDE of your choice.
 
 We will use the [ICTP Jupyterhub Server](https://jupyter.ictp.it/smr3962/)
-We will use [Jupyter notebook](https://jupyter.org/) online.
 
 ## Required Python Packages {.hcenter}
 
-The following are packages needed for this workshop:
+You need the following packages for this workshop:
 
 - Pandas
 - Jupyter notebook
 - Numpy
 - Matplotlib
+- Seaborn
 - Plotnine
-
 
 ## Download the data {.hcenter}
 
-We'll be using 4 datasets:
+We'll use the following datasets:
 - [tmdb-movies.csv](https://raw.githubusercontent.com/deepak525/Investigate_TMDb_Movies/master/tmdb-movies.csv)
-- [movies.csv](https://raw.githubusercontent.com/CODATA-RDA-DataScienceSchools/Materials/master/docs/DataTrieste2023/RecommenderSystems/movies.csv)
-- [ratings.csv](https://raw.githubusercontent.com/CODATA-RDA-DataScienceSchools/Materials/master/docs/DataTrieste2023/RecommenderSystems/ratings.csv)
+- [movies.csv](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2024/Python/data/movies.csv)
+- [ratings.csv](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2024/Python/data/ratings.csv)
 
 
 ## Objectives {.smaller .hcenter}
@@ -75,7 +74,7 @@ We'll be using 4 datasets:
 -   Indexing, slicing and indexing dataframes
 -   Data types and formats
 -   Combining dataframes
--   Data workflows and automation
+-   Libraries for plotting
 -   Plotting with plotnine
 -   Additional functions
 -   Additional resources
@@ -288,11 +287,6 @@ Declared using semicolons(;) :
 flag = 2; ropes = 3; pole = 4
 ```
 
-## Time for... {.hcenter}
-
-![](images/Practical.PNG){fig-align="center"}
-
-
 ## Data structures vs Data types {.hcenter}
 
 ::: columns
@@ -340,12 +334,12 @@ Credit: [Devopedia](https://devopedia.org/python-data-structures)
 
 -   The data might not have column names:
 
-    -   You can use `col_names = FALSE` to tell `read_csv()` not to treat the first row as headings, and instead label them sequentially from X1 to Xn: `read_csv("data.csv", col_names = FALSE)`
-    -   Alternatively, pass `header` a character vector with column names: `read_csv("data.csv", col_names = c("name", "surname", "age", "weight"))`
+    -   You can use `col_names = FALSE` to tell `read_csv()` not to treat the first row as headings, and instead label them sequentially from X1 to Xn: `pd.read_csv("data.csv", col_names = FALSE)`
+    -   Alternatively, pass `header` a character vector with column names: `pd.read_csv("data.csv", col_names = c("name", "surname", "age", "weight"))`
 
--   Specify the value(s) that are used to represent missing values in your file: `read_csv("data.csv", na = ".")`
+-   Specify the value(s) that are used to represent missing values in your file: `pd.read_csv("data.csv", na = ".")`
 
--   Trim whitespace: `read_csv("data.csv", trim_ws = TRUE)`
+-   Trim whitespace: `pd.read_csv("data.csv", trim_ws = TRUE)`
 
 ## Data frames {.hcenter}
 
@@ -355,41 +349,31 @@ Credit: [Devopedia](https://devopedia.org/python-data-structures)
 
 ![](images/dataframes.png){fig-align="center"}
 
-## The data {.hcenter}
+## Functions, methods, and attributes
 
-TODO
+### Functions
+
+variable = library.function(argument1, argument2)
+
+Example: my_data = pd.read_csv("data/movies.csv")
+
+### Methods
+
+variable.method(argument)
+
+Example: my_data.head(15)
+
+### Attributes
+
+variable.attribute
+
+Example: my_data.columns
 
 ## Time for... {.hcenter}
 
 ![](images/Practical.PNG){fig-align="center"}
-
-
-## Formatting dates {.hcenter}
-
-TODO
-
-## Time for... {.hcenter}
-
-![](images/Practical.PNG){fig-align="center"}
-
 
 ## Data manipulation {.hcenter .smaller}
-
-TODO
-
-## Time for... {.hcenter}
-
-![](images/Practical.PNG){fig-align="center"}
-
-## Pipes {.hcenter}
-
-TODO
-
-## Time for... {.hcenter}
-
-![](images/Practical.PNG){fig-align="center"}
-
-## Split-apply-combine analysis {.hcenter}
 
 ![](images/split-apply-combine.png){fig-align="center" width="800"}
 
@@ -401,23 +385,31 @@ TODO
 
 ![](images/Practical.PNG){fig-align="center"}
 
-## Reshaping your data {.hcenter}
+## Indexing and slicing {.hcenter}
 
-TODO
-
-## Time for... {.hcenter}
-
-![](images/Practical.PNG){fig-align="center"}
-
-
-## Cleaning and subsetting data {.hcenter}
-
-![](images/Surveys_complete.PNG){fig-align="center" width="700"}
+![](images/indexing_slicing.png){fig-align="center"}
 
 ## Time for... {.hcenter}
 
 ![](images/Practical.PNG){fig-align="center"}
 
+## Concatenating dataframes {.hcenter}
+
+![](images/joins.jpg){fig-align="center"}
+
+## Time for... {.hcenter}
+
+![](images/Practical.PNG){fig-align="center"}
+
+## Libraries for plotting {.hcenter}
+
+- Matplotlib is the most basic and widely-used Python library for creating static, animated, and interactive visualisations. It provides a lot of control over every aspect of a plot.
+- Seaborn is built on top of Matplotlib and provides a high-level interface for creating attractive and informative statistical graphics.
+- Plotnine is a Python implementation of the Grammar of Graphics (similar to R's ggplot2). It provides a high-level abstraction for creating complex plots by layering components.
+
+## Comparison of Matplotlib, Seaborn, and Plotnine {.hcenter}
+
+![](images/plotting-libraries.png){fig-align="center"}
 
 ## Data visualisation: grammar of graphics {.hcenter .smaller}
 
@@ -437,14 +429,13 @@ plot = [data]{.red} + [aesthetics]{.green} + [geometry]{.blue}
 
 ![](images/grammar_of_graphics3.png){fig-align="center" width="400"}
 
-## Time for... {.hcenter}
-
-![](images/Practical.PNG){fig-align="center"}
-
 ## Plot components {.hcenter}
 
 ![](images/plot_description.PNG){fig-align="center"}
 
+## Time for... {.hcenter}
+
+![](images/Practical.PNG){fig-align="center"}
 
 ## Some other useful functions (1/3) {.hcenter}
 
@@ -487,28 +478,6 @@ choices = ['small', 'medium', 'large']
 df['category'] = np.select(conditions, choices)
 ```
 
-## Some other useful functions (3/3) {.hcenter}
-
-```{python}
-#| echo: true
-#| message: false
-#| warning: false
-#| eval: false
-
-# Mutating joins: combine variables from two data frames
-pd.merge(x, y, on='key') #keeps all observations in both x and y.
-pd.merge(x, y, on='key', how='left')  #keeps all observations in x.
-pd.merge(x, y, on='key', how='right') #keeps all observations in y.
-pd.merge(x, y, on='key', how='outer')  #keeps all observations in x and y.
-
-# Filtering joins: keep cases from the left-hand data frame
-x[x[on].isin(y[on])] #keeps all observations in x that have a match in y.
-x[~x[on].isin(y[on])] #keeps all observations in x that don't have a match in y.
-```
-
-## Joins {.hcenter}
-
-![](images/join_types.jpg){fig-align="center" width="450"}
 
 ## IF statements {.hcenter}
 
