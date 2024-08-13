@@ -38,7 +38,10 @@ We will use [Jupyter notebook](https://jupyter.org/) online.
 
 ## Download the data {.hcenter}
 
-TODO - download the data.
+We'll be using 4 datasets:
+- [tmdb-movies.csv](https://raw.githubusercontent.com/deepak525/Investigate_TMDb_Movies/master/tmdb-movies.csv)
+- [movies.csv](https://raw.githubusercontent.com/CODATA-RDA-DataScienceSchools/Materials/master/docs/DataTrieste2023/RecommenderSystems/movies.csv)
+- [ratings.csv](https://raw.githubusercontent.com/CODATA-RDA-DataScienceSchools/Materials/master/docs/DataTrieste2023/RecommenderSystems/ratings.csv)
 
 
 ## Objectives {.smaller .hcenter}
@@ -77,7 +80,7 @@ TODO - download the data.
 
 [Integrated Development Environment (IDE) `->`  an open-source web application that allows you to interact with Python. It allows us to create and share documents that combine code, graphs, and narrative text.]{.medium}
 
-![](images/python-editors.png){fig-align="center" width="700"}
+![](images/python-editors.png){fig-align="center" width="500"}
 
 ## Why learn Python? {.smaller .hcenter}
 
@@ -99,78 +102,76 @@ See the following details about the [Jupyter Notebook interface](https://datacar
 
 ## What can you do in Python? {.smaller .hcenter}
 
-![](images/mathematics.jpg){fig-align="center" width="700"}
+![](images/mathematics.jpg){fig-align="center" width="500"}
 
-.footnote[
+::: aside
 Credit: [IPCisco.com](https://ipcisco.com/lesson/python-math-functions/)
-]
+:::
 
 ## What can you do in Python? {.smaller .hcenter}
 
 ![](images/statistics.png){fig-align="center" width="700"}
 
-.footnote[
+::: aside
 Credit: [DexLab](https://m.dexlabanalytics.com/blog/python-statistics-fundamentals-how-to-describe-your-data-part-ii)
-]
+:::
 
 ## What can you do in Python? {.smaller .hcenter}
 
 ![](images/analysis.png){fig-align="center" width="500"}
 
-.footnote[
+::: aside
 Credit: [Data Carpentry](https://datacarpentry.org/python-ecology-lesson/06-loops-and-functions.html)
-]
+:::
 
 ## What can you do in Python? {.smaller .hcenter}
 
-.pull-left[
-![](images/visualisation.jpeg){fig-align="center" width="850"}
-]
+![](images/visualisation.jpeg){fig-align="center" width="800"}
 
-.pull-right[
-![](images/visualisation2.png){fig-align="center" width="850"}
-]
-
-.footnote[
+::: aside
 Credit: Gauransh Singh - [Data Visualization in Python using Matplotlib and Seaborn](https://www.linkedin.com/pulse/data-visualization-python-using-matplotlib-seaborn-gauransh-singh/)
-]
+:::
+
 
 ## What can you do in Python? {.smaller .hcenter}
 
-![](images/functions.png){fig-align="center" width="500"}
+![](images/functions.png){fig-align="center" width="300"}
 
-.footnote[
+::: aside
 Credit: [Thinking Neuron](https://thinkingneuron.com/user-defined-functions-in-python/)
-]
+:::
 
 ## What can you do in Python? {.smaller .hcenter}
 
 ![](images/report.png){fig-align="center" width="900"}
 
-.footnote[
+::: aside
 Credit: [Quarto](https://quarto.org/)
-]
+:::
 
 ## What can you do in Python? {.smaller .hcenter}
 
-![](images/databases.jpg){fig-align="center"}
+![](images/databases.jpg){fig-align="center" width="800"}
 
-.footnote[
+::: aside
 Credit: [datacamp](https://www.datacamp.com/blog/sql-vs-python-which-to-learn)
-]
+:::
 
 ## What can you do in Python? {.smaller .hcenter}
 
-![](images/webscraping.png){fig-align="center"}
+![](images/webscraping.png){fig-align="center" width="800"}
 
-.footnote[
+::: aside
 Credit: [Excelsior](https://medium.com/@get_excelsior/web-scraping-a-problem-solving-skill-for-the-digital-age-6bf5c7e103bb)
-]
+:::
 
 ## What can you do in Python? {.smaller .hcenter}
 
-![](images/dashboard.png){fig-align="center"}
+![](images/dashboard.png){fig-align="center" width="800"}
 
+::: aside
+Credit: [Build a real-time dashboard in Python with Tinybird and Dash](https://www.tinybird.co/blog-posts/python-real-time-dashboard)
+:::
 
 ## Create a new project {.hcenter}
 
@@ -196,9 +197,9 @@ Credit: [Excelsior](https://medium.com/@get_excelsior/web-scraping-a-problem-sol
 
 ## Running code in Jupyter notebooks {.smaller .hcenter}
 
--   Enter code or text into the **input** area and click play (or Ctrl + Enter or Shift + Enter for the shortcut) to execute the content of the specific cell.
+-   Enter code or text into the **input** area and [click play]{.red} (or [Ctrl + Enter]{.red} or [Shift + Enter]{.red} for the shortcut) to execute the content of the specific cell.
 -   When you execute a code cell, that code is sent to an execution kernel, and the result is returned in the output area of the notebook.
--   Pressing the + button in the menu bar will add a new cell.
+-   Pressing the [+]{.red} button in the menu bar will add a new cell.
 -   All your commands, as well as any output, will be saved as part of the notebook file.
 
 ## Time for... {.hcenter}
@@ -221,11 +222,11 @@ Credit: [Excelsior](https://medium.com/@get_excelsior/web-scraping-a-problem-sol
     -   Many libraries also have websites with additional help, tutorials, etc.
 -   Dealing with error messages (known as the Python traceback)
 
-![](images/python_traceback.png){fig-align="center" width="400"}
+![](images/python_traceback.png){fig-align="center" width="500"}
 
-.footnote[
+::: aside
 Credit: Chad Hansen - [Understanding the Python Traceback](https://realpython.com/python-traceback/#:~:text=Python%20Traceback%20Overview,-There%20are%20several&text=In%20Python%2C%20it's%20best%20to,exception%20name%20that%20was%20raised.)
-]
+:::
 
 ## Seeking help (3/3) {.smaller .hcenter}
 
@@ -244,7 +245,7 @@ Credit: Chad Hansen - [Understanding the Python Traceback](https://realpython.co
 ## Python statements {.smaller .hcenter}
 
 - A Python statement is an instruction that the Python interpreter can execute.
-- Types of statements: Assignment statements, Conditional statements, Looping statements, etc.
+- Types of statements: Assignment, Conditional, or Looping statements, etc.
 - NEWLINE character is used to end a statement.
 - Statements can be extended to one or more lines using parentheses (), braces {}, square brackets [], semi-colon (;) and continuation character slash (\).
 
@@ -307,11 +308,11 @@ Data types:
 
 ## Data structures {.hcenter}
 
-![](images/data-structures.png){fig-align="center"}
+![](images/data-structures.png){fig-align="center" width="800"}
 
-.footnote[
+::: aside
 Credit: [Devopedia](https://devopedia.org/python-data-structures)
-]
+:::
 
 
 ## Time for... {.hcenter}
@@ -419,11 +420,11 @@ plot = [data]{.red} + [aesthetics]{.green} + [geometry]{.blue}
 
 ## Data visualisation: grammar of graphics {.hcenter}
 
-![](images/grammar_of_graphics.PNG){fig-align="center" width="600"}
+![](images/grammar_of_graphics2.png){fig-align="center" width="600"}
 
 ## Data visualisation: grammar of graphics {.hcenter}
 
-![](images/grammar_of_graphics3.png){fig-align="center" width="600"}
+![](images/grammar_of_graphics3.png){fig-align="center" width="400"}
 
 ## Time for... {.hcenter}
 
@@ -434,103 +435,48 @@ plot = [data]{.red} + [aesthetics]{.green} + [geometry]{.blue}
 ![](images/plot_description.PNG){fig-align="center"}
 
 
-## Some other useful functions (1/5) {.hcenter}
+## Some other useful functions (1/3) {.hcenter}
 
 ```{r}
 #| echo: true
 #| message: false
 #| warning: false
 #| eval: false
-
-# Import data by browsing for file
-my_data <- read.csv(file.choose(new = TRUE))
 
 # Import Excel file (per sheet)
-library(readxl)
+my_data = pd.read_excel("data/my_data.xlsx", sheet_name="Sheet1")
 
-read_excel("data/my_data.xlsx", sheet = "Sheet1")
-```
+# Rename specific column headers:
+df = df.rename(columns={'old_name': 'new_name'})
 
-## Some other useful functions (2/5) {.hcenter}
-
-```{r}
-#| echo: true
-#| message: false
-#| warning: false
-#| eval: false
-
-# Update a package
-tidyverse_update()
-
-# Helper function to use within filter():
-between(weight, 30, 50)
-
-# Helper functions to use within select():
-ends_with("xyz")
-contains("cde")
-select(df, col5, col6, everything())
-
-# Create and keep only the new column:
-transmute(df, new_column = old_column*2)
+# Separate (i.e. split) one column into multiple:
+df[['col1', 'col2']] = df['column'].str.split('-', expand=True)
 
 # Global substitutions (i.e. find and replace):
-gsub(pattern, replacement, data)
+df['data'] = df['data'].str.replace('pattern', 'replacement')
 ```
 
-## Some other useful functions (3/5) {.hcenter}
+## Some other useful functions (2/3) {.hcenter}
 
-```{r}
-#| echo: true
-#| message: false
-#| warning: false
-#| eval: false
-
-# Remove an object from the environment
-rm(object_name)
-
-# Detach (i.e. "unload") a package
-detach(tidyverse)
-
-# Pick the top one (from arranged data)
-dataframe %>%
-  filter(!is.na(var1)) %>%
-  arrange(var1, var2, var3) %>%
-  slice(1)
-
-dataframe %>%
-  filter(!is.na(var1)) %>%
-  arrange(var1, var2, var3) %>%
-  top_n(1)
-```
-
-## Some other useful functions (4/5) {.hcenter}
-
-```{r}
+```{python}
 #| echo: true
 #| message: false
 #| warning: false
 #| eval: false
 
 # Divide data into categories:
-mutate(category = case_when(weight <= 100 ~ "small",
-                            weight > 100 & weight < 200 ~ "medium",
-                            weight > 200 ~ "large"))
+conditions = [
+    (df['weight'] <= 100),
+    (df['weight'] > 100) & (df['weight'] < 200),
+    (df['weight'] > 200)
+]
 
-# Rename specific column headers:
-rename(df, new_name = old_name)
+choices = ['small', 'medium', 'large']
 
-# Top 10 heaviest animals:
-top_n(df, 10, weight)
-
-# Separate (i.e. split) one column into multiple:
-separate(column, into = c("col1", "col2"))
-
-# Bind tables on columns or rows
-cbind(df1, df2, ...)
-rbind(df1, df2, ...)
+df['category'] = np.select(conditions, choices)
 ```
 
-## Some other useful functions (5/5) {.hcenter}
+## Some other useful functions (3/3) {.hcenter}
 
 ```{python}
 #| echo: true
@@ -676,14 +622,12 @@ print(variable_counts)
 -   [Python Tutorial - Python Full Course for Beginners](https://www.youtube.com/watch?v=_uQrJ0TkZlc)
 -   [Python cheatsheet](https://quickref.me/python.html)
 -   [learnpython.org - learn interactively](https://www.learnpython.org/)
--   Interactive learning
-    -   
 -   [Books](https://rstudio.com/resources/books/)
 
 ## Summary {.hcenter}
 
--   RStudio projects give you a solid workflow that will serve you well in the future:
-    -   Create an RStudio project for each data analysis project
+-   Reproducible projects give you a solid workflow that will serve you well in the future:
+    -   Create a project for each data analysis project
     -   Create a file structure that is logical and reusable - helps to automate future work
     -   Keep raw data files there
     -   Keep scripts there
