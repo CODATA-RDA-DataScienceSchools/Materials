@@ -25,15 +25,26 @@ This lesson is based on the [Ecology Data Carpentry lesson](https://datacarpentr
 
 All Data Carpentry instructional material is made available under the Creative Commons Attribution license.
 
-## Prerequisites
+## Prerequisites {.hcenter}
 
 To set up your Python development environment locally, you will need to install the following:
 
-- [Anaconda]()
+- [Anaconda - all-in-one installer](https://datacarpentry.org/python-ecology-lesson/#installing-anaconda)
 - [Python 3](https://code.visualstudio.com/docs/python/python-tutorial#_install-a-python-interpreter)
-- Any one of the following IDEs: [VS Code](https://code.visualstudio.com/), [PyCharm](https://www.jetbrains.com/pycharm/)
+- [VS Code](https://code.visualstudio.com/)
 
+We will use the [ICTP Jupyterhub Server](https://jupyter.ictp.it/smr3962/)
 We will use [Jupyter notebook](https://jupyter.org/) online.
+
+## Required Python Packages {.hcenter}
+
+The following are packages needed for this workshop:
+
+- Pandas
+- Jupyter notebook
+- Numpy
+- Matplotlib
+- Plotnine
 
 
 ## Download the data {.hcenter}
