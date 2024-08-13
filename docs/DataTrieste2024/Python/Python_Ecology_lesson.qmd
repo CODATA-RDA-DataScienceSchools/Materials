@@ -1,0 +1,646 @@
+---
+title: "Python Ecology Lesson"
+authors:
+  - name: Bianca Peterson (Ph.D.)
+    orcid: 0000-0001-6927-9159
+    email: bianca@fathomdata.dev
+    affiliations:
+      - Fathom Data
+format:
+  revealjs:
+    theme: dark
+    slide-number: true
+    chalkboard:
+      buttons: false
+    preview-links: auto
+    auto-stretch: false
+    css: styles.css
+    logo: images/logo.png
+    footer: <https://bit.ly/3ODtPGj>
+---
+
+## Attribution {.hcenter}
+
+This lesson is based on the [Ecology Data Carpentry lesson](https://datacarpentry.org/python-ecology-lesson/).
+
+All Data Carpentry instructional material is made available under the Creative Commons Attribution license.
+
+## Prerequisites {.hcenter}
+
+To set up your Python development environment locally, you will need to install the following:
+
+- [Anaconda - all-in-one installer](https://datacarpentry.org/python-ecology-lesson/#installing-anaconda)
+- [Python 3](https://code.visualstudio.com/docs/python/python-tutorial#_install-a-python-interpreter)
+- [VS Code](https://code.visualstudio.com/)
+
+We will use the [ICTP Jupyterhub Server](https://jupyter.ictp.it/smr3962/)
+We will use [Jupyter notebook](https://jupyter.org/) online.
+
+## Required Python Packages {.hcenter}
+
+The following are packages needed for this workshop:
+
+- Pandas
+- Jupyter notebook
+- Numpy
+- Matplotlib
+- Plotnine
+
+
+## Download the data {.hcenter}
+
+We'll be using 4 datasets:
+- [tmdb-movies.csv](https://raw.githubusercontent.com/deepak525/Investigate_TMDb_Movies/master/tmdb-movies.csv)
+- [movies.csv](https://raw.githubusercontent.com/CODATA-RDA-DataScienceSchools/Materials/master/docs/DataTrieste2023/RecommenderSystems/movies.csv)
+- [ratings.csv](https://raw.githubusercontent.com/CODATA-RDA-DataScienceSchools/Materials/master/docs/DataTrieste2023/RecommenderSystems/ratings.csv)
+
+
+## Objectives {.smaller .hcenter}
+
+::: columns
+::: {.column width="50%"}
+-   What is Python?
+-   Why learn Python?
+-   Jupyter notebook interface
+-   Create a reproducible project
+-   Variables
+-   Sequences: Lists and tuples
+-   Dictionaries
+-   Functions and arguments
+-   Dataframes and groups
+-   Plotting with Pandas
+:::
+
+::: {.column width="50%"}
+-   Indexing, slicing and indexing dataframes
+-   Data types and formats
+-   Combining dataframes
+-   Data workflows and automation
+-   Plotting with plotnine
+-   Additional functions
+-   Additional resources
+-   Summary
+:::
+:::
+
+## What is Python? {.smaller .hcenter}
+
+-   [Python `->` both the programming language and the software that interprets the scripts.]{.medium}
+
+## IDE software {.smaller .hcenter}
+
+[Integrated Development Environment (IDE) `->`  an open-source web application that allows you to interact with Python. It allows us to create and share documents that combine code, graphs, and narrative text.]{.medium}
+
+![](images/python-editors.png){fig-align="center" width="500"}
+
+## Why learn Python? {.smaller .hcenter}
+
+-   R doesn't involve lots of pointing and clicking - easy to redo analysis if you collected more data.
+-   R code is great for `reproducibility` - obtain same results from same dataset using same analysis.
+-   R is `extensible` and `interdisciplinary` - ~20,000 packages to extend its capabilities, and statistical approaches from many scientific disciplines can be combined.
+-   R works on `data of all shapes and sizes` - it is designed for data analysis.
+-   R produces `high-quality graphics` - can adjust any aspect of your graph.
+-   R has a `large community` - mailing lists and websites (Stack Overflow).
+-   R is `open-source` and `cross-platform` - Anyone can inspect the source code.
+-   Less chance for mistakes.
+
+## Jupyter notebook interface
+
+We will use [Jupyter Notebook](https://jupyter.org/) online.
+
+See the following details about the [Jupyter Notebook interface](https://datacarpentry.org/python-ecology-lesson/jupyter_notebooks.html).
+
+
+## What can you do in Python? {.smaller .hcenter}
+
+![](images/mathematics.jpg){fig-align="center" width="500"}
+
+::: aside
+Credit: [IPCisco.com](https://ipcisco.com/lesson/python-math-functions/)
+:::
+
+## What can you do in Python? {.smaller .hcenter}
+
+![](images/statistics.png){fig-align="center" width="700"}
+
+::: aside
+Credit: [DexLab](https://m.dexlabanalytics.com/blog/python-statistics-fundamentals-how-to-describe-your-data-part-ii)
+:::
+
+## What can you do in Python? {.smaller .hcenter}
+
+![](images/analysis.png){fig-align="center" width="500"}
+
+::: aside
+Credit: [Data Carpentry](https://datacarpentry.org/python-ecology-lesson/06-loops-and-functions.html)
+:::
+
+## What can you do in Python? {.smaller .hcenter}
+
+![](images/visualisation.jpeg){fig-align="center" width="800"}
+
+::: aside
+Credit: Gauransh Singh - [Data Visualization in Python using Matplotlib and Seaborn](https://www.linkedin.com/pulse/data-visualization-python-using-matplotlib-seaborn-gauransh-singh/)
+:::
+
+
+## What can you do in Python? {.smaller .hcenter}
+
+![](images/functions.png){fig-align="center" width="300"}
+
+::: aside
+Credit: [Thinking Neuron](https://thinkingneuron.com/user-defined-functions-in-python/)
+:::
+
+## What can you do in Python? {.smaller .hcenter}
+
+![](images/report.png){fig-align="center" width="900"}
+
+::: aside
+Credit: [Quarto](https://quarto.org/)
+:::
+
+## What can you do in Python? {.smaller .hcenter}
+
+![](images/databases.jpg){fig-align="center" width="800"}
+
+::: aside
+Credit: [datacamp](https://www.datacamp.com/blog/sql-vs-python-which-to-learn)
+:::
+
+## What can you do in Python? {.smaller .hcenter}
+
+![](images/webscraping.png){fig-align="center" width="800"}
+
+::: aside
+Credit: [Excelsior](https://medium.com/@get_excelsior/web-scraping-a-problem-solving-skill-for-the-digital-age-6bf5c7e103bb)
+:::
+
+## What can you do in Python? {.smaller .hcenter}
+
+![](images/dashboard.png){fig-align="center" width="800"}
+
+::: aside
+Credit: [Build a real-time dashboard in Python with Tinybird and Dash](https://www.tinybird.co/blog-posts/python-real-time-dashboard)
+:::
+
+## Create a new project {.hcenter}
+
+-   It is good practice to keep a set of related data, analyses and text in single folder called the `working directory`.
+-   You can easily share it with others without worrying about whether or not underlying scripts will still work.
+-   Only ever use relative paths and not absolute paths.
+
+![](images/jupyter-reproducible-project.png){fig-align="center" width="600"}
+
+## Absolute vs relative paths {.hcenter}
+
+![](images/Absolute_vs_relative.PNG){fig-align="center" width="800"}
+
+## Time for... {.hcenter}
+
+![](images/Practical.PNG){fig-align="center"}
+
+## Your working directory should look like this {.smaller .hcenter}
+
+![](images/file_structure.png){fig-align="center" width="400"}
+
+[Working directory]{.red} = where R looks for files that you ask it to load, and where it will put any files that you ask it to save.
+
+## Running code in Jupyter notebooks {.smaller .hcenter}
+
+-   Enter code or text into the **input** area and [click play]{.red} (or [Ctrl + Enter]{.red} or [Shift + Enter]{.red} for the shortcut) to execute the content of the specific cell.
+-   When you execute a code cell, that code is sent to an execution kernel, and the result is returned in the output area of the notebook.
+-   Pressing the [+]{.red} button in the menu bar will add a new cell.
+-   All your commands, as well as any output, will be saved as part of the notebook file.
+
+## Time for... {.hcenter}
+
+![](images/Practical.PNG){fig-align="center"}
+
+## Seeking help (1/3) {.smaller .hcenter}
+
+- Check under the **Help** menu
+- Type `help()`
+- Type `?object` or `help(object)` to get information about an object
+- [Python documentation](https://www.python.org/doc)
+- [Pandas documentation](https://pandas.pydata.org/pandas-docs/stable/)
+
+## Seeking help (2/3) {.smaller .hcenter}
+
+-   Finding more libraries and functions
+    -   To search all available libraries, use the [Python Package Index (PyPi) website](https://pypi.org/)
+    -   Google `Python <task>`
+    -   Many libraries also have websites with additional help, tutorials, etc.
+-   Dealing with error messages (known as the Python traceback)
+
+![](images/python_traceback.png){fig-align="center" width="500"}
+
+::: aside
+Credit: Chad Hansen - [Understanding the Python Traceback](https://realpython.com/python-traceback/#:~:text=Python%20Traceback%20Overview,-There%20are%20several&text=In%20Python%2C%20it's%20best%20to,exception%20name%20that%20was%20raised.)
+:::
+
+## Seeking help (3/3) {.smaller .hcenter}
+
+-   Where to ask for help:
+    -   Friendly colleagues
+    -   Stack Overflow: [https://stackoverflow.com/questions/tagged/python](https://stackoverflow.com/questions/tagged/python)
+    -   Python help mailing list: [https://www.python.org/community/lists/](https://www.python.org/community/lists/)
+        -   Use correct vocabulary
+
+
+## Time for... {.hcenter}
+
+![](images/Practical.PNG){fig-align="center"}
+
+
+## Python statements {.smaller .hcenter}
+
+- A Python statement is an instruction that the Python interpreter can execute.
+- Types of statements: Assignment, Conditional, or Looping statements, etc.
+- NEWLINE character is used to end a statement.
+- Statements can be extended to one or more lines using parentheses (), braces {}, square brackets [], semi-colon (;) and continuation character slash (\).
+
+```{python}
+#| echo: true
+#| message: false
+#| warning: false
+#| eval: false
+
+Declared using Continuation Character (\):
+s = 1 + 2 + 3 + \
+    4 + 5 + 6 + \
+    7 + 8 + 9
+
+Declared using parentheses () :
+n = (1 * 2 * 3 + 
+7 + 8 + 9)
+
+Declared using square brackets [] :
+footballer = ['MESSI',
+          'NEYMAR',
+          'SUAREZ']
+
+Declared using braces {} :
+x = {1 + 2 + 3 + 4 + 5 + 6 +
+     7 + 8 + 9}
+
+Declared using semicolons(;) :
+flag = 2; ropes = 3; pole = 4
+```
+
+## Time for... {.hcenter}
+
+![](images/Practical.PNG){fig-align="center"}
+
+
+## Data structures vs Data types {.hcenter}
+
+::: columns
+::: {.column width="50%"}
+Data structures:
+
+- List
+- Tuple
+- Set
+- Dictionary
+:::
+
+::: {.column width="50%"}
+Data types:
+
+-   Numeric (integer) -> `2`
+-   Numeric (float) -> `2.345`
+-   Complex -> `c = 3 + 9j`
+-   Boolean -> `True` or `False`
+-   Character -> `"hello"` or `'hello'`
+:::
+:::
+
+
+## Data structures {.hcenter}
+
+![](images/data-structures.png){fig-align="center" width="800"}
+
+::: aside
+Credit: [Devopedia](https://devopedia.org/python-data-structures)
+:::
+
+
+## Time for... {.hcenter}
+
+![](images/Practical.PNG){fig-align="center"}
+
+
+## Importing data with `read_csv()` {.hcenter .smaller}
+
+-   Sometimes there are a few lines of metadata at the top of the file:
+
+    -   You can use skip the first "n" lines: `read_csv("data.csv", skip = 5)`
+    -   Or drop all lines that start with a certain character, e.g. "\#": `read_csv("data.csv", comment = "#")`
+
+-   The data might not have column names:
+
+    -   You can use `col_names = FALSE` to tell `read_csv()` not to treat the first row as headings, and instead label them sequentially from X1 to Xn: `read_csv("data.csv", col_names = FALSE)`
+    -   Alternatively, pass `header` a character vector with column names: `read_csv("data.csv", col_names = c("name", "surname", "age", "weight"))`
+
+-   Specify the value(s) that are used to represent missing values in your file: `read_csv("data.csv", na = ".")`
+
+-   Trim whitespace: `read_csv("data.csv", trim_ws = TRUE)`
+
+## Data frames {.hcenter}
+
+![](images/dataframe2.png){fig-align="center"}
+
+## Tidy data {.hcenter}
+
+![](images/dataframes.png){fig-align="center"}
+
+## The data {.hcenter}
+
+TODO
+
+## Time for... {.hcenter}
+
+![](images/Practical.PNG){fig-align="center"}
+
+
+## Formatting dates {.hcenter}
+
+TODO
+
+## Time for... {.hcenter}
+
+![](images/Practical.PNG){fig-align="center"}
+
+
+## Data manipulation {.hcenter .smaller}
+
+TODO
+
+## Time for... {.hcenter}
+
+![](images/Practical.PNG){fig-align="center"}
+
+## Pipes {.hcenter}
+
+TODO
+
+## Time for... {.hcenter}
+
+![](images/Practical.PNG){fig-align="center"}
+
+## Split-apply-combine analysis {.hcenter}
+
+![](images/split-apply-combine.png){fig-align="center" width="800"}
+
+[It collapses each group into a single-row summary of that group]{.verysmall}
+
+[Credit: Modified from [Ranae Dietzel & Andee Kaplan](https://agron590-isu.github.io/materials/week_08/dplyr/slides_dplyr.html)]{.verysmall}
+
+## Time for... {.hcenter}
+
+![](images/Practical.PNG){fig-align="center"}
+
+## Reshaping your data {.hcenter}
+
+TODO
+
+## Time for... {.hcenter}
+
+![](images/Practical.PNG){fig-align="center"}
+
+
+## Cleaning and subsetting data {.hcenter}
+
+![](images/Surveys_complete.PNG){fig-align="center" width="700"}
+
+## Time for... {.hcenter}
+
+![](images/Practical.PNG){fig-align="center"}
+
+
+## Data visualisation: grammar of graphics {.hcenter .smaller}
+
+Grammar of graphics = a framework which follows a layered approach to describe and construct visualisations or graphics in a structured manner
+
+plot = [data]{.red} + [aesthetics]{.green} + [geometry]{.blue}
+
+-   `<data>` = refers to a data frame (data set)
+-   `<aesthetics>` = indicates x and y variables & how data should be displayed in the plot (e.g. color, size, shape)
+-   `<geometry>` = refers to the type of graphics (bar chart, histogram, box plot, line plot, density plot, etc.)
+
+## Data visualisation: grammar of graphics {.hcenter}
+
+![](images/grammar_of_graphics2.png){fig-align="center" width="600"}
+
+## Data visualisation: grammar of graphics {.hcenter}
+
+![](images/grammar_of_graphics3.png){fig-align="center" width="400"}
+
+## Time for... {.hcenter}
+
+![](images/Practical.PNG){fig-align="center"}
+
+## Plot components {.hcenter}
+
+![](images/plot_description.PNG){fig-align="center"}
+
+
+## Some other useful functions (1/3) {.hcenter}
+
+```{r}
+#| echo: true
+#| message: false
+#| warning: false
+#| eval: false
+
+# Import Excel file (per sheet)
+my_data = pd.read_excel("data/my_data.xlsx", sheet_name="Sheet1")
+
+# Rename specific column headers:
+df = df.rename(columns={'old_name': 'new_name'})
+
+# Separate (i.e. split) one column into multiple:
+df[['col1', 'col2']] = df['column'].str.split('-', expand=True)
+
+# Global substitutions (i.e. find and replace):
+df['data'] = df['data'].str.replace('pattern', 'replacement')
+```
+
+## Some other useful functions (2/3) {.hcenter}
+
+```{python}
+#| echo: true
+#| message: false
+#| warning: false
+#| eval: false
+
+# Divide data into categories:
+conditions = [
+    (df['weight'] <= 100),
+    (df['weight'] > 100) & (df['weight'] < 200),
+    (df['weight'] > 200)
+]
+
+choices = ['small', 'medium', 'large']
+
+df['category'] = np.select(conditions, choices)
+```
+
+## Some other useful functions (3/3) {.hcenter}
+
+```{python}
+#| echo: true
+#| message: false
+#| warning: false
+#| eval: false
+
+# Mutating joins: combine variables from two data frames
+pd.merge(x, y, on='key') #keeps all observations in both x and y.
+pd.merge(x, y, on='key', how='left')  #keeps all observations in x.
+pd.merge(x, y, on='key', how='right') #keeps all observations in y.
+pd.merge(x, y, on='key', how='outer')  #keeps all observations in x and y.
+
+# Filtering joins: keep cases from the left-hand data frame
+x[x[on].isin(y[on])] #keeps all observations in x that have a match in y.
+x[~x[on].isin(y[on])] #keeps all observations in x that don't have a match in y.
+```
+
+## Joins {.hcenter}
+
+![](images/join_types.jpg){fig-align="center" width="450"}
+
+## IF statements {.hcenter}
+
+```{python}
+#| echo: true
+#| eval: false
+
+if condition:
+    # code executed when condition is TRUE
+else:
+    # code executed when condition is FALSE
+
+
+if this:
+    # do this
+elif that:
+    # do that
+else:
+    # do something else
+```
+
+## IF statements {.hcenter}
+
+```{python}
+#| echo: true
+#| eval: false
+
+temp = 15
+
+if temp <= 0:
+    result = "freezing"
+elif temp <= 10:
+    result = "cold"
+elif temp <= 20:
+    result = "cool"
+elif temp <= 30:
+    result = "warm"
+else:
+    result = "hot"
+
+print(result)
+```
+
+## While loops {.hcenter}
+
+```{python}
+#| echo: true
+#| eval: false
+
+secret_number = 9
+guess_count = 0
+guess_limit = 3
+while guess_count < guess_limit:
+    guess = int(input('Guess: '))
+    guess_count += 1
+    if guess == secret_number"
+        print('You won!')
+        break
+else:
+    print('Sorry, you failed!')
+```
+
+## For loops {.hcenter}
+
+```{python}
+#| echo: true
+#| eval: false
+
+prices = [10, 20, 30]
+
+total = 0
+for price in prices:
+    total += price # This is the same as total = total + price
+    print(f"Total price: {total}")
+```
+
+## Writing your own function {.hcenter .smaller}
+
+-   Functions allow you to automate common tasks instead of copy-and-pasting
+-   Writing a function has 3 main advantages over using copy-and-paste:
+    -   You can give a function an evocative name that makes your code easier to understand.
+    -   As requirements change, you only need to update code in one place, instead of many.
+    -   You eliminate the chance of making incidental mistakes when you copy and paste (i.e. updating a variable name in one place, but not in another).
+
+## Writing your own function {.hcenter}
+
+```{python}
+#| echo: true
+#| eval: false
+
+def count_variable_occurrences(file_path, variable):
+    # Read the CSV file into a pandas DataFrame
+    df = pd.read_csv(file_path)
+    
+    # Count the occurrences of the specified variable
+    counts = df[variable].value_counts()
+    
+    return counts
+
+# Usage
+
+variable_counts = count_variable_occurrences(file_path, 'your_variable_name')
+print(variable_counts)
+```
+
+## Useful shortcuts {.hcenter .smaller}
+
+-   `ESC` = Switch the cell to command mode
+-   `a` = Create a cell above the currently selected one
+-   `b` = Create a cell below the currently selected one
+-   `c` = Copy the contents of a cell
+-   `x` = Cut the contents of a cell
+-   `v` = Paste the previously copied or cut contents
+-   `d` = Press the key twice in a row to delete the selected cell
+-   `y` = Change cell to code
+-   `m` = Change cell to markdown
+
+
+## Additional Resources {.hcenter .smaller}
+
+-   [Python Graph Gallery](https://python-graph-gallery.com/)
+-   [Python Tutorial - Python Full Course for Beginners](https://www.youtube.com/watch?v=_uQrJ0TkZlc)
+-   [Python cheatsheet](https://quickref.me/python.html)
+-   [learnpython.org - learn interactively](https://www.learnpython.org/)
+-   [Books](https://rstudio.com/resources/books/)
+
+## Summary {.hcenter}
+
+-   Reproducible projects give you a solid workflow that will serve you well in the future:
+    -   Create a project for each data analysis project
+    -   Create a file structure that is logical and reusable - helps to automate future work
+    -   Keep raw data files there
+    -   Keep scripts there
+    -   Save your outputs (plots and cleaned data) there
+    -   Only ever use relative paths, not absolute paths
