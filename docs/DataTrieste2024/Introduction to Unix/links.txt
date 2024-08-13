@@ -1,2 +1,0 @@
-https://swcarpentry.github.io/shell-novice/ - Software carpentries Introduction to Unix. This is the resource we will be using for this module.
-
