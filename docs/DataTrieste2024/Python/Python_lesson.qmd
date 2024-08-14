@@ -349,7 +349,7 @@ Credit: [Devopedia](https://devopedia.org/python-data-structures)
 
 ![](images/dataframes.png){fig-align="center"}
 
-## Functions, methods, and attributes
+## Functions, methods, and attributes {.hcenter .smaller}
 
 ### Functions
 
