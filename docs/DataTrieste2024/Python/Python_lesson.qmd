@@ -16,7 +16,7 @@ format:
     auto-stretch: false
     css: styles.css
     logo: images/logo.png
-    footer: <https://bit.ly/3ODtPGj>
+    footer: <https://bit.ly/46Nmxa9>
 ---
 
 ## Attribution {.hcenter}
