@@ -1,5 +1,5 @@
 ---
-title: "Python Ecology Lesson"
+title: "Introduction to Python"
 authors:
   - name: Bianca Peterson (Ph.D.)
     orcid: 0000-0001-6927-9159
@@ -49,6 +49,7 @@ You need the following packages for this workshop:
 ## Download the data {.hcenter}
 
 We'll use the following datasets:
+
 - [tmdb-movies.csv](https://raw.githubusercontent.com/deepak525/Investigate_TMDb_Movies/master/tmdb-movies.csv)
 - [movies.csv](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2024/Python/data/movies.csv)
 - [ratings.csv](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2024/Python/data/ratings.csv)
@@ -67,15 +68,14 @@ We'll use the following datasets:
 -   Dictionaries
 -   Functions and arguments
 -   Dataframes and groups
--   Plotting with Pandas
 :::
 
 ::: {.column width="50%"}
+-   Plotting with Pandas
 -   Indexing, slicing and indexing dataframes
 -   Data types and formats
 -   Combining dataframes
 -   Libraries for plotting
--   Plotting with plotnine
 -   Additional functions
 -   Additional resources
 -   Summary
@@ -353,21 +353,18 @@ Credit: [Devopedia](https://devopedia.org/python-data-structures)
 
 ### Functions
 
-variable = library.function(argument1, argument2)
-
-Example: my_data = pd.read_csv("data/movies.csv")
+- variable = library.function(argument1, argument2)
+- Example: my_data = pd.read_csv("data/movies.csv")
 
 ### Methods
 
-variable.method(argument)
-
-Example: my_data.head(15)
+- variable.method(argument)
+- Example: my_data.head(15)
 
 ### Attributes
 
-variable.attribute
-
-Example: my_data.columns
+- variable.attribute
+- Example: my_data.columns
 
 ## Time for... {.hcenter}
 
@@ -395,7 +392,7 @@ Example: my_data.columns
 
 ## Concatenating dataframes {.hcenter}
 
-![](images/joins.jpg){fig-align="center"}
+![](images/joins.jpg){fig-align="center" width="600"}
 
 ## Time for... {.hcenter}
 
@@ -403,13 +400,13 @@ Example: my_data.columns
 
 ## Libraries for plotting {.hcenter}
 
-- Matplotlib is the most basic and widely-used Python library for creating static, animated, and interactive visualisations. It provides a lot of control over every aspect of a plot.
-- Seaborn is built on top of Matplotlib and provides a high-level interface for creating attractive and informative statistical graphics.
-- Plotnine is a Python implementation of the Grammar of Graphics (similar to R's ggplot2). It provides a high-level abstraction for creating complex plots by layering components.
+- [Matplotlib]{.red} is the most basic and widely-used Python library for creating static, animated, and interactive visualisations. It provides a lot of control over every aspect of a plot.
+- [Seaborn]{.red} is built on top of Matplotlib and provides a high-level interface for creating attractive and informative statistical graphics.
+- [Plotnine]{.red} is a Python implementation of the Grammar of Graphics (similar to R's ggplot2). It provides a high-level abstraction for creating complex plots by layering components.
 
 ## Comparison of Matplotlib, Seaborn, and Plotnine {.hcenter}
 
-![](images/plotting-libraries.png){fig-align="center"}
+![](images/plotting-libraries.png){fig-align="center" width="800"}
 
 ## Data visualisation: grammar of graphics {.hcenter .smaller}
 
@@ -598,6 +595,9 @@ print(variable_counts)
 
 ## Additional Resources {.hcenter .smaller}
 
+- [Official Python Documentation](https://docs.python.org/3/)
+- [Built-in Functions Page](https://docs.python.org/3/library/functions.html)
+- [Python Package Index (PyPI)](https://pypi.org/)
 -   [Python Graph Gallery](https://python-graph-gallery.com/)
 -   [Python Tutorial - Python Full Course for Beginners](https://www.youtube.com/watch?v=_uQrJ0TkZlc)
 -   [Python cheatsheet](https://quickref.me/python.html)

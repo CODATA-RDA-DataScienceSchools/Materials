@@ -10,7 +10,7 @@
 <link href="Python_Ecology_lesson_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.551">
 
-  <title>Python Ecology Lesson</title>
+  <title>Introduction to Python</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -393,7 +393,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Python Ecology Lesson</h1>
+  <h1 class="title">Introduction to Python</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -415,19 +415,36 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <p>This lesson is based on the <a href="https://datacarpentry.org/python-ecology-lesson/">Ecology Data Carpentry lesson</a>.</p>
 <p>All Data Carpentry instructional material is made available under the Creative Commons Attribution license.</p>
 </section>
-<section id="prerequisites" class="slide level2">
+<section id="prerequisites" class="slide level2 hcenter">
 <h2>Prerequisites</h2>
 <p>To set up your Python development environment locally, you will need to install the following:</p>
 <ul>
-<li><a href="">Anaconda</a></li>
+<li><a href="https://datacarpentry.org/python-ecology-lesson/#installing-anaconda">Anaconda - all-in-one installer</a></li>
 <li><a href="https://code.visualstudio.com/docs/python/python-tutorial#_install-a-python-interpreter">Python 3</a></li>
-<li>Any one of the following IDEs: <a href="https://code.visualstudio.com/">VS Code</a>, <a href="https://www.jetbrains.com/pycharm/">PyCharm</a></li>
+<li><a href="https://code.visualstudio.com/">VS Code</a> or another IDE of your choice.</li>
 </ul>
-<p>We will use <a href="https://jupyter.org/">Jupyter notebook</a> online.</p>
+<p>We will use the <a href="https://jupyter.ictp.it/smr3962/">ICTP Jupyterhub Server</a></p>
+</section>
+<section id="required-python-packages" class="slide level2 hcenter">
+<h2>Required Python Packages</h2>
+<p>You need the following packages for this workshop:</p>
+<ul>
+<li>Pandas</li>
+<li>Jupyter notebook</li>
+<li>Numpy</li>
+<li>Matplotlib</li>
+<li>Seaborn</li>
+<li>Plotnine</li>
+</ul>
 </section>
 <section id="download-the-data" class="slide level2 hcenter">
 <h2>Download the data</h2>
-<p>We’ll be using 4 datasets: - <a href="https://raw.githubusercontent.com/deepak525/Investigate_TMDb_Movies/master/tmdb-movies.csv">tmdb-movies.csv</a> - <a href="https://raw.githubusercontent.com/CODATA-RDA-DataScienceSchools/Materials/master/docs/DataTrieste2023/RecommenderSystems/movies.csv">movies.csv</a> - <a href="https://raw.githubusercontent.com/CODATA-RDA-DataScienceSchools/Materials/master/docs/DataTrieste2023/RecommenderSystems/ratings.csv">ratings.csv</a></p>
+<p>We’ll use the following datasets:</p>
+<ul>
+<li><a href="https://raw.githubusercontent.com/deepak525/Investigate_TMDb_Movies/master/tmdb-movies.csv">tmdb-movies.csv</a></li>
+<li><a href="https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2024/Python/data/movies.csv">movies.csv</a></li>
+<li><a href="https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2024/Python/data/ratings.csv">ratings.csv</a></li>
+</ul>
 </section>
 <section id="objectives" class="slide level2 smaller hcenter">
 <h2>Objectives</h2>
@@ -443,15 +460,14 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <li>Dictionaries</li>
 <li>Functions and arguments</li>
 <li>Dataframes and groups</li>
-<li>Plotting with Pandas</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <ul>
+<li>Plotting with Pandas</li>
 <li>Indexing, slicing and indexing dataframes</li>
 <li>Data types and formats</li>
 <li>Combining dataframes</li>
-<li>Data workflows and automation</li>
-<li>Plotting with plotnine</li>
+<li>Libraries for plotting</li>
 <li>Additional functions</li>
 <li>Additional resources</li>
 <li>Summary</li>
@@ -729,14 +745,6 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <span id="cb1-20"><a href=""></a>flag <span class="op">=</span> <span class="dv">2</span><span class="op">;</span> ropes <span class="op">=</span> <span class="dv">3</span><span class="op">;</span> pole <span class="op">=</span> <span class="dv">4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="time-for-3" class="slide level2 hcenter">
-<h2>Time for…</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/Practical.PNG" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</section>
 <section id="data-structures-vs-data-types" class="slide level2 hcenter">
 <h2>Data structures vs Data types</h2>
 <div class="columns">
@@ -771,7 +779,7 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <aside><div>
 <p>Credit: <a href="https://devopedia.org/python-data-structures">Devopedia</a></p>
 </div></aside></section>
-<section id="time-for-4" class="slide level2 hcenter">
+<section id="time-for-3" class="slide level2 hcenter">
 <h2>Time for…</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -789,11 +797,11 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 </ul></li>
 <li><p>The data might not have column names:</p>
 <ul>
-<li>You can use <code>col_names = FALSE</code> to tell <code>read_csv()</code> not to treat the first row as headings, and instead label them sequentially from X1 to Xn: <code>read_csv("data.csv", col_names = FALSE)</code></li>
-<li>Alternatively, pass <code>header</code> a character vector with column names: <code>read_csv("data.csv", col_names = c("name", "surname", "age", "weight"))</code></li>
+<li>You can use <code>col_names = FALSE</code> to tell <code>read_csv()</code> not to treat the first row as headings, and instead label them sequentially from X1 to Xn: <code>pd.read_csv("data.csv", col_names = FALSE)</code></li>
+<li>Alternatively, pass <code>header</code> a character vector with column names: <code>pd.read_csv("data.csv", col_names = c("name", "surname", "age", "weight"))</code></li>
 </ul></li>
-<li><p>Specify the value(s) that are used to represent missing values in your file: <code>read_csv("data.csv", na = ".")</code></p></li>
-<li><p>Trim whitespace: <code>read_csv("data.csv", trim_ws = TRUE)</code></p></li>
+<li><p>Specify the value(s) that are used to represent missing values in your file: <code>pd.read_csv("data.csv", na = ".")</code></p></li>
+<li><p>Trim whitespace: <code>pd.read_csv("data.csv", trim_ws = TRUE)</code></p></li>
 </ul>
 </section>
 <section id="data-frames" class="slide level2 hcenter">
@@ -812,23 +820,19 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 </figure>
 </div>
 </section>
-<section id="the-data" class="slide level2 hcenter">
-<h2>The data</h2>
-<p>TODO</p>
+<section id="functions-methods-and-attributes" class="slide level2">
+<h2>Functions, methods, and attributes</h2>
+<h3 id="functions">Functions</h3>
+<p>variable = library.function(argument1, argument2)</p>
+<p>Example: my_data = pd.read_csv(“data/movies.csv”)</p>
+<h3 id="methods">Methods</h3>
+<p>variable.method(argument)</p>
+<p>Example: my_data.head(15)</p>
+<h3 id="attributes">Attributes</h3>
+<p>variable.attribute</p>
+<p>Example: my_data.columns</p>
 </section>
-<section id="time-for-5" class="slide level2 hcenter">
-<h2>Time for…</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/Practical.PNG" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</section>
-<section id="formatting-dates" class="slide level2 hcenter">
-<h2>Formatting dates</h2>
-<p>TODO</p>
-</section>
-<section id="time-for-6" class="slide level2 hcenter">
+<section id="time-for-4" class="slide level2 hcenter">
 <h2>Time for…</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -838,7 +842,45 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 </section>
 <section id="data-manipulation" class="slide level2 hcenter smaller">
 <h2>Data manipulation</h2>
-<p>TODO</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/split-apply-combine.png" class="quarto-figure quarto-figure-center" width="800"></p>
+</figure>
+</div>
+<p><span class="verysmall">It collapses each group into a single-row summary of that group</span></p>
+<p><span class="verysmall">Credit: Modified from <a href="https://agron590-isu.github.io/materials/week_08/dplyr/slides_dplyr.html">Ranae Dietzel &amp; Andee Kaplan</a></span></p>
+</section>
+<section id="time-for-5" class="slide level2 hcenter">
+<h2>Time for…</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Practical.PNG" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</section>
+<section id="indexing-and-slicing" class="slide level2 hcenter">
+<h2>Indexing and slicing</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/indexing_slicing.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</section>
+<section id="time-for-6" class="slide level2 hcenter">
+<h2>Time for…</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Practical.PNG" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</section>
+<section id="concatenating-dataframes" class="slide level2 hcenter">
+<h2>Concatenating dataframes</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/joins.jpg" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
 </section>
 <section id="time-for-7" class="slide level2 hcenter">
 <h2>Time for…</h2>
@@ -848,61 +890,19 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 </figure>
 </div>
 </section>
-<section id="pipes" class="slide level2 hcenter">
-<h2>Pipes</h2>
-<p>TODO</p>
+<section id="libraries-for-plotting" class="slide level2 hcenter">
+<h2>Libraries for plotting</h2>
+<ul>
+<li>Matplotlib is the most basic and widely-used Python library for creating static, animated, and interactive visualisations. It provides a lot of control over every aspect of a plot.</li>
+<li>Seaborn is built on top of Matplotlib and provides a high-level interface for creating attractive and informative statistical graphics.</li>
+<li>Plotnine is a Python implementation of the Grammar of Graphics (similar to R’s ggplot2). It provides a high-level abstraction for creating complex plots by layering components.</li>
+</ul>
 </section>
-<section id="time-for-8" class="slide level2 hcenter">
-<h2>Time for…</h2>
+<section id="comparison-of-matplotlib-seaborn-and-plotnine" class="slide level2 hcenter">
+<h2>Comparison of Matplotlib, Seaborn, and Plotnine</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/Practical.PNG" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</section>
-<section id="split-apply-combine-analysis" class="slide level2 hcenter">
-<h2>Split-apply-combine analysis</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/split-apply-combine.png" class="quarto-figure quarto-figure-center" width="800"></p>
-</figure>
-</div>
-<p><span class="verysmall">It collapses each group into a single-row summary of that group</span></p>
-<p><span class="verysmall">Credit: Modified from <a href="https://agron590-isu.github.io/materials/week_08/dplyr/slides_dplyr.html">Ranae Dietzel &amp; Andee Kaplan</a></span></p>
-</section>
-<section id="time-for-9" class="slide level2 hcenter">
-<h2>Time for…</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/Practical.PNG" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</section>
-<section id="reshaping-your-data" class="slide level2 hcenter">
-<h2>Reshaping your data</h2>
-<p>TODO</p>
-</section>
-<section id="time-for-10" class="slide level2 hcenter">
-<h2>Time for…</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/Practical.PNG" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</section>
-<section id="cleaning-and-subsetting-data" class="slide level2 hcenter">
-<h2>Cleaning and subsetting data</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/Surveys_complete.PNG" class="quarto-figure quarto-figure-center" width="700"></p>
-</figure>
-</div>
-</section>
-<section id="time-for-11" class="slide level2 hcenter">
-<h2>Time for…</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/Practical.PNG" class="quarto-figure quarto-figure-center"></p>
+<p><img data-src="images/plotting-libraries.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </section>
@@ -932,19 +932,19 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 </figure>
 </div>
 </section>
-<section id="time-for-12" class="slide level2 hcenter">
-<h2>Time for…</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/Practical.PNG" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</section>
 <section id="plot-components" class="slide level2 hcenter">
 <h2>Plot components</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/plot_description.PNG" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</section>
+<section id="time-for-8" class="slide level2 hcenter">
+<h2>Time for…</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Practical.PNG" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </section>
@@ -979,89 +979,67 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <span id="cb3-10"><a href=""></a>df[<span class="st">'category'</span>] <span class="op">=</span> np.select(conditions, choices)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="some-other-useful-functions-33" class="slide level2 hcenter">
-<h2>Some other useful functions (3/3)</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href=""></a><span class="co"># Mutating joins: combine variables from two data frames</span></span>
-<span id="cb4-2"><a href=""></a>pd.merge(x, y, on<span class="op">=</span><span class="st">'key'</span>) <span class="co">#keeps all observations in both x and y.</span></span>
-<span id="cb4-3"><a href=""></a>pd.merge(x, y, on<span class="op">=</span><span class="st">'key'</span>, how<span class="op">=</span><span class="st">'left'</span>)  <span class="co">#keeps all observations in x.</span></span>
-<span id="cb4-4"><a href=""></a>pd.merge(x, y, on<span class="op">=</span><span class="st">'key'</span>, how<span class="op">=</span><span class="st">'right'</span>) <span class="co">#keeps all observations in y.</span></span>
-<span id="cb4-5"><a href=""></a>pd.merge(x, y, on<span class="op">=</span><span class="st">'key'</span>, how<span class="op">=</span><span class="st">'outer'</span>)  <span class="co">#keeps all observations in x and y.</span></span>
-<span id="cb4-6"><a href=""></a></span>
-<span id="cb4-7"><a href=""></a><span class="co"># Filtering joins: keep cases from the left-hand data frame</span></span>
-<span id="cb4-8"><a href=""></a>x[x[on].isin(y[on])] <span class="co">#keeps all observations in x that have a match in y.</span></span>
-<span id="cb4-9"><a href=""></a>x[<span class="op">~</span>x[on].isin(y[on])] <span class="co">#keeps all observations in x that don't have a match in y.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="joins" class="slide level2 hcenter">
-<h2>Joins</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/join_types.jpg" class="quarto-figure quarto-figure-center" width="450"></p>
-</figure>
-</div>
-</section>
 <section id="if-statements" class="slide level2 hcenter">
 <h2>IF statements</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href=""></a><span class="cf">if</span> condition:</span>
-<span id="cb5-2"><a href=""></a>    <span class="co"># code executed when condition is TRUE</span></span>
-<span id="cb5-3"><a href=""></a><span class="cf">else</span>:</span>
-<span id="cb5-4"><a href=""></a>    <span class="co"># code executed when condition is FALSE</span></span>
-<span id="cb5-5"><a href=""></a></span>
-<span id="cb5-6"><a href=""></a></span>
-<span id="cb5-7"><a href=""></a><span class="cf">if</span> this:</span>
-<span id="cb5-8"><a href=""></a>    <span class="co"># do this</span></span>
-<span id="cb5-9"><a href=""></a><span class="cf">elif</span> that:</span>
-<span id="cb5-10"><a href=""></a>    <span class="co"># do that</span></span>
-<span id="cb5-11"><a href=""></a><span class="cf">else</span>:</span>
-<span id="cb5-12"><a href=""></a>    <span class="co"># do something else</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href=""></a><span class="cf">if</span> condition:</span>
+<span id="cb4-2"><a href=""></a>    <span class="co"># code executed when condition is TRUE</span></span>
+<span id="cb4-3"><a href=""></a><span class="cf">else</span>:</span>
+<span id="cb4-4"><a href=""></a>    <span class="co"># code executed when condition is FALSE</span></span>
+<span id="cb4-5"><a href=""></a></span>
+<span id="cb4-6"><a href=""></a></span>
+<span id="cb4-7"><a href=""></a><span class="cf">if</span> this:</span>
+<span id="cb4-8"><a href=""></a>    <span class="co"># do this</span></span>
+<span id="cb4-9"><a href=""></a><span class="cf">elif</span> that:</span>
+<span id="cb4-10"><a href=""></a>    <span class="co"># do that</span></span>
+<span id="cb4-11"><a href=""></a><span class="cf">else</span>:</span>
+<span id="cb4-12"><a href=""></a>    <span class="co"># do something else</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="if-statements-1" class="slide level2 hcenter">
 <h2>IF statements</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href=""></a>temp <span class="op">=</span> <span class="dv">15</span></span>
-<span id="cb6-2"><a href=""></a></span>
-<span id="cb6-3"><a href=""></a><span class="cf">if</span> temp <span class="op">&lt;=</span> <span class="dv">0</span>:</span>
-<span id="cb6-4"><a href=""></a>    result <span class="op">=</span> <span class="st">"freezing"</span></span>
-<span id="cb6-5"><a href=""></a><span class="cf">elif</span> temp <span class="op">&lt;=</span> <span class="dv">10</span>:</span>
-<span id="cb6-6"><a href=""></a>    result <span class="op">=</span> <span class="st">"cold"</span></span>
-<span id="cb6-7"><a href=""></a><span class="cf">elif</span> temp <span class="op">&lt;=</span> <span class="dv">20</span>:</span>
-<span id="cb6-8"><a href=""></a>    result <span class="op">=</span> <span class="st">"cool"</span></span>
-<span id="cb6-9"><a href=""></a><span class="cf">elif</span> temp <span class="op">&lt;=</span> <span class="dv">30</span>:</span>
-<span id="cb6-10"><a href=""></a>    result <span class="op">=</span> <span class="st">"warm"</span></span>
-<span id="cb6-11"><a href=""></a><span class="cf">else</span>:</span>
-<span id="cb6-12"><a href=""></a>    result <span class="op">=</span> <span class="st">"hot"</span></span>
-<span id="cb6-13"><a href=""></a></span>
-<span id="cb6-14"><a href=""></a><span class="bu">print</span>(result)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href=""></a>temp <span class="op">=</span> <span class="dv">15</span></span>
+<span id="cb5-2"><a href=""></a></span>
+<span id="cb5-3"><a href=""></a><span class="cf">if</span> temp <span class="op">&lt;=</span> <span class="dv">0</span>:</span>
+<span id="cb5-4"><a href=""></a>    result <span class="op">=</span> <span class="st">"freezing"</span></span>
+<span id="cb5-5"><a href=""></a><span class="cf">elif</span> temp <span class="op">&lt;=</span> <span class="dv">10</span>:</span>
+<span id="cb5-6"><a href=""></a>    result <span class="op">=</span> <span class="st">"cold"</span></span>
+<span id="cb5-7"><a href=""></a><span class="cf">elif</span> temp <span class="op">&lt;=</span> <span class="dv">20</span>:</span>
+<span id="cb5-8"><a href=""></a>    result <span class="op">=</span> <span class="st">"cool"</span></span>
+<span id="cb5-9"><a href=""></a><span class="cf">elif</span> temp <span class="op">&lt;=</span> <span class="dv">30</span>:</span>
+<span id="cb5-10"><a href=""></a>    result <span class="op">=</span> <span class="st">"warm"</span></span>
+<span id="cb5-11"><a href=""></a><span class="cf">else</span>:</span>
+<span id="cb5-12"><a href=""></a>    result <span class="op">=</span> <span class="st">"hot"</span></span>
+<span id="cb5-13"><a href=""></a></span>
+<span id="cb5-14"><a href=""></a><span class="bu">print</span>(result)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="while-loops" class="slide level2 hcenter">
 <h2>While loops</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href=""></a>secret_number <span class="op">=</span> <span class="dv">9</span></span>
-<span id="cb7-2"><a href=""></a>guess_count <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb7-3"><a href=""></a>guess_limit <span class="op">=</span> <span class="dv">3</span></span>
-<span id="cb7-4"><a href=""></a><span class="cf">while</span> guess_count <span class="op">&lt;</span> guess_limit:</span>
-<span id="cb7-5"><a href=""></a>    guess <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">'Guess: '</span>))</span>
-<span id="cb7-6"><a href=""></a>    guess_count <span class="op">+=</span> <span class="dv">1</span></span>
-<span id="cb7-7"><a href=""></a>    <span class="cf">if</span> guess <span class="op">==</span> secret_number<span class="st">"</span></span>
-<span id="cb7-8"><a href=""></a><span class="er">        print</span>(<span class="st">'You won!'</span>)</span>
-<span id="cb7-9"><a href=""></a>        <span class="cf">break</span></span>
-<span id="cb7-10"><a href=""></a><span class="cf">else</span>:</span>
-<span id="cb7-11"><a href=""></a>    <span class="bu">print</span>(<span class="st">'Sorry, you failed!'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href=""></a>secret_number <span class="op">=</span> <span class="dv">9</span></span>
+<span id="cb6-2"><a href=""></a>guess_count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb6-3"><a href=""></a>guess_limit <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb6-4"><a href=""></a><span class="cf">while</span> guess_count <span class="op">&lt;</span> guess_limit:</span>
+<span id="cb6-5"><a href=""></a>    guess <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">'Guess: '</span>))</span>
+<span id="cb6-6"><a href=""></a>    guess_count <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb6-7"><a href=""></a>    <span class="cf">if</span> guess <span class="op">==</span> secret_number<span class="st">"</span></span>
+<span id="cb6-8"><a href=""></a><span class="er">        print</span>(<span class="st">'You won!'</span>)</span>
+<span id="cb6-9"><a href=""></a>        <span class="cf">break</span></span>
+<span id="cb6-10"><a href=""></a><span class="cf">else</span>:</span>
+<span id="cb6-11"><a href=""></a>    <span class="bu">print</span>(<span class="st">'Sorry, you failed!'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="for-loops" class="slide level2 hcenter">
 <h2>For loops</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href=""></a>prices <span class="op">=</span> [<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">30</span>]</span>
-<span id="cb8-2"><a href=""></a></span>
-<span id="cb8-3"><a href=""></a>total <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb8-4"><a href=""></a><span class="cf">for</span> price <span class="kw">in</span> prices:</span>
-<span id="cb8-5"><a href=""></a>    total <span class="op">+=</span> price <span class="co"># This is the same as total = total + price</span></span>
-<span id="cb8-6"><a href=""></a>    <span class="bu">print</span>(<span class="ss">f"Total price: </span><span class="sc">{</span>total<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href=""></a>prices <span class="op">=</span> [<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">30</span>]</span>
+<span id="cb7-2"><a href=""></a></span>
+<span id="cb7-3"><a href=""></a>total <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb7-4"><a href=""></a><span class="cf">for</span> price <span class="kw">in</span> prices:</span>
+<span id="cb7-5"><a href=""></a>    total <span class="op">+=</span> price <span class="co"># This is the same as total = total + price</span></span>
+<span id="cb7-6"><a href=""></a>    <span class="bu">print</span>(<span class="ss">f"Total price: </span><span class="sc">{</span>total<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="writing-your-own-function" class="slide level2 hcenter smaller">
@@ -1079,19 +1057,19 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <section id="writing-your-own-function-1" class="slide level2 hcenter">
 <h2>Writing your own function</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href=""></a><span class="kw">def</span> count_variable_occurrences(file_path, variable):</span>
-<span id="cb9-2"><a href=""></a>    <span class="co"># Read the CSV file into a pandas DataFrame</span></span>
-<span id="cb9-3"><a href=""></a>    df <span class="op">=</span> pd.read_csv(file_path)</span>
-<span id="cb9-4"><a href=""></a>    </span>
-<span id="cb9-5"><a href=""></a>    <span class="co"># Count the occurrences of the specified variable</span></span>
-<span id="cb9-6"><a href=""></a>    counts <span class="op">=</span> df[variable].value_counts()</span>
-<span id="cb9-7"><a href=""></a>    </span>
-<span id="cb9-8"><a href=""></a>    <span class="cf">return</span> counts</span>
-<span id="cb9-9"><a href=""></a></span>
-<span id="cb9-10"><a href=""></a><span class="co"># Usage</span></span>
-<span id="cb9-11"><a href=""></a></span>
-<span id="cb9-12"><a href=""></a>variable_counts <span class="op">=</span> count_variable_occurrences(file_path, <span class="st">'your_variable_name'</span>)</span>
-<span id="cb9-13"><a href=""></a><span class="bu">print</span>(variable_counts)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href=""></a><span class="kw">def</span> count_variable_occurrences(file_path, variable):</span>
+<span id="cb8-2"><a href=""></a>    <span class="co"># Read the CSV file into a pandas DataFrame</span></span>
+<span id="cb8-3"><a href=""></a>    df <span class="op">=</span> pd.read_csv(file_path)</span>
+<span id="cb8-4"><a href=""></a>    </span>
+<span id="cb8-5"><a href=""></a>    <span class="co"># Count the occurrences of the specified variable</span></span>
+<span id="cb8-6"><a href=""></a>    counts <span class="op">=</span> df[variable].value_counts()</span>
+<span id="cb8-7"><a href=""></a>    </span>
+<span id="cb8-8"><a href=""></a>    <span class="cf">return</span> counts</span>
+<span id="cb8-9"><a href=""></a></span>
+<span id="cb8-10"><a href=""></a><span class="co"># Usage</span></span>
+<span id="cb8-11"><a href=""></a></span>
+<span id="cb8-12"><a href=""></a>variable_counts <span class="op">=</span> count_variable_occurrences(file_path, <span class="st">'your_variable_name'</span>)</span>
+<span id="cb8-13"><a href=""></a><span class="bu">print</span>(variable_counts)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="useful-shortcuts" class="slide level2 hcenter smaller">
@@ -1111,6 +1089,9 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <section id="additional-resources" class="slide level2 hcenter smaller">
 <h2>Additional Resources</h2>
 <ul>
+<li><a href="https://docs.python.org/3/">Official Python Documentation</a></li>
+<li><a href="https://docs.python.org/3/library/functions.html">Built-in Functions Page</a></li>
+<li><a href="https://pypi.org/">Python Package Index (PyPI)</a></li>
 <li><a href="https://python-graph-gallery.com/">Python Graph Gallery</a></li>
 <li><a href="https://www.youtube.com/watch?v=_uQrJ0TkZlc">Python Tutorial - Python Full Course for Beginners</a></li>
 <li><a href="https://quickref.me/python.html">Python cheatsheet</a></li>
