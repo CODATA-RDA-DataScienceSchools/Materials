@@ -4,7 +4,7 @@ This lesson provides an extensive introduction to Python.
 
 ## Presentation
 
-The presentation can be viewed at [bit.ly/46Nmxa9](bit.ly/46Nmxa9)
+The presentation can be viewed at https://bit.ly/46Nmxa9
 
 ## Attribution
 
