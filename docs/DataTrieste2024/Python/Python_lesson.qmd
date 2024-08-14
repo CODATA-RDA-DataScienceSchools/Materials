@@ -94,13 +94,13 @@ We'll use the following datasets:
 
 ## Why learn Python? {.smaller .hcenter}
 
--   R doesn't involve lots of pointing and clicking - easy to redo analysis if you collected more data.
--   R code is great for `reproducibility` - obtain same results from same dataset using same analysis.
--   R is `extensible` and `interdisciplinary` - ~20,000 packages to extend its capabilities, and statistical approaches from many scientific disciplines can be combined.
--   R works on `data of all shapes and sizes` - it is designed for data analysis.
--   R produces `high-quality graphics` - can adjust any aspect of your graph.
--   R has a `large community` - mailing lists and websites (Stack Overflow).
--   R is `open-source` and `cross-platform` - Anyone can inspect the source code.
+-   Python doesn't involve lots of pointing and clicking - easy to redo analysis if you collected more data.
+-   Python code is great for `reproducibility` - obtain same results from same dataset using same analysis.
+-   Python is `extensible` and `interdisciplinary` - ~20,000 packages to extend its capabilities, and statistical approaches from many scientific disciplines can be combined.
+-   Python works on `data of all shapes and sizes` - it is designed for data analysis.
+-   Python produces `high-quality graphics` - can adjust any aspect of your graph.
+-   Python has a `large community` - mailing lists and websites (Stack Overflow).
+-   Python is `open-source` and `cross-platform` - Anyone can inspect the source code.
 -   Less chance for mistakes.
 
 ## Jupyter notebook interface
