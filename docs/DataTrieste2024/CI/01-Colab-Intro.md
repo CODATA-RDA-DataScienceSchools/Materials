@@ -24,7 +24,7 @@ and gradient-boosted tree analysis.
 * You will see a popup that looks like this:
 <img src="https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/SouthAfrica2021/Colab_Open.png" width="800"/>
 
-* Click the _GitHub_ link on the top bar menu.
+* Click the _GitHub_ link on the bar menu.
 * Enter this link:
   `https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2024/CI/Colab_Regression_Spark.ipynb`
   into the search field.
