@@ -8,7 +8,7 @@ During this exercise we will get familiarised with the Colab platform. We will
 also exercise our R knowledge by building a few data visualizations 
 
 ## Log Onto Google Colab
-* Point your browser at the [Google Colab R Kernel](https://colab.to/r)
+* Point your browser at the [Google Colab]([https://colab.to/r](https://colab.research.google.com/)
   site.
 * If you are not signed in, use the _Sign In_ button on the top right of
   the screen. 
