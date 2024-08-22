@@ -9,7 +9,7 @@ also exercise our Python knowledge to perform a linear regression, a decision tr
 and a gradient-boosted tree.
 
 ## Log Onto Google Colab
-* Point your browser at the [Google Colab]([https://colab.to/r](https://colab.research.google.com/)
+* Point your browser at the [Google Colab](https://colab.research.google.com/)
   site.
 * If you are not signed in, use the _Sign In_ button on the top right of
   the screen. 
