@@ -5,7 +5,7 @@ servers, meaning you can leverage the power of Google hardware, including GPUs
 and TPUs, regardless of the power of your machine. 
 
 During this exercise we will get familiarised with the Colab platform. We will
-also exercise our Python knowledge to perform a linear regression, a decision tree, 
+also review our Python knowledge to perform a linear regression, a decision tree, 
 and a gradient-boosted tree.
 
 ## Log Onto Google Colab
