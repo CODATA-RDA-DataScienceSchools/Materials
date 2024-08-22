@@ -33,5 +33,3 @@ and a gradient-boosted tree.
 * Don't forget to reconnect the kernel by using the "Connect" button at the
   top right of the notebook as can be seen at the image:
 ![Connect Kernel Image](connect_kernel.png)
-
-[Return to CI Overview](00-Hands_on_Exercise_Overview.md)
