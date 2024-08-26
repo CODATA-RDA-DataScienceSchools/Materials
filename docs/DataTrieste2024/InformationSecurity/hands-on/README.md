@@ -52,6 +52,7 @@ $ gpg --gen-key
 ```
 
 The key is stored in an special databased placed at `${HOME}/.gnupg/trustdb.gpg`. 
+
 ⚠️⚠️⚠️ Remember that the `${HOME}` variable points to your user home directory. It could be something like `/home/john`, considering that your username is _john_. Throughout this tutorial you can change the username _john_ to your own username. ⚠️⚠️⚠️
 
 During the generation you should provide the user name and email address:
