@@ -88,7 +88,7 @@ Our next step would be to install the *conda environment manager* tool.
 
 ### Installing `conda` environment manager
 
-<img src="img/03.png" width="200px"/>
+<img src="https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2023AdvancedWorkshop/CloudComputing/img/03.png" width="200px"/>
 
 For this hands-on we are going to use the [conda environment manager](https://docs.conda.io/en/latest/). This is a dependency and environment management for any language—Python, R, Ruby, Lua, Scala, Java, JavaScript, C/ C++, FORTRAN, and more.
 
