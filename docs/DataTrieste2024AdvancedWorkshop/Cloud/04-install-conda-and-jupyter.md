@@ -21,7 +21,7 @@ For the instance creation we are going to use the following parameters:
 Now we are ready to create the VM by accessing the *Launch Instance* button.
 The instance is ready to be used when we see the *Active* status and the ***Power State*** set to *Running*.
 
-For more details on how to create a VM, please refer to [Exercise 2](02-Create_A_VM.md)
+For more details on how to create a VM, please refer to [Exercise 2](02-Create_a_VM.md)
 
 #### 2. Accessing the VM
 We are going to use the [ssh protocol](https://en.wikipedia.org/wiki/Secure_Shell_Protocol) to access the VM. 
