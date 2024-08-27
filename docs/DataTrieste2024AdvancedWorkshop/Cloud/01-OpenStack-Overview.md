@@ -8,7 +8,7 @@ have created and securely connected to a cloud resource hosted by the
 ICTP. 
 
 After creating the machine, the next exercise, the [Exercise
-2](02-Connect_And_Install.md) - Connect to Your OpenStack VM and prepare it for
+2](03-Connect_And_Install.md) - Connect to Your OpenStack VM and prepare it for
 installing a Jupyter Notebook.
 
 ## Exercise 3 - Creating A Cloud Based Jupyter Notebook
