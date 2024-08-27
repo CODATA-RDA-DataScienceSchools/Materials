@@ -21,7 +21,7 @@ For the instance creation we are going to use the following parameters:
 Now we are ready to create the VM by accessing the *Launch Instance* button.
 The instance is ready to be used when we see the *Active* status and the ***Power State*** set to *Running*.
 
-For more details on how to create a VM, please refer to [Exercise 2](02-Create_a_VM.md)
+For more details on how to create a VM, please refer to [Exercise 1](02-Create_a_VM.md)
 
 #### 2. Accessing the VM
 We are going to use the [ssh protocol](https://en.wikipedia.org/wiki/Secure_Shell_Protocol) to access the VM. 
@@ -29,7 +29,7 @@ Before accessing the machine we have to find its IP address at the Openstack int
 
 ![](img/02.png)
 
-For more information about how to connect to the VM that we've just created please review the [Exercise 2](02-Connect_And_Install.md).
+For more information about how to connect to the VM that we've just created please review the [Exercise 2](03-Connect_And_Install.md).
 
 We need to update the Firewall rules in order to have an instance of a jupyter
 notebook running on our Virtual Machine. We have to access the `Edit Security
