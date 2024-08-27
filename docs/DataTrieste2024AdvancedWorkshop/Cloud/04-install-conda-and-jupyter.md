@@ -27,7 +27,7 @@ For more details on how to create a VM, please refer to [Exercise 1](02-Create_a
 We are going to use the [ssh protocol](https://en.wikipedia.org/wiki/Secure_Shell_Protocol) to access the VM. 
 Before accessing the machine we have to find its IP address at the Openstack interface. Under the ***Instances*** tab we should see the *Jupyter* VM. As seen in the image below:
 
-![](img/02.png)
+![](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2023AdvancedWorkshop/CloudComputing/img/02.png)
 
 For more information about how to connect to the VM that we've just created please review the [Exercise 2](03-Connect_And_Install.md).
 
