@@ -3,7 +3,7 @@
 ## Connect to the OpenStack API
    * Point your browser to the [ICTP OpenStack Cloud](https://osc2.ictp.it/horizon/)
    * Log in with the credentials given in class
-   * The Domain should be `smr3861`
+   * The Domain should be `smr4037`
    * You'll be automatically presented with a pie chart visualization of the current status of your OpenStack environment. It will look something like the figure below, though it may differ. 
    ![OpenStack Overview](OpenStack_Overview.png)
 
