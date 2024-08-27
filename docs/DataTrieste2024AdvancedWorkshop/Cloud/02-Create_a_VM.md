@@ -19,7 +19,7 @@
       * Click _Next_.
    * You will be automatically moved to the next tab in the popup _Source_.
       * **NOTE on Sources:** We will use Ubuntu. The following installation instructions are written in Python, R, and Jupyter. If you are familiar with Debian or CentOS feel free to use it going forward, but you'll need to provide your own installation and configuration for the next exercises.
-      * Choose the _Ubuntu Server 20.04_ option by clicking on the up arrow button to the right of the _Ubuntu Server 20.04_ line. It looks like this: <img src="Up_Arrow.png" width="30"/>. This will move the line from the _Available_ section to the _Allocated_ section of the popup window.   
+      * Choose the _Ubuntu Server 20.04_ option by clicking on the up arrow button to the right of the _Ubuntu Server 20.04_ line. It looks like this: <img src="https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2023AdvancedWorkshop/CloudComputing/Up_Arrow.png" width="30"/>. This will move the line from the _Available_ section to the _Allocated_ section of the popup window.   
       * Click _Next_.
    * You will be automatically moved to the next tab in the popup _Flavor_.
        * **NOTE on Flavors:** We will use a _m2.medium_ VM for this default exercise. If you are importing your own data for this exercise and need additional compute power, talk to your instructor. We'll advise you on the availability of additional resources. 
