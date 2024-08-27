@@ -13,7 +13,7 @@ installing a Jupyter Notebook.
 
 ## Exercise 3 - Creating A Cloud Based Jupyter Notebook
 
-In [Exercise 3](03-install-conda-and-jupyter.md) - Deploying a *Jupyter
+In [Exercise 3](04-install-conda-and-jupyter.md) - Deploying a *Jupyter
 Notebook Server* at an *IaaS* platform using the *conda* environment manager
 you will use the VM you created in Exercise 2 to set up an online Jupyter
 Notebook. This notebook will be used in the next exercise to recreate the
