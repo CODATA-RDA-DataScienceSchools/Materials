@@ -22,7 +22,7 @@ choosing.
 
 ## Exercise 4 - Regression Analysis Using Jupyter
 
-We can start with a Python and data analysis refresher by revisiting the Boston Housing dataset analysis on [Google Colab]([06-warmup-google-colab.md](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2024/CI/02-Colab_Regression.md)
+We can start with a Python and data analysis refresher by revisiting the Boston Housing dataset analysis on [Google Colab]((https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2024/CI/02-Colab_Regression.md))
 
 We return to the Spark data Analysis task to recreate a new regression
 analysis on the VM you've created to do your own work in [Exercise
