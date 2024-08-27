@@ -36,7 +36,7 @@ notebook running on our Virtual Machine. We have to access the `Edit Security
 Groups` option under the _Action_ dropdown menu at the Instances list as seen
 in the picture:
 
-<img src="(https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2023AdvancedWorkshop/CloudComputing/img/security_groups1.png)" width="200px"/>
+<img src="https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2023AdvancedWorkshop/CloudComputing/img/security_groups1.png" width="200px"/>
 
 
 In the list of security Groups we will add the `Jupyter Server` firewall rules
