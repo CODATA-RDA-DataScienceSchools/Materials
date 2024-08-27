@@ -2,8 +2,8 @@
 
 Prerequisites: 
    * The software that will allow you to connect to your VM. This is called _Terminal_ and installed by default on a Mac. If you are on a Windows based machine, you should use an appropriate terminal software. I suggest [Git Bash](https://git-scm.com/downloads) for new users. 
-   * Your OpenStack SSH Key created in [Exercise 1](01-Create_a_VM.md)
-   * The IP Address of your VM from  [Exercise 1](01-Create_a_VM.md)
+   * Your OpenStack SSH Key created in [Exercise 1](02-Create_a_VM.md)
+   * The IP Address of your VM from  [Exercise 1](02-Create_a_VM.md)
 
 **Notes on syntax:**
 
