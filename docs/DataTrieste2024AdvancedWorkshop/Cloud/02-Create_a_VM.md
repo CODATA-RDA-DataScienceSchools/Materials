@@ -41,4 +41,4 @@
       * This will take a few minutes, but when it's active you'll see something like this: ![](Instance_Running.png) 
       * You have created a Cloud resource using OpenStack! Excellent work!
 
-[Return to CI Overview](01-Hands_on_Exercise_Overview.md)
+[Return to CI Overview](01-OpenStack-Overview.md)
