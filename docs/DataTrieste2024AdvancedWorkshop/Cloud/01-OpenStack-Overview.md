@@ -2,7 +2,7 @@
 
 ## Exercise 1 - Setting Up A Cloud Resource Using OpenStack
 
-[Exercise 1](01-Create_A_VM.md) will walk you through creating a Virtual
+[Exercise 1](02-Create_a_VM.md) will walk you through creating a Virtual
 Machine (VM) using the OpenStack browser based API. Upon completion you will
 have created and securely connected to a cloud resource hosted by the
 ICTP. 
