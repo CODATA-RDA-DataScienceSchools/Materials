@@ -230,19 +230,19 @@ In order to access the jupyter server we should user a web browser and access th
 
 After accessing the page you should see a request for password or token:
 
-![](img/jupyter_server1.png)
+![](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2023AdvancedWorkshop/CloudComputing/img/jupyter_server1.png)
 
 The token is the parameter right after the word `token=` at the output of the
 `jupyter notebook` command. E.g.:
 
-![](img/jupyter_server2.png)
+![](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2023AdvancedWorkshop/CloudComputing/img/jupyter_server2.png)
 
 
 You should copy the token value and paste it at the Password/Token field. After
 that you will be redirected to a page that displays the list of notebooks that
 you have in your system:
 
-![](img/04.png)
+![](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2023AdvancedWorkshop/CloudComputing/img/04.png)
 
 
 Now we can either upload one of the notebooks that we worked during the
@@ -251,11 +251,11 @@ the page); or we can create a notebook from scratch. For this, access the drop
 down menu to check what kernels are installed on the server. If our R
 installation worked we should be able to see both *python* and *R* *kernels*:
 
-![](img/05.png)
+![](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2023AdvancedWorkshop/CloudComputing/img/05.png)
 
 Lets create an R notebook and check if the installation worked by running a `R.version` command:
 
-![](img/06.png)
+![](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2023AdvancedWorkshop/CloudComputing/img/06.png)
 
 Now you can go ahead and try to run one the analysis developed for the previous exercises.
 
