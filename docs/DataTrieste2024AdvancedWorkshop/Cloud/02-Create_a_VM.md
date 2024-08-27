@@ -5,7 +5,7 @@
    * Log in with the credentials given in class
    * The Domain should be `smr4037`
    * You'll be automatically presented with a pie chart visualization of the current status of your OpenStack environment. It will look something like the figure below, though it may differ. 
-   ![OpenStack Overview](OpenStack_Overview.png)
+   ![OpenStack Overview](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2023AdvancedWorkshop/CloudComputing/OpenStack_Overview.png)
 
    * Click _Instances_ in the left-hand menu. This will show you all of the running instances. This may be empty if you are just starting. 
    * At the top-right of the screen you will have a _Launch Instance_ button. Click this button. 
