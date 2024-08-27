@@ -26,7 +26,7 @@ We can start with a Python and data analysis refresher by revisiting the Boston 
 
 We return to the Spark data Analysis task to recreate a new regression
 analysis on the VM you've created to do your own work in [Exercise
-4](04-OpenStack_Regression_Analysis.md)
+4](05-OpenStack_Regression_Analysis.md)
 
 ## Advanced topics
 
