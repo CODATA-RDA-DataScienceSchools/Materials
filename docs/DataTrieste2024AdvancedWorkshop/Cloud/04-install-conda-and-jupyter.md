@@ -43,7 +43,7 @@ In the list of security Groups we will add the `Jupyter Server` firewall rules
 by clicking at the plus sign right next to it as seen in the picture:
 
 
-<img src="img/security_groups2.png" width="200px"/>
+<img src="https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2023AdvancedWorkshop/CloudComputing/img/jupyter_server2.png" width="200px"/>
 
 
 After that we should see the list of security groups updated and containing two
@@ -53,7 +53,7 @@ entries:
 * Jupyter Server
 
 
-<img src="img/security_groups3.png" width="200px"/>
+<img src="https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2023AdvancedWorkshop/CloudComputing/img/jupyter_server3.png" width="200px"/>
 
 
 <!--
