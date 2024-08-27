@@ -7,7 +7,7 @@ Before installing and configuring the *Jupyter Notebook Server* we need to alloc
 
 For instantiating a new VM, we should head to the ***Instances*** menu item as show in the image bellow: 
 
-![](img/01.png)
+![](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2023AdvancedWorkshop/CloudComputing/img/01.png)
 
 After that we are going to create a new VM by clicking at the *Launch Instances*
 For the instance creation we are going to use the following parameters:
