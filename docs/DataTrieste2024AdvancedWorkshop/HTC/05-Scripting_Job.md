@@ -32,5 +32,5 @@ $ chmod 755 simple.sh
 Can you write a submit file to run this job? This should be easy--the script is your _Executable_, not `/bin/sh`. You may also want to change the name of your `submit.log`, `submit.out`, and `submit.err` in your `submit` file to be sure they are not written over when you run this submission. 
 
 ## Challenge
-Rewrite this script in Perl or Python (if you're comfortable with one of those languages). Does it still work for you?
+Rewrite this script in Python. Does it still work for you?
 
