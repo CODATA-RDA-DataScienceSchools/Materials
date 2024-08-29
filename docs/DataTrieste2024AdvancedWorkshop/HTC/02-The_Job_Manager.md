@@ -128,9 +128,8 @@ How do you use the `-constraint` or `-format` options to `condor_q`? When would 
 
 ### Extra credit
 
-What else can you find out with condor_status? Try any one of:
+What else can you find out with condor_status? 
 
-   * `man condor_status`
    * `condor_status -help`
    * [condor_status from the online manual](http://www.cs.wisc.edu/condor/manual/v8.0/condor_status.html)
 
