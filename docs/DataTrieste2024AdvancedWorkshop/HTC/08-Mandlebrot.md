@@ -15,7 +15,7 @@ First, we will get and compile the goatbrot software, then create a nice mandleb
 ```
 $ git clone https://github.com/beejjorgensen/goatbrot
 $ cd goatbrot
-$ make
+$ gcc -fopenmp -o goatbrot goatbrot.c -lm
 $ ./goatbrot -i 1000 -o tile_000000_000000.ppm -c 0,0 -w 3 -s 1000,1000
 ```
 
@@ -53,7 +53,7 @@ $ ./goatbrot -i 1000 -o tile_000001_000001.ppm -c 0.75,-0.75 -w 1.5 -s 500,500
 ```
 $ wget http://www.imagemagick.org/download/ImageMagick.tar.gz
 $ tar -xzvf ImageMagick.tar.gz
-$ cd ImageMagick-7.1.1-15/
+$ cd ImageMagick-7.1.1-37/
 $ ./configure --prefix=/home/jovyan/opt/
 $ make install
 ```
@@ -61,7 +61,7 @@ $ make install
    3. Now make the four segments into a single GIF file.
    4. 
 ```
-$ ~/opt/montage tile_000000_000000.ppm tile_000000_000001.ppm tile_000001_000000.ppm tile_000001_000001.ppm -mode Concatenate -tile 2x2 ~/mandle.gif
+$ ~/opt/bin/magick montage tile_000000_000000.ppm tile_000000_000001.ppm tile_000001_000000.ppm tile_000001_000001.ppm -mode Concatenate -tile 2x2 mandle.gif
 ```
 
 This will produce the same image as above. We broke the image space into a 2 by 2 grid and ran `goatbrot` on each section of the grid. The `montage` program simply stitches the files together. 
