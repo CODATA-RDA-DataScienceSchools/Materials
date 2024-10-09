@@ -2,7 +2,7 @@
 output:
   bookdown::gitbook:
     highlight: tango
-    permalink: https://github.com/CODATA-RDA-DataScienceSchools/Materials/edit/master/docs/DataSanJose2019
+    permalink: https://github.com/CODATA-RDA-DataScienceSchools/Materials/edit/master/docs/DataHeredia2024
 ---
 
 # Heredia School of Research Data Science 
