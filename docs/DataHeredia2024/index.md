@@ -23,6 +23,6 @@ The goal of this workshop is to train researchers in Research Data Science (RDS)
    * Day 7 - [Overview of Machine Learning*]( )
    * Day 8 - [Artificial Neural Networks]( )
    * Day 9 - Security and Computational Infrastructures - [All material]( )
-   * Day 10 - [School Close Out]()
+   * Day 10 - Security and Computational Infrastructures [School Close Out]()
 
 Some of the material in this curriculum was derived and adapted from work that is Copyright © Software Carpentry made available under the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/). 
