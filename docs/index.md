@@ -8,3 +8,4 @@
    * [Materials from DataSouthAfrica 2021 ](https://codata-rda-datascienceschools.github.io/Materials/SouthAfrica2021/)
    * [Materials from DataTrieste 2021 ](https://codata-rda-datascienceschools.github.io/Materials/DataTrieste2021/)
    * [Materials from DataAtlanta2022 ](https://codata-rda-datascienceschools.github.io/Materials/DataAtlanta2022/)
+   * [Materials from DataHeredia2024 ](https://codata-rda-datascienceschools.github.io/Materials/DataHeredia2024/)
