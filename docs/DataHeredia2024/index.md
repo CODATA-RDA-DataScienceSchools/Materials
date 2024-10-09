@@ -12,7 +12,7 @@ UNA, Heredia, Costa Rica
 ## Background and purpose 
 The goal of this workshop is to train researchers in Research Data Science (RDS). RDS refers to the principles and practice of Open Science and research data management and curation, the use of a range of data platforms and infrastructures, large scale analysis, statistics, visualization and modelling techniques, software development and data annotation. These are important tools for extracting useful information from data and these tools are useful in every research area. 
 
-## Materials for the 2019 School of Research Data Science in San José
+## Materials for the 2024 School of Research Data Science in Heredia, Costa Rica
 
    * Day 1 - [Introduction]( ), [Open Science]( ), [Author Carpentry]( )
    * Day 2 - [Introduction to R]( ) 
