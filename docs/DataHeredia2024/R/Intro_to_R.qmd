@@ -21,7 +21,7 @@ format:
     auto-stretch: false
     css: styles.css
     logo: images/logo.png
-    footer: <https://bit.ly/3ODtPGj>
+    footer: <https://shorturl.at/Y2qvd>
 ---
 
 ```{r, cache = FALSE, include=FALSE}

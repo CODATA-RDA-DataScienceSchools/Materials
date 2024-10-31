@@ -1,7 +1,7 @@
 
 # R Ecology Lesson
 
-The presentation can be viewed at https://bit.ly/3ODtPGj
+The presentation can be viewed at https://shorturl.at/Y2qvd 
 
 ## Attribution
 
