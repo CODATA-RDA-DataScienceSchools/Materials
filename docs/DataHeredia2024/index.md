@@ -8,7 +8,7 @@ The goal of this workshop is to train researchers in Research Data Science (RDS)
 
 ## Materials for the 2024 School of Research Data Science in Heredia, Costa Rica
 
-   * Day 1 Wednesday, Nov 6th - [Introduction]( ), [Open Science]( ), [Author Carpentry](https://github.com/CODATA-RDA-DataScienceSchools/Materials/tree/master/docs/DataHeredia2024/Author_carpentry)
+   * Day 1 Wednesday, Nov 6th - [Introduction]( ), [Open Science]( ), [Author Carpentry](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataHeredia2024/Author_carpentry/README.md)
    * Day 2 Thursday, Nov 7th - [Introduction to R](https://github.com/CODATA-RDA-DataScienceSchools/Materials/tree/master/docs/DataHeredia2024/R) 
    * Day 3 Friday, Nov 8th - [Introduction to R](https://github.com/CODATA-RDA-DataScienceSchools/Materials/tree/master/docs/DataHeredia2024/R), [Data Visualization]( )
    * Day 4 Saturday, Nov 9th - [Data Visualization]( ), [Intro to Research Data Management]( ), [DMP example 1]( ), [DMP example 2]( )
