@@ -25,7 +25,7 @@ format:
     footer: <http://bit.ly/4fyniXV>
 ---
 
-## Introduction
+## Introduction 
 
 -   [About Marcela](https://malfaro.netlify.app/)
 -   [About Bianca](https://binxiepeterson.github.io/)
