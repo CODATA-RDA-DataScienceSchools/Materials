@@ -22,7 +22,7 @@ format:
     preview-links: auto
     logo: images/logo.png
     css: styles.css
-    footer: <https://bit.ly/3pUP3G5>
+    footer: <http://bit.ly/4fyniXV>
 ---
 
 ## Introduction
@@ -31,24 +31,37 @@ format:
 -   [About Bianca](https://binxiepeterson.github.io/)
 -   [About this curriculum](https://authorcarpentry.github.io/)
 
-## First
+## First things first
 
--   Find your ORCiD link and prepare to post it on the etherpad, next to your name.
--   Questions to discuss in pairs and/or in the chat:
+-   Create your ORCiD account: [https://orcid.org/register](https://orcid.org/register) 
+There are two videos that 
+a) explain why ORCIDs are a good idea - that can be found here https://vimeo.com/97150912
+b) how to register on ORCID - that can be found here https://vimeo.com/236778203 
+Many other videos on ORCID can be found here https://info.orcid.org/video-tutorials/
+
+⏰ 15 minutes
+
+## First things first
+
+-   Find your ORCiD link and prepare to post it on the etherpad, next to your name on the Etherpad [https://pad.carpentries.org/Heredia2024](https://pad.carpentries.org/Heredia2024).
+-   Questions to discuss in pairs:
     -   Have you used ORCiD to link your publications?
     -   Do you think it's important to have and use one?
+    
+⏰ 5 minutes
 
 ## What are we going to do this afternoon?
 
 1.  Discuss workflows for academic publishing.
-2.  Learn how to use Quarto for reproducible reports - how to include bibliography from .bib files, and how to cite data and/or software, and more.
+2.  Learn how our curriculum is linked to those workflows.
 3.  Discuss authorship, and contributorship in collaborative research projects.
+4. Present resources to identify predatory journals.
 
 ## Workflows
 
--   Discuss in pairs and/or in the chat: [what's your workflow?](https://101innovations.wordpress.com/workflows/)
+-   Discuss in pairs: [what's your workflow?](https://101innovations.wordpress.com/workflows/)
 -   If you could describe your workflow for Discovery - Analysis - Writing - Publication - Outreach - Assessment, what would it look like?
--   Describe it in the etherpad.
+-   Describe it on paper and prepare to share it with the rest of the group.
 
 ⏰ 10 minutes
 
@@ -73,15 +86,27 @@ Q2. When and how would you discuss the author contributions in the paper? You ca
 
 Q3. How/when should you decide which journals do you want to publish in?
 
-## Where do we publish it? More about workflows!
+⏰ 15 minutes
 
--   We'll have the following guest talk:
+## Where do we publish it? 
+
+-   Please check out the materials from Andy Nobes on how to avoid predatory journals:
 
     -   "How to avoid 'predatory' journals" - [Andy Nobes](https://www.inasp.info/staff/andy-nobes-0)
+    - [https://bit.ly/4hw9DCt](https://bit.ly/4hw9DCt)
+    
+-   Work on the exercise on slide 42 in pairs.
+
+⏰ 20 minutes
+
 
 ## Thank you!
 
 Marcela Alfaro Córdoba, Ph.D.
+
+```{r}
+#
+```
 
 [`r icons::icon_style(icons::fontawesome("twitter"), fill="white")` macordob](https://twitter.com/macordob)\
 [`r icons::icon_style(icons::fontawesome("envelope-open", style = "solid"), fill="white")` macordob\@ucsc.edu](mailto:macordob@ucsc.edu)\

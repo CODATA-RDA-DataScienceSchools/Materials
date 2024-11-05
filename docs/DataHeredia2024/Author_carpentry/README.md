@@ -10,7 +10,7 @@
 
 ## Presentation
 
-The presentation can be viewed at [https://bit.ly/3pUP3G5](https://bit.ly/3pUP3G5).
+The presentation can be viewed at [http://bit.ly/4fyniXV](http://bit.ly/4fyniXV).
 
 ## Schedule
 

@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="AuthorCarpentry_files/libs/clipboard/clipboard.min.js"></script>
-<script src="AuthorCarpentry_files/libs/quarto-html/tabby.min.js"></script>
-<script src="AuthorCarpentry_files/libs/quarto-html/popper.min.js"></script>
-<script src="AuthorCarpentry_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="AuthorCarpentry_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="AuthorCarpentry_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="AuthorCarpentry_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="AuthorCarpentry_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="reproducible_reports_files/libs/clipboard/clipboard.min.js"></script>
+<script src="reproducible_reports_files/libs/quarto-html/tabby.min.js"></script>
+<script src="reproducible_reports_files/libs/quarto-html/popper.min.js"></script>
+<script src="reproducible_reports_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="reproducible_reports_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="reproducible_reports_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="reproducible_reports_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="reproducible_reports_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.550">
 
-  <title>Author Carpentry</title>
+  <title>Reproducible Reports</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="AuthorCarpentry_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="AuthorCarpentry_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="reproducible_reports_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="reproducible_reports_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -28,15 +28,100 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
-  <link rel="stylesheet" href="AuthorCarpentry_files/libs/revealjs/dist/theme/quarto.css">
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #f8f8f2;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #f8f8f2; } /* Normal */
+    code span.al { color: #f07178; background-color: #2a0f15; font-weight: bold; } /* Alert */
+    code span.an { color: #d4d0ab; } /* Annotation */
+    code span.at { color: #00e0e0; } /* Attribute */
+    code span.bn { color: #d4d0ab; } /* BaseN */
+    code span.bu { color: #abe338; } /* BuiltIn */
+    code span.cf { color: #ffa07a; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #abe338; } /* Char */
+    code span.cn { color: #ffd700; } /* Constant */
+    code span.co { color: #f8f8f2; font-style: italic; } /* Comment */
+    code span.cv { color: #ffd700; } /* CommentVar */
+    code span.do { color: #f8f8f2; } /* Documentation */
+    code span.dt { color: #ffa07a; } /* DataType */
+    code span.dv { color: #d4d0ab; } /* DecVal */
+    code span.er { color: #f07178; text-decoration: underline; } /* Error */
+    code span.ex { color: #00e0e0; font-weight: bold; } /* Extension */
+    code span.fl { color: #d4d0ab; } /* Float */
+    code span.fu { color: #ffa07a; } /* Function */
+    code span.im { color: #abe338; } /* Import */
+    code span.in { color: #d4d0ab; } /* Information */
+    code span.kw { color: #ffa07a; font-weight: bold; } /* Keyword */
+    code span.op { color: #ffa07a; } /* Operator */
+    code span.ot { color: #00e0e0; } /* Other */
+    code span.pp { color: #dcc6e0; } /* Preprocessor */
+    code span.re { color: #00e0e0; background-color: #f8f8f2; } /* RegionMarker */
+    code span.sc { color: #abe338; } /* SpecialChar */
+    code span.ss { color: #abe338; } /* SpecialString */
+    code span.st { color: #abe338; } /* String */
+    code span.va { color: #00e0e0; } /* Variable */
+    code span.vs { color: #abe338; } /* VerbatimString */
+    code span.wa { color: #dcc6e0; } /* Warning */
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="reproducible_reports_files/libs/revealjs/dist/theme/quarto.css">
   <link rel="stylesheet" href="styles.css">
-  <link href="AuthorCarpentry_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="AuthorCarpentry_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="AuthorCarpentry_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="AuthorCarpentry_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="AuthorCarpentry_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
-  <link href="AuthorCarpentry_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link href="reproducible_reports_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="reproducible_reports_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="reproducible_reports_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="reproducible_reports_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="reproducible_reports_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="reproducible_reports_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -328,7 +413,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Author Carpentry</h1>
+  <h1 class="title">Reproducible Reports</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -356,83 +441,344 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 </div>
 
 </section>
-<section id="introduction" class="slide level2">
-<h2>Introduction</h2>
+<section id="reproducible-reports" class="slide level2">
+<h2>Reproducible Reports</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html"><img data-src="https://the-turing-way.netlify.app/_images/reproducible-definition-grid.svg" class="quarto-figure quarto-figure-center" alt="The Turing Way: Reproducible Research"></a></p>
+<figcaption>The Turing Way: Reproducible Research</figcaption>
+</figure>
+</div>
+</section>
+<section id="why-do-we-want-to-work-on-repro-mode" class="slide level2">
+<h2>Why do we want to work on repro-mode?</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://the-turing-way.netlify.app/reproducible-research/overview/overview-benefit.html"><img data-src="https://the-turing-way.netlify.app/_images/reasons-reproducibility.png" class="quarto-figure quarto-figure-center" alt="The Turing Way: Advantages of Reproducible Research"></a></p>
+<figcaption>The Turing Way: Advantages of Reproducible Research</figcaption>
+</figure>
+</div>
+</section>
+<section id="what-is-quarto-13" class="slide level2">
+<h2>What is Quarto? (1/3)</h2>
 <ul>
-<li><a href="https://malfaro.netlify.app/">About Marcela</a></li>
-<li><a href="https://binxiepeterson.github.io/">About Bianca</a></li>
-<li><a href="https://authorcarpentry.github.io/">About this curriculum</a></li>
+<li>Quarto is an open-source scientific and technical publishing system built on Pandoc (same as LateX).</li>
+<li>Create dynamic content with Python, R, Julia, and Observable (JavaScript).</li>
+<li>Author documents using Jupyter notebooks or with plain text markdown using your favorite editor (e.g.&nbsp;VS Code, RStudio, Jupyter Lab, etc.).</li>
 </ul>
 </section>
-<section id="first-things-first" class="slide level2">
-<h2>First things first</h2>
+<section id="what-is-quarto-23" class="slide level2">
+<h2>What is Quarto? (2/3)</h2>
 <ul>
-<li>Create your ORCiD account: <a href="https://orcid.org/register">https://orcid.org/register</a> There are two videos that</li>
+<li>Publish high-quality articles, reports, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.</li>
+<li>Author with scientific markdown, including equations, citations, figure panels, advanced layout, and more.</li>
 </ul>
-<ol type="a">
-<li>explain why ORCIDs are a good idea - that can be found here https://vimeo.com/97150912</li>
-<li>how to register on ORCID - that can be found here https://vimeo.com/236778203 Many other videos on ORCID can be found here https://info.orcid.org/video-tutorials/</li>
-</ol>
-<p>⏰ 15 minutes</p>
 </section>
-<section id="first-things-first-1" class="slide level2">
-<h2>First things first</h2>
+<section id="what-is-quarto-33" class="slide level2">
+<h2>What is Quarto? (3/3)</h2>
+<p>Some examples:</p>
 <ul>
-<li>Find your ORCiD link and prepare to post it on the etherpad, next to your name on the Etherpad <a href="https://pad.carpentries.org/Heredia2024">https://pad.carpentries.org/Heredia2024</a>.</li>
-<li>Questions to discuss in pairs:
-<ul>
-<li>Have you used ORCiD to link your publications?</li>
-<li>Do you think it’s important to have and use one?</li>
-</ul></li>
+<li><p>This presentation was done in Quarto. 😃</p></li>
+<li><p>You can produce HTML reports such as <a href="https://quarto-dev.github.io/quarto-gallery/page-layout/tufte.html">this one</a>.</p></li>
+<li><p>Other examples: <a href="https://quarto.org/docs/gallery/" class="uri">https://quarto.org/docs/gallery/</a></p>
+<p>👁️‍🗨️ If you want to look at the code for these examples, click on the <code>&lt;/&gt;</code> icon.</p></li>
 </ul>
-<p>⏰ 5 minutes</p>
 </section>
-<section id="what-are-we-going-to-do-this-afternoon" class="slide level2">
-<h2>What are we going to do this afternoon?</h2>
+<section id="what-tools-did-we-use-before-quarto" class="slide level2">
+<h2>What tools did we use before Quarto?</h2>
+<ul>
+<li>Word processor (Microsoft Word, Open Office, Google Docs, etc.)</li>
+<li>Jupyter Notebooks</li>
+<li>R Markdown</li>
+<li>LaTeX (Overleaf, TeXstudio, etc.)</li>
+<li>Any other? Type it in the chat (online) or say it out loud (in class).</li>
+</ul>
+</section>
+<section id="what-changed" class="slide level2">
+<h2>What changed?</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html"><img data-src="https://the-turing-way.netlify.app/_images/reproducibility.jpg" class="quarto-figure quarto-figure-center" alt="The Turing Way: Guide for Reproducible Research"></a></p>
+<figcaption>The Turing Way: Guide for Reproducible Research</figcaption>
+</figure>
+</div>
+</section>
+<section id="anatomy-of-a-quarto-document" class="slide level2">
+<h2>Anatomy of a Quarto document</h2>
+<ul>
+<li><strong><code>YAML</code></strong>: “YAML is a human-readable data serialization language that is often used for writing configuration files. It contains the metadata (title, tags, and descriptions) for the document.</li>
+<li><strong><code>Main Body</code></strong>: Text, which may include in-line code, written in <a href="https://quarto.org/docs/authoring/markdown-basics.html">markdown</a> (plain text formatting) syntax.</li>
+<li><strong><code>Code Chunks</code></strong>: Code in different languages (depending on what you have installed on your computer) that can be executed when the document is rendered.</li>
+</ul>
+</section>
+<section id="lets-do-it" class="slide level2">
+<h2>Let’s do it!</h2>
+<p>Follow these steps:</p>
 <ol type="1">
-<li>Discuss workflows for academic publishing.</li>
-<li>Learn how our curriculum is linked to those workflows.</li>
-<li>Discuss authorship, and contributorship in collaborative research projects.</li>
-<li>Present resources to identify predatory journals.</li>
+<li>Open RStudio.</li>
+<li>Click <strong><code>File</code></strong> &gt; <strong><code>New Project</code></strong> &gt; <strong><code>New Directory</code></strong> &gt; <strong><code>Quarto Project</code></strong> &gt; Name your Directory and click on <strong><code>Create git repository</code></strong> &gt; <strong><code>Create Project</code></strong>.</li>
+<li>Click on <strong><code>Render</code></strong> to test that the most basic Quarto document renders on your computer.</li>
+<li>If it worked, you should see a <code>&lt;filename&gt;.html</code> file in your local folder. Open it in your Web Browser.</li>
 </ol>
 </section>
-<section id="workflows" class="slide level2">
-<h2>Workflows</h2>
+<section id="lets-start-with-yaml" class="slide level2">
+<h2>Let’s start with YAML</h2>
 <ul>
-<li>Discuss in pairs: <a href="https://101innovations.wordpress.com/workflows/">what’s your workflow?</a></li>
-<li>If you could describe your workflow for Discovery - Analysis - Writing - Publication - Outreach - Assessment, what would it look like?</li>
-<li>Describe it on paper and prepare to share it with the rest of the group.</li>
+<li><p>Be careful with the indentation!</p></li>
+<li><p>Let’s add: title, author, and date.</p></li>
 </ul>
-<p>⏰ 10 minutes</p>
+<p>⏰ 2 minutes</p>
+<pre><code>---
+title: "Reproducible Report Example"
+author: Your name
+date: 2023/08/03
+format: gfm 
+---</code></pre>
 </section>
-<section id="now-lets-go-back-to-the-author-process" class="slide level2">
-<h2>Now, let’s go back to the author process</h2>
+<section id="yaml-details" class="slide level2">
+<h2>YAML details</h2>
+<p>It depends on the format you want to work in:</p>
+<ul>
+<li><a href="https://quarto.org/docs/output-formats/gfm.html">Markdown</a></li>
+<li><a href="https://quarto.org/docs/output-formats/html-basics.html">HTML</a></li>
+<li><a href="https://quarto.org/docs/output-formats/pdf-basics.html">PDF</a></li>
+<li><a href="https://quarto.org/docs/output-formats/ms-word.html">MS Word</a></li>
+<li>Other formats (Presentations, Open Office, ePub, etc.)</li>
+</ul>
+</section>
+<section id="we-will-continue-to-work-in-html" class="slide level2">
+<h2>We will continue to work in HTML</h2>
+<ul>
+<li>Why? Because it’s more flexible.</li>
+<li>Nevertheless, you can also use <code>gfm</code> format to create <code>Readme.md</code> files for your repo on GitHub or GitLab.</li>
+<li>It is possible to deploy as a webpage on GitHub/GitLab.</li>
+<li>Data and code are available from your repo as a <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">Webpage</a>.</li>
+<li>You can also <a href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content">add a DOI</a>.</li>
+</ul>
+</section>
+<section id="now-lets-add-text-in-the-main-body" class="slide level2">
+<h2>Now let’s add text in the Main Body</h2>
+<pre><code>## Introduction
 
-<img data-src="https://the-turing-way.netlify.app/_images/collaboration.svg" class="r-stretch quarto-figure-center"><p class="caption">https://the-turing-way.netlify.app/collaboration/collaboration.html</p></section>
-<section id="group-discussion-12" class="slide level2">
-<h2>Group Discussion (1/2)</h2>
-<p>You are about to start an interdisciplinary project with 5 collaborators. They are from different areas of expertise, a couple of them are from different countries. You want to keep working with a reproducible workflow, but you know most of them are not proficient in some of the tools you use.</p>
-<p>–</p>
-<p>Q1. How/when do you negotiate which tools you are going to use to work on the project? Which factors do you need to take into account when deciding which tools to use?</p>
+This is a Quarto document. To learn more about Quarto see &lt;https://quarto.org&gt;.
+
+Another way to create links is to use: [a label with a link](https://quarto.org)</code></pre>
+<p>🤓 Go through <a href="https://commonmark.org/help/tutorial/">this tutorial</a> to learn markdown in a fun, interactive way!</p>
 </section>
-<section id="group-discussion-22" class="slide level2">
-<h2>Group Discussion (2/2)</h2>
-<p>Q2. When and how would you discuss the author contributions in the paper? You can use this as a guide: <a href="https://credit.niso.org/" class="uri">https://credit.niso.org/</a></p>
-<p>–</p>
-<p>Q3. How/when should you decide which journals do you want to publish in?</p>
-<p>⏰ 15 minutes</p>
+<section id="and-now-the-code-chunks" class="slide level2">
+<h2>And now, the code chunks:</h2>
+<p>Here we call the R `summary()` function</p>
+<p>The function’s output is included immediately below the code.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a><span class="fu">summary</span>(cars)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>     speed           dist       
+ Min.   : 4.0   Min.   :  2.00  
+ 1st Qu.:12.0   1st Qu.: 26.00  
+ Median :15.0   Median : 36.00  
+ Mean   :15.4   Mean   : 42.98  
+ 3rd Qu.:19.0   3rd Qu.: 56.00  
+ Max.   :25.0   Max.   :120.00  </code></pre>
+</div>
+</div>
+<p>How much do you want to see?</p>
+<p>#| code-fold: true</p>
 </section>
-<section id="where-do-we-publish-it" class="slide level2">
-<h2>Where do we publish it?</h2>
+<section id="plot-output" class="slide level2">
+<h2>Plot Output</h2>
+<p>You can also embed plots, for example:</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb5-2"><a href=""></a></span>
+<span id="cb5-3"><a href=""></a>dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">cond =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>), <span class="at">each=</span><span class="dv">10</span>),</span>
+<span id="cb5-4"><a href=""></a>                  <span class="at">xvar =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span> <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="dv">20</span>,<span class="at">sd=</span><span class="dv">3</span>),</span>
+<span id="cb5-5"><a href=""></a>                  <span class="at">yvar =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span> <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="dv">20</span>,<span class="at">sd=</span><span class="dv">3</span>))</span>
+<span id="cb5-6"><a href=""></a></span>
+<span id="cb5-7"><a href=""></a><span class="fu">ggplot</span>(dat, <span class="fu">aes</span>(<span class="at">x=</span>xvar, <span class="at">y=</span>yvar)) <span class="sc">+</span></span>
+<span id="cb5-8"><a href=""></a>    <span class="fu">geom_point</span>(<span class="at">shape=</span><span class="dv">1</span>) <span class="sc">+</span> </span>
+<span id="cb5-9"><a href=""></a>    <span class="fu">geom_smooth</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+
+</div>
+<img data-src="reproducible_reports_files/figure-revealjs/fig-pressure-1.png" width="960" class="r-stretch quarto-figure-center"><p class="caption">
+Figure&nbsp;1: Pressure
+</p></section>
+<section id="tables" class="slide level2 smaller">
+<h2>Tables</h2>
+<p>Use the <code>knitr::kable()</code> function to print tables as HTML:</p>
+<div class="cell">
+<div class="cell-output-display">
+<table style="width:100%;">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 15%">
+<col style="width: 9%">
+<col style="width: 12%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">carat</th>
+<th style="text-align: left;">cut</th>
+<th style="text-align: left;">color</th>
+<th style="text-align: left;">clarity</th>
+<th style="text-align: right;">depth</th>
+<th style="text-align: right;">table</th>
+<th style="text-align: right;">price</th>
+<th style="text-align: right;">x</th>
+<th style="text-align: right;">y</th>
+<th style="text-align: right;">z</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">0.23</td>
+<td style="text-align: left;">Ideal</td>
+<td style="text-align: left;">E</td>
+<td style="text-align: left;">SI2</td>
+<td style="text-align: right;">61.5</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">326</td>
+<td style="text-align: right;">3.95</td>
+<td style="text-align: right;">3.98</td>
+<td style="text-align: right;">2.43</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">0.21</td>
+<td style="text-align: left;">Premium</td>
+<td style="text-align: left;">E</td>
+<td style="text-align: left;">SI1</td>
+<td style="text-align: right;">59.8</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">326</td>
+<td style="text-align: right;">3.89</td>
+<td style="text-align: right;">3.84</td>
+<td style="text-align: right;">2.31</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">0.23</td>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">E</td>
+<td style="text-align: left;">VS1</td>
+<td style="text-align: right;">56.9</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">327</td>
+<td style="text-align: right;">4.05</td>
+<td style="text-align: right;">4.07</td>
+<td style="text-align: right;">2.31</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">0.29</td>
+<td style="text-align: left;">Premium</td>
+<td style="text-align: left;">I</td>
+<td style="text-align: left;">VS2</td>
+<td style="text-align: right;">62.4</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">334</td>
+<td style="text-align: right;">4.20</td>
+<td style="text-align: right;">4.23</td>
+<td style="text-align: right;">2.63</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">0.31</td>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">J</td>
+<td style="text-align: left;">SI2</td>
+<td style="text-align: right;">63.3</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">335</td>
+<td style="text-align: right;">4.34</td>
+<td style="text-align: right;">4.35</td>
+<td style="text-align: right;">2.75</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">0.24</td>
+<td style="text-align: left;">Very Good</td>
+<td style="text-align: left;">J</td>
+<td style="text-align: left;">VVS2</td>
+<td style="text-align: right;">62.8</td>
+<td style="text-align: right;">57</td>
+<td style="text-align: right;">336</td>
+<td style="text-align: right;">3.94</td>
+<td style="text-align: right;">3.96</td>
+<td style="text-align: right;">2.48</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="latex-math" class="slide level2">
+<h2>LaTeX Math</h2>
+<p>You can also include LaTeX math:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>$$ P\left(A=2\middle|\frac{A^2}{B}&gt;4\right)</p>
+<p>$$</p>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\[
+P\left(A=2\middle|\frac{A^2}{B}&gt;4\right)
+\]</span></p>
+</div>
+</div>
+</section>
+<section id="add-bibliography" class="slide level2">
+<h2>Add bibliography</h2>
+<p>This is the list of articles we’ll use:</p>
+<ol start="0" type="1">
+<li>They can be found in <a href="https://drive.google.com/drive/folders/14QsEDkAoyEt4eeobQFJi6o-reHYC03Nx?usp=sharing">this folder</a></li>
+<li><span class="citation" data-cites="Doney2009">Doney et al. (<a href="#/references" role="doc-biblioref" onclick="">2009</a>)</span></li>
+<li><span class="citation" data-cites="Jullion2014">Jullion et al. (<a href="#/references" role="doc-biblioref" onclick="">2014</a>)</span></li>
+<li><span class="citation" data-cites="Menezes2017">Menezes, Macdonald, and Schatzman (<a href="#/references" role="doc-biblioref" onclick="">2017</a>)</span></li>
+<li><span class="citation" data-cites="Resplandy2018">Resplandy et al. (<a href="#/references" role="doc-biblioref" onclick="">2018</a>)</span></li>
+<li><span class="citation" data-cites="Hahn2017">Hahn et al. (<a href="#/references" role="doc-biblioref" onclick="">2017</a>)</span></li>
+</ol>
+</section>
+<section id="bib-files" class="slide level2">
+<h2>.bib files</h2>
+<p>The easiest way to do this is maintaining a <code>.bib</code> file. You can create it using Zotero, or you can create it manually using <a href="https://www.doi2bib.org/" class="uri">https://www.doi2bib.org/</a>.</p>
 <ul>
-<li><p>Please check out the materials from Andy Nobes on how to avoid predatory journals:</p>
-<ul>
-<li>“How to avoid ‘predatory’ journals” - <a href="https://www.inasp.info/staff/andy-nobes-0">Andy Nobes</a></li>
-<li><a href="https://bit.ly/4hw9DCt">https://bit.ly/4hw9DCt</a></li>
-</ul></li>
-<li><p>Work on the exercise on slide 42 in pairs.</p></li>
+<li>Zotero: Select the library you wish to export to BibTex in Zotero.</li>
+<li>Create a file in any Text editor -&gt; paste the bibs using <a href="https://www.doi2bib.org/" class="uri">https://www.doi2bib.org/</a> and save it as <code>&lt;filename&gt;.bib</code> in the same project folder.</li>
 </ul>
-<p>⏰ 20 minutes</p>
+</section>
+<section id="references" class="slide level2 smaller scrollable">
+<h2>References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" style="font-size: 80%;" data-entry-spacing="0" role="list">
+<div id="ref-Doney2009" class="csl-entry" role="listitem">
+Doney, Scott C., Victoria J. Fabry, Richard A. Feely, and Joan A. Kleypas. 2009. <span>“Ocean Acidification: The Other CO2 Problem.”</span> <em>Annual Review of Marine Science</em> 1 (1): 169–92. <a href="https://doi.org/10.1146/annurev.marine.010908.163834">https://doi.org/10.1146/annurev.marine.010908.163834</a>.
+</div>
+<div id="ref-Hahn2017" class="csl-entry" role="listitem">
+Hahn, Johannes, Peter Brandt, Sunke Schmidtko, and Gerd Krahmann. 2017. <span>“Decadal Oxygen Change in the Eastern Tropical North Atlantic.”</span> <em>Ocean Science</em> 13 (4): 551–76. <a href="https://doi.org/10.5194/os-13-551-2017">https://doi.org/10.5194/os-13-551-2017</a>.
+</div>
+<div id="ref-Jullion2014" class="csl-entry" role="listitem">
+Jullion, Loïc, Alberto C. Naveira Garabato, Sheldon Bacon, Michael P. Meredith, Pete J. Brown, Sinhue Torres-Valdés, Kevin G. Speer, et al. 2014. <span>“The Contribution of the Weddell Gyre to the Lower Limb of the Global Overturning Circulation.”</span> <em>Journal of Geophysical Research: Oceans</em> 119 (6): 3357–77. <a href="https://doi.org/10.1002/2013jc009725">https://doi.org/10.1002/2013jc009725</a>.
+</div>
+<div id="ref-Menezes2017" class="csl-entry" role="listitem">
+Menezes, Viviane V., Alison M. Macdonald, and Courtney Schatzman. 2017. <span>“Accelerated Freshening of Antarctic Bottom Water over the Last Decade in the Southern Indian Ocean.”</span> <em>Science Advances</em> 3 (1). <a href="https://doi.org/10.1126/sciadv.1601426">https://doi.org/10.1126/sciadv.1601426</a>.
+</div>
+<div id="ref-Resplandy2018" class="csl-entry" role="listitem">
+Resplandy, L., R. F. Keeling, Y. Eddebbar, M. K. Brooks, R. Wang, L. Bopp, M. C. Long, J. P. Dunne, W. Koeve, and A. Oschlies. 2018. <span>“Quantification of Ocean Heat Uptake from Changes in Atmospheric O2 and <span>CO</span>2 Composition.”</span> <em>Nature</em> 563 (7729): 105–8. <a href="https://doi.org/10.1038/s41586-018-0651-8">https://doi.org/10.1038/s41586-018-0651-8</a>.
+</div>
+</div>
+</section>
+<section id="citing-software-and-data" class="slide level2">
+<h2>Citing software and data</h2>
+<ul>
+<li>From IEEE: <a href="https://ieeexplore.ieee.org/document/9018356" class="uri">https://ieeexplore.ieee.org/document/9018356</a></li>
+<li>From PeerJ: <a href="https://peerj.com/articles/cs-86/" class="uri">https://peerj.com/articles/cs-86/</a></li>
+<li>Persistent identifiers for code and data. How? Zenodo, FigShare, Institutional Repository, GitHub/DOI.</li>
+</ul>
 </section>
 <section id="thank-you" class="slide level2">
 <h2>Thank you!</h2>
@@ -448,7 +794,7 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
 <div class="quarto-auto-generated-content">
 <p><img src="images/logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p><a href="http://bit.ly/4fyniXV" class="uri">http://bit.ly/4fyniXV</a></p>
+<p><a href="https://bit.ly/3pUP3G5" class="uri">https://bit.ly/3pUP3G5</a></p>
 </div>
 </div>
 </section>
@@ -456,20 +802,20 @@ Bianca Peterson (Ph.D.) <a href="https://orcid.org/0000-0001-6927-9159" class="q
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="AuthorCarpentry_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="reproducible_reports_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="AuthorCarpentry_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="AuthorCarpentry_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="AuthorCarpentry_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="AuthorCarpentry_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="AuthorCarpentry_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
-  <script src="AuthorCarpentry_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="reproducible_reports_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="reproducible_reports_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="reproducible_reports_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="reproducible_reports_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="reproducible_reports_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="reproducible_reports_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="AuthorCarpentry_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="AuthorCarpentry_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="AuthorCarpentry_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="AuthorCarpentry_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="reproducible_reports_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="reproducible_reports_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="reproducible_reports_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="reproducible_reports_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
