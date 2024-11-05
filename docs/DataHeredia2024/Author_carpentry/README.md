@@ -1,7 +1,7 @@
 ## Files
 
 - `authorcarpentry.bib`: BibTeX file (specially formatted text file) containing a list of bibliographic citations.
-- `AuthorCarpentry.html`: presentation rendered from `AuthorCarpentry.qmd`. To preview this rendered file, go to [https://bit.ly/3pUP3G5](http://bit.ly/4fyniXV).
+- `AuthorCarpentry.html`: presentation rendered from `AuthorCarpentry.qmd`. To preview this rendered file, go to [http://bit.ly/4fyniXV](http://bit.ly/4fyniXV).
 - `AuthorCarpentry.qmd`: source file (Quarto markdown file) for the presentation.
 - `Notes.qmd`: teaching notes for instructors.
 - `Quarto.Rproj`: R project file.
