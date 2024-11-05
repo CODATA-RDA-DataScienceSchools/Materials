@@ -9,16 +9,13 @@ editor: visual
 
 You will need the following software:
 
-- [Download and install R](https://cran.r-project.org/bin/).
-- [Download and install RStudio](https://posit.co/download/rstudio-desktop/).
-- [Download and install Quarto](https://quarto.org/docs/download/).
+-   [Download and install R](https://cran.r-project.org/bin/).
+-   [Download and install RStudio](https://posit.co/download/rstudio-desktop/).
+-   [Download and install Quarto](https://quarto.org/docs/download/).
 
 ## Preparation
 
-In order to teach this lesson, you will need to be familiar with:
-- [ORCiD]()
-- [The Turing Way: Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html)
-- [Quarto](https://quarto.org)
+In order to teach this lesson, you will need to be familiar with: - [ORCiD]() - [The Turing Way: Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html) - [Quarto](https://quarto.org)
 
 ## Files
 
