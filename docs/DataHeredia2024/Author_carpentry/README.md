@@ -24,7 +24,6 @@ The presentation can be viewed at [http://bit.ly/4fyniXV](http://bit.ly/4fyniXV)
         [here](https://authorcarpentry.github.io/orcid-profile/01-adding-works.html).
     -   Already have it? Connect it with Science Open (if you want)
         [here](http://blog.scienceopen.com/2016/06/orcid-integration-at-scienceopen/).
-3.  Does Quarto run on our computers? Do we have R and RStudio working on our computers?
 
 ## Learning Objectives
 
