@@ -21,7 +21,7 @@ ggplot(gapminder, aes(x=continent)) + geom_bar() #distributions of continent
 
 ggplot(gapminder, aes(x=continent, fill=continent)) + geom_bar() #more colorful :)
 ggplot(gapminder, aes(x=continent, fill=continent)) + 
-  geom_bar(aes(y=after_stat(count)/12)) + #transform the count to count the nbr of countries
+  geom_bar(aes(y=..count../12)) + #transform the count to count the nbr of countries
   labs(y="Number of countries") + #add a better label to y axis
   guides(fill="none") #remove the legend (redundance)
 
