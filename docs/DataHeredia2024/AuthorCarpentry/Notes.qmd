@@ -1,0 +1,22 @@
+---
+title: "Teaching notes"
+author: "Bianca Peterson"
+format: html
+editor: visual
+---
+
+## Software
+
+You will need the following software:
+
+-   [Download and install R](https://cran.r-project.org/bin/).
+-   [Download and install RStudio](https://posit.co/download/rstudio-desktop/).
+-   [Download and install Quarto](https://quarto.org/docs/download/).
+
+## Preparation
+
+In order to teach this lesson, you will need to be familiar with: - [ORCiD]() - [The Turing Way: Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html) - [Quarto](https://quarto.org)
+
+## Files
+
+The `README.md` file contains a list of the files in the repository. To update the presentation, modify the `AuthorCarpentry.qmd` file and click **Render** to produce the HTML formatted presentation.
