@@ -5,4 +5,4 @@
 
 ## Excercise
 
-   * [Challenges of being open and responsible at home Costa Rica 2024](https://docs.google.com/document/d/1ENRD0jxQ-Wcvgdvt2du0USN1e5LcnXZJ3uEF8ND-O3g/edit?usp=sharing)
+   * [Challenges of being open and responsible at home](https://docs.google.com/document/d/1ENRD0jxQ-Wcvgdvt2du0USN1e5LcnXZJ3uEF8ND-O3g/edit?usp=sharing)
