@@ -1,3 +1,12 @@
+# Author Carpentry 
+
+## Learning Objectives
+
+1.  Discuss workflows for academic publishing.
+2.  Learn how our curriculum is linked to those workflows.
+3.  Discuss authorship, and contributorship in collaborative research projects.
+4. Present resources to identify predatory journals.
+
 ## Files
 
 - `authorcarpentry.bib`: BibTeX file (specially formatted text file) containing a list of bibliographic citations.
@@ -12,7 +21,6 @@
 
 The presentation can be viewed at [http://bit.ly/4fyniXV](http://bit.ly/4fyniXV).
 
-
 ## Set Up
 
 1.  What is ORCiD and why do you need one?
@@ -25,9 +33,4 @@ The presentation can be viewed at [http://bit.ly/4fyniXV](http://bit.ly/4fyniXV)
     -   Already have it? Connect it with Science Open (if you want)
         [here](http://blog.scienceopen.com/2016/06/orcid-integration-at-scienceopen/).
 
-## Learning Objectives
 
-1.  Discuss workflows for academic publishing.
-2.  Learn how our curriculum is linked to those workflows.
-3.  Discuss authorship, and contributorship in collaborative research projects.
-4. Present resources to identify predatory journals.
