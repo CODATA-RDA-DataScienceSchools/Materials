@@ -12,7 +12,7 @@ The goal of this workshop is to train researchers in Research Data Science (RDS)
    * Day 2 Thursday, Nov 7th - [Introduction to R](R) 
    * Day 3 Friday, Nov 8th - [Introduction to R](R), [Data Visualization](DataVisualization)
    * Day 4 Saturday, Nov 9th - [Data Visualization](DataVisualization), [Intro to Research Data Management]( ), [DMP example 1]( ), [DMP example 2]( )
-   * Day 5 Monday, Nov 11th - [Open Science]( ), [Data Management Plans*]( )
+   * Day 5 Monday, Nov 11th - [Open Responsible Science](OpenResponsibleScience), [Data Management Plans*]( )
    * Day 6 Friday Nov 15th - [Intro Unix]( ), [UNIX Shell]( ) [Version Control with Git]( ), 
    * Day 7 Saturday Nov 16th - [Overview of Machine Learning*]( )
    * Day 8 Monday Nov 18th - [Artificial Neural Networks]( )
