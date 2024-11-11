@@ -3,7 +3,7 @@
 ## Presentations
 
    * Open and Responsible (Data) Science Citizenship 1: [PPTX](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataHeredia2024/OpenResponsibleScience/Costa%20Rica_2024_Ethics_Mon_presentation.pptx) /  [PDF](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataHeredia2024/OpenResponsibleScience/Costa%20Rica_2024_Ethics_Mon_presentation.pdf)
-   * Open and Responsible (Data) Science Citizenship 2: [PPTX](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataHeredia2024/OpenResponsibleScience/Costa%20Rica_2024_Ethics_Mon_presentation.pptx) /  [PDF](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataHeredia2024/OpenResponsibleScience/Costa%20Rica_2024_Ethics_Mon_presentation.pdf)
+   * Open and Responsible (Data) Science Citizenship 2: [PPTX](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataHeredia2024/OpenResponsibleScience/Costa%20Rica_2024_Ethics_2_presentation.pptx) /  [PDF](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataHeredia2024/OpenResponsibleScience/Costa%20Rica_2024_Ethics_2_presentation.pdf)
 
 ## Excercise
 
