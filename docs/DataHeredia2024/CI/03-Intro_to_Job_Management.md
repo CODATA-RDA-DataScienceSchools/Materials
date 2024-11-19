@@ -4,7 +4,7 @@
 
 You will receive login credentials at the beginning of this session. 
 
-   * You might want to refer to the online [Condor 10.7.1 manual](https://readthedocs.org/projects/htcondor/downloads/pdf/latest/).<br>
+   * You might want to refer to the online [Condor 24.1.1 manual](https://readthedocs.org/projects/htcondor/downloads/pdf/latest/).<br>
    * You may enjoy browsing the [Condor web page](http://www.cs.wisc.edu/condor/).<br>
 
 ## Which Condor?
