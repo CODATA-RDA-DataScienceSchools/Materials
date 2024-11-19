@@ -18,7 +18,7 @@ We are going to use this free cloud resource to run a regression analysis on a c
    * You will see a popup that looks like this:
    <img src="https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/SouthAfrica2021/Colab_Open.png" width="800"/><br>
    * Click the _GitHub_ link on the top bar menu.
-   * Enter this link: https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2023/CI/Colab_Regression_Spark.ipynb
+   * Enter this link: [https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataHeredia2024/CI/Regression_Spark.ipynb](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataHeredia2024/CI/Regression_Spark.ipynb)
    * This will open the Apache Spark-based Regression Analysis Notebook we will look at during this lesson.
 
 ## Run Regression Analysis with Apache Spark
