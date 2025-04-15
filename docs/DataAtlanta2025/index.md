@@ -1,6 +1,8 @@
 # Open Science and AI for Research:  Supporting Early-Career Researchers of Tomorrow in Open Science & AI for Research
 
+## Location:
 CODA Building, Georgia Tech
+756 W Peachtree St NW, Atlanta, GA 30308
 
 ## Program Goal:
 Increase the Readiness of Early-Career Researchers in the South to utilize Open Science tools, Artificial Intelligence, and Open Data in developing a pipeline for research.
