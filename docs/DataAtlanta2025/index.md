@@ -33,7 +33,9 @@ Activite
 | 10:15 - 10:30  | Coffee break                    |           |           |
 | 10:30 - 12:00  | Research Data Management        |           |           |
 | 12:00 - 13:00  | Lunch Break                     |           |           |
-| 13:00 - 17:00  |                                 |           |           |
+| 13:00 - 15:00  | NASA TOPS - SCHOOL Project      |  C1215    |           |
+| 15:00 - 15:30  | Coffee Break                    |  C1215    |           |
+| 15:30 - 17:00  | MSI Needs Assessment - Invitation Only | C1215 |        |
 |April 25        |                                 |  C1015    |           |
 | 9:00 - 10:15   |                                 |           |           |
 | 10:15 - 10:30  | Coffee break                    |           |           |
