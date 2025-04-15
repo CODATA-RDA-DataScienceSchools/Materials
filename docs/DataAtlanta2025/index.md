@@ -25,8 +25,9 @@ Activite
 | 10:15 - 10:30  | Coffee break                    |           |           |
 | 10:30 - 12:00  | Open and Responsible Research   | room 1370 |[Link]( )  |
 | 12:00 - 13:00  | Lunch Break                     |           |           |
-| 13:00 - 14:15  | Open and Responsible Research   | room 1370 | [Link]( ) |
-| 14:15 - 17:30  | Author Carpentry                |  C1215    | [Link](https://malfaro2.github.io/Atlanta2022/AuthorCarpentry.html#/title-slide)  |
+| 13:00 - 14:30  | Open and Responsible Research   | room 1370 | [Link]( ) |
+| 14:30 - 14:45  | Lunch Break                     |           |           |
+| 14:45 - 17:00  | Author Carpentry                |  C1215    | [Link](https://malfaro2.github.io/Atlanta2022/AuthorCarpentry.html#/title-slide)  |
 |April 24        |                                 |  C1215    |           |
 | 9:00 - 10:15   | Research Data Management        |           |           |
 | 10:15 - 10:30  | Coffee break                    |           |           |
