@@ -1,15 +1,17 @@
 # Open Science and AI for Research:  Supporting Early-Career Researchers of Tomorrow in Open Science & AI for Research
 
+CODA Building, Georgia Tech
+
 ## Program Goal:
 Increase the Readiness of Early-Career Researchers in the South to utilize Open Science tools, Artificial Intelligence, and Open Data in developing a pipeline for research.
 
 ## Program Rationale: 
-Modern researchers should be able to take advantage of the increased speed of Open Science tools and the accuracy of Open Data to create astonishing results, however, thoughtful guidance is needed to put together a "pipeline for research". The ever-accelerating volume and variety of data being generated is having a huge impact on a wide variety of research disciplines, from the sciences to the humanities. The rapid increase in the volume of data generated through electronic health records (EHR), climate sensors, food and water systems, the criminal justice system, and other social justice research presents exciting opportunities for developing data science approaches (e.g., AI/ML methods) for research. At the same, Open Science tools, or semi-open like ChatGPT, can improve speed of workflows and planning.   
+Modern researchers should be able to take advantage of the increased speed of Open Science tools and the accuracy of Open Data to create astonishing results, however, thoughtful guidance is needed to put together a "pipeline for research". The ever-accelerating volume and variety of data being generated is having a huge impact on a wide variety of research disciplines, from the sciences to the humanities. The rapid increase in the volume of data generated through electronic health records (EHR), climate sensors, food and water systems, the criminal justice system, and other social justice research presents exciting opportunities for developing data science approaches (e.g., AI/ML methods) for research. At the same, Open Science tools, or semi-open like ChatGPT, can improve the speed of workflows and planning.   
 
 This workshop will focus on establishing a research pipeline, where common tasks can be streamlined with Open tools such as strategies for automating the publication of data, paper writing, data management, literature review, and research reproducibility. Also, a needs assessment session will be held for participants to relate Open Science needs and tools that would further support their research and other researchers on their campuses.
 
 ## Program Description:
-The South Big Data Hub will join CODATA-RDA, Microsoft, and AIM-AHEAD Southeast Hub at Morehouse School of Medicine to host a  Researcher Open Science and AI Training Program through a mix of virtual and in-person instruction. Dates: April 21-25, 2025
+The South Big Data Hub will join CODATA-RDA, Microsoft, and AIM-AHEAD Southeast Hub at Morehouse School of Medicine to host a  Researcher Open Science and AI Training Program through a mix of virtual and in-person instruction. Dates: April 22-25, 2025
 
 ### Detailed agenda
    * Check your travel arrangements with Carolyn.Young@gtri.gatech.edu
