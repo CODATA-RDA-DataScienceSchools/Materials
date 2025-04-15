@@ -37,11 +37,11 @@ Activite
 | 15:00 - 15:30  | Coffee Break                    |  C1215    |           |
 | 15:30 - 17:00  | MSI Needs Assessment - Invitation Only | C1215 |        |
 |April 25        |                                 |  C1015    |           |
-| 9:00 - 10:15   |                                 |           |           |
+| 9:00 - 10:15   | MSI Needs Assessment - Invitation Only | C1015 |           |
 | 10:15 - 10:30  | Coffee break                    |           |           |
-| 10:30 - 12:00  |                                 |           |           |
+| 10:30 - 12:00  | MSI Needs Assessment - Invitation Only | C1015 |           |
 | 12:00 - 13:00  | Lunch Break                     |           |           |
-| 13:00 - 17:00  |                                 |           |           |
+| 13:00 - 17:00  | MSI Needs Assessment - Invitation Only | C1015 |           |
 
 **Before you leave**, please make sure you:
 
