@@ -21,11 +21,11 @@ Activite
 | April 22       | Carpentries                     | room 1370 |[Link](https://sdiggs.github.io/2025-04-21-carpentries-sords/)    |
 | April 23       |                                 |           |           |
 | 9:00 - 9:45    | Intro and welcome               | room 1370 |           |
-| 9:45 - 10:15   | Open and Responsible Research   | room 1370 | [Link](OpenScience_EthicsATL2023.pdf)  |
+| 9:45 - 10:15   | Open and Responsible Research   | room 1370 | [Link]( ) |
 | 10:15 - 10:30  | Coffee break                    |           |           |
-| 10:30 - 12:00  | Open and Responsible Research   | room 1370 |[Link](OpenScience_EthicsATL2023.pdf)  |
+| 10:30 - 12:00  | Open and Responsible Research   | room 1370 |[Link]( )  |
 | 12:00 - 13:00  | Lunch Break                     |           |           |
-| 13:00 - 14:15  | Open and Responsible Research   | room 1370 | [Link](OpenScience_EthicsATL2023.pdf)  |
+| 13:00 - 14:15  | Open and Responsible Research   | room 1370 | [Link]( ) |
 | 14:15 - 17:30  | Author Carpentry                |  C1215    | [Link](https://malfaro2.github.io/Atlanta2022/AuthorCarpentry.html#/title-slide)  |
 |April 24        |                                 |  C1215    |           |
 | 9:00 - 10:15   | Research Data Management        |           |           |
