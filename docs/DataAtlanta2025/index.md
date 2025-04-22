@@ -32,13 +32,13 @@ Activite
 | 10:15 - 10:30  | Coffee break                    |           |           |
 | 10:30 - 12:00  | Open and Responsible Research   | room 1370 |[Link]( )  |
 | 12:00 - 13:00  | Lunch Break                     |           |           |
-| 13:00 - 14:30  | Open and Responsible Research   | room 1370 | [Link]( ) |
+| 13:00 - 14:30  | Research Data Management        | room 1370 | [Link]( ) |
 | 14:30 - 14:45  | Lunch Break                     |           |           |
-| 14:45 - 17:00  | Open and Responsible Research   |  C1215    |           |
+| 14:45 - 17:00  | Research Data Management        |  C1215    |           |
 |April 24        |                                 |  C1215    |           |
-| 9:00 - 10:15   | Research Data Management        |           |           |
+| 9:00 - 10:15   | Open and Responsible Research   |           |           |
 | 10:15 - 10:30  | Coffee break                    |           |           |
-| 10:30 - 12:00  | Research Data Management        |           |           |
+| 10:30 - 12:00  | Open and Responsible Research   |           |           |
 | 12:00 - 13:00  | Lunch Break                     |           |           |
 | 13:00 - 15:00  | NASA TOPS - SCHOOL Project      |  C1215    |           |
 | 15:00 - 15:30  | Coffee Break                    |  C1215    |           |
