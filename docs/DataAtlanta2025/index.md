@@ -25,7 +25,7 @@ Activite
 
 | Time           | Session                         | Place     | Materials |
 |----------------|---------------------------------|-----------|-----------|
-| April 22       | Carpentries (Git, Unix, Python) | room 1370 |[Link](https://sdiggs.github.io/2025-04-21-carpentries-sords/)    |
+| April 22       | Carpentries (Unix, Python)      | room 1370 |[Link](https://sdiggs.github.io/2025-04-21-carpentries-sords/)    |
 | April 23       |                                 |           |           |
 | 9:00 - 9:45    | Intro and welcome               | room 1370 |           |
 | 9:45 - 10:15   | Author Carpentry                | room 1370 |  [Link](https://malfaro2.github.io/Atlanta2022/AuthorCarpentry.html#/title-slide)|
