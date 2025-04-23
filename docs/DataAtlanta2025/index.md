@@ -36,7 +36,7 @@ Activite
 | 14:30 - 14:45  | Coffee Break                    |           |           |
 | 14:45 - 17:00  | Research Data Management        |  C1215    |           |
 |April 24        |                                 |  C1215    |           |
-| 9:00 - 10:15   | Open and Responsible Research   |           |  [Link](https://docs.google.com/presentation/d/1WuEKTAlBuw_TTA1yI8LraDsn1qHBbnuo/edit?usp=sharing&ouid=112984299418303080333&rtpof=true&sd=true))         |
+| 9:00 - 10:15   | Open and Responsible Research   |           |  [Link] (https://docs.google.com/document/d/1AAdxclQoSgoC2ceZyui1CnoF1jOTGQ4KDA-aiFXN1bg/edit?usp=sharing))         |
 | 10:15 - 10:30  | Coffee break                    |           |           |
 | 10:30 - 12:00  | Open and Responsible Research   |           |           |
 | 12:00 - 13:00  | Lunch Break                     |           |           |
