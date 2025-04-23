@@ -33,7 +33,7 @@ Activite
 | 10:30 - 12:00  | Open and Responsible Research   | room 1370 |[Link]( )  |
 | 12:00 - 13:00  | Lunch Break                     |           |           |
 | 13:00 - 14:30  | Research Data Management        | room 1370 | [Link]( ) |
-| 14:30 - 14:45  | Lunch Break                     |           |           |
+| 14:30 - 14:45  | Coffee Break                    |           |           |
 | 14:45 - 17:00  | Research Data Management        |  C1215    |           |
 |April 24        |                                 |  C1215    |           |
 | 9:00 - 10:15   | Open and Responsible Research   |           |           |
