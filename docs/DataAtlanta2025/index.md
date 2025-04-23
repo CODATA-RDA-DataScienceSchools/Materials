@@ -58,7 +58,7 @@ Activite
 ## Important Links <a name="links"></a>
 
 * [CODATA/RDA Schools of Research Data Science](https://www.datascienceschools.org/)
-* [Data Atlanta 2023](docs/DataAtlanta2023/index.md)
+* [Data Atlanta 2023](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataAtlanta2023/index.md)
 * [South BD Hub](https://southbigdatahub.org)
 * [RDA Groups](https://www.rd-alliance.org/groups)
 * [The Committee on Data for the International Science Council](https://www.codata.org)
