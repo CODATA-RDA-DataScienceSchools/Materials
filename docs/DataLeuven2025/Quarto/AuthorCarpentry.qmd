@@ -314,12 +314,16 @@ Bianca Peterson, Ph.D.
 
 --
 
+##
+
 Hugh Shanahan 
 
-[{./images/square-bluesky-brands.svg} @hughshanahan.bsky.social](https://bsky.app/profile/hughshanahan.bsky.social)
+[{{< fa brands bluesky  >}} \@hughshanahan.bsky.social](https://bsky.app/profile/hughshanahan.bsky.social)
 
-[{{< fa brands mastodon  >}} @HughShanahan](https://mastodon.ie/deck/@HughShanahan)
+[{{< fa brands mastodon  >}} \@HughShanahan](https://mastodon.ie/deck/@HughShanahan)
 
 [{{< fa envelope-open >}} hugh.shanahan\@rhul.ac.uk](mailto:hugh.shanahan@rhul.ac.uk)
 
 [{{< fa rocket >}} https://github.com/hughshanahan/](https://github.com/hughshanahan)
+
+##
