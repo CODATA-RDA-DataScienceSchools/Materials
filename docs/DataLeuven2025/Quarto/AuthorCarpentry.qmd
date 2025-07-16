@@ -73,7 +73,7 @@ format:
 
 ## Why do we want to work on repro-mode?
 
-[![The Turing Way: Advantages of Reproducible Research](https://book.the-turing-way.org/build/reasons-reproducibil-50c3447f47cfdb55ed075f8f8e4202de.png){fig-align="center" width=60%}](https://the-turing-way.netlify.app/reproducible-research/overview/overview-benefit.html)
+[![The Turing Way: Advantages of Reproducible Research](images/reasons-reproducibil-4957d8d02446aeef45cabf7cca0e798e.png){fig-align="center" width=60%}](https://the-turing-way.netlify.app/reproducible-research/overview/overview-benefit.html)
 
 ## What is Quarto? (1/3)
 
@@ -108,7 +108,7 @@ Some examples:
 
 ## What changed?
 
-[![The Turing Way: Guide for Reproducible Research](https://book.the-turing-way.org/build/reproducibility-a799e60c55c02ae40338ff00c23b3d38.jpg){fig-align="center" width=60%}](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html)
+[![The Turing Way: Guide for Reproducible Research](images/reproducibility-9a84ea99c51f1e3d96e9f0e6b8e6d2a4.jpg){fig-align="center" width=60%}](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html)
 
 ## Anatomy of a Quarto document
 
@@ -271,7 +271,7 @@ The easiest way to do this is maintaining a `.bib` file. You can create it using
 ## Now, let's go back to the author process
 
 
-[![The Turing Way: Collaboration](https://book.the-turing-way.org/build/collaboration-805fc07aa6ed2207d47d0e3241a1e54f.svg){fig-align="center" width=60%}](https://the-turing-way.netlify.app/collaboration/collaboration.html)
+[![The Turing Way: Collaboration](images/collaboration-aa0f34704e1a00a211ee793291139055.svg){fig-align="center" width=60%}](https://the-turing-way.netlify.app/collaboration/collaboration.html)
 
 ## Group Discussion (1/2)
 
