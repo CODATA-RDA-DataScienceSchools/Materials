@@ -390,10 +390,10 @@ Hugh Shanahan <a href="https://orcid.org/0000-0003-1374-6015" class="quarto-titl
 <h2>Let’s do it!</h2>
 <p>Follow these steps:</p>
 <ol type="1">
-<li>Open RStudio.</li>
-<li>Click <strong><code>File</code></strong> &gt; <strong><code>New Project</code></strong> &gt; <strong><code>New Directory</code></strong> &gt; <strong><code>Quarto Project</code></strong> &gt; Name your Directory and click on <strong><code>Create git repository</code></strong> &gt; <strong><code>Create Project</code></strong>.</li>
-<li>Click on <strong><code>Render</code></strong> to test that the most basic Quarto document renders on your computer.</li>
-<li>If it worked, you should see a <code>&lt;filename&gt;.html</code> file in your local folder. Open it in your Web Browser.</li>
+<li>Open Google Drive and go to Google Colab.</li>
+<li>Create a new directory called Quarto and place a copy of <a href="https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataLeuven2025/Quarto/QuartoSetup.ipynb">this notebook</a> into that folder</li>
+<li>Open the notebook and then run all the cells in it.</li>
+<li>From Google Drive open another notebook in the same directory - call it test.ipynb.</li>
 </ol>
 </section>
 <section id="lets-start-with-yaml" class="slide level2">
@@ -409,6 +409,10 @@ author: Your name
 date: 2023/08/03
 format: gfm 
 ---</code></pre>
+</section>
+<section id="rendering" class="slide level2">
+<h2>Rendering</h2>
+<p>quarto render test.ipynb</p>
 </section>
 <section id="yaml-details" class="slide level2">
 <h2>YAML details</h2>
@@ -431,8 +435,8 @@ format: gfm
 <li>You can also <a href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content">add a DOI</a>.</li>
 </ul>
 </section>
-<section id="now-lets-add-text-in-the-main-body" class="slide level2">
-<h2>Now let’s add text in the Main Body</h2>
+<section id="now-lets-add-text-in-the-main-body-open-a-text-cell" class="slide level2">
+<h2>Now let’s add text in the Main Body (open a text cell!)</h2>
 <pre><code>## Introduction
 
 This is a Quarto document. To learn more about Quarto see &lt;https://quarto.org&gt;.
@@ -446,14 +450,14 @@ Another way to create links is to use: [a label with a link](https://quarto.org)
 <p>The function’s output is included immediately below the code.</p>
 <div class="rows">
 <div class="row" height="50%">
-<div id="1008342d" class="cell" data-execution_count="1">
+<div id="ec487327" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href=""></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb3-2"><a href=""></a>my_data <span class="op">=</span> pd.read_csv(<span class="st">"https://raw.githubusercontent.com/deepak525/Investigate_TMDb_Movies/master/tmdb-movies.csv"</span>)</span>
 <span id="cb3-3"><a href=""></a>my_data[<span class="st">'budget'</span>].mean()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="10">
+<div class="cell-output cell-output-display" data-execution_count="4">
 <pre><code>14625701.09414688</code></pre>
 </div>
 </div>
@@ -467,6 +471,20 @@ Another way to create links is to use: [a label with a link](https://quarto.org)
 <h2>Plot Output</h2>
 <p>(Will discuss plots more next week)</p>
 <div id="cell-Plot" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href=""></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb5-2"><a href=""></a><span class="im">from</span> plotnine <span class="im">import</span> (</span>
+<span id="cb5-3"><a href=""></a>    ggplot,</span>
+<span id="cb5-4"><a href=""></a>    aes,</span>
+<span id="cb5-5"><a href=""></a>    geom_point</span>
+<span id="cb5-6"><a href=""></a>)</span>
+<span id="cb5-7"><a href=""></a>df <span class="op">=</span> pd.DataFrame({<span class="st">"x"</span> : [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>], <span class="st">"y"</span> : [ <span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">30</span>, <span class="dv">40</span>]})</span>
+<span id="cb5-8"><a href=""></a>(</span>
+<span id="cb5-9"><a href=""></a>    ggplot(df, aes(<span class="st">"x"</span>, <span class="st">"y"</span>))</span>
+<span id="cb5-10"><a href=""></a>    <span class="op">+</span> geom_point()</span>
+<span id="cb5-11"><a href=""></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -479,14 +497,14 @@ Another way to create links is to use: [a label with a link](https://quarto.org)
 <section id="tables" class="slide level2 smaller">
 <h2>Tables</h2>
 <p>Use the pandas function to print tables as HTML:</p>
-<div id="397cdddb" class="cell" data-execution_count="3">
+<div id="686e9740" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href=""></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb5-2"><a href=""></a>data <span class="op">=</span> pd.read_csv(<span class="st">"https://raw.githubusercontent.com/deepak525/Investigate_TMDb_Movies/master/tmdb-movies.csv"</span>)</span>
-<span id="cb5-3"><a href=""></a>data.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href=""></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb6-2"><a href=""></a>data <span class="op">=</span> pd.read_csv(<span class="st">"https://raw.githubusercontent.com/deepak525/Investigate_TMDb_Movies/master/tmdb-movies.csv"</span>)</span>
+<span id="cb6-3"><a href=""></a>data.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="12">
+<div class="cell-output cell-output-display" data-execution_count="6">
 <div>
 
 

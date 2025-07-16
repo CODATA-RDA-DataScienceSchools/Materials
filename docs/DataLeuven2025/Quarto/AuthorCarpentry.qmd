@@ -120,10 +120,10 @@ Some examples:
 
 Follow these steps:
 
-1.  Open RStudio.
-2.  Click **`File`** \> **`New Project`** \> **`New Directory`** \> **`Quarto Project`** \> Name your Directory and click on **`Create git repository`** \> **`Create Project`**.
-3.  Click on **`Render`** to test that the most basic Quarto document renders on your computer.
-4.  If it worked, you should see a `<filename>.html` file in your local folder. Open it in your Web Browser.
+1.  Open Google Drive and go to Google Colab.
+2.  Create a new directory called Quarto and place a copy of [this notebook](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataLeuven2025/Quarto/QuartoSetup.ipynb) into that folder
+3.  Open the notebook and then run all the cells in it.
+4.  From Google Drive open another notebook in the same directory - call it test.ipynb.
 
 ## Let's start with YAML
 
@@ -141,6 +141,11 @@ date: 2023/08/03
 format: gfm 
 ---
 ```
+
+## Rendering
+
+quarto render test.ipynb
+
 
 ## YAML details
 
@@ -160,7 +165,7 @@ It depends on the format you want to work in:
 -   Data and code are available from your repo as a [Webpage](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
 -   You can also [add a DOI](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content).
 
-## Now let's add text in the Main Body
+## Now let's add text in the Main Body (open a text cell!)
 
 ```         
 ## Introduction
@@ -202,8 +207,9 @@ How much do you want to see?
 (Will discuss plots more next week)
 
 ```{python}
+#| echo: true
+#| code-fold: true
 #| label: Plot
-
 import pandas as pd
 from plotnine import (
     ggplot,
@@ -232,7 +238,6 @@ data.head()
 ## LaTeX Math
 
 You can also include LaTeX math:
-
 
 \$\$
   P\\left(A=2\\middle\|\\frac{A\^2}{B}\>4\\right)
