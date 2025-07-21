@@ -1,6 +1,6 @@
 # 🛡️ Information Security Workshop
 
-![Workshop Logo](../../../assets/DS_logo_s-mono.png)
+![Workshop Logo](../../../assets/DS_logo_s-inverse.png)
 
 Welcome to the **Information Security Lesson**! This repository contains the material you'll need to follow the sessions and practice key concepts through hands-on exercises.
 
