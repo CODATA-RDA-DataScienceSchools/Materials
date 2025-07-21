@@ -16,11 +16,11 @@ Additionally, this system allows the sender to "sign" a message with their priva
 
 For any further assistance on GNUpg, check their [website](https://gnupg.org/index.html).
 
-# Generating a Key
+
 
 GPG is installed by default in most distributions.
 
-⚠️⚠️⚠️ **For this lab session there is no need to install gpg, because it has already been installed** ⚠️⚠️⚠️
+
 
 If you are using a machine that, for any reason, GPG is not installed, on Ubuntu and Debian, you can update the local repo index and install it by typing:
 
@@ -29,6 +29,31 @@ $ sudo apt update
 $ sudo apt install gnupg
 ```
 
+
+And if it is a mac os machine, you can do the following:
+
+## Installing GPG on macOS
+
+GPG (Gnu Privacy Guard) is a tool for secure communication and file encryption. It’s widely used for signing Git commits and encrypting messages.
+
+---
+
+### ✅ Step 1: Install Homebrew (if not already installed)
+
+Homebrew is a package manager for macOS. If you don’t have it yet, open **Terminal** and run:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+### ✅ Step 2: Install GPG
+Once Homebrew is ready, install GPG by running:
+
+```bash
+brew install gnupg
+```
+
+## Check installation
 We can check if it is installed by running the command: 
 
 ```bash!
@@ -44,6 +69,8 @@ This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 ...
 ```
+
+# Generating a Key
 
 In order to start using the GNUpg you must first create a new keypair:
 
@@ -609,7 +636,7 @@ The **Good signature from "VeraCrypt Team (2018 - Supersedes Key ID=0x54DDD393) 
 3. Upload your key to the `openpgp` key server;
 4. Pair with other students and exchange encrypted messages among yourselves;
 5. Don't forget to export your private key to take home with you; Use this [link](https://itslinuxfoss.com/export-gpg-private-key-and-public-key-file/#:~:text=To%20export%20a%20GPG%20private%20and%20public%20key%20to%20a,%E2%80%93list%2Dkeys%E2%80%9D%20command.) as reference;
-6. Check the integrity of the [Tixati torrent client](https://www.tixati.com/download/linux.html) program;
+6. Check the integrity of the [KeePassXC](https://keepassxc.org/download/#windows) program;
 7. What is a Revocation key? Why is it important to have one?
     * Read this [blog post](https://blog.chapagain.com.np/gpg-revoking-your-public-key-and-notifiying-key-server/).
 
