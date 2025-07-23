@@ -89,7 +89,7 @@ th, td { padding: 5px; }
 }
 
 .logo {
-  background-image: url(pictures/LOGO.png);
+  background-image: url(pictures/logo.png);
   background-size: contain;
   background-repeat: repeat;
   position: absolute;
