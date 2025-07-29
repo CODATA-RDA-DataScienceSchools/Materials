@@ -16,7 +16,7 @@ format:
     auto-stretch: false
     css: styles.css
     logo: images/logo.png
-    footer: <https://bit.ly/46Nmxa9>
+    footer: <https://bit.ly/3UBrei6>
 ---
 
 ## Attribution {.hcenter}
@@ -33,7 +33,7 @@ To set up your Python development environment locally, you will need to install 
 - [Python 3](https://code.visualstudio.com/docs/python/python-tutorial#_install-a-python-interpreter)
 - [VS Code](https://code.visualstudio.com/) or another IDE of your choice.
 
-We will use the [ICTP Jupyterhub Server](https://jupyter.ictp.it/smr3962/)
+We will use [Google Colab](https://colab.google/)
 
 ## Required Python Packages {.hcenter}
 
@@ -51,8 +51,9 @@ You need the following packages for this workshop:
 We'll use the following datasets:
 
 - [tmdb-movies.csv](https://raw.githubusercontent.com/deepak525/Investigate_TMDb_Movies/master/tmdb-movies.csv)
-- [movies.csv](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2024/Python/data/movies.csv)
-- [ratings.csv](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2024/Python/data/ratings.csv)
+- [tmdb-movies.missing.csv](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2025/Python/data/tmdb-movies-missing.csv)
+- [movies.csv](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2025/Python/data/movies.csv)
+- [ratings.csv](https://github.com/CODATA-RDA-DataScienceSchools/Materials/blob/master/docs/DataTrieste2025/Python/data/ratings.csv)
 
 
 ## Objectives {.smaller .hcenter}
@@ -100,17 +101,18 @@ We'll use the following datasets:
 -   Python works on `data of all shapes and sizes` - it is designed for data analysis.
 -   Python produces `high-quality graphics` - can adjust any aspect of your graph.
 -   Python has a `large community` - mailing lists and websites (Stack Overflow).
--   Python is `open-source` and `cross-platform` - Anyone can inspect the source code.
+-   Python is `open-source` and `cross-platform` - anyone can inspect the source code.
 -   Less chance for mistakes.
 
 ## Jupyter notebook interface
 
-We will use [Jupyter Notebook](https://jupyter.org/) online.
+We will use [Google Colab](https://colab.google/).
 
 See the following details about the [Jupyter Notebook interface](https://datacarpentry.org/python-ecology-lesson/jupyter_notebooks.html).
 
 
 ## What can you do in Python? {.smaller .hcenter}
+#### Math
 
 ![](images/mathematics.jpg){fig-align="center" width="500"}
 
@@ -119,6 +121,7 @@ Credit: [IPCisco.com](https://ipcisco.com/lesson/python-math-functions/)
 :::
 
 ## What can you do in Python? {.smaller .hcenter}
+#### Statistics
 
 ![](images/statistics.png){fig-align="center" width="700"}
 
@@ -127,6 +130,7 @@ Credit: [DexLab](https://m.dexlabanalytics.com/blog/python-statistics-fundamenta
 :::
 
 ## What can you do in Python? {.smaller .hcenter}
+####  Data analysis
 
 ![](images/analysis.png){fig-align="center" width="500"}
 
@@ -135,6 +139,7 @@ Credit: [Data Carpentry](https://datacarpentry.org/python-ecology-lesson/06-loop
 :::
 
 ## What can you do in Python? {.smaller .hcenter}
+#### Data visualisation
 
 ![](images/visualisation.jpeg){fig-align="center" width="800"}
 
@@ -144,6 +149,7 @@ Credit: Gauransh Singh - [Data Visualization in Python using Matplotlib and Seab
 
 
 ## What can you do in Python? {.smaller .hcenter}
+#### Custom functions
 
 ![](images/functions.png){fig-align="center" width="300"}
 
@@ -152,6 +158,7 @@ Credit: [Thinking Neuron](https://thinkingneuron.com/user-defined-functions-in-p
 :::
 
 ## What can you do in Python? {.smaller .hcenter}
+#### Reproducible reports
 
 ![](images/report.png){fig-align="center" width="900"}
 
@@ -160,6 +167,7 @@ Credit: [Quarto](https://quarto.org/)
 :::
 
 ## What can you do in Python? {.smaller .hcenter}
+#### Relational databases
 
 ![](images/databases.jpg){fig-align="center" width="800"}
 
@@ -168,6 +176,7 @@ Credit: [datacamp](https://www.datacamp.com/blog/sql-vs-python-which-to-learn)
 :::
 
 ## What can you do in Python? {.smaller .hcenter}
+#### Webscraping
 
 ![](images/webscraping.png){fig-align="center" width="800"}
 
@@ -176,6 +185,7 @@ Credit: [Excelsior](https://medium.com/@get_excelsior/web-scraping-a-problem-sol
 :::
 
 ## What can you do in Python? {.smaller .hcenter}
+#### Dashboards
 
 ![](images/dashboard.png){fig-align="center" width="800"}
 
@@ -209,7 +219,7 @@ Credit: [Build a real-time dashboard in Python with Tinybird and Dash](https://w
 
 -   Enter code or text into the **input** area and [click play]{.red} (or [Ctrl + Enter]{.red} or [Shift + Enter]{.red} for the shortcut) to execute the content of the specific cell.
 -   When you execute a code cell, that code is sent to an execution kernel, and the result is returned in the output area of the notebook.
--   Pressing the [+]{.red} button in the menu bar will add a new cell.
+-   Pressing the [+Code]{.red} button in the menu bar will add a new code cell.
 -   All your commands, as well as any output, will be saved as part of the notebook file.
 
 ## Time for... {.hcenter}
@@ -329,17 +339,16 @@ Credit: [Devopedia](https://devopedia.org/python-data-structures)
 
 -   Sometimes there are a few lines of metadata at the top of the file:
 
-    -   You can use skip the first "n" lines: `read_csv("data.csv", skip = 5)`
-    -   Or drop all lines that start with a certain character, e.g. "\#": `read_csv("data.csv", comment = "#")`
+    -   You can use skip the first "n" lines: `read_csv("data.csv", skiprows=5)`
+    -   Or drop all lines that start with a certain character, e.g. "\#": `read_csv("data.csv", comment="#")`
 
 -   The data might not have column names:
 
-    -   You can use `col_names = FALSE` to tell `read_csv()` not to treat the first row as headings, and instead label them sequentially from X1 to Xn: `pd.read_csv("data.csv", col_names = FALSE)`
-    -   Alternatively, pass `header` a character vector with column names: `pd.read_csv("data.csv", col_names = c("name", "surname", "age", "weight"))`
+    -   You can pass `usecols` a list with column names: `pd.read_csv("data.csv", usecols=['foo', 'bar'])[['foo', 'bar']]`
 
--   Specify the value(s) that are used to represent missing values in your file: `pd.read_csv("data.csv", na = ".")`
+-   Specify additional value(s) that are used to represent missing values in your file: `pd.read_csv("data.csv", na_values=".")`
 
--   Trim whitespace: `pd.read_csv("data.csv", trim_ws = TRUE)`
+-   Trim whitespace: `pd.read_csv("data.csv", skipinitialspace=True)`
 
 ## Data frames {.hcenter}
 
@@ -391,6 +400,14 @@ Credit: [Devopedia](https://devopedia.org/python-data-structures)
 ![](images/Practical.PNG){fig-align="center"}
 
 ## Concatenating dataframes {.hcenter}
+
+![](images/concat.png){fig-align="center" width="600"}
+
+## Time for... {.hcenter}
+
+![](images/Practical.PNG){fig-align="center"}
+
+## Joining dataframes {.hcenter}
 
 ![](images/joins.jpg){fig-align="center" width="600"}
 
@@ -551,7 +568,7 @@ for price in prices:
     print(f"Total price: {total}")
 ```
 
-## Writing your own function {.hcenter .smaller}
+## Writing your own functions {.hcenter .smaller}
 
 -   Functions allow you to automate common tasks instead of copy-and-pasting
 -   Writing a function has 3 main advantages over using copy-and-paste:
@@ -576,7 +593,7 @@ def count_variable_occurrences(file_path, variable):
 
 # Usage
 
-variable_counts = count_variable_occurrences(file_path, 'your_variable_name')
+variable_counts = count_variable_occurrences(file_path, 'variable_name')
 print(variable_counts)
 ```
 
