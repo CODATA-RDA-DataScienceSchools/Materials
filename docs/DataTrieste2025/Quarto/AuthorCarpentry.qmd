@@ -31,7 +31,7 @@ format:
     preview-links: auto
     logo: images/logo.png
     css: styles.css
-    footer: <http://bit.ly/45eVpAT> 
+    footer: <http://bit.ly/41qjtzk> 
 ---
 
 ## Introduction
