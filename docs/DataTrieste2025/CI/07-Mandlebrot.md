@@ -63,7 +63,7 @@ $ ./goatbrot -i 1000 -o tile_000001_000001.ppm -c 0.75,-0.75 -w 1.5 -s 500,500
 ```
 $ wget http://www.imagemagick.org/download/ImageMagick.tar.gz
 $ tar -xzvf ImageMagick.tar.gz
-$ cd ImageMagick-7.1.1-15/
+$ cd ImageMagick-7.1.2-0/
 $ ./configure --prefix=/home/jovyan/opt/
 $ make install
 ```
