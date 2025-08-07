@@ -15,6 +15,16 @@ First, we will get and compile the goatbrot software, then create a nice mandleb
 ```
 $ git clone https://github.com/beejjorgensen/goatbrot
 $ cd goatbrot
+```
+You will need to make a slight adjustment to the Makefile to compile goatbrot properly. You can make this adjustment with nano or your favorite editor. 
+
+Line 11 in the Makefile should be:
+```
+LDOPTS=-fopenmp -Wl,--no-as-needed -lm
+```
+
+Now you can compile with:
+```
 $ make
 $ ./goatbrot -i 1000 -o tile_000000_000000.ppm -c 0,0 -w 3 -s 1000,1000
 ```
