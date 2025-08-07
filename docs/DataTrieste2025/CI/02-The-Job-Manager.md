@@ -25,7 +25,7 @@ $CondorVersion: 10.6.0 2023-06-29 BuildID: 658549 PackageID: 10.6.0-1.1 $
 $CondorPlatform: X86_64-Ubuntu_22.04 $
 ```
 
-Note that the "CondorPlatform" reports the type of computer we built it on, _not_ the computer we're running on. It was built on CentOS_7.6, but you might notice that we're running on CentOS Linux release 7.3.1.
+Note that the "CondorPlatform" reports the type of computer we built it on, _not_ the computer we're running on. It was built on CentOS_7.6, but you might notice that we're running on Ubuntu Linux 24.04.
 
 ### Extra Tip: The OS version
 
