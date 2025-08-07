@@ -130,7 +130,6 @@ How do you use the `-constraint` or `-format` options to `condor_q`? When would 
 
 What else can you find out with condor_status? Try any one of:
 
-   * `man condor_status`
    * `condor_status -help`
    * [condor_status from the online manual](https://htcondor.readthedocs.io/en/latest/man-pages/condor_status.html)
 
