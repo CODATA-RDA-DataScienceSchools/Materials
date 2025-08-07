@@ -10,7 +10,7 @@ You will receive login credentials at the beginning of this session.
 ## Which Condor?
 We will be using Condor 10.6.0, which is a recent production version of Condor.
 
-Condor has two coexisting types of releases at any given time: stable and development. Condor 10.6.0 is considered a stable releases, and you can know they are stable because the second digits (a 6 in these cases) are  even numbers. In a given stable series, all versions have the same features (for example 10.6.0 and 10.6.1 have the same set of features) and differ only in bug fixes.
+Condor has two coexisting types of releases at any given time: stable and development. Condor 24.9.2 is considered a stable releases, and you can know they are stable because the second digits (a 6 in these cases) are  even numbers. In a given stable series, all versions have the same features (for example 24.9.2 and 24.9.3 have the same set of features) and differ only in bug fixes.
 
 ## Where you will work
 
