@@ -71,7 +71,7 @@ $ make install
    3. Now make the four segments into a single GIF file.
    4. 
 ```
-$ ~/opt/montage tile_000000_000000.ppm tile_000000_000001.ppm tile_000001_000000.ppm tile_000001_000001.ppm -mode Concatenate -tile 2x2 ~/mandle.gif
+$ ~/opt/bin/montage tile_000000_000000.ppm tile_000000_000001.ppm tile_000001_000000.ppm tile_000001_000001.ppm -mode Concatenate -tile 2x2 ~/mandle.gif
 ```
 
 This will produce the same image as above. We broke the image space into a 2 by 2 grid and ran `goatbrot` on each section of the grid. The `montage` program simply stitches the files together. 
