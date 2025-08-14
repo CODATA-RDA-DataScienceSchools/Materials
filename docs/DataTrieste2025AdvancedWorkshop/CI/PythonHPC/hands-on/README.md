@@ -380,3 +380,8 @@ tail -f pi_estimation_JOBID.out
 - Test on single node before scaling
 - Check SLURM output files for errors
 - Use `srun --pty bash` for interactive debugging
+
+
+## GPU
+
+Try the [following notebook with experiments of math operations using GPU](https://colab.research.google.com/drive/1anVbRXx2zRcR4AYSsDwpClUoafgc3UUj#scrollTo=66bBu8XWkYvM)
